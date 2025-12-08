@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python kvíz gyakorló</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div>
+        <p class="eyebrow">Kvíz gyakorlás</p>
+        <h1>Python kérdések (65 db)</h1>
+        <p class="sub">A kvíz fájlokból kibányászott kérdések. Válasz után megjelenik a helyes megoldás, a tovább gombbal léphetsz a következőre.</p>
+      </div>
+      <div class="controls">
+        <button id="restart-all" class="ghost">Újrakezdés (összes)</button>
+        <button id="restart-wrong" class="ghost">Újrakezdés (csak hibásak)</button>
+      </div>
+    </header>
+
+    <section class="status">
+      <div class="stat">
+        <p class="label">Helyes / összes</p>
+        <p class="value" id="score">0 / 0</p>
+      </div>
+      <div class="stat">
+        <p class="label">Kérdés</p>
+        <p class="value" id="position">1 / 1</p>
+      </div>
+      <div class="progress">
+        <div class="bar" id="progress-bar"></div>
+      </div>
+    </section>
+
+    <section class="card" id="card">
+      <div class="question-block">
+        <p class="quiz-tag" id="quiz-tag"></p>
+        <h2 id="question-title">Töltés...</h2>
+        <pre id="question-text" class="question-text"></pre>
+      </div>
+      <div id="options" class="options"></div>
+      <div id="feedback" class="feedback"></div>
+      <div class="actions">
+        <button id="prev" class="ghost">Előző</button>
+        <button id="next">Következő</button>
+      </div>
+    </section>
+
+    <section class="footer-note">
+      <p>Tippek: ha végeztél, az <strong>Újrakezdés</strong> gombokkal új paklit állíthatsz össze (minden kérdés vagy csak a mostani hibásak).</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

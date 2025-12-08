@@ -1,0 +1,1409 @@
+[
+  {
+    "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q01",
+    "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Elemezd a kódot!\nimport json\nwith open(\"adatok.json\", \"r\") as fajl:\n    adatok = json.load(fajl)\n    print(adatok)\n    print(json.dumps(adatok, indent=4))\nMelyik a helyes válasz?",
+    "options": [
+      {
+        "text": "A json.dumps () függvény a adatok.json fájl tartalmát listaként olvassa be",
+        "correct": false
+      },
+      {
+        "text": "A json.load () függvény a adatok.json fájl tartalmát dictionary-ként olvassa be",
+        "correct": true
+      },
+      {
+        "text": "A json.load () függvény a adatok.json fájl tartalmát listaként olvassa be",
+        "correct": false
+      },
+      {
+        "text": "A json.dumps () függvény a adatok.json fájl tartalmát dictionary-ként olvassa be",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q02",
+    "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "import json\nadatok  = {\n    \"nev\" : \"Anna\" ,\n    \"kor\" : 25,\n    \"varos\" : \"Budapest\"\n}\nwith open (\"ki.json\" , \"w\") as fajl:\n    json.dumps (adatok , fajl)\nA json.dumps (adatok, fajl) függvénnyel az adatok dictionary-t JSON formátumban\nírjuk ki a ki.json fájlba.",
+    "options": [
+      {
+        "text": "Hamis",
+        "correct": true
+      },
+      {
+        "text": "Igaz",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q03",
+    "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik Python utasítás írja ki egy JSON fájlba egy dictionary tartalmát?",
+    "options": [
+      {
+        "text": "json.print ()",
+        "correct": false
+      },
+      {
+        "text": "json.dumps ()",
+        "correct": false
+      },
+      {
+        "text": "json.dump ()",
+        "correct": true
+      },
+      {
+        "text": "json.write ()",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q04",
+    "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mire való az indent =4 paraméter?",
+    "options": [
+      {
+        "text": "Sorfolytonos megjelenítésre",
+        "correct": false
+      },
+      {
+        "text": "A dictionary kulcs - érték párjainak felsorolására",
+        "correct": false
+      },
+      {
+        "text": "4 karakteres behúzással jeleníti meg a dictionary tartalmát",
+        "correct": true
+      },
+      {
+        "text": "A kiírás 4-es tagolására",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q05",
+    "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "class Point:\n    pass\nMelyik kód fogja helyesen példányosítani a Point osztályt?",
+    "options": [
+      {
+        "text": "P = Point()",
+        "correct": true
+      },
+      {
+        "text": "p = Point",
+        "correct": false
+      },
+      {
+        "text": "P = point",
+        "correct": false
+      },
+      {
+        "text": "P = point()",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q06",
+    "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "with open ('adat.json' , \"r\") as f:\n     ###\nIgaz-e a következő állítás?\nA with kulcsszó egy kontextuskezelőt  használ, amely automatikusan gondoskodik a\nfájl megfelelő lezárásáról, még akkor is, ha kivétel keletkezik a fájlműveletek során.",
+    "options": [
+      {
+        "text": "Hamis",
+        "correct": false
+      },
+      {
+        "text": "Igaz",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q07",
+    "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "A mint nevű modulban található make_tool() függvényt akarod meghívni. A kódod a\nkövetkező sorral kezdődik:\nimport mint\nMi a helyes formája a függvény meghívásának?",
+    "options": [
+      {
+        "text": "mint.make_tool",
+        "correct": false
+      },
+      {
+        "text": "make_tool()",
+        "correct": false
+      },
+      {
+        "text": "mint.make_tool()",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q08",
+    "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Írd le a pi importálását a math modulból. Új névnek a PI-t szeretnénk használni.",
+    "options": [
+      {
+        "text": "from math import pi as PI",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q09",
+    "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik a helyes válasz?\nclass Vásárlás:\n    db = 1\n    érték = 20\n    def __init__(self):\n        self.ár_ft = 300\n        self.__keret = True",
+    "options": [
+      {
+        "text": "A darab és az érték osztály változók (class variable)",
+        "correct": true
+      },
+      {
+        "text": "Az érték és a __keret osztályváltozók (class variable)",
+        "correct": false
+      },
+      {
+        "text": "A darab és az érték példány változók (instance variable)",
+        "correct": false
+      },
+      {
+        "text": "A darab és a __keret osztály változók (class variable)",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q10",
+    "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mit kell írni a ### helyére, hogy a kód beolvassa a bemenet.json fájl tartalmát?\nimport  json\nwith open (\"bemenet.json\" , \"r\") as fajl:\n    adatok  = json.###(fajl)\n    print(adatok )\n    print(json.dumps (adatok , indent =4))",
+    "options": [
+      {
+        "text": "upload",
+        "correct": false
+      },
+      {
+        "text": "load",
+        "correct": true
+      },
+      {
+        "text": "dump",
+        "correct": false
+      },
+      {
+        "text": "read",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q11",
+    "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a JSON rövidítés feloldása?",
+    "options": [
+      {
+        "text": "Joint Structure Object Namespace",
+        "correct": false
+      },
+      {
+        "text": "Java Syntax Over Network",
+        "correct": false
+      },
+      {
+        "text": "Java Serialized Output Name",
+        "correct": false
+      },
+      {
+        "text": "JavaScript Object Notation",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q12",
+    "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik állítás írja le helyesen a POST , GET , PUT  és DELETE HTTP  metódusok\náltalános szerepét?",
+    "options": [
+      {
+        "text": "Ezek csak a szerveroldali fájlok közvetlen módosítását végzik el futás közben",
+        "correct": false
+      },
+      {
+        "text": "Ezek kizárólag statikus HTML-oldalak gyorsabb betöltésére szolgálnak",
+        "correct": false
+      },
+      {
+        "text": "Ezek a metódusok a kliens és szerver közti adatküldés és -kezelés különböző módjait határozzák meg webes alkalmazásokban",
+        "correct": true
+      },
+      {
+        "text": "Ezek a metódusok titkosítják a HTTP-kéréseket, hogy biztonságos kapcsolatot biztosítsanak",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q13",
+    "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a KurzusFajlKezelo osztály célja a következő kódban?\nimport json\nclass KurzusFajlKezelo:\nut = \"kurzusok.json\"\ndef kurzusok_olvasas(self):\n    try:\n        with open(self.ut, \"r\") as be:\n            kurzusok = json.load(be)\n    except FileNotFoundError:\n        return []\n    return kurzusok\ndef kurzusok_iras(self, kurzusok):\n     with open(self.ut, \"w\") as ki:\n         json.dump(kurzusok, ki, indent=4)",
+    "options": [
+      {
+        "text": "Adatbázis-kezelés SQL lekérdezésekkel",
+        "correct": false
+      },
+      {
+        "text": "Bináris fájlok olvasása és írása",
+        "correct": false
+      },
+      {
+        "text": "Szöveges fájlok soronkénti feldolgozása",
+        "correct": false
+      },
+      {
+        "text": "JSON formátumú fájlok olvasása és írása kurzusadatok kezelésére",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q14",
+    "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mire használható a Swagger UI?",
+    "options": [
+      {
+        "text": "Adatbázisok kezelésére és SQL lekérdezések futtatására",
+        "correct": false
+      },
+      {
+        "text": "Python kód statikus típusellenőrzésére",
+        "correct": false
+      },
+      {
+        "text": "Egy webes felület biztosítására, amelyen keresztül API-k dokumentációja és tesztelése végezhető",
+        "correct": true
+      },
+      {
+        "text": "Grafikus felhasználói felületek (GUI) létrehozására Pythonban",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q15",
+    "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mire használható az Uvicorn Pythonban?",
+    "options": [
+      {
+        "text": "Adatbázisok kezelésére és SQL lekérdezések futtatására",
+        "correct": false
+      },
+      {
+        "text": "Egy aszinkron webkiszolgáló futtatására, amely támogatja az ASGI (Asynchronous Server Gateway Interface) szabványt",
+        "correct": true
+      },
+      {
+        "text": "No answer text provided",
+        "correct": false
+      },
+      {
+        "text": "Grafikus felhasználói felületek (GUI) létrehozására",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q16",
+    "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik állítás igaz a Pydantic modellekre vonatkozóan Pythonban?\n \nA Pydantic modellek automatikusan validálják és konvertálják az adatokat a megadott",
+    "options": [
+      {
+        "text": "típusok szerint",
+        "correct": true
+      },
+      {
+        "text": "A Pydantic modellek kizárólag JSON formátumú adatokat tudnak kezelni",
+        "correct": false
+      },
+      {
+        "text": "A Pydantic modellek nem használhatók osztályok öröklésére",
+        "correct": false
+      },
+      {
+        "text": "A Pydantic modellek nem támogatják az alapértelmezett értékek használatát attribútumokhoz",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python-q01",
+    "quiz": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass  Szamok :\n    def __init__ (self, szamok ):\n        self.szamok  = szamok\n    def __str__ (self):\n        return  str(self.szamok )\n    def __getitem__ (self, index ):\n        return  self.szamok [index ]\n    def __setitem__ (self, index , value ):\n        self.szamok [index ] = value\n    \nsz_1  = Szamok ([1,2,3,4,5])\nfor i in sz_1 :\n    sz_1 .__setitem__ (i-1, i**2)\nprint(sz_1 .__str__ ())",
+    "options": [
+      {
+        "text": "[0, 1, 4, 9, 16]",
+        "correct": false
+      },
+      {
+        "text": "0 1 4 9 16",
+        "correct": false
+      },
+      {
+        "text": "AttributeError",
+        "correct": false
+      },
+      {
+        "text": "[1, 4, 9, 16, 25]",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python-q02",
+    "quiz": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass  Egyenes :\n    def __init__ (self,m=3,b=2):\n        self.b = b\n        self.__m = m\n    def get_m (self):\n        return  self.__m\n    def set_m (self, érték ):\n        self.__m = érték\ne = Egyenes ()\ne.set_m (2)\ne.b = 3\nprint(f'y = {e.get_m ()}x + {e.b}')",
+    "options": [
+      {
+        "text": "y = 2x + 3",
+        "correct": true
+      },
+      {
+        "text": "y = 3x + 2",
+        "correct": false
+      },
+      {
+        "text": "y = 2x + 2",
+        "correct": false
+      },
+      {
+        "text": "AttributeError",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python-q03",
+    "quiz": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass  Szam :\n    def __init__ (self, szam ):\n        self.szam  = szam\n    def __str__ (self):\n        return  str(self.szam )\n    def __floordiv__ (self, other ):\n        return  Szam (self.szam  // other .szam)\n    def __mod__ (self, other ):\n        return  Szam (self.szam  % other .szam)\nsz1 = Szam (13)\nsz2 = Szam (5)\nprint(sz1.__mod__ (sz2))\nprint(sz1.__floordiv__ (sz2))",
+    "options": [
+      {
+        "text": "3 3",
+        "correct": false
+      },
+      {
+        "text": "2 3",
+        "correct": false
+      },
+      {
+        "text": "3 2",
+        "correct": true
+      },
+      {
+        "text": "AttributeError",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python-q04",
+    "quiz": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass  Pizza :\n    def __init__ (self, tipus , extra , meret ):\n        self.t = tipus\n        self.e = extra\n        self.m = meret\n    def inform (self):\n        return  f\"típus: {self.t}, extra: {self.e}, méret: {self.m} cm\"\nclass  Rendeles (Pizza ):\n    def inform (self):\n        return  f\"Rendelés - {super ().inform ()}\"\nclass  Gyartas :\n    def gyart (tipus , extra , meret ):\n        if tipus  == \"sajtos\" :\n            return  Rendeles (tipus , extra , meret )\n        elif tipus  == \"sonkás\" :\n            return  Rendeles (tipus , extra , meret )\n        else:\n            return  \"Ismeretlen típus!\"\npizza1  = Gyartas .gyart (\"sonkás\" , \"brokkoli\" , 30)\npizza2  = Gyartas .gyart (\"zöldséges\" , \"oliva\" , 40)\nprint(pizza1 .inform ())\nprint(pizza2 )",
+    "options": [
+      {
+        "text": "Rendelés - típus: sonkás, extra: brokkoli, méret: 30 cm Ismeretlen típus!",
+        "correct": true
+      },
+      {
+        "text": "típus: sonkás, extra: brokkoli, méret: 30 cm Ismeretlen típus!",
+        "correct": false
+      },
+      {
+        "text": "Rendelés - típus: sonkás, extra: brokkoli, méret: 30 cm",
+        "correct": false
+      },
+      {
+        "text": "Rendelés - típus: sonkás, extra: brokkoli, méret: 30 cm Rendelés - típus: zöldséges, extra: oliva, méret: 40 cm",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python-q05",
+    "quiz": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nsor_1  = \"Tavaszi szél\"\nsor_2  = \" vizet áraszt\"\nsor_3  = sor_1  + sor_2\nsor_1  += sor_2\nprint(sor_1  == sor_3 )\nprint(sor_3  is sor_1 )",
+    "options": [
+      {
+        "text": "False True",
+        "correct": false
+      },
+      {
+        "text": "False False",
+        "correct": false
+      },
+      {
+        "text": "True False",
+        "correct": true
+      },
+      {
+        "text": "True True",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python-q06",
+    "quiz": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a muvelet.txt fájl tartalma a kód végrehajtása után?\nn, i = 4, 2\ntry:\n    with open ('muvelet.txt' , 'w') as f:\n        f.write (str((i+1)*n) + \":\" + str(n) + \" = \" + str(i+1))\nexcept  IOError  as e:\n    print(\"I/O error\" )",
+    "options": [
+      {
+        "text": "12:4 = 3",
+        "correct": true
+      },
+      {
+        "text": "12:3 = 4",
+        "correct": false
+      },
+      {
+        "text": "I/O error lép fel, ezért nem jön létre a fájl",
+        "correct": false
+      },
+      {
+        "text": "I/O error lép fel, ezért üres lesz a fájl",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python-q07",
+    "quiz": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\ndef dekorátor (függvény ):\n    def belső_fv (a):\n        print(\"xxx\", end=' ' )\n        függvény (a)\n        print(\"yyy\" )\n    return  belső_fv\n@dekorátor\ndef köszönés (nev):\n        print(f\"Szia {nev}!\", end=' ' )\nköszönés (\"Anna\" )",
+    "options": [
+      {
+        "text": "AttributeError",
+        "correct": false
+      },
+      {
+        "text": "xxx Szia! yyy",
+        "correct": false
+      },
+      {
+        "text": "xxx Szia Anna! yyy",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python-q08",
+    "quiz": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass  BankSzámla :\n    def __init__ (self, tulajd , egyenl ):\n        self.tulajd  = tulajd\n        self.egyenl  = egyenl\n        print(f\"{self.tulajd } egyenlege {self.egyenl }.\")\n    def befizet (self, val):\n        self.egyenl  += val\n        print(f\"Egyenleg: {self.egyenl }.\")\n    def __del__ (self):\n        print(f\"Számla lezárva.\" )\nszámla  = BankSzámla (\"Kata\" , 10000 )\nszámla .befizet (20000 )",
+    "options": [
+      {
+        "text": "Kata egyenlege 10000. Egyenleg: 30000. Számla lezárva",
+        "correct": true
+      },
+      {
+        "text": "AttributeError",
+        "correct": false
+      },
+      {
+        "text": "Kata egyenlege 100000. Egyenleg: 120000. Számla lezárva",
+        "correct": false
+      },
+      {
+        "text": "Kata egyenlege 10000. Egyenleg: 30000",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python-q09",
+    "quiz": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass  Állat:\n    def beszél (self):       \n        return \"Az állat beszél\"\nclass  Kutya (Állat):\n    def beszél (self):\n        return  \"A kutya ugat.\"\nclass  Macska (Állat):\n    def beszél (self):\n        return  \"A macska nyávog.\"\nállatok  = [Kutya (), Macska ()]\nprint(állatok [1].beszél())",
+    "options": [
+      {
+        "text": "A macska nyávog",
+        "correct": true
+      },
+      {
+        "text": "A macska nyávog. A kutya ugat",
+        "correct": false
+      },
+      {
+        "text": "A kutya ugat",
+        "correct": false
+      },
+      {
+        "text": "Az állat beszél",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python-q10",
+    "quiz": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass  Állat:\n    def beszél (self):\n        return  \"Az állat beszél.\"\nclass  Kutya (Állat):\n    def beszél (self):\n        return  f\"{str(super ().beszél ())} A kutya ugat.\"\nclass  Macska (Állat):\n    def beszél (self):\n        return  f\"{str(super ().beszél ())} A macska nyávog.\"\nállatok  = [Macska (), Kutya()]\nprint(állatok [1].beszél())",
+    "options": [
+      {
+        "text": "Az állat beszél. A macska nyávog",
+        "correct": false
+      },
+      {
+        "text": "Az állat beszél. A kutya ugat",
+        "correct": true
+      },
+      {
+        "text": "A kutya ugat",
+        "correct": false
+      },
+      {
+        "text": "Az állat beszél",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python-q11",
+    "quiz": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass  Szam :\n    def __init__ (self, szam ):\n        self.szam  = szam\n    def __str__ (self):\n        return  str(self.szam )\n    def __floordiv__ (self, other ):\n        return  Szam (self.szam  // other .szam)\n    def __mod__ (self, other ):\n        return  Szam (self.szam  % other .szam)\nsz1 = Szam (13)\nsz2 = Szam (5)\nprint(sz1.__mod__ (sz2))\nprint(sz2.__floordiv__ (sz1))",
+    "options": [
+      {
+        "text": "3 2",
+        "correct": false
+      },
+      {
+        "text": "2 3",
+        "correct": false
+      },
+      {
+        "text": "3 0",
+        "correct": true
+      },
+      {
+        "text": "AttributeError",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python-q12",
+    "quiz": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "A @staticmethod dekorátorral ellátott osztálymetódus\nlogikailag egységbe van zárva egy osztállyal, de nem módosítja a\npéldányait/osztályattribútumokat.",
+    "options": [
+      {
+        "text": "Hamis",
+        "correct": false
+      },
+      {
+        "text": "Igaz",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python-q13",
+    "quiz": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass Személy:\n    __fő = 0              \n    def __init__(self, név):\n         self.név = név\n         Személy .__fő += 1      \n   \n    @classmethod\n    def get_létszám(cls):\n         return cls.__fő\n   \nszemély1 = Személy(\"X\")\nszemély2 = Személy(\"Y\")\nszemély3  = Személy (\"Z\")     \nprint(személy2.get_létszám())",
+    "options": [
+      {
+        "text": "2",
+        "correct": false
+      },
+      {
+        "text": "3",
+        "correct": true
+      },
+      {
+        "text": "AttributeError",
+        "correct": false
+      },
+      {
+        "text": "0",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python-q14",
+    "quiz": "kvíz-9_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass  A:\n    def a_method (self):\n        return  \"A happened\"\nclass  B:\n    def b_method (self):\n        return  \"B happened\"\nclass  C:\n    def __init__ (self, b):\n        self.b = b\n    def a_method (self):\n        return  self.b.b_method()\nc_instance  = C(B())\nprint(c_instance .a_method ())",
+    "options": [
+      {
+        "text": "AttributeError",
+        "correct": false
+      },
+      {
+        "text": "B happened",
+        "correct": true
+      },
+      {
+        "text": "A happened",
+        "correct": false
+      },
+      {
+        "text": "C happened",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python-q01",
+    "quiz": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik errno konstans tartozik a class 'FileNotFoundError' exception osztályhoz?",
+    "options": [
+      {
+        "text": "errno.EEXIST",
+        "correct": false
+      },
+      {
+        "text": "errno.EMFILE",
+        "correct": false
+      },
+      {
+        "text": "errno.ENOENT",
+        "correct": true
+      },
+      {
+        "text": "errno.EACCES",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python-q02",
+    "quiz": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi az open() függvény mode argumentum értéke, ha egy TXT fájl tartalmát\nszeretnénk beolvasni?",
+    "options": [
+      {
+        "text": "\"Rb\"",
+        "correct": false
+      },
+      {
+        "text": "\"Wt\"",
+        "correct": false
+      },
+      {
+        "text": "\"rt\" vagy \"r\"",
+        "correct": true
+      },
+      {
+        "text": "\"wt\" vagy \"w\"",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python-q03",
+    "quiz": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a muvelet.txt fájl tartalma a kód végrehajtása után?\nn, i = 5, 3\ntry:\n    with open ('muvelet.txt' , 'w') as f:\n        f.write (str((i+1)*n) + \":\" + str(n) + \" = \" + str(i+1))\nexcept  IOError  as e:\n    print(\"I/O error\" )",
+    "options": [
+      {
+        "text": "20:5 = 4",
+        "correct": true
+      },
+      {
+        "text": "15:5 = 3",
+        "correct": false
+      },
+      {
+        "text": "I/O error lép fel, ezért nem jön létre a fájl",
+        "correct": false
+      },
+      {
+        "text": "I/O error lép fel, ezért üres lesz a fájl",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python-q04",
+    "quiz": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a Flask a Python világában?",
+    "options": [
+      {
+        "text": "Egy könnyen kezelhető, bővíthető webkeretrendszer Python nyelven",
+        "correct": true
+      },
+      {
+        "text": "Egy Pythonban írt adatbázis-migrációs eszköz",
+        "correct": false
+      },
+      {
+        "text": "Egy Python-alapú adatvizualizációs könyvtár",
+        "correct": false
+      },
+      {
+        "text": "Egy gépi tanulási könyvtár neurális hálókhoz",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python-q05",
+    "quiz": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik szintaxist használja a Jinja2 sablonnyelv egy feltételes elágazás (if)\nkezelésére?",
+    "options": [
+      {
+        "text": "<% if user .is_admin %> . . . <% endif %>",
+        "correct": false
+      },
+      {
+        "text": "[[ if user .is_admin ]] . . . [[ endif ]]",
+        "correct": false
+      },
+      {
+        "text": "{% if user .is_admin %} . . . {% endif %}",
+        "correct": true
+      },
+      {
+        "text": "{{ if user .is_admin }} . . . {{ endif }}",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python-q06",
+    "quiz": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "from flask import Flask, request, jsonify\napp = Flask(__name__)\n@app.route('/api/data', methods=['POST'])\ndef receive_data():\n    data = request.get_json()\n    name = data.get('name')\n    return jsonify({\"message\": f\"Hello, {name}!\"})\nif __name__ == '__main__':\napp.run(debug=T rue)\nMit csinál a request.get_json() függvény a fenti Flask példában?",
+    "options": [
+      {
+        "text": "Létrehoz egy új végpontot, amely JSON-t küld vissza",
+        "correct": false
+      },
+      {
+        "text": "Elmenti a JSON-t adatbázisba SQL formában",
+        "correct": false
+      },
+      {
+        "text": "Beolvassa a POST kérésben érkező JSON-adatot, és Python szótárrá alakítja",
+        "correct": true
+      },
+      {
+        "text": "Konvertálja a HTML-űrlapot JSON formátummá",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python-q07",
+    "quiz": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mit csinál a render_template() függvény a Flask keretrendszerben?",
+    "options": [
+      {
+        "text": "Elindítja a Flask szervert a megadott sablonkóddal",
+        "correct": false
+      },
+      {
+        "text": "Betölt egy HTML sablont, és dinamikus adatokat ágyaz bele, hogy visszatérjen egy teljes HTML-oldallal",
+        "correct": true
+      },
+      {
+        "text": "JSON-választ generál API-kérésekhez sablon alapján",
+        "correct": false
+      },
+      {
+        "text": "Adatbázis-kapcsolatot hoz létre és SQL-lekérdezéseket futtat",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python-q08",
+    "quiz": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik szintaxist használja a Jinja2 sablonmotor HTML-ben a változók kiíratására?",
+    "options": [
+      {
+        "text": "[[ variable ]]",
+        "correct": false
+      },
+      {
+        "text": "{% variable %}",
+        "correct": false
+      },
+      {
+        "text": "<% variable %>",
+        "correct": false
+      },
+      {
+        "text": "{{ variable }}",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python-q09",
+    "quiz": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "app = Flask(__name__)\nMiért adjuk át a __name__  változót a Flask() osztálynak?",
+    "options": [
+      {
+        "text": "Azért, hogy az alkalmazás automatikusan felismerje az adatbázis nevét",
+        "correct": false
+      },
+      {
+        "text": "Azért, hogy beállítsa az alapértelmezett portot a szerver indításához",
+        "correct": false
+      },
+      {
+        "text": "Azért, hogy a Flask tudja, hol keresse a statikus fájlokat és sablonokat, és hogy a futtatott modul a főprogram-e",
+        "correct": true
+      },
+      {
+        "text": "Azért, hogy titkos kulcsot generáljon a Flask alkalmazás számára",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python-q10",
+    "quiz": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik request attribútummal lehet lekérni az URL-ben szereplő paramétereket?",
+    "options": [
+      {
+        "text": "request.data()",
+        "correct": false
+      },
+      {
+        "text": "request.args()",
+        "correct": true
+      },
+      {
+        "text": "request.form()",
+        "correct": false
+      },
+      {
+        "text": "request.files()",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python-q11",
+    "quiz": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mit jelent az errno.EACCES által képviselt érték?",
+    "options": [
+      {
+        "text": "No such file or directory",
+        "correct": false
+      },
+      {
+        "text": "Bad file number",
+        "correct": false
+      },
+      {
+        "text": "Permission denied",
+        "correct": true
+      },
+      {
+        "text": "Too many open files",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python-q12",
+    "quiz": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a Jinja2 a webfejlesztésben?",
+    "options": [
+      {
+        "text": "Egy adatbázis-kezelő rendszer Python alapokon",
+        "correct": false
+      },
+      {
+        "text": "Egy JavaScript-alapú CSS keretrendszer",
+        "correct": false
+      },
+      {
+        "text": "Egy sablonmotor Python nyelvhez, amely HTML-oldalak dinamikus generálását segíti",
+        "correct": true
+      },
+      {
+        "text": "Egy Python nyelvű webkiszolgáló, amely HTTP-kéréseket kezel",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python-q13",
+    "quiz": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik állítás írja le helyesen a POST , GET , PUT  és DELETE HTTP  metódusok\náltalános szerepét?",
+    "options": [
+      {
+        "text": "Ezek kizárólag statikus HTML-oldalak gyorsabb betöltésére szolgálnak",
+        "correct": false
+      },
+      {
+        "text": "Ezek a metódusok titkosítják a HTTP-kéréseket, hogy biztonságos kapcsolatot biztosítsanak",
+        "correct": false
+      },
+      {
+        "text": "Ezek csak a szerveroldali fájlok közvetlen módosítását végzik el futás közben",
+        "correct": false
+      },
+      {
+        "text": "Ezek a metódusok a kliens és szerver közti adatküldés és -kezelés különböző módjait határozzák meg webes alkalmazásokban",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python-q14",
+    "quiz": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "@app.route('/')\ndef home():\n    return 'W elcome!'\nA kódrészlet egy útvonalat definiál, amely a weboldal gyökeréhez (\"/\") rendeli a home\nfüggvényt.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python-q15",
+    "quiz": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a szerepe a debug=T rue paraméternek az app.run() hívásnál?",
+    "options": [
+      {
+        "text": "Átkapcsolja az alkalmazást termelési (production) módba",
+        "correct": false
+      },
+      {
+        "text": "Engedélyezi az automatikus újratöltést és a részletes hibakeresést fejlesztés közben",
+        "correct": true
+      },
+      {
+        "text": "Elrejti a hibákat, hogy a felhasználó ne lássa őket",
+        "correct": false
+      },
+      {
+        "text": "Csak akkor szükséges, ha HTTPS-t akarunk használni",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python-q16",
+    "quiz": "kvíz-10_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenete a következő kódnak, ha a fajl.txt-hez nincs hozzáférési engedélyünk?\nimport errno\ntry:\n    s = open (\"fajl.txt\" , \"rt\")\n    print(\"beolvasva\" )\n    s.close ()\nexcept  IOError  as err:\n    if err.errno  == errno .ENOENT :\n        print(\"I/O hiba\" )\n    else:\n        print(\"egyéb hiba\" )",
+    "options": [
+      {
+        "text": "beolvasva",
+        "correct": false
+      },
+      {
+        "text": "egyéb hiba",
+        "correct": true
+      },
+      {
+        "text": "I/O hiba",
+        "correct": false
+      },
+      {
+        "text": "Permission denied",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q01",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi lesz az eredménye a következő kódrészletben az index paraméter hamisra\nállításának? compact.to_csv('rpi_data_processed.csv', index=False)",
+    "options": [
+      {
+        "text": "A .csv kiterjesztés létrehozása miatt kell, hogy igaz legyen",
+        "correct": false
+      },
+      {
+        "text": "Nem jön létre az index oszlop a CSV fájlban",
+        "correct": true
+      },
+      {
+        "text": "Az index-nek minden esetben igaznak kell lennie",
+        "correct": false
+      },
+      {
+        "text": "Az index-nek igaznak kellene lennie, hogy ne vezessünk be új index oszlopot",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q02",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "district sales stores\n01 231.0 12\n12 156.0 13\n23 10.0 16\n34 519.0 2\n45 437.0 6\nDobd el a df nevű dataframe 'district' oszlopát a drop metódussal helyben.  Ne hozz\nlétre új adatkeretet.",
+    "options": [
+      {
+        "text": "df.drop('district', axis=1)",
+        "correct": false
+      },
+      {
+        "text": "sales = df.drop('district', axis=1)",
+        "correct": false
+      },
+      {
+        "text": "sales = df.drop('district', axis=0, inplace=T rue)",
+        "correct": false
+      },
+      {
+        "text": "df.drop('district', axis=1, inplace=T rue)",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q03",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "A ### helyére írd meg a kódot, amellyel létrehozod a df nevű DataFrame 'T otal'\noszlopát. Ebbe az új oszlopba a 'Db' és az 'Ár' oszlopok értékeiből számítsd ki az\negyes cikkek összértékét .\nNe használj szóközöket! Figyelj az ékezetekre!\nimport  pandas as pd\ndata = { 'Cikk' : ['Cipő1' , 'Póló1' , 'Nadrág1' , 'Cipő2' , 'Póló2' , 'Nadrág2' ],\n                  'Db' : [10, 15, 8, 12, 20, 6],\n                  'Ár' : [50, 20, 40, 55, 25, 45] }\ndf = pd.DataFrame(data)\n###",
+    "options": [
+      {
+        "text": "df.Total=df.Db*df.Ár",
+        "correct": true
+      },
+      {
+        "text": "df.Total=df.Ár*df.Db",
+        "correct": true
+      },
+      {
+        "text": "df['Total']=df['Db']*df['Ár']",
+        "correct": true
+      },
+      {
+        "text": "df['Total']=df['Ár']*df['Db']",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q04",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik Python csomagot használják leggyakrabban adatmanipulációra?",
+    "options": [
+      {
+        "text": "seaborn",
+        "correct": false
+      },
+      {
+        "text": "folium",
+        "correct": false
+      },
+      {
+        "text": "matplotlib",
+        "correct": false
+      },
+      {
+        "text": "pandas",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q05",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik Python csomagnak része az egy- vagy többdimenziós tömbök (array)\nkezelése?",
+    "options": [
+      {
+        "text": "matplotlib",
+        "correct": false
+      },
+      {
+        "text": "math",
+        "correct": false
+      },
+      {
+        "text": "pandas",
+        "correct": false
+      },
+      {
+        "text": "numpy",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q06",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "A kód kiegészíti egy új oszloppal a df DataFrame-et, és ebben az oszlopban I (igen)\nill. N (nem) jelenti a feltételnek való megfelelést:\ndf['25_feletti'] = df['kor'].apply(lambda x: 'I' if x > 25 else 'N')",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q07",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Az adatok mennyisége  __________________  növekszik.",
+    "options": [
+      {
+        "text": "exponenciálisan",
+        "correct": true
+      },
+      {
+        "text": "négyzetesen",
+        "correct": false
+      },
+      {
+        "text": "lineárisan",
+        "correct": false
+      },
+      {
+        "text": "random",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q08",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Ilyen módon törölhetünk egy sort a dfp nevű adatkeretből:\ndfp.drop( 45, inplace=T rue)",
+    "options": [
+      {
+        "text": "True",
+        "correct": true
+      },
+      {
+        "text": "False",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q09",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Az alábbiak közül melyik strukturált adat ?",
+    "options": [
+      {
+        "text": "fénykép",
+        "correct": false
+      },
+      {
+        "text": "pdf",
+        "correct": false
+      },
+      {
+        "text": "csv",
+        "correct": true
+      },
+      {
+        "text": "docx",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q10",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik utasítást használjuk, ha az 'Oldal' nevű új oszlopot hozzá akarjuk tenni a GB\nnevű DataFrame-hez?",
+    "options": [
+      {
+        "text": "GB['Oldal'] = GB['Lap'] * 2",
+        "correct": true
+      },
+      {
+        "text": "GB.['Oldal'] = GB.['Lap'] * 2",
+        "correct": false
+      },
+      {
+        "text": "insert_column(GB, 'Oldal')",
+        "correct": false
+      },
+      {
+        "text": "GB.add_column('Oldal')",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q11",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "A Big Data meghatározása a következő:\naz olyan hatalmas méretű, gyorsan változó, vagy összetett adatok, amelyek tárolása,\nfeldolgozása és elemzése a hagyományos adattároló és elemző módszerek\nsegítségével nem lehetséges.",
+    "options": [
+      {
+        "text": "True",
+        "correct": true
+      },
+      {
+        "text": "False",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q12",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik a helyes formátumú kimenet?\nfrom datetime  import  date\nimport  time\nnow = time.time()\nd = date.fromtimestamp (now )\nprint(d)",
+    "options": [
+      {
+        "text": "2025-1 1-26",
+        "correct": true
+      },
+      {
+        "text": "2025/1 1/26",
+        "correct": false
+      },
+      {
+        "text": "2025-Nov-26",
+        "correct": false
+      },
+      {
+        "text": "25-November-26",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q13",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Hogyan választhatunk ki egy oszlopot DataFrame-ből?",
+    "options": [
+      {
+        "text": "df.select_column('column_name')",
+        "correct": false
+      },
+      {
+        "text": "df.get_column('column_name')",
+        "correct": false
+      },
+      {
+        "text": "df['column_name']",
+        "correct": true
+      },
+      {
+        "text": "df.column('column_name')",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q14",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Hogyan cserélhetjük ki egy DataFrame oszlopának nevét?",
+    "options": [
+      {
+        "text": "df.columns['old_name'] = 'new_name'",
+        "correct": false
+      },
+      {
+        "text": "df['old_name'].rename('new_name')",
+        "correct": false
+      },
+      {
+        "text": "df.change_column_name('old_name', 'new_name')",
+        "correct": false
+      },
+      {
+        "text": "df.rename_column('old_name', 'new_name')",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q15",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik pandas metódust használjuk egy dataframe létrehozásához dictionary-ből?",
+    "options": [
+      {
+        "text": "pd.make_dataframe()",
+        "correct": false
+      },
+      {
+        "text": "pd.DataFrame()",
+        "correct": true
+      },
+      {
+        "text": "pd.dict_to_dataframe()",
+        "correct": false
+      },
+      {
+        "text": "pd.create_dataframe()",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q16",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Milyen metódus állítja elő az alábbi kimenetet a Tit nevű dataframe-ből?\n<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 915 entries, 0 to 914\nData columns (total 12 columns):\nPassengerId    915 non-null int64\nSurvived       915 non-null int64\nPclass         915 non-null int64\nName           915 non-null object\nGender         915 non-null object\nAge            738 non-null float64\nSibSp          915 non-null int64",
+    "options": [
+      {
+        "text": "Tit.describe()",
+        "correct": false
+      },
+      {
+        "text": "Tit.head()",
+        "correct": false
+      },
+      {
+        "text": "Tit.info()",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q17",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a program kimenete? \nfrom datetime import timedelta, date, datetime\ndelta = timedelta(weeks=1, days=1, hours=1)\ndelta2 = delta * 2\nd = date(2025, 1 1, 4) + delta2\nprint(d)\ndt = datetime(2025, 10, 4, 9, 45) + delta2\nprint(dt)",
+    "options": [
+      {
+        "text": "2025-1 1-20 2025-1 1-20 10:45:00",
+        "correct": false
+      },
+      {
+        "text": "2025-10-20 1 1:45:00 2025-1 1-20",
+        "correct": false
+      },
+      {
+        "text": "2025-1 1-20 2025-10-20 1 1:45:00",
+        "correct": true
+      },
+      {
+        "text": "2025-1 1-20 2025-10-20 10:45:00",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q18",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "district sales stores\n01 231.0 12\n12 156.0 13\n23 10.0 16\n34 519.0 2\n45 437.0 6\nHa a fenti adatkeret neve LA, akkor a 'sales' oszlopot el lehet elérni mindkét módon:\nLA.sales valamint LA.['sales']",
+    "options": [
+      {
+        "text": "True",
+        "correct": false
+      },
+      {
+        "text": "False",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python-q19",
+    "quiz": "kvíz-11_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik pandas metódust használjuk adatok mentésére CSV fájlba?",
+    "options": [
+      {
+        "text": "save_csv()",
+        "correct": false
+      },
+      {
+        "text": "to_csv()",
+        "correct": true
+      },
+      {
+        "text": "write_csv()",
+        "correct": false
+      },
+      {
+        "text": "export_csv()",
+        "correct": false
+      }
+    ]
+  }
+]
