@@ -1,5 +1,283 @@
 [
   {
+    "id": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python-q01",
+    "quiz": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi lesz az eredménye az alábbi kódrészletnek, ha 3 a bemenet?\nx=int(input('Kérek egy számot: '))\ny=x*'3'\nprint (y)",
+    "options": [
+      {
+        "text": "333",
+        "correct": true
+      },
+      {
+        "text": "9",
+        "correct": false
+      },
+      {
+        "text": "27",
+        "correct": false
+      },
+      {
+        "text": "Error",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python-q02",
+    "quiz": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi lesz az eredménye az alábbi kódrészletnek, ha 10 a bemenet?\nx=input('Kérek egy számot: ')\ny=x+1\nprint (y)",
+    "options": [
+      {
+        "text": "101",
+        "correct": false
+      },
+      {
+        "text": "11",
+        "correct": false
+      },
+      {
+        "text": "10",
+        "correct": false
+      },
+      {
+        "text": "Error",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python-q03",
+    "quiz": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Python-ban a while ciklus egy elől tesztelő feltételes, pozitív kiértékelésű ciklus.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python-q04",
+    "quiz": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "A Python kódban az utasítás lezáráshoz elegendő a sorvége jelet használni.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python-q05",
+    "quiz": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi lesz a kimenet?\na = 2\nprint(f'a = {a}')",
+    "options": [
+      {
+        "text": "f a = 2",
+        "correct": false
+      },
+      {
+        "text": "a={2}",
+        "correct": false
+      },
+      {
+        "text": "a = 2",
+        "correct": true
+      },
+      {
+        "text": "a2",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python-q06",
+    "quiz": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Hogyan lehet eltávolítani egy pygame nevű csomagot?",
+    "options": [
+      {
+        "text": "pip delete pygame",
+        "correct": false
+      },
+      {
+        "text": "pip remove pygame",
+        "correct": false
+      },
+      {
+        "text": "pip uninstall pygame",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python-q07",
+    "quiz": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "A print(\"2\", 2) eredménye a következő lesz:",
+    "options": [
+      {
+        "text": "2 2",
+        "correct": true
+      },
+      {
+        "text": "22",
+        "correct": false
+      },
+      {
+        "text": "Egyik sem",
+        "correct": false
+      },
+      {
+        "text": "4",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python-q08",
+    "quiz": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Jelöld a helyes válaszokat (két jó válasz van).",
+    "options": [
+      {
+        "text": "Python programok gyorsabbak a C++ programoknál",
+        "correct": false
+      },
+      {
+        "text": "A Python3 és a Python2 nem kompatibilis egymással",
+        "correct": true
+      },
+      {
+        "text": "A Python egy open source és multiplatform programozási nyelv",
+        "correct": true
+      },
+      {
+        "text": "A python1 és a Python3 kompatibilis egymással",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python-q09",
+    "quiz": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi lesz az eredménye az alábbi programrészletnek?\nfor i in range (0, 6, 3):\n     print (i)",
+    "options": [
+      {
+        "text": "0",
+        "correct": false
+      },
+      {
+        "text": "0 3",
+        "correct": true
+      },
+      {
+        "text": "3",
+        "correct": false
+      },
+      {
+        "text": "0 3 6",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python-q10",
+    "quiz": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi lesz az eredménye az alábbi utasításnak?\nprint ('2' + '2')",
+    "options": [
+      {
+        "text": "2 2",
+        "correct": false
+      },
+      {
+        "text": "22",
+        "correct": true
+      },
+      {
+        "text": "4",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python-q11",
+    "quiz": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "A beküldött megoldás:Kérem, hogy azok válaszoljanak erre a kérdésre, akik a Kvíz-1-ben ezt nem tették\nmeg!\nMilyen feladatokra használtad eddig a Pythont?",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz (reflexiós kérdés)",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python-q12",
+    "quiz": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nprint(len('alma' + \"fa\"))",
+    "options": [
+      {
+        "text": "6",
+        "correct": true
+      },
+      {
+        "text": "almafa",
+        "correct": false
+      },
+      {
+        "text": "Error",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python-q13",
+    "quiz": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Python-ban az x = '1' és az y = \"1\" értékadások esetén",
+    "options": [
+      {
+        "text": "egy szám és egy string típus jön létre",
+        "correct": false
+      },
+      {
+        "text": "két karakter típus jön létre",
+        "correct": false
+      },
+      {
+        "text": "két string típus jön létre",
+        "correct": true
+      },
+      {
+        "text": "egy karakter és egy string típus jön létre",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python-q14",
+    "quiz": "kvíz---2_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "",
+    "options": [
+      {
+        "text": "Helyes-e az alábbi értékadás: a, b, c = 1, 2, 3",
+        "correct": true
+      },
+      {
+        "text": "True",
+        "correct": true
+      },
+      {
+        "text": "False",
+        "correct": false
+      }
+    ]
+  },
+  {
     "id": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python-q01",
     "quiz": "kvíz-8_2025_26_1-ip-18kvpyeg-2---python",
     "question": "Elemezd a kódot!\nimport json\nwith open(\"adatok.json\", \"r\") as fajl:\n    adatok = json.load(fajl)\n    print(adatok)\n    print(json.dumps(adatok, indent=4))\nMelyik a helyes válasz?",
@@ -1402,6 +1680,1639 @@
       },
       {
         "text": "export_csv()",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q01",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Hány darab csillag karakter kerül ki a képernyőre a program futását követően?\ni = 2\nwhile i >= 0:\n    print(\"*\")\n    i -= 2",
+    "options": [
+      {
+        "text": "kettő",
+        "correct": true
+      },
+      {
+        "text": "három",
+        "correct": false
+      },
+      {
+        "text": "egy",
+        "correct": false
+      },
+      {
+        "text": "nulla",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q02",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi az eredménye az alábbi programrészletnek?\nfor k in range (10, 5, -2):\n     print (k, end=\" \" )",
+    "options": [
+      {
+        "text": "10 8 6 4",
+        "correct": false
+      },
+      {
+        "text": "10 8",
+        "correct": false
+      },
+      {
+        "text": "10 8 6",
+        "correct": true
+      },
+      {
+        "text": "10",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q03",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi lesz a kimenet, ha 2100 a bemenet?\nyear = int(input('Kérek egy évszámot:')\nprint(year  % 4 == 0 and (year % 100 != 0 or year % 400 == 0))",
+    "options": [
+      {
+        "text": "True",
+        "correct": false
+      },
+      {
+        "text": "False",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q04",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\ni=2\nwhile i<5:\n    i += 2\nprint(i)",
+    "options": [
+      {
+        "text": "2",
+        "correct": false
+      },
+      {
+        "text": "6",
+        "correct": true
+      },
+      {
+        "text": "i",
+        "correct": false
+      },
+      {
+        "text": "4",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q05",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\na = 0o12\nb = 0x12\nprint(a+b)",
+    "options": [
+      {
+        "text": "28",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q06",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\na, b = 7, 2\nprint(f'A  hatvány értéke: {b**a}')",
+    "options": [
+      {
+        "text": "A hatvány értéke: 128",
+        "correct": true
+      },
+      {
+        "text": "Error",
+        "correct": false
+      },
+      {
+        "text": "A hatvány értéke: 49",
+        "correct": false
+      },
+      {
+        "text": "A hatvány értéke: 256",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q07",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nx = 2\nif x>2:\n    print(3)\nelif x%2==1: \n    print(1)\nelse:\n    print(x)",
+    "options": [
+      {
+        "text": "1",
+        "correct": false
+      },
+      {
+        "text": "2",
+        "correct": true
+      },
+      {
+        "text": "x",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q08",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi lesz a kimenet?\nprint(13. % 5)",
+    "options": [
+      {
+        "text": "3",
+        "correct": false
+      },
+      {
+        "text": "3.0",
+        "correct": true
+      },
+      {
+        "text": "Error",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q09",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nx, y = 1, 2\nz = ((x == y) or (x < y)) and not(x != y)\nprint(not(z))",
+    "options": [
+      {
+        "text": "0",
+        "correct": false
+      },
+      {
+        "text": "1",
+        "correct": false
+      },
+      {
+        "text": "False",
+        "correct": false
+      },
+      {
+        "text": "True",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q10",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a következő kód várható kimenete?\ns1 = '23.4'\ni = int(s1)\ns2 = str(i)\nf = float(s2)\nprint(s1 == s2)",
+    "options": [
+      {
+        "text": "False",
+        "correct": false
+      },
+      {
+        "text": "Error",
+        "correct": true
+      },
+      {
+        "text": "True",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q11",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi lesz a kimenet?\nlista = [1, 2, 3]\nlista = lista.append (10)\nprint(lista)",
+    "options": [
+      {
+        "text": "Nincs kimenet",
+        "correct": false
+      },
+      {
+        "text": "[]",
+        "correct": false
+      },
+      {
+        "text": "[1, 2, 3, 10]",
+        "correct": false
+      },
+      {
+        "text": "None",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q12",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nprint(5 % 2 + 3 // -2)",
+    "options": [
+      {
+        "text": "2",
+        "correct": false
+      },
+      {
+        "text": "0.0",
+        "correct": false
+      },
+      {
+        "text": "-1",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q13",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "A beküldött megoldás:Mi a kimenet?\nfor i in range (7, 10, -1):\n     print (i, end=\" \" )\nből a Error , mert nem lehet '-1' lépésekkel eljutni  a 7ből a 10-be",
+    "options": [
+      {
+        "text": "Error, mert nem lehet -1 lépésekkel eljutni 7-ből 10-be",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q14",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi lesz az eredménye az alábbi kódrészletnek, ha 2 a bemenet?\na=int(input('Kérek egy számot: '))\nb=str(a) + \"12\"\nprint (b)",
+    "options": [
+      {
+        "text": "1212",
+        "correct": false
+      },
+      {
+        "text": "Error",
+        "correct": false
+      },
+      {
+        "text": "212",
+        "correct": true
+      },
+      {
+        "text": "14",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q15",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nx, y = 5, 2\na = x & y\nb = x | y\nc = ~y\nd = y ^ 3\ne = y >> 1\nf = x << 2\nprint(a, b, c, d, e, f)",
+    "options": [
+      {
+        "text": "Error",
+        "correct": false
+      },
+      {
+        "text": "0 5 -5 1 1 16",
+        "correct": false
+      },
+      {
+        "text": "0 7 -3 1 1 20",
+        "correct": true
+      },
+      {
+        "text": "0 7 -7 1 1 8",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q16",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nx = 5\nprint('x<10')",
+    "options": [
+      {
+        "text": "x<10",
+        "correct": true
+      },
+      {
+        "text": "True",
+        "correct": false
+      },
+      {
+        "text": "true",
+        "correct": false
+      },
+      {
+        "text": "Error",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q17",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi az eredmény?\nprint((-1)** 3 ** 2)",
+    "options": [
+      {
+        "text": "6",
+        "correct": false
+      },
+      {
+        "text": "-1",
+        "correct": true
+      },
+      {
+        "text": "1",
+        "correct": false
+      },
+      {
+        "text": "-9",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python-q18",
+    "quiz": "kvíz-3_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nfor i in range (-1,3):\n    if i > 1:\n        break\n    print(i, end=\" \")",
+    "options": [
+      {
+        "text": "-1 0",
+        "correct": false
+      },
+      {
+        "text": "-1 0 1 2",
+        "correct": false
+      },
+      {
+        "text": "Error",
+        "correct": false
+      },
+      {
+        "text": "-1 0 1",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python-q01",
+    "quiz": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nlist = [i + i for i in range(5)]\nprint (list)",
+    "options": [
+      {
+        "text": "2 4 6 8 10",
+        "correct": false
+      },
+      {
+        "text": "[1, 2, 3, 4, 5]",
+        "correct": false
+      },
+      {
+        "text": "[2, 4, 6, 8, 10]",
+        "correct": false
+      },
+      {
+        "text": "[0, 2, 4, 6, 8]",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python-q02",
+    "quiz": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nlst = [[1, 6], [2, 3], 4, 5]\nprint(lst[1])",
+    "options": [
+      {
+        "text": "[1, 6]",
+        "correct": false
+      },
+      {
+        "text": "6",
+        "correct": false
+      },
+      {
+        "text": "[2, 3]",
+        "correct": true
+      },
+      {
+        "text": "Error",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python-q03",
+    "quiz": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nlist = [i *2 for i in range(6) if i%2!=0]\nprint (list)",
+    "options": [
+      {
+        "text": "[2, 4, 6, 8, 10]",
+        "correct": false
+      },
+      {
+        "text": "[2, 6, 10]",
+        "correct": true
+      },
+      {
+        "text": "[0, 2, 4, 6, 8, 10]",
+        "correct": false
+      },
+      {
+        "text": "[0, 4, 8]",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python-q04",
+    "quiz": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a következő kód kimenete?\nlista = [3, 2, [1, [0, 4, 5], 6], 7]\ns = lista[2][1][1]\nprint(s)",
+    "options": [
+      {
+        "text": "0",
+        "correct": false
+      },
+      {
+        "text": "Error",
+        "correct": false
+      },
+      {
+        "text": "4",
+        "correct": true
+      },
+      {
+        "text": "5",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python-q05",
+    "quiz": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nlst = []\ndel lst\nprint(lst)",
+    "options": [
+      {
+        "text": "[]",
+        "correct": false
+      },
+      {
+        "text": "Error",
+        "correct": true
+      },
+      {
+        "text": "None",
+        "correct": false
+      },
+      {
+        "text": "False",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python-q06",
+    "quiz": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "A következő beágyazott listában add meg az indexelést a\n'this'\nstring megragadására.\nlista = ['a','b',[4,10,'Hi Python learner'],['c',[1,66,'this'],2,1 11],'e',7]",
+    "options": [
+      {
+        "text": "lista[3][1][3]",
+        "correct": false
+      },
+      {
+        "text": "lista[2][1][3]",
+        "correct": false
+      },
+      {
+        "text": "lista[3][1][2]",
+        "correct": true
+      },
+      {
+        "text": "lista[3][2][3]",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python-q07",
+    "quiz": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nlist_1  = [\"A\",\"B\",\"C\"]\nlist_2  = list_1\nlist_3  = list_2\ndel list_1 [0]\ndel list_2 [:]\nprint(list_3 )",
+    "options": [
+      {
+        "text": "[]",
+        "correct": true
+      },
+      {
+        "text": "['A', 'B', 'C']",
+        "correct": false
+      },
+      {
+        "text": "[\"B\", \"C\"]",
+        "correct": false
+      },
+      {
+        "text": "Error",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python-q08",
+    "quiz": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi lesz a program eredménye?\nm_l = [3,-1,1]\nm_l[-1] = m_l[-2]\nprint (m_l)",
+    "options": [
+      {
+        "text": "Error",
+        "correct": false
+      },
+      {
+        "text": "[3,-1,-2]",
+        "correct": false
+      },
+      {
+        "text": "[3,-1,-1]",
+        "correct": true
+      },
+      {
+        "text": "[3, -2, 1]",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python-q09",
+    "quiz": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nfor kar in \"bcd\":\n     print(chr(ord(kar) - 1), end = ' ')",
+    "options": [
+      {
+        "text": "b c d",
+        "correct": false
+      },
+      {
+        "text": "Error",
+        "correct": false
+      },
+      {
+        "text": "a b c",
+        "correct": true
+      },
+      {
+        "text": "97 98 100",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python-q10",
+    "quiz": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "floor_types = ['Parking', 'Shops', 'Food Court', 'Of fices']\nfloor_numbers = ###\nzipped = list(zip(floor_types ,floor_numbers ))\nprint(zipped)\nÍrd a ### helyére a hiányzó kódot, hogy a kimenet a következő legyen:\n[('Parking', 1), ('Shops', 2), ('Food Court', 3), ('Offices', 4)]",
+    "options": [
+      {
+        "text": "[1,2,3,4]",
+        "correct": true
+      },
+      {
+        "text": "range(1, 5)",
+        "correct": true
+      },
+      {
+        "text": "range(1,5)",
+        "correct": true
+      },
+      {
+        "text": "[1, 2, 3, 4]",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python-q11",
+    "quiz": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\ngreek_1  = ['omega' , 'alpha' , 'pi', 'gamma' ]  \ngreek_2  = sorted (greek_1 )\nprint(greek_2 .sort(reverse  = True))",
+    "options": [
+      {
+        "text": "['alpha', 'gamma', 'pi', 'omega' ]",
+        "correct": false
+      },
+      {
+        "text": "None",
+        "correct": true
+      },
+      {
+        "text": "Error",
+        "correct": false
+      },
+      {
+        "text": "['omega' , 'pi', 'gamma', 'alpha' ]",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python-q12",
+    "quiz": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Add meg a helyes választ!\nlist_1  = [\"A\",\"B\",\"C\"]\nlist_2  = list_1\nlist_3  = list_2\ndel list_1 [0]\ndel list_2 [0]\nprint(list_3 )",
+    "options": [
+      {
+        "text": "['C'] mert hivatkozás másolás történik",
+        "correct": true
+      },
+      {
+        "text": "list_3",
+        "correct": false
+      },
+      {
+        "text": "[ ]",
+        "correct": false
+      },
+      {
+        "text": "['C'] mert ez egy szeletelés művelet eredménye",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python-q13",
+    "quiz": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Hogyan nevezzük a kódban található műveletet?\nlist_1  = [\"A\", \"B\", \"C\"]\nlist_2  = list_1 [:]\nlist_3  = list_2 [:]\ndel list_1 [0]\ndel list_2 [1]\nprint(list_3 )",
+    "options": [
+      {
+        "text": "Hivatkozás másolás lista művelet",
+        "correct": false
+      },
+      {
+        "text": "Lista szeletelése",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python-q14",
+    "quiz": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\na = \"A\"\nb = \"B\"\nc = \"C\"\nd = \" \"\nlst = [d, c, b, a]\nlst.reverse ()\nprint(lst)",
+    "options": [
+      {
+        "text": "[a, b, c, d]",
+        "correct": false
+      },
+      {
+        "text": "[d, c, b, a]",
+        "correct": false
+      },
+      {
+        "text": "Error",
+        "correct": false
+      },
+      {
+        "text": "[' ', 'C', 'B', 'A']",
+        "correct": false
+      },
+      {
+        "text": "['A', 'B', 'C', ' ']",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python-q15",
+    "quiz": "kvíz-4_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nprint(\"*\".join([\"Hol\" , \"van\" , \"a\", \"nyár?\" ]))",
+    "options": [
+      {
+        "text": "'Hol*van*a*nyár'",
+        "correct": false
+      },
+      {
+        "text": "Hol van a nyár?",
+        "correct": false
+      },
+      {
+        "text": "Error",
+        "correct": false
+      },
+      {
+        "text": "Hol*van*a*nyár?",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python-q01",
+    "quiz": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\ndef szorzat(a=1,b=1,c):\n    return a * b * c\nprint(szorzat(2,4,1))",
+    "options": [
+      {
+        "text": "1",
+        "correct": false
+      },
+      {
+        "text": "8",
+        "correct": false
+      },
+      {
+        "text": "Error",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python-q02",
+    "quiz": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nb = lambda  a: a[::-1] + a\nprint(b(\"abc\" ))",
+    "options": [
+      {
+        "text": "ababc",
+        "correct": false
+      },
+      {
+        "text": "cbaabc",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python-q03",
+    "quiz": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nm = lambda  lst: \" \".join(lst)\nprint(m([\"Ez\", \"egy\" , \"teszt\" ]))",
+    "options": [
+      {
+        "text": "Ez egy teszt",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python-q04",
+    "quiz": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\na = lambda lst: list(filter(lambda x: x % 2 == 0, lst))\nprint(a([0, 1, 2, 3, 4, 5]))",
+    "options": [
+      {
+        "text": "[0,2,4]",
+        "correct": true
+      },
+      {
+        "text": "[0, 2, 4]",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python-q05",
+    "quiz": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\ndef hello ():\n    print(\"Hello!\" )\n    return\nprint(hello ())",
+    "options": [
+      {
+        "text": "Hello!",
+        "correct": false
+      },
+      {
+        "text": "Hello! Error",
+        "correct": false
+      },
+      {
+        "text": "Hello! None",
+        "correct": true
+      },
+      {
+        "text": "Hello! False",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python-q06",
+    "quiz": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\ndef Hello():\n    print(\"Hello\" )\n    return  \"hello\"\nprint(Hello())",
+    "options": [
+      {
+        "text": "hello",
+        "correct": false
+      },
+      {
+        "text": "hello Hello",
+        "correct": false
+      },
+      {
+        "text": "Hello hello",
+        "correct": true
+      },
+      {
+        "text": "Hello",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python-q07",
+    "quiz": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nb = lambda oldal: oldal ** 3\na = [b(x) for x in range(1,4)]\nprint(a)",
+    "options": [
+      {
+        "text": "[1, 8, 27, 64]",
+        "correct": false
+      },
+      {
+        "text": "[0, 1, 8, 27]",
+        "correct": false
+      },
+      {
+        "text": "[1, 8, 27]",
+        "correct": true
+      },
+      {
+        "text": "[1, 4, 9]",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python-q08",
+    "quiz": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nn = lambda  y: [x**2 for x in range (y+1)]\nprint(n(3))",
+    "options": [
+      {
+        "text": "[0, 1, 4]",
+        "correct": false
+      },
+      {
+        "text": "[1, 4, 9, 16]",
+        "correct": false
+      },
+      {
+        "text": "[0, 1, 4, 9]",
+        "correct": true
+      },
+      {
+        "text": "[1, 4, 9]",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python-q09",
+    "quiz": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Igaz vagy hamis az állítás?\nA következő kód kimenete az 5 lesz:\nprint((lambda a,b: (a**2 + b**2)**0.5)(-3,-4))",
+    "options": [
+      {
+        "text": "Hamis",
+        "correct": true
+      },
+      {
+        "text": "Igaz",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python-q10",
+    "quiz": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nh = lambda  lst: list(map(lambda  x: len(x), lst))\nprint(h([\"hello\" , \"world\" ]))",
+    "options": [
+      {
+        "text": "5, 5",
+        "correct": false
+      },
+      {
+        "text": "[5, 5]",
+        "correct": true
+      },
+      {
+        "text": "[6, 6]",
+        "correct": false
+      },
+      {
+        "text": "[10]",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python-q11",
+    "quiz": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nb = lambda  x: 1 if x == 0 else x * b(x - 1)\nprint(b(4))",
+    "options": [
+      {
+        "text": "24",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python-q12",
+    "quiz": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\ndef szorzat (a,b=4,c=2):\n    return  a * b * c\nprint(szorzat (1,3))",
+    "options": [
+      {
+        "text": "6",
+        "correct": true
+      },
+      {
+        "text": "0",
+        "correct": false
+      },
+      {
+        "text": "8",
+        "correct": false
+      },
+      {
+        "text": "Error",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python-q13",
+    "quiz": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "A beküldött megoldás:Írd le, mi a következő kód kimenete:\ndef a(**b):\n    for x,y in b.items ():\n        if isinstance (y, int):\n            print(f\"{x}: {y}\")\n    if \"fizetés\"  not in b or len(b[\"fizetés\" ]) == 0:\n        print(\"Nincs fizetési mód megadva.\" )\na(termék =\"Laptop\" , ár=123000 , darab =2, fizetés =\"\")",
+    "options": [
+      {
+        "text": "ár: 123000\n    darab: 2\n    Nincs fizetési mód megadva.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python-q14",
+    "quiz": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\ndef összeg (*a):\n    return  sum(a)    \nprint(összeg (1, 2, 3, 4))",
+    "options": [
+      {
+        "text": "10",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python-q15",
+    "quiz": "kvíz-5_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\ndef gyök (n):\n    for i in range (n):      \n        gyök  = i**0.5\n        yield round (gyök ,2)\nfor elem  in gyök (2):\n    print(elem, end = '  ' )",
+    "options": [
+      {
+        "text": "Error",
+        "correct": false
+      },
+      {
+        "text": "0 1",
+        "correct": false
+      },
+      {
+        "text": "0.0 1.0",
+        "correct": true
+      },
+      {
+        "text": "0.0. 1.0 1.41",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python-q01",
+    "quiz": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Miket tartalmaz egy osztály?",
+    "options": [
+      {
+        "text": "Függvényeket és modulokat",
+        "correct": false
+      },
+      {
+        "text": "Metódusokat és függvényeket",
+        "correct": false
+      },
+      {
+        "text": "Kizárólag a konstruktort",
+        "correct": false
+      },
+      {
+        "text": "Attribútumokat és metódusokat",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python-q02",
+    "quiz": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "class Játék:\n     pass\nÍrd le a kódot, amivel a Játék osztályból létrehozod a Labda nevű példányt:",
+    "options": [
+      {
+        "text": "class Labda(Játék):",
+        "correct": false
+      },
+      {
+        "text": "Labda = Játék()",
+        "correct": true
+      },
+      {
+        "text": "Labda= Játék()",
+        "correct": true
+      },
+      {
+        "text": "Labda =Játék()",
+        "correct": true
+      },
+      {
+        "text": "Labda=Játék()",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python-q03",
+    "quiz": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "A beküldött megoldás:Írj egy rekurzív  lambda függvényt egy szám faktoriálisának kiszámítására.\nA ### helyett  írd meg a kódot.\nfactor  = ###\nprint(factor (5))        # Kimenet: 120\nfactor = lambda a : if a  == 1 return 1 else return a * factor a - 1\nSyntaxError",
+    "options": [
+      {
+        "text": "factor = lambda a: 1 if a <= 1 else a * factor(a - 1)",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python-q04",
+    "quiz": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik a helyes válasz?\nclass Vásárlás:\n    def __init__(self):\n         self._ár = 300\n         self.__keret = True",
+    "options": [
+      {
+        "text": "Az _ár és a __keret privát változók",
+        "correct": false
+      },
+      {
+        "text": "A __keret privát változó",
+        "correct": true
+      },
+      {
+        "text": "Az _ár privát változó",
+        "correct": false
+      },
+      {
+        "text": "Nincs a kódban privát változó",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python-q05",
+    "quiz": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a program kimenete?\nclass  Snake :\n    pass\nclass  Cobra (Snake ):\n    pass\npiton  = Snake ()\nkobra  = Cobra ()\nprint(issubclass (Cobra , Snake ))\nprint(isinstance (kobra ,Snake ))",
+    "options": [
+      {
+        "text": "False True",
+        "correct": false
+      },
+      {
+        "text": "True False",
+        "correct": false
+      },
+      {
+        "text": "AttributeError",
+        "correct": false
+      },
+      {
+        "text": "True True",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python-q06",
+    "quiz": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "A beküldött megoldás:Írj lambda függvényt egy szám páratlan voltának ellenőrzésére. \nA ### helyett  írd meg a kódot.\nis_odd  = ###\nprint(is_odd (3))        # Kimenet: True\nlambda a : a % 2 == 1",
+    "options": [
+      {
+        "text": "is_odd = lambda a: a % 2 == 1",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python-q07",
+    "quiz": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\ns1 = '234'\na = float(s1)\ns2 = str(a)\nb = float(s2)\nprint(s1 == s2)",
+    "options": [
+      {
+        "text": "False",
+        "correct": true
+      },
+      {
+        "text": "ValueError",
+        "correct": false
+      },
+      {
+        "text": "True",
+        "correct": false
+      },
+      {
+        "text": "SyntaxError",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python-q08",
+    "quiz": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass  PéldaOsztály :              \n    def __init__ (self, val = 1):\n        self.__a = val\n    def set_b (self, val = 2):\n        self.b = val\npéldány_1  = PéldaOsztály (2)\nprint(példány_1 .__a)",
+    "options": [
+      {
+        "text": "SyntaxError",
+        "correct": false
+      },
+      {
+        "text": "2",
+        "correct": false
+      },
+      {
+        "text": "AttributeError",
+        "correct": true
+      },
+      {
+        "text": "1",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python-q09",
+    "quiz": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a várható kimenete a kódnak ?\nimport  math\ntry:\n    a = math .sqrt(-9)\nexcept  ValueError :\n    print(\"inf\")\nelse:\n    print(\"fine\" )\nfinally :\n    print(\"end\" )",
+    "options": [
+      {
+        "text": "fine",
+        "correct": false
+      },
+      {
+        "text": "inf",
+        "correct": false
+      },
+      {
+        "text": "inf end",
+        "correct": true
+      },
+      {
+        "text": "fine end",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python-q10",
+    "quiz": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Írd le a kódot, amellyel a leszármazott osztályt megalkotjuk, hivatkozva az\nősosztályra.\nA leszármazott osztály neve Child, az ős neve Parent.",
+    "options": [
+      {
+        "text": "class Child(Parent)",
+        "correct": false
+      },
+      {
+        "text": "class Child(Parent):",
+        "correct": true
+      },
+      {
+        "text": "class Child( Parent):",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python-q11",
+    "quiz": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nimport  math\ntry:\n    print( math .sqrt(9))\nexcept  ValueError :\n    print(\"the end\" )\nelse:\n    print(\"fine\" )",
+    "options": [
+      {
+        "text": "3.0 fine",
+        "correct": true
+      },
+      {
+        "text": "3 fine",
+        "correct": false
+      },
+      {
+        "text": "3.0 the end",
+        "correct": false
+      },
+      {
+        "text": "Error",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python-q12",
+    "quiz": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mit definiálunk a __init__() metódussal?",
+    "options": [
+      {
+        "text": "A függvény inicializáló metódusát",
+        "correct": false
+      },
+      {
+        "text": "Egyiket sem a fentiek közül",
+        "correct": false
+      },
+      {
+        "text": "Az osztály konstruktorát",
+        "correct": true
+      },
+      {
+        "text": "Importáljuk az osztály adatait",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python-q13",
+    "quiz": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik kivétel lép fel a következő művelet esetén?\nb = 0\na = 1 / 'b'",
+    "options": [
+      {
+        "text": "TypeError",
+        "correct": true
+      },
+      {
+        "text": "SyntaxError",
+        "correct": false
+      },
+      {
+        "text": "ZeroDivisionError",
+        "correct": false
+      },
+      {
+        "text": "ValueError",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python-q14",
+    "quiz": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi hiányzik az alábbi kódrészletből?\nclass Piton:\n    def __init__():\n         self.hang = 'Szszszszszszsz'",
+    "options": [
+      {
+        "text": "A __init__() konstruktorból hiányzik a self paraméter",
+        "correct": true
+      },
+      {
+        "text": "A __init__() konstruktorból hiányzik a hang paraméter",
+        "correct": false
+      },
+      {
+        "text": "Nem hiányzik semmi",
+        "correct": false
+      },
+      {
+        "text": "Az ősosztály inicializálása",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python-q15",
+    "quiz": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass  Egyenes :\n    def __init__ (self):\n        self.b = 1\n        self.__m = 2\n    def get_M (self):\n        return  self.__m\n    def set_M (self, meredek ):\n        self.__m = meredek\ne = Egyenes ()\ne.set_M (3)\nprint(e.get_M (), e.b)",
+    "options": [
+      {
+        "text": "3 1",
+        "correct": true
+      },
+      {
+        "text": "3 2",
+        "correct": false
+      },
+      {
+        "text": "AttributeError",
+        "correct": false
+      },
+      {
+        "text": "2 1",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python-q16",
+    "quiz": "kvíz-6_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass  MyZeroDivisionError (ZeroDivisionError ):\n    pass\ndef do_the_division (mine ):\n    if mine :\n        raise  MyZeroDivisionError\n    else:\n        raise  ZeroDivisionError\ntry:\n    do_the_division (False )\nexcept  MyZeroDivisionError :\n    print('My division by zero' )\nexcept  ZeroDivisionError :\n    print('Original division by zero' )",
+    "options": [
+      {
+        "text": "Original division by zero",
+        "correct": true
+      },
+      {
+        "text": "Division by zero",
+        "correct": false
+      },
+      {
+        "text": "My division by zero",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python-q01",
+    "quiz": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a várható kimenete a kódnak?\nclass  MyZeroDivisionError (ZeroDivisionError ):\n    pass\ndef do_the_division (mine ):\n    if mine :\n        raise  MyZeroDivisionError\n    else:\n        raise  ZeroDivisionError\ntry:\n    do_the_division (True)\nexcept  MyZeroDivisionError :\n    print('My division by zero' )\nexcept  ZeroDivisionError :\n    print('Original division by zero' )",
+    "options": [
+      {
+        "text": "Division by zero",
+        "correct": false
+      },
+      {
+        "text": "Some bad news",
+        "correct": false
+      },
+      {
+        "text": "My division by zero",
+        "correct": true
+      },
+      {
+        "text": "Original division by zero",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python-q02",
+    "quiz": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Javítsd ki a kódot, hogy a program kimenete az a e i o u sorozat legyen. Megjelöltem\na kijavítandó sort.\nclass  Vowels :\n    def __init__ (self):\n        self.vow = \"aeiou\"\n        self.pos = 0\n    def __iter__ (self):\n        return  self\n    def __next__ (self):\n        if self.pos == len(vow):    #Az egész sort írd le helyesen. \n           raise  StopIteration\n        self.pos += 1        \n        return  self.vow[self.pos - 1]\nvowels  = Vowels ()\nfor v in vowels :\n    print(v, end=' ')",
+    "options": [
+      {
+        "text": "if self.pos >= len(vow) - 1",
+        "correct": false
+      },
+      {
+        "text": "if self.pos == len(self.vow):",
+        "correct": true
+      },
+      {
+        "text": "if self.pos==len(self.vow):",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python-q03",
+    "quiz": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Írj egy map() és belső függvényeként egy lambda függvényt,  amelyik az [1, 2, 3, 4]\nbemenetből előállítja az [1, 3, 3, 5] kimenetet.\nKérések: Az x változónevet használd. A \"megengedő vagy\" operációt használd a\nlambda függvényben, amelyik:\npáros | 1 = páros + 1     páratlan | 1 = páratlan eredményt ad.\nA ### helyett írd meg a kódot!\nlst = [1, 2, 3, 4]\núj_lista  =   ###\nprint(új_lista )",
+    "options": [
+      {
+        "text": "map(lambda x: x + 1 if x %2==1 else x, lst)",
+        "correct": false
+      },
+      {
+        "text": "list(map(lambda x: x|1, lst)",
+        "correct": true
+      },
+      {
+        "text": "list(map(lambda n: n | 1, lst))",
+        "correct": true
+      },
+      {
+        "text": "list(map(lambda x: x | 1, lst))",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python-q04",
+    "quiz": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Melyik a helyes válasz?\nclass Vásárlás:\n    darab = 1\n    érték = 20\n    def __init__(self):\n        self.ár_ft = 2\n        self.__keret = True",
+    "options": [
+      {
+        "text": "Az érték és a __keret osztályváltozók (class variable)",
+        "correct": false
+      },
+      {
+        "text": "A darab és az érték osztály változók (class variable)",
+        "correct": true
+      },
+      {
+        "text": "A darab és az érték példány változók (instance variable)",
+        "correct": false
+      },
+      {
+        "text": "A darab és a __keret osztály változók (class variable)",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python-q05",
+    "quiz": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "A mint nevű modulban található make_money() függvényt akarod meghívni. A kódod\na következő sorral kezdődik:\nimport mint\nMi a helyes formája a függvény meghívásának?",
+    "options": [
+      {
+        "text": "make_money()",
+        "correct": false
+      },
+      {
+        "text": "mint.make_money",
+        "correct": false
+      },
+      {
+        "text": "mint.make_money()",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python-q06",
+    "quiz": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass  PéldaOsztály :                 \n    def __init__ (self, val = 1):\n        self.__egy  = val\n    def set_second (self, val = 2):\n        self.kettő  = val\npéldány_1  = PéldaOsztály (2)\npéldány_1 .set_second (3)\nprint(példány_1 .__dict__ )",
+    "options": [
+      {
+        "text": "AttributeError",
+        "correct": false
+      },
+      {
+        "text": "{'__egy': 2, 'kettő': 3}",
+        "correct": false
+      },
+      {
+        "text": "{'_PéldaOsztály__egy': 2, '_PéldaOsztály__kettő': 3}",
+        "correct": false
+      },
+      {
+        "text": "{'_PéldaOsztály__egy': 2, 'kettő': 3}",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python-q07",
+    "quiz": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass  Egyenes :\n    def __init__ (self):\n        self.b = 1\n        self.__m = 2\n    def get_M (self):\n        return  self.__m\n    def set_M (self, meredek ):\n        self.__m = meredek\ne = Egyenes ()\ne.set_M (3)\nprint(e.get_M ())\nprint(e.__dict__ )",
+    "options": [
+      {
+        "text": "3 {'b': 1, '_Egyenes__m': 3}",
+        "correct": true
+      },
+      {
+        "text": "2 {'b': 1, '_Egyenes__m': 2}",
+        "correct": false
+      },
+      {
+        "text": "AttributeError",
+        "correct": false
+      },
+      {
+        "text": "3 {'b': 1, '__m': 3}",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python-q08",
+    "quiz": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Az ZeroDivisionError prioritása alacsonyabb, mint az ArithmeticError-é az\nExceptions-fában, ezért a try - except blokkban a ZeroDivisionError-nak mindig az\nArithmeticError előtt kell szerepelnie.",
+    "options": [
+      {
+        "text": "True",
+        "correct": true
+      },
+      {
+        "text": "False",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python-q09",
+    "quiz": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenete az alábbi kódnak?\na = 1\ndef fun():\n    global a\n    a = 2\n    print(a)\na = 3\nfun()\nprint(a)",
+    "options": [
+      {
+        "text": "1 3",
+        "correct": false
+      },
+      {
+        "text": "2 3",
+        "correct": false
+      },
+      {
+        "text": "2 2",
+        "correct": true
+      },
+      {
+        "text": "1 2",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python-q10",
+    "quiz": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Feltételezzük, hogy létezik egy Snakes nevű osztály .\nKészítsd el azt a Piton osztályt, ami a Snakes-ből származik. Csak az első sor kell!",
+    "options": [
+      {
+        "text": "class Piton(Snakes):",
+        "correct": true
+      },
+      {
+        "text": "class Piton( Snakes ):",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python-q11",
+    "quiz": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\n(A math.hypot(a,b) függvény megadja az a és b befogójú derékszögű háromszög\nátfogóját float-ban.)\nimport  math\nclass  Pont:\n    def __init__ (self, x=0.0, y=0.0):\n        self.x = x      \n        self.y = y      \n    def pontok_tavolsaga (self, pont):\n        delta_x  = abs(self.x - pont.x)\n        delta_y  = abs(self.y - pont.y)\n        return  math .hypot (delta_x , delta_y )\nA = Pont(-2, 5)\nB = Pont(1, 1)                        \nprint(A.pontok_tavolsaga (B))",
+    "options": [
+      {
+        "text": "5.0",
+        "correct": true
+      },
+      {
+        "text": "5",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python-q12",
+    "quiz": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass Bal:\n    v = \"B\"\n    v_bal = \"BB\"\n    def oldal(self):\n        return \"bal\"\nclass Jobb:\n    v = \"J\"\n    v_jobb = \"JJ\"\n    def oldal(self):\n        return \"jobb\"\nclass Kozep(Jobb, Bal):\n    pass\npld = Kozep()\nprint(pld.v , pld.v_bal, pld.oldal())",
+    "options": [
+      {
+        "text": "B BB bal",
+        "correct": false
+      },
+      {
+        "text": "J JJ bal",
+        "correct": false
+      },
+      {
+        "text": "J BB jobb",
+        "correct": true
+      },
+      {
+        "text": "B BB jobb",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python-q13",
+    "quiz": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass Pont:\n    def __init__(self):\n        self.x = 0\n        self.__y = 1\n    def get_Y(self):\n        return self.__y\n    def set_Y(self, ertek):\n        self.__y = ertek\nA = Pont()\nprint(A.__y)",
+    "options": [
+      {
+        "text": "1",
+        "correct": false
+      },
+      {
+        "text": "ValueError",
+        "correct": false
+      },
+      {
+        "text": "AttributeError",
+        "correct": true
+      },
+      {
+        "text": "(0, 1)",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python-q14",
+    "quiz": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nclass A:\n    def függvény(self):\n        return \"A-ból\"\nclass B(A):\n    def függvény(self):\n        return \"B-ből \" + super().függvény()\nclass C(A):\n    def függvény(self):\n        return \"C-ből \" + super().függvény()\nclass D(C, B):\n    def függvény(self):\n        return \"D-ből \" + super().függvény()\nd = D()\nprint(d.függvény())",
+    "options": [
+      {
+        "text": "D-ből B-ből A-ból",
+        "correct": false
+      },
+      {
+        "text": "D-ből C-ből B-ből A-ból",
+        "correct": true
+      },
+      {
+        "text": "D-ből C-ből A-ból",
+        "correct": false
+      },
+      {
+        "text": "D-ből B-ből C-ből A-ból",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python-q15",
+    "quiz": "kvíz-7_2025_26_1-ip-18kvpyeg-2---python",
+    "question": "Mi a kimenet?\nsor_1 = \"Boci, boci tarka\"\nsor_2 = \"Boci, boci\"\nsor_2 += \" tarka\"\nprint(sor_1 == sor_2, sor_1 is sor_2)\nsor_3 = sor_1\nprint(sor_3 is sor_1)",
+    "options": [
+      {
+        "text": "True True True",
+        "correct": false
+      },
+      {
+        "text": "False False True",
+        "correct": false
+      },
+      {
+        "text": "True False True",
+        "correct": true
+      },
+      {
+        "text": "False True False",
         "correct": false
       }
     ]
