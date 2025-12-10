@@ -2,6 +2,9 @@ import json
 import re
 from pathlib import Path
 
+import pdfplumber
+import pytesseract
+from PIL import Image
 from PyPDF2 import PdfReader
 
 
@@ -107,7 +110,130 @@ def parse_block(block: str) -> dict:
     return {"header": header, "question": qtext, "options": cleaned_opts}
 
 
+def parse_kviz12_ocr(pdf_path: Path) -> list[dict]:
+    """OCR-alapú feldolgozás a kviz12.pdf-hez."""
+
+    def ocr_text() -> str:
+        texts: list[str] = []
+        with pdfplumber.open(pdf_path) as pdf:
+            for page in pdf.pages:
+                img = page.to_image(resolution=250).original  # PIL Image
+                text = pytesseract.image_to_string(img, lang="eng+hun")
+                texts.append(text)
+        return "\n\n".join(texts)
+
+    def parse_blocks(text: str) -> list[dict]:
+        parts = re.split(r"\n(?=\d+\. k)", text)
+        questions = []
+        for part in parts[1:]:
+            lines = [l.strip() for l in part.split("\n") if l.strip()]
+            lines = [
+                l
+                for l in lines
+                if "Kviz-12" not in l
+                and "module" not in l
+                and not re.match(r"\d+ of \d+", l)
+                and not re.match(r"\d{1,2}/\d{1,2}/\d{2}", l)
+            ]
+            if not lines:
+                continue
+            header = lines[0]
+            rest = lines[1:]
+            if not rest:
+                continue
+
+            idx_marker = next((i for i, l in enumerate(rest) if re.search(r"helyes", l, re.I)), len(rest))
+            q_end = -1
+            for i in range(min(idx_marker, len(rest))):
+                if (
+                    "?" in rest[i]
+                    or "kód" in rest[i].lower()
+                    or "kell" in rest[i].lower()
+                    or "mit " in rest[i].lower()
+                    or "melyik" in rest[i].lower()
+                ):
+                    q_end = i
+            if q_end == -1:
+                q_end = 0
+
+            question_lines = rest[: q_end + 1]
+            option_lines = rest[q_end + 1 :]
+
+            options = []
+            buf = ""
+            buf_corr = False
+            next_corr = False
+            for line in option_lines:
+                if re.fullmatch(r"(?i)helyes!?|helyes valasz|delyes valasz", line):
+                    next_corr = True
+                    continue
+
+                if re.search(r"helyes", line, re.I):
+                    clean_line = re.sub(r"(?i)helyes!?|helyes valasz|delyes valasz", "", line).strip(" .|")
+                    if clean_line:
+                        if buf:
+                            options.append({"text": buf.strip(), "correct": buf_corr})
+                        options.append({"text": clean_line, "correct": True})
+                        buf, buf_corr, next_corr = "", False, False
+                    continue
+
+                if buf:
+                    if (not buf.endswith((".", "?", "!"))) or line[:1].islower():
+                        buf += " " + line
+                        continue
+                    else:
+                        options.append({"text": buf.strip(), "correct": buf_corr})
+                        buf = ""
+
+                buf = line
+                buf_corr = next_corr
+                next_corr = False
+
+            if buf:
+                options.append({"text": buf.strip(), "correct": buf_corr})
+
+            questions.append(
+                {
+                    "header": header,
+                    "question": "\n".join(question_lines).strip(),
+                    "options": options,
+                }
+            )
+        return questions
+
+    def fixups(qs: list[dict]) -> list[dict]:
+        fixed = []
+        for q in qs:
+            # általános javítás: ha csak False van, adjuk hozzá a True opciót
+            if len(q["options"]) == 1 and q["options"][0]["text"].lower() in ("false", "hamis"):
+                q["options"].append({"text": "True", "correct": False})
+
+            for opt in q["options"]:
+                if re.search(r"helyes", opt["text"], re.I) or re.search(r"delyes", opt["text"], re.I):
+                    opt["text"] = re.sub(r"(?i)helyes!?|helyes valasz|delyes valasz", "", opt["text"]).strip(" .|")
+                    opt["correct"] = True
+
+            # 16. kérdés speciális: iloc[1] -> második sor értékei
+            if q["header"].startswith("16. kérdés"):
+                q["question"] = "Mit ad vissza az alábbi kód?\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nprint(df.iloc[1])"
+                q["options"] = [
+                    {"text": "A második oszlop értékeit.", "correct": False},
+                    {"text": "A sorindexet.", "correct": False},
+                    {"text": "A második sor értékeit.", "correct": True},
+                    {"text": "Hibát ad, mert hibás a szintaxis.", "correct": False},
+                ]
+
+            fixed.append(q)
+        return fixed
+
+    ocr_txt = ocr_text()
+    return fixups(parse_blocks(ocr_txt))
+
+
 def parse_pdf(path: Path) -> list[dict]:
+    if path.name.lower().startswith("kviz12"):
+        return parse_kviz12_ocr(path)
+
     reader = PdfReader(path)
     text = "\n".join((page.extract_text() or "") for page in reader.pages)
     blocks = re.split(r"(?=\d+ / \d+ pont \d+\. kérdés)", text)
@@ -147,7 +273,7 @@ def fix_missing_answers(entry: dict) -> dict:
 
 
 def quiz_label(path: Path) -> str:
-    match = re.search(r"Kvíz[- ]?(\\d+)", path.stem)
+    match = re.search(r"Kvíz[- ]?(\d+)", path.stem)
     return f"kviz-{match.group(1)}" if match else path.stem.replace(" ", "-").lower()
 
 
