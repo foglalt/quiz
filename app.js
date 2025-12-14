@@ -29,8 +29,16 @@ const escapeHtml = (text = "") =>
 
 const formatMathLike = (text = "") => {
   const escaped = escapeHtml(text);
-  const supified = escaped.replace(/([\p{L}\p{N}\)\]])\^(\d+)/gu, "$1<sup>$2</sup>");
-  return supified.replace(/\n/g, "<br>");
+
+  let formatted = escaped;
+  formatted = formatted.replace(/\\overline\{([^}]+)\}/g, '<span class="overline">$1</span>');
+  formatted = formatted.replace(/([\p{L}\p{N}])_\{([^}]+)\}/gu, "$1<sub>$2</sub>");
+  formatted = formatted.replace(/([\p{L}\p{N}])_([\p{L}\p{N}]+)/gu, "$1<sub>$2</sub>");
+  formatted = formatted.replace(/([\p{L}\p{N}\)\]])\^\{([^}]+)\}/gu, "$1<sup>$2</sup>");
+  formatted = formatted.replace(/([\p{L}\p{N}\)\]])\^(\d+)/gu, "$1<sup>$2</sup>");
+  formatted = formatted.replace(/\n/g, "<br>");
+
+  return formatted;
 };
 
 const setFormattedHtml = (el, text = "") => {

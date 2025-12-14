@@ -341,22 +341,22 @@
   },
   {
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_2_06",
-    "question": "Melyik igaz az LÁtló′ = {⟨M⟩ | ⟨M⟩ ∈ L(M)} nyelvre?",
+    "question": "Melyik igaz az \\overline{L_{Átló}} = {⟨M⟩ | ⟨M⟩ ∈ L(M)} nyelvre?",
     "options": [
       {
-        "text": "a) LÁtló′ ∉ RE",
+        "text": "a) \\overline{L_{Átló}} ∉ RE",
         "correct": false
       },
       {
-        "text": "b) LÁtló′ ∈ RE \\\\ R",
+        "text": "b) \\overline{L_{Átló}} ∈ RE \\\\ R",
         "correct": true
       },
       {
-        "text": "c) LÁtló′ ∈ R \\\\ RE",
+        "text": "c) \\overline{L_{Átló}} ∈ R \\\\ RE",
         "correct": false
       },
       {
-        "text": "d) LÁtló′ ∈ R",
+        "text": "d) \\overline{L_{Átló}} ∈ R",
         "correct": false
       }
     ],

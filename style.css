@@ -146,6 +146,18 @@ h1 {
   vertical-align: super;
 }
 
+.question-text sub,
+.option sub,
+.feedback sub {
+  font-size: 0.85em;
+  vertical-align: sub;
+}
+
+.overline {
+  text-decoration: overline;
+  display: inline-block;
+}
+
 .options {
   display: grid;
   gap: 10px;
