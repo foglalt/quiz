@@ -1,7 +1,6 @@
 const els = {
   questionTitle: document.getElementById("question-title"),
   questionText: document.getElementById("question-text"),
-  quizTag: document.getElementById("quiz-tag"),
   options: document.getElementById("options"),
   feedback: document.getElementById("feedback"),
   score: document.getElementById("score"),
@@ -71,7 +70,6 @@ function renderQuestion() {
   const q = currentQuestion();
   const answer = state.answers.get(q.id);
 
-  els.quizTag.textContent = q.quiz || "kvíz";
   els.questionTitle.textContent = `Kérdés ${state.currentIndex + 1}`;
   els.questionText.textContent = q.question;
   els.options.innerHTML = "";
@@ -94,7 +92,7 @@ function renderQuestion() {
 
   els.prev.disabled = state.currentIndex === 0;
   els.next.disabled = !answer;
-  els.feedback.textContent = answer ? feedbackText(q, answer.selected) : "";
+  els.feedback.textContent = answer ? feedbackMessage(q, answer.selected) : "";
   updateStats();
 }
 
@@ -112,7 +110,7 @@ function handleAnswer(idx) {
   }
 
   lockOptions(q, idx);
-  els.feedback.textContent = feedbackText(q, idx);
+  els.feedback.textContent = feedbackMessage(q, idx);
   els.next.disabled = false;
   updateStats();
 }
@@ -135,6 +133,13 @@ function feedbackText(q, selectedIdx) {
     return "Helyes válasz!";
   }
   return `Helyes megoldás: ${correctTexts.join(" | ")}`;
+}
+
+function feedbackMessage(q, selectedIdx) {
+  const base = feedbackText(q, selectedIdx);
+  const explanation = typeof q.explanation === "string" ? q.explanation.trim() : "";
+  if (!explanation) return base;
+  return `${base}\n\nMagyarázat: ${explanation}`;
 }
 
 function updateStats() {

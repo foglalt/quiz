@@ -8,6 +8,9 @@ from PIL import Image
 from PyPDF2 import PdfReader
 
 
+PLACEHOLDER_EXPLANATION = "Magyarázat hamarosan."
+
+
 def clean_opt_text(text: str) -> str:
     text = re.sub(r"Helyes!?Helyes!?|Helyes válasz|Megadott válasz", "", text, flags=re.IGNORECASE)
     text = text.replace("Helyes válaszok", "")
@@ -288,9 +291,9 @@ def main() -> None:
             q = fix_missing_answers(q)
             entry = {
                 "id": f"{quiz_id}-q{idx:02d}",
-                "quiz": quiz_id,
                 "question": q["question"],
                 "options": q["options"],
+                "explanation": PLACEHOLDER_EXPLANATION,
             }
             questions.append(entry)
 

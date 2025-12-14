@@ -117,18 +117,6 @@ h1 {
   margin-bottom: 16px;
 }
 
-.quiz-tag {
-  margin: 0 0 8px;
-  display: inline-flex;
-  padding: 4px 10px;
-  background: rgba(124, 58, 237, 0.15);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  color: var(--accent);
-  font-size: 12px;
-  font-weight: 600;
-}
-
 #question-title {
   margin: 0 0 10px;
   font-size: 20px;
@@ -193,6 +181,7 @@ h1 {
   min-height: 24px;
   color: var(--muted);
   font-size: 14px;
+  white-space: pre-wrap;
 }
 
 .actions {
