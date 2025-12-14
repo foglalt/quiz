@@ -3,8 +3,14 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_01",
     "question": "Epszilon-mentesítés után minden szabály jobboldalán található legalább egy terminális vagy nemterminális szimbólum.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "Az epszilon-mentesítés célja az ε-szabályok eltüntetése, így a szabályok jobb oldala nem lehet üres."
   },
@@ -12,8 +18,14 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_02",
     "question": "Minden környezetfüggő nyelv generálható hossz-nemcsökkentő grammatikával.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "Ismert tétel: a környezetfüggő (1-es típusú) nyelvek a nem-kontraktív (hossz-nemcsökkentő) grammatikákkal generálhatók."
   },
@@ -21,8 +33,14 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_03",
     "question": "A G = ({S, A, B, C}, {x, y, z}, S, {S → AB|x, A → BC|y, CB → CS, SA → AA}) grammatika Kuroda normálformájú.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "A Kuroda-normálformában megengedettek az A→BC, AB→CD, A→a alakok (és esetleg S→ε). A megadott szabályok ezekbe illenek."
   },
@@ -30,8 +48,14 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_04",
     "question": "Az x ∨ y ∧ z → ¬x → ¬y formula helyes zárójelezése: ((x ∨ (y ∧ z)) → (¬x → ¬y)).",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "Szokásos precedencia: ¬ > ∧ > ∨ > →, és az → tipikusan jobbra asszociatív, így a megadott zárójelezés adódik."
   },
@@ -39,8 +63,14 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_05",
     "question": "Legyenek f, g, h : N → N függvények úgy, hogy f ∈ O(g) és h ∈ Ω(g). Ekkor f ∈ O(h).",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "f≤C·g és h≥c·g ⇒ g≤(1/c)·h ⇒ f≤(C/c)·h, tehát f∈O(h)."
   },
@@ -48,8 +78,14 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_06",
     "question": "Egy M = (Q, Σ, Γ, δ, q0, qi, qn) egy szalagos, determinisztikus TG átmenetfüggvénye egy (Q \\ {qi, qn}) × Γ → Q × Γ × {L, S, R} függvény.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "A δ a nem-leálló állapotok és a fej alatti szimbólum alapján adja meg az új állapotot, írandó jelet és a fejmozgást (L/S/R)."
   },
@@ -57,8 +93,14 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_07",
     "question": "Minden M k-szalagos, f(n) ∈ Ω(n) időkorlátos DTG-hez megadható egy vele ekvivalens M′ egyszalagos, O(f(n)^3) időkorlátos DTG.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "A standard szimuláció (jegyzet szerint) négyzetes lassulást ad: O(f(n)^2), nem O(f(n)^3)."
   },
@@ -66,8 +108,14 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_08",
     "question": "Az {a ≺ b} rendezett ábécé feletti szavak halmazának shortlex rendezés szerinti első négy eleme: a, b, aa, ab.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "Shortlex: először hossz szerint, azon belül lexikografikusan. Hossz 1: a,b; hossz 2: aa,ab,…"
   },
@@ -75,8 +123,14 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_09",
     "question": "|N| = |N × N| = |Q|.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "Mindhárom halmaz megszámlálhatóan végtelen: N×N és Q is felsorolható."
   },
@@ -84,8 +138,14 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_10",
     "question": "RE zárt a komplementer-képzésre.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Az RE nyelvek általában nem zártak komplementerre; a biztos zártság komplementerre az R osztálynál van."
   },
@@ -93,8 +153,14 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_11",
     "question": "Tudjuk, hogy R ⊂ L1.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Az ismert irány: L1 ⊆ R (a környezetfüggő nyelvek eldönthetők), nem pedig R ⊆ L1."
   },
@@ -102,8 +168,14 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_12",
     "question": "Tudjuk, hogy P ≠ NP.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "A P vs NP kérdés nyitott, tehát nem „tudjuk” az állítást."
   },
@@ -111,8 +183,14 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_13",
     "question": "Tudjuk, hogy 2-színezés nem NP-beli.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "A 2-színezés polinomidőben eldönthető (bipartit teszt), ezért P-beli, így NP-beli is."
   },
@@ -120,29 +198,52 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_14",
     "question": "Tudjuk, hogy Gráfizomorfizmus NP-köztes.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Nem bizonyított, hogy NP-köztes (nem ismert sem P-beli, sem NP-teljes volta)."
   },
   {
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_15",
-    "question": "Tudjuk, hogy ELER′ ∈ SPACE(log(n)).",
+    "question": "Tudjuk, hogy ELÉR ∈ SPACE(log(n)).",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Elér NL-teljes és NL=coNL, de az, hogy determinisztikus logtárban (L=SPACE(log n)) van-e, nyitott (L ?= NL), így nem állítható biztosan."
   },
-
   {
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_2_01",
     "question": "Az alábbi szabályhalmazok közül melyik esetén lesz a G = ({S, A, B}, {a, b}, S, R) grammatika Chomsky normálformájú?",
     "options": [
-      { "text": "a) R = {S → AB, A → BB|a, B → AS|b}", "correct": false },
-      { "text": "b) R = {S → AB|ε, A → BB|a, B → AA|b}", "correct": false },
-      { "text": "c) R = {S → BA, A → SB|a, B → AS|b}", "correct": false },
-      { "text": "d) mindhárom esetben", "correct": true }
+      {
+        "text": "a) R = {S → AB, A → BB|a, B → AS|b}",
+        "correct": false
+      },
+      {
+        "text": "b) R = {S → AB|ε, A → BB|a, B → AA|b}",
+        "correct": false
+      },
+      {
+        "text": "c) R = {S → BA, A → SB|a, B → AS|b}",
+        "correct": false
+      },
+      {
+        "text": "d) mindhárom esetben",
+        "correct": true
+      }
     ],
     "explanation": "A CNF-ben A→BC vagy A→a alak megengedett, és S→ε is engedhető a szokásos feltétellel. Mindhárom eset megfelel ennek."
   },
@@ -150,10 +251,22 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_2_02",
     "question": "A CYK algoritmus milyen típusú grammatikák szóproblémájának eldöntésére nem alkalmas?",
     "options": [
-      { "text": "a) 3-típusú", "correct": false },
-      { "text": "b) 2-típusú", "correct": false },
-      { "text": "c) 1-típusú", "correct": true },
-      { "text": "d) a fentiek mindegyikére alkalmas", "correct": false }
+      {
+        "text": "a) 3-típusú",
+        "correct": false
+      },
+      {
+        "text": "b) 2-típusú",
+        "correct": false
+      },
+      {
+        "text": "c) 1-típusú",
+        "correct": true
+      },
+      {
+        "text": "d) a fentiek mindegyikére alkalmas",
+        "correct": false
+      }
     ],
     "explanation": "A CYK egy tagsági algoritmus környezetfüggetlen (2-es típusú) nyelvekre/grammatikákra (CNF). 1-es típusúra nem alkalmas."
   },
@@ -161,10 +274,22 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_2_03",
     "question": "Az alábbiak közül melyik klózpár rezolvense az x ∨ y klóz?",
     "options": [
-      { "text": "a) {x ∨ y ∨ z, x ∨ y}", "correct": false },
-      { "text": "b) {x ∨ y ∨ z, x ∨ ¬z}", "correct": true },
-      { "text": "c) {w ∨ x ∨ y ∨ z, ¬w ∨ ¬z}", "correct": false },
-      { "text": "d) mindháromnak", "correct": false }
+      {
+        "text": "a) {x ∨ y ∨ z, x ∨ y}",
+        "correct": false
+      },
+      {
+        "text": "b) {x ∨ y ∨ z, x ∨ ¬z}",
+        "correct": true
+      },
+      {
+        "text": "c) {w ∨ x ∨ y ∨ z, ¬w ∨ ¬z}",
+        "correct": false
+      },
+      {
+        "text": "d) mindháromnak",
+        "correct": false
+      }
     ],
     "explanation": "A (b)-ben z és ¬z komplementerek, feloldás után a maradék literálok: x ∨ y."
   },
@@ -172,10 +297,22 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_2_04",
     "question": "Mi az asszimptotikus nagyságrendje az f(n) = log(n^3) + log(n) függvénynek?",
     "options": [
-      { "text": "a) Θ(log(n))", "correct": true },
-      { "text": "b) Θ(n)", "correct": false },
-      { "text": "c) Θ(n^3)", "correct": false },
-      { "text": "d) Θ(3n)", "correct": false }
+      {
+        "text": "a) Θ(log(n))",
+        "correct": true
+      },
+      {
+        "text": "b) Θ(n)",
+        "correct": false
+      },
+      {
+        "text": "c) Θ(n^3)",
+        "correct": false
+      },
+      {
+        "text": "d) Θ(3n)",
+        "correct": false
+      }
     ],
     "explanation": "log(n^3)=3log n, ezért f(n)=4log n=Θ(log n)."
   },
@@ -183,9 +320,18 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_2_05",
     "question": "Mi az M = (Q, {0, 1}, {0, 1, ⊔}, δ, q0, qi, qn) egy szalagos nemdeterminisztikus TG 01 input szóhoz tartozó kezdőkonfigurációja?",
     "options": [
-      { "text": "a) q001", "correct": true },
-      { "text": "b) 0q01", "correct": false },
-      { "text": "c) 01q0⊔", "correct": false },
+      {
+        "text": "a) q001",
+        "correct": true
+      },
+      {
+        "text": "b) 0q01",
+        "correct": false
+      },
+      {
+        "text": "c) 01q0⊔",
+        "correct": false
+      },
       {
         "text": "d) a fentiek mindegyike egy lehetséges kezdőkonfiguráció",
         "correct": false
@@ -197,10 +343,22 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_2_06",
     "question": "Melyik igaz az LÁtló′ = {⟨M⟩ | ⟨M⟩ ∈ L(M)} nyelvre?",
     "options": [
-      { "text": "a) LÁtló′ ∉ RE", "correct": false },
-      { "text": "b) LÁtló′ ∈ RE \\\\ R", "correct": true },
-      { "text": "c) LÁtló′ ∈ R \\\\ RE", "correct": false },
-      { "text": "d) LÁtló′ ∈ R", "correct": false }
+      {
+        "text": "a) LÁtló′ ∉ RE",
+        "correct": false
+      },
+      {
+        "text": "b) LÁtló′ ∈ RE \\\\ R",
+        "correct": true
+      },
+      {
+        "text": "c) LÁtló′ ∈ R \\\\ RE",
+        "correct": false
+      },
+      {
+        "text": "d) LÁtló′ ∈ R",
+        "correct": false
+      }
     ],
     "explanation": "Szimulációval elfogadás esetén felismerhető (RE), de nem-elfogadás esetén a gép megakadhat, így nem eldönthető (nem R)."
   },
@@ -208,10 +366,22 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_2_07",
     "question": "Melyik igaz biztosan, ha L1 ≤p L2?",
     "options": [
-      { "text": "a) L2 ≤p L1", "correct": false },
-      { "text": "b) L̄2 ≤p L̄1", "correct": false },
-      { "text": "c) L̄1 ≤p L̄2", "correct": true },
-      { "text": "d) L̄2 ≤p L1", "correct": false }
+      {
+        "text": "a) L2 ≤p L1",
+        "correct": false
+      },
+      {
+        "text": "b) L̄2 ≤p L̄1",
+        "correct": false
+      },
+      {
+        "text": "c) L̄1 ≤p L̄2",
+        "correct": true
+      },
+      {
+        "text": "d) L̄2 ≤p L1",
+        "correct": false
+      }
     ],
     "explanation": "Ha x∈L1 ⇔ f(x)∈L2, akkor x∈L̄1 ⇔ f(x)∈L̄2 ugyanazzal a redukcióval."
   },
@@ -223,7 +393,10 @@
         "text": "a) G komplementerében van 5 csúcsból álló klikk",
         "correct": false
       },
-      { "text": "b) G-ben van 5 csúcsból álló klikk", "correct": false },
+      {
+        "text": "b) G-ben van 5 csúcsból álló klikk",
+        "correct": false
+      },
       {
         "text": "c) G-ben van 3 csúcsból álló lefogó ponthalmaz",
         "correct": false
@@ -239,10 +412,22 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_2_09",
     "question": "A Hátizsák (1) és Ládapakolás (2) problémák közül melyik vezethető vissza a másikra polinom időben?",
     "options": [
-      { "text": "a) csak az 1 a 2-re", "correct": false },
-      { "text": "b) csak a 2 az 1-re", "correct": false },
-      { "text": "c) mindkettő", "correct": true },
-      { "text": "d) egyik se", "correct": false }
+      {
+        "text": "a) csak az 1 a 2-re",
+        "correct": false
+      },
+      {
+        "text": "b) csak a 2 az 1-re",
+        "correct": false
+      },
+      {
+        "text": "c) mindkettő",
+        "correct": true
+      },
+      {
+        "text": "d) egyik se",
+        "correct": false
+      }
     ],
     "explanation": "Mindkettő NP-teljes döntési probléma, ezért polinomidőben interredukálhatók."
   },
@@ -250,10 +435,22 @@
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_2_10",
     "question": "Mi a tartalmazási viszony PSPACE és NPSPACE között?",
     "options": [
-      { "text": "a) PSPACE = NPSPACE", "correct": true },
-      { "text": "b) PSPACE ⊂ NPSPACE", "correct": false },
-      { "text": "c) NPSPACE ⊂ PSPACE", "correct": false },
-      { "text": "d) nincs köztük tartalmazási viszony", "correct": false }
+      {
+        "text": "a) PSPACE = NPSPACE",
+        "correct": true
+      },
+      {
+        "text": "b) PSPACE ⊂ NPSPACE",
+        "correct": false
+      },
+      {
+        "text": "c) NPSPACE ⊂ PSPACE",
+        "correct": false
+      },
+      {
+        "text": "d) nincs köztük tartalmazási viszony",
+        "correct": false
+      }
     ],
     "explanation": "Savitch-tétel következménye, hogy a polinomiális tárigényű determinizmus és nemdeterminizmus megegyezik: PSPACE = NPSPACE."
   },
@@ -261,8 +458,14 @@
     "id": "2023-06-05_TF_01",
     "question": "Minden Chomsky normálformájú grammatika egyben hossz-nemcsökkentő grammatika is.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Chomsky-normálformában megengedett lehet az S→ε szabály is (ha a nyelv tartalmazza az üres szót). Ez egy hosszcsökkenés (1 szimbólumról 0-ra), tehát nem garantálható, hogy minden CNF grammatika hossz-nemcsökkentő."
   },
@@ -270,8 +473,14 @@
     "id": "2023-06-05_TF_02",
     "question": "Az (ab|ba)* és (ab)* | (ba)* reguláris kifejezések ugyanazt a nyelvet jelölik.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "(ab|ba)* tetszőleges sorrendben engedi az „ab” és „ba” blokkok ismétlését (pl. „abba” = „ab”·„ba”). (ab)* | (ba)* viszont csak tisztán „ab” ismétléseket vagy tisztán „ba” ismétléseket enged, így „abba” nem benne van."
   },
@@ -279,8 +488,14 @@
     "id": "2023-06-05_TF_03",
     "question": "Bármely L nyelv esetén L* \\\\ L+ = {ε}.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Ha ε∉L, akkor valóban L* = {ε} ∪ L+, így a különbség {ε}. De ha ε∈L (pl. L={ε}), akkor ε már benne lehet L+-ban is, és a különbség akár üres is lehet."
   },
@@ -288,8 +503,14 @@
     "id": "2023-06-05_TF_04",
     "question": "Minden véges nemdeterminisztikus automatával felismerhető nyelv leírható reguláris kifejezéssel is.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "Az NFA-k pontosan a reguláris nyelveket ismerik fel, a reguláris nyelveknek pedig létezik reguláris kifejezéses leírása (NFA⇔DFA⇔regex ekvivalencia)."
   },
@@ -297,8 +518,14 @@
     "id": "2023-06-05_TF_05",
     "question": "A G=({S,A},{c,d},S,{S→AcA, SA→AS, A→cdA, A→cc}) grammatika 1-es típusú.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "Az 1-es típus (környezetfüggő) egyik jellemzője a hossz-nemcsökkentés: itt minden szabály jobb oldala legalább olyan hosszú, mint a bal oldal (nincs ε-szabály). A bal oldalon több szimbólum is állhat (pl. SA→AS), ami megengedett 1-es típusban."
   },
@@ -306,8 +533,14 @@
     "id": "2023-06-05_TF_06",
     "question": "Egy lineáris grammatika minden szabálya A→XBY vagy A→Z alakú, ahol A,B∈VN, X,Y,Z∈VT*.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "A lineáris grammatika definíciója: minden produkció jobb oldalán legfeljebb egy nemterminális szerepel. Ez pontosan lefedhető az A→XBY (egy nemterminális B) vagy A→Z (csak terminálisok) alakokkal."
   },
@@ -315,8 +548,14 @@
     "id": "2023-06-05_TF_07",
     "question": "Minden környezetfüggetlen grammatika kezdőszimbóluma aktív nemterminális szimbólum.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Ha „aktív” alatt produktív/hasznos nemterminálist értünk (képes terminális szót levezetni), akkor üres nyelvet generáló CFG-ben a kezdőszimbólum nem produktív. Tehát nem igaz, hogy minden CFG-ben a kezdőszimbólum szükségképpen aktív."
   },
@@ -324,8 +563,14 @@
     "id": "2023-06-05_TF_08",
     "question": "A CYK algoritmussal polinom időben eldönthető az 1-es típusú grammatikák szóproblémája.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "A CYK algoritmus környezetfüggetlen (2-es típusú) grammatikákhoz való (Chomsky-normálformában) és CFG-tagságot dönt el polinom időben. 1-es típus (környezetfüggő) szóproblémájára ez nem alkalmazható így."
   },
@@ -333,8 +578,14 @@
     "id": "2023-06-05_TF_09",
     "question": "A ∀x∃y(P(x,y)→Q(x)) elsőrendű logikai formula zárt.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "Zárt (mondat) az a formula, amelyben nincs szabad változó. Itt x-et és y-t is kvantor köti (∀x, ∃y), tehát nincs szabad változó."
   },
@@ -342,8 +593,14 @@
     "id": "2023-06-05_TF_10",
     "question": "Minden Turing felismerhető nyelv egyúttal Turing eldönthető is.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "A Turing-felismerhető (RE) nyelvek szigorúan többek, mint az eldönthetők (R). Klasszikus példa: az elfogadási/megállási jellegű nyelvek RE-ben vannak, de nem mind eldönthető."
   },
@@ -351,8 +608,14 @@
     "id": "2023-06-05_TF_11",
     "question": "Minden O(f(n)) időkorlátos nemdeterminisztikus TG-hez létezik vele ekvivalens O(f(n)^2) időkorlátos determinisztikus TG.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Általánosan a nemdeterminisztikus idő determinisztikus idővel való szimulációja nem ismert ilyen kis (négyzetes) overhead-del; a determinisztikus szimuláció tipikusan exponenciális lehet. Egy ilyen állítás lényegében erős, NP-jellegű nyitott kérdésekhez vezetne."
   },
@@ -360,8 +623,14 @@
     "id": "2023-06-05_TF_12",
     "question": "RE zárt a komplementer-képzésre.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Az RE (rekurzívan felsorolható) osztály nem zárt komplementerre: a megállási nyelv RE, de a komplementere nem RE. (Ha zárt lenne, RE=R következne, ami hamis.)"
   },
@@ -369,8 +638,14 @@
     "id": "2023-06-05_TF_13",
     "question": "Ha L1 ≤ L2 és L2∈R, akkor L1∈R.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "Ha L1 sok-egy redukálható L2-re egy kiszámítható leképezéssel, és L2 eldönthető, akkor L1-et is el lehet dönteni: kiszámoljuk a leképezést, majd lefuttatjuk L2 döntő algoritmusát."
   },
@@ -378,8 +653,14 @@
     "id": "2023-06-05_TF_14",
     "question": "φ és ψ ítéletkalkulusbeli formulákról eldönthető algoritmikusan, hogy φ ∼0 ψ fennáll-e.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "Ítéletlogikában az ekvivalencia eldönthető (pl. igazságtáblával vagy SAT-redukcióval). φ∼0ψ akkor és csak akkor, ha φ↔ψ tautológia."
   },
@@ -387,18 +668,29 @@
     "id": "2023-06-05_TF_15",
     "question": "Minden f:N→N esetén TIME(f(n)) ⊆ NTIME(f(n)).",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "A determinisztikus gép speciális esete a nemdeterminisztikusnak (csak 1 lehetséges lépés). Ezért minden determinisztikusan f(n) időben megoldható nyelv nemdeterminisztikusan is megoldható f(n) időben."
   },
-
   {
     "id": "MINTA_TF_01",
     "question": "Minden Chomsky normálformájú grammatikával generálható nyelv generálható környezetfüggő grammatikával is.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "A Chomsky-normálformájú grammatika környezetfüggetlen (2-es típus), a környezetfüggő (1-es típus) pedig szigorúan tágabb osztály. Így minden CFG-nyelv kontextusszenzitív is."
   },
@@ -406,8 +698,14 @@
     "id": "MINTA_TF_02",
     "question": "Minden hossznemcsökkentő grammatika egyben Kuroda normálformájú grammatika is.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "A Kuroda-normálforma egy speciális alak (megszorított szabályformákkal). Egy grammatika attól, hogy hossz-nemcsökkentő, még nem lesz automatikusan Kuroda-normálformájú (legfeljebb átalakítható lehet arra)."
   },
@@ -415,8 +713,14 @@
     "id": "MINTA_TF_03",
     "question": "Az x ∧ y ∨ z formula helyes zárójelezése ((x ∧ y) ∨ z).",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "A szokásos precedencia szerint a negáció erősebb, mint ∧, és az ∧ erősebb, mint ∨. Ezért zárójelezés nélkül x ∧ y ∨ z = (x ∧ y) ∨ z."
   },
@@ -424,8 +728,14 @@
     "id": "MINTA_TF_04",
     "question": "Algoritmikusan eldönthető, hogy egy zárt elsőrendű logikai formula tautológia-e.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Elsőrendű logikában a validitás/tautológia (minden modellben igaz) eldönthetetlen probléma (Church–Turing eredmények). Az, hogy a formula zárt, nem teszi eldönthetővé."
   },
@@ -433,8 +743,14 @@
     "id": "MINTA_TF_05",
     "question": "LHalt komplementere RE \\\\ R-ben van.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "LHalt maga rekurzívan felsorolható (szimulálással megtalálható a megállás), de a komplementere nem RE (nem lehet általánosan félig-eldönteni a „nem áll meg” esetet). Így biztosan nem lehet RE\\\\R-ben."
   },
@@ -442,8 +758,14 @@
     "id": "MINTA_TF_06",
     "question": "Ha M egyszalagos determinisztikus TG három lépésben elfogadja abc-t, akkor abcabc-t 6 lépésben fogadja el.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "A futásidő nem arányosítható ilyen módon: a gép működése függhet a teljes bemenettől, a hosszától és a tartalmától is. Az, hogy abc-t gyorsan elfogadja, semmit nem garantál abcabc-re."
   },
@@ -451,8 +773,14 @@
     "id": "MINTA_TF_07",
     "question": "Egy L nyelvet eldöntő NTG egy u inputszóhoz tartozó nemdeterminisztikus számításifájának minden levele elfogadó konfiguráció.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Nemdeterminisztikus elfogadásnál elég, ha létezik elfogadó ág. Egy NTG-decider esetén minden ág megáll, de elfogadó bemenetre lehetnek elutasító levelek is; a lényeg, hogy legalább egy elfogadó levél legyen."
   },
@@ -460,8 +788,14 @@
     "id": "MINTA_TF_08",
     "question": "Minden reguláris nyelv felismerhető lineárisan korlátolt automatával.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "A lineárisan korlátolt automata (LBA) legalább olyan erős, mint a véges automata: egy DFA/NFA szimulálható konstans extra tárigénnyel, ami belefér az O(n) korlátba."
   },
@@ -469,8 +803,14 @@
     "id": "MINTA_TF_09",
     "question": "Tetszőleges G1 és G2 környezetfüggetlen grammatikák esetén algoritmikusan eldönthető, hogy L(G1) ⊆ L(G2).",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "CFG-nyelvek tartalmazási problémája általánosan eldönthetetlen. Ez klasszikus eredmény a formális nyelvek elméletében."
   },
@@ -478,8 +818,14 @@
     "id": "MINTA_TF_10",
     "question": "Minden L1,L2 ∈ R esetén, ha L1 ≤p L2, akkor L2 ≤p L1.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "A polinomiális redukció nem szimmetrikus reláció. Például az üres nyelv ≤p bármely nyelvre, de visszafelé általában nem igaz."
   },
@@ -487,8 +833,14 @@
     "id": "MINTA_TF_11",
     "question": "Minden egyszerű, 8 csúcsú, összefüggő G gráfban ha van 3 csúcsból álló klikk, akkor van 5 csúcsból álló független ponthalmaz.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Egy 8 csúcsú gráfban a „van K3” nem kényszeríti ki az „van független halmaz méret 5” tulajdonságot. Az ilyen garanciák Ramsey-típusú számoktól függenek (K3 és független 5-höz jóval nagyobb n kell)."
   },
@@ -496,8 +848,14 @@
     "id": "MINTA_TF_12",
     "question": "Ismert, hogy a 3SAT probléma P-teljes.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "A 3SAT NP-teljes (klasszikus Cook–Levin és redukciók). P-teljességet csak P-beli problémákra értelmezünk (logspace-redukcióval); 3SAT-ról nem ismert, hogy P-ben lenne."
   },
@@ -505,8 +863,14 @@
     "id": "MINTA_TF_13",
     "question": "A következő dominókészletnek van megoldása: { a/ab, abc/c, b/ca, ca/a, dd/e }.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "A dd/e dominó nem használható megoldásban (d és e máshol nem szerepel), de az első négy dominóval létezik egyezés. Példa megoldássorozat indexekkel: 1,3,4,1,1,3,2,1,4,3,1,4,1,3,1,2,1,2,2,4 (ekkor a felső és alsó konkatenáció megegyezik)."
   },
@@ -514,8 +878,14 @@
     "id": "MINTA_TF_14",
     "question": "SPACE(log(n)) ⊆ NSPACE(log(n)).",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "Deterministikus tárbonyolultságú gép felfogható nemdeterminisztikusként is (nincs szükség elágazásra). Ezért minden DSPACE-osztály benne van a megfelelő NSPACE-osztályban."
   },
@@ -523,18 +893,29 @@
     "id": "MINTA_TF_15",
     "question": "Az (x ∨ ¬y ∨ ¬z) ∧ (¬x ∨ y) ∧ (¬y ∨ z) ∧ ¬z formula a Horn-SAT egy hamis példánya.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Horn-formula (klózonként legfeljebb 1 pozitív literál) és itt kielégíthető is: ¬z miatt z=false, ebből (¬y ∨ z) miatt y=false, majd (¬x ∨ y) miatt x=false. Ezzel az első klóz is igaz, tehát nem „hamis példány”."
   },
-
   {
     "id": "2024-12-11_TF_01",
     "question": "Minden Chomsky normálformájú grammatika egyben hossz-nemcsökkentő grammatika is.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "CNF-ben megengedett lehet az S→ε szabály; ez hosszcsökkenés. Ezért nem áll, hogy minden CNF grammatika hossz-nemcsökkentő."
   },
@@ -542,8 +923,14 @@
     "id": "2024-12-11_TF_02",
     "question": "Egy Kuroda normálformájú grammatika minden szabálya A→a, A→BC, AB→AC vagy AB→CB alakú (A,B,C nemterminális, a terminális).",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "A standard Kuroda-normálformában a kontextusszenzitív szabályok általánosabban AB→CD alakúak (két nemterminálisból két nemterminális), nem csak az AB→AC vagy AB→CB speciálesetek."
   },
@@ -551,8 +938,14 @@
     "id": "2024-12-11_TF_03",
     "question": "Az (x ∧ ¬y ∧ z) ∨ (¬x ∧ y ∧ z) ítéletlogikai formula 3KNF.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "3KNF (3-CNF) konjunkció klózokból, ahol minden klóz diszjunkció. Itt viszont diszjunkció van két, 3 literálos konjunkció között, tehát ez 3DNF-jellegű, nem 3KNF."
   },
@@ -560,8 +953,14 @@
     "id": "2024-12-11_TF_04",
     "question": "Zérusrendű logikában F formula-halmaz és φ formula esetén F ⊨0 φ akkor és csak akkor, ha F ∪ {¬φ} kielégíthetetlen.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "Ítéletlogikában (0. rendű) a szemantikai következmény ekvivalens azzal, hogy a premisszák és a konklúzió negációjának együttese nem elégíthető ki (klasszikus ellentmondásosítási kritérium)."
   },
@@ -569,8 +968,14 @@
     "id": "2024-12-11_TF_05",
     "question": "Minden kétszalagos Turing géphez létezik vele ekvivalens egyszalagos Turing gép.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "Az egyszalagos és többszalagos Turing-gépek ugyanazt a nyelvosztályt ismerik fel/eldöntik; a többszalagos szimulálható egyszalagossal (legfeljebb polinomiális időveszteséggel), ezért nyelvi értelemben ekvivalensek."
   },
@@ -578,8 +983,14 @@
     "id": "2024-12-11_TF_06",
     "question": "Létezik olyan probléma, amit nem lehet eldönteni determinisztikus Turing géppel, de nemdeterminisztikussal lehet.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Az eldönthetőség (rekurzív nyelvek osztálya, R) szempontjából a determinisztikus és nemdeterminisztikus Turing-gépek egyformán erősek: ami eldönthető NTG-vel, az eldönthető DTG-vel is."
   },
@@ -587,8 +998,14 @@
     "id": "2024-12-11_TF_07",
     "question": "Egyszalagos nemdeterminisztikus TG esetén: ha u-re q0u ⊢* x qn y fennáll valamilyen x,y-re, akkor u ∉ L(M).",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Nemdeterminisztikus elfogadásnál az számít, hogy létezik-e elfogadó ág (qi-be ér). Az, hogy van elutasító (qn-es) ág, nem zárja ki, hogy egy másik ág elfogadja u-t."
   },
@@ -596,8 +1013,14 @@
     "id": "2024-12-11_TF_08",
     "question": "Minden lineárisan korlátolt automata reguláris nyelvet ismer fel.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Az LBA-k a kontextusszenzitív nyelveket ismerik fel, amelyek szigorúan tágabbak a reguláris nyelveknél. Tehát nem igaz, hogy minden LBA által felismert nyelv reguláris lenne."
   },
@@ -605,8 +1028,14 @@
     "id": "2024-12-11_TF_09",
     "question": "A 0. típusú grammatikák szóproblémája algoritmikusan eldönthetetlen.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "A 0. típusú (korlátlan) grammatikák megfelelnek a Turing-gépek által felismerhető nyelveknek. A tagsági/szóprobléma ebben az általánosságban a megállási/elfogadási jellegű eldönthetetlen problémákhoz vezet."
   },
@@ -614,8 +1043,14 @@
     "id": "2024-12-11_TF_10",
     "question": "LPMP NP-teljes.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "A Post-megfeleltetési probléma (PCP/MP) klasszikusan eldönthetetlen, tehát nem NP-teljes (NP-teljességhez legalább eldönthetőség kell)."
   },
@@ -623,8 +1058,14 @@
     "id": "2024-12-11_TF_11",
     "question": "Ha egy egyszerű, 8 csúcsú, összefüggő G gráfban van 3 csúcsból álló klikk, akkor a G komplementerében van 5 csúcsból álló klikk.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "A komplementerben lévő 5-klikk azt jelentené, hogy az eredeti gráfban van 5 csúcsú független ponthalmaz. 8 csúcs esetén a „van háromszög” nem kényszeríti ki ezt."
   },
@@ -632,8 +1073,14 @@
     "id": "2024-12-11_TF_12",
     "question": "Tudjuk, hogy RE \\\\ R = ∅.",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "RE\\\\R nem üres: például a megállási nyelv rekurzívan felsorolható, de nem eldönthető, tehát RE-ben van, R-ben nincs. Ezért RE\\\\R ≠ ∅."
   },
@@ -641,8 +1088,14 @@
     "id": "2024-12-11_TF_13",
     "question": "2SAT ∈ PSPACE.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "2SAT polinomidőben megoldható (tehát P-ben van), és P ⊆ PSPACE. Következésképp 2SAT biztosan PSPACE-beli."
   },
@@ -650,8 +1103,14 @@
     "id": "2024-12-11_TF_14",
     "question": "NL ⊆ coNL.",
     "options": [
-      { "text": "Igaz", "correct": true },
-      { "text": "Hamis", "correct": false }
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
     ],
     "explanation": "Az Immerman–Szelepcsényi-tétel szerint NL = coNL, így különösen NL ⊆ coNL igaz."
   },
@@ -659,20 +1118,37 @@
     "id": "2024-12-11_TF_15",
     "question": "Az ELÉR probléma determinisztikus tárbonyolultsága O(log(n)).",
     "options": [
-      { "text": "Igaz", "correct": false },
-      { "text": "Hamis", "correct": true }
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
     ],
     "explanation": "Az irányított elérhetőség (klasszikus ELÉR) NL-teljes. Az, hogy determinisztikus logtérben (L-ben) megoldható-e, a L vs NL nyitott kérdésével függ össze, tehát nem állítható biztosan."
   },
-
   {
     "id": "2024-12-11_MC_01",
     "question": "Melyik Chomsky-féle nyelvosztályokkal kapcsolatos tartalmazási reláció igaz?",
     "options": [
-      { "text": "L2 ⊆ L3", "correct": false },
-      { "text": "L2 ⊂ L1", "correct": true },
-      { "text": "L0 ⊂ L1", "correct": false },
-      { "text": "L1 ⊆ L3", "correct": false }
+      {
+        "text": "L2 ⊆ L3",
+        "correct": false
+      },
+      {
+        "text": "L2 ⊂ L1",
+        "correct": true
+      },
+      {
+        "text": "L0 ⊂ L1",
+        "correct": false
+      },
+      {
+        "text": "L1 ⊆ L3",
+        "correct": false
+      }
     ],
     "explanation": "A Chomsky-hierarchia: L3 (reguláris) ⊂ L2 (környezetfüggetlen) ⊂ L1 (környezetfüggő) ⊂ L0 (rekurzívan felsorolható). Ebből L2 ⊂ L1 az igaz."
   },
@@ -680,10 +1156,22 @@
     "id": "2024-12-11_MC_02",
     "question": "Legyen G=({S,A,B,C},{x,y,z},S,R) egy Chomsky normálformájú grammatika. Melyik szabályhalmaz lehet R?",
     "options": [
-      { "text": "{S→ABC|x, A→AB|y, B→CC|z, C→x|y|z}", "correct": false },
-      { "text": "{S→AB|x, AB→y|z, B→CA, A→AS}", "correct": false },
-      { "text": "{S→AB|x|ε, A→CC|y}", "correct": true },
-      { "text": "{S→A, A→B|x, B→C|y, C→z}", "correct": false }
+      {
+        "text": "{S→ABC|x, A→AB|y, B→CC|z, C→x|y|z}",
+        "correct": false
+      },
+      {
+        "text": "{S→AB|x, AB→y|z, B→CA, A→AS}",
+        "correct": false
+      },
+      {
+        "text": "{S→AB|x|ε, A→CC|y}",
+        "correct": true
+      },
+      {
+        "text": "{S→A, A→B|x, B→C|y, C→z}",
+        "correct": false
+      }
     ],
     "explanation": "CNF-ben a megengedett alakok: A→BC vagy A→a (és esetleg S→ε). (a) S→ABC tiltott (3 nemterminális). (b) AB→… tiltott baloldal, és A→AS unit/kezdőszimbólum RHS. (d) unit-produktumok (A→B stb.) tiltottak. (c) megfelel a formáknak."
   },
@@ -691,10 +1179,22 @@
     "id": "2024-12-11_MC_03",
     "question": "Az alábbiak közül mely klózpár rezolvense az x ∨ ¬y klóz?",
     "options": [
-      { "text": "{x ∨ y, ¬y}", "correct": false },
-      { "text": "{x ∨ z, ¬y ∨ ¬z}", "correct": true },
-      { "text": "{x ∨ z ∨ w, ¬y ∨ ¬z ∨ ¬w}", "correct": false },
-      { "text": "{x, ¬y}", "correct": false }
+      {
+        "text": "{x ∨ y, ¬y}",
+        "correct": false
+      },
+      {
+        "text": "{x ∨ z, ¬y ∨ ¬z}",
+        "correct": true
+      },
+      {
+        "text": "{x ∨ z ∨ w, ¬y ∨ ¬z ∨ ¬w}",
+        "correct": false
+      },
+      {
+        "text": "{x, ¬y}",
+        "correct": false
+      }
     ],
     "explanation": "Rezolúcióhoz komplementer literálpár kell. (x∨z) és (¬y∨¬z) z/¬z-re rezolválva (x∨¬y) adódik."
   },
@@ -702,10 +1202,22 @@
     "id": "2024-12-11_MC_04",
     "question": "Ha egy Turing-gépnél δ(q,a)=(r,b,L), akkor mi lesz az aqaa konfiguráció rákövetkezője?",
     "options": [
-      { "text": "raba", "correct": true },
-      { "text": "arba", "correct": false },
-      { "text": "rabb", "correct": false },
-      { "text": "arbLa", "correct": false }
+      {
+        "text": "raba",
+        "correct": true
+      },
+      {
+        "text": "arba",
+        "correct": false
+      },
+      {
+        "text": "rabb",
+        "correct": false
+      },
+      {
+        "text": "arbLa",
+        "correct": false
+      }
     ],
     "explanation": "Az „aqaa” értelmezése: balra „a”, a fej az első „a”-n áll q állapotban, utána „a”. Írás: a→b, majd balra lépés, így a fej a bal oldali „a”-ra kerül r állapotban: „raba”."
   },
@@ -713,10 +1225,22 @@
     "id": "2024-12-11_MC_05",
     "question": "Melyik halmaz számossága megszámlálhatóan végtelen az alábbiak közül?",
     "options": [
-      { "text": "R", "correct": false },
-      { "text": "{L | L ⊆ {0,1}*}", "correct": false },
-      { "text": "{n ∈ N : n = n^2}", "correct": false },
-      { "text": "{a,b,c}*", "correct": true }
+      {
+        "text": "R",
+        "correct": false
+      },
+      {
+        "text": "{L | L ⊆ {0,1}*}",
+        "correct": false
+      },
+      {
+        "text": "{n ∈ N : n = n^2}",
+        "correct": false
+      },
+      {
+        "text": "{a,b,c}*",
+        "correct": true
+      }
     ],
     "explanation": "{a,b,c}* a véges szavak halmaza véges ábécén, ezért megszámlálhatóan végtelen. R és a {0,1}* összes részhalmaza nem megszámlálható, a n=n^2 megoldáshalmaz pedig véges (0 és 1)."
   },
@@ -736,7 +1260,10 @@
         "text": "Minden 3 szalagos NTG-hez megadható vele ekvivalens 1 szalagos DTG.",
         "correct": true
       },
-      { "text": "Minden nyelv felismerhető NTG-vel.", "correct": false }
+      {
+        "text": "Minden nyelv felismerhető NTG-vel.",
+        "correct": false
+      }
     ],
     "explanation": "Nyelvosztály szinten a DTG és NTG felismerhető nyelvei megegyeznek (RE). Ezért létezik 1-szalagos DTG, ami ekvivalens egy 3-szalagos NTG-vel (időveszteség lehet, de az állítás nem köt időt). A többi állítás túl erős vagy hamis."
   },
@@ -744,10 +1271,22 @@
     "id": "2024-12-11_MC_07",
     "question": "Melyik eldöntésprobléma vezethető vissza a másikra? LU={⟨M,w⟩ | w∈L(M)}, LHalt={⟨M,w⟩ | M megáll w-n}.",
     "options": [
-      { "text": "Csak LU vezethető vissza LHalt-ra.", "correct": false },
-      { "text": "Csak LHalt vezethető vissza LU-ra.", "correct": false },
-      { "text": "Egyik sem vezethető vissza a másikra.", "correct": false },
-      { "text": "Mindkettő vezethető vissza a másikra.", "correct": true }
+      {
+        "text": "Csak LU vezethető vissza LHalt-ra.",
+        "correct": false
+      },
+      {
+        "text": "Csak LHalt vezethető vissza LU-ra.",
+        "correct": false
+      },
+      {
+        "text": "Egyik sem vezethető vissza a másikra.",
+        "correct": false
+      },
+      {
+        "text": "Mindkettő vezethető vissza a másikra.",
+        "correct": true
+      }
     ],
     "explanation": "LU ≤ LHalt: készítünk M'-t, ami akkor és csak akkor áll meg, ha M elfogad. LHalt ≤ LU: készítünk M''-t, ami akkor és csak akkor fogad el, ha M megáll. Így kölcsönösen visszavezethetők."
   },
@@ -755,10 +1294,22 @@
     "id": "2024-12-11_MC_08",
     "question": "Legyenek L és L' NP-beli problémák. Mikor jelenthetjük ki biztosan, hogy L' NP-teljes?",
     "options": [
-      { "text": "Ha L NP-teljes és L ≤p L'.", "correct": true },
-      { "text": "Ha L NP-teljes és L ≤ L'.", "correct": false },
-      { "text": "Ha L NP-teljes és L' ≤p L.", "correct": false },
-      { "text": "Ha L NP-teljes és L' ≤ L.", "correct": false }
+      {
+        "text": "Ha L NP-teljes és L ≤p L'.",
+        "correct": true
+      },
+      {
+        "text": "Ha L NP-teljes és L ≤ L'.",
+        "correct": false
+      },
+      {
+        "text": "Ha L NP-teljes és L' ≤p L.",
+        "correct": false
+      },
+      {
+        "text": "Ha L NP-teljes és L' ≤ L.",
+        "correct": false
+      }
     ],
     "explanation": "NP-teljességhez kell: L'∈NP (adott) és NP-nehézség. NP-nehézséghez elég egy ismert NP-teljes L-ről polinomiális redukciót adni L' felé: L ≤p L'."
   },
@@ -766,10 +1317,22 @@
     "id": "2024-12-11_MC_09",
     "question": "Melyik, bonyolultsági osztályok közötti összefüggés igaz biztosan?",
     "options": [
-      { "text": "TIME(f(n)) ⊆ SPACE(f(n))", "correct": true },
-      { "text": "SPACE(f(n)) ⊆ TIME(f(n))", "correct": false },
-      { "text": "NTIME(f(n)) ⊆ TIME(f(n))", "correct": false },
-      { "text": "NSPACE(f(n)) ⊆ SPACE(f(n))", "correct": false }
+      {
+        "text": "TIME(f(n)) ⊆ SPACE(f(n))",
+        "correct": true
+      },
+      {
+        "text": "SPACE(f(n)) ⊆ TIME(f(n))",
+        "correct": false
+      },
+      {
+        "text": "NTIME(f(n)) ⊆ TIME(f(n))",
+        "correct": false
+      },
+      {
+        "text": "NSPACE(f(n)) ⊆ SPACE(f(n))",
+        "correct": false
+      }
     ],
     "explanation": "Ha egy gép legfeljebb f(n) lépést tesz, akkor legfeljebb f(n) különböző cellát tud bejárni/írni, tehát a tárigénye is O(f(n)). A többi irány/egyenlőség általánosan nem garantált."
   },
@@ -777,10 +1340,22 @@
     "id": "2024-12-11_MC_10",
     "question": "Melyik páros eleme a Részletösszeg nyelvnek (célösszeg: 29)?",
     "options": [
-      { "text": "({1,2,4,8,16}, 29)", "correct": true },
-      { "text": "({1,3,9,27,81}, 29)", "correct": false },
-      { "text": "({1,2,3,4,5,6,7}, 29)", "correct": false },
-      { "text": "({2,3,5,7,11}, 29)", "correct": false }
+      {
+        "text": "({1,2,4,8,16}, 29)",
+        "correct": true
+      },
+      {
+        "text": "({1,3,9,27,81}, 29)",
+        "correct": false
+      },
+      {
+        "text": "({1,2,3,4,5,6,7}, 29)",
+        "correct": false
+      },
+      {
+        "text": "({2,3,5,7,11}, 29)",
+        "correct": false
+      }
     ],
     "explanation": "Részletösszegben azt kérdezzük: van-e részhalmaz, ami 29-re összegződik. Az elsőnél 16+8+4+1=29, tehát igen. A többi halmaz összegéből nem állítható elő 29 (pl. 1..7 összege 28)."
   }

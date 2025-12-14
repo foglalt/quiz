@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap");
+
 :root {
   --bg: #0f172a;
   --card: #131c31;
@@ -6,6 +8,9 @@
   --text: #e2e8f0;
   --muted: #9ca3af;
   --border: #1f2937;
+  --font-sans: "Space Grotesk", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", "Cascadia Code", Consolas, "Noto Sans Math",
+    "Segoe UI Symbol", monospace;
 }
 
 * {
@@ -18,7 +23,7 @@ body {
     radial-gradient(circle at 80% 0%, rgba(34, 197, 94, 0.18), transparent 30%),
     var(--bg);
   color: var(--text);
-  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-sans);
   min-height: 100vh;
 }
 
@@ -130,8 +135,15 @@ h1 {
   padding: 12px;
   color: var(--text);
   white-space: pre-wrap;
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-family: var(--font-mono);
   line-height: 1.45;
+}
+
+.question-text sup,
+.option sup,
+.feedback sup {
+  font-size: 0.85em;
+  vertical-align: super;
 }
 
 .options {

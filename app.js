@@ -19,6 +19,24 @@ const state = {
   answers: new Map(), // id -> {selected, correct}
 };
 
+const escapeHtml = (text = "") =>
+  text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
+const formatMathLike = (text = "") => {
+  const escaped = escapeHtml(text);
+  const supified = escaped.replace(/([\p{L}\p{N}\)\]])\^(\d+)/gu, "$1<sup>$2</sup>");
+  return supified.replace(/\n/g, "<br>");
+};
+
+const setFormattedHtml = (el, text = "") => {
+  el.innerHTML = formatMathLike(text);
+};
+
 const shuffle = (arr) => {
   const copy = [...arr];
   for (let i = copy.length - 1; i > 0; i -= 1) {
@@ -58,9 +76,9 @@ function currentQuestion() {
 function renderQuestion() {
   if (!state.deck.length) {
     els.questionTitle.textContent = "Nincs kérdés";
-    els.questionText.textContent = "Adj hozzá kérdéseket a questions.json fájlba.";
+    setFormattedHtml(els.questionText, "Adj hozzá kérdéseket a questions.json fájlba.");
     els.options.innerHTML = "";
-    els.feedback.textContent = "";
+    els.feedback.innerHTML = "";
     els.next.disabled = true;
     els.prev.disabled = true;
     updateStats();
@@ -71,13 +89,13 @@ function renderQuestion() {
   const answer = state.answers.get(q.id);
 
   els.questionTitle.textContent = `Kérdés ${state.currentIndex + 1}`;
-  els.questionText.textContent = q.question;
+  setFormattedHtml(els.questionText, q.question);
   els.options.innerHTML = "";
 
   q.options.forEach((opt, idx) => {
     const btn = document.createElement("button");
     btn.className = "option";
-    btn.textContent = opt.text || "—";
+    btn.innerHTML = formatMathLike(opt.text || "—");
     btn.type = "button";
     btn.disabled = !!answer;
     btn.addEventListener("click", () => handleAnswer(idx));
@@ -92,7 +110,7 @@ function renderQuestion() {
 
   els.prev.disabled = state.currentIndex === 0;
   els.next.disabled = !answer;
-  els.feedback.textContent = answer ? feedbackMessage(q, answer.selected) : "";
+  setFormattedHtml(els.feedback, answer ? feedbackMessage(q, answer.selected) : "");
   updateStats();
 }
 
@@ -110,7 +128,7 @@ function handleAnswer(idx) {
   }
 
   lockOptions(q, idx);
-  els.feedback.textContent = feedbackMessage(q, idx);
+  setFormattedHtml(els.feedback, feedbackMessage(q, idx));
   els.next.disabled = false;
   updateStats();
 }
@@ -156,7 +174,10 @@ function goNext() {
     state.currentIndex += 1;
     renderQuestion();
   } else {
-    els.feedback.textContent = "Végigértél ezen a körön. Újrakezdés gombokkal választhatsz új paklit.";
+    setFormattedHtml(
+      els.feedback,
+      "Végigértél ezen a körön. Újrakezdés gombokkal választhatsz új paklit."
+    );
   }
 }
 
@@ -173,14 +194,20 @@ function restartAll() {
 
 function restartWrong() {
   if (!state.answers.size) {
-    els.feedback.textContent = "Előbb válaszolj néhány kérdésre, hogy legyen hibás lista.";
+    setFormattedHtml(
+      els.feedback,
+      "Előbb válaszolj néhány kérdésre, hogy legyen hibás lista."
+    );
     return;
   }
   const wrongIds = Array.from(state.answers.entries())
     .filter(([, ans]) => !ans.correct)
     .map(([id]) => id);
   if (!wrongIds.length) {
-    els.feedback.textContent = "Nincs hibás válasz ebből a körből, menj végig az összesen.";
+    setFormattedHtml(
+      els.feedback,
+      "Nincs hibás válasz ebből a körből, menj végig az összesen."
+    );
     return;
   }
   const subset = state.allQuestions.filter((q) => wrongIds.includes(q.id));
