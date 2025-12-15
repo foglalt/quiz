@@ -460,14 +460,14 @@
     "options": [
       {
         "text": "Igaz",
-        "correct": false
+        "correct": true
       },
       {
         "text": "Hamis",
-        "correct": true
+        "correct": false
       }
     ],
-    "explanation": "Chomsky-normálformában megengedett lehet az S→ε szabály is (ha a nyelv tartalmazza az üres szót). Ez egy hosszcsökkenés (1 szimbólumról 0-ra), tehát nem garantálható, hogy minden CNF grammatika hossz-nemcsökkentő."
+    "explanation": "Chomsky-normálformában megengedett lehet az S→ε szabály is, de ez a hossz-nemcsökkentő grammatikák esetén is megengedett, ha az üres szó a nyelv része. Egyébként minden szabály jobboldala legalább olyan hosszú, mint a bal oldala."
   },
   {
     "id": "2023-06-05_TF_02",
@@ -696,7 +696,7 @@
   },
   {
     "id": "MINTA_TF_02",
-    "question": "Minden hossznemcsökkentő grammatika egyben Kuroda normálformájú grammatika is.",
+    "question": "Minden hossz-nemcsökkentő grammatika egyben Kuroda normálformájú grammatika is.",
     "options": [
       {
         "text": "Igaz",
@@ -903,21 +903,6 @@
       }
     ],
     "explanation": "Horn-formula (klózonként legfeljebb 1 pozitív literál) és itt kielégíthető is: ¬z miatt z=false, ebből (¬y ∨ z) miatt y=false, majd (¬x ∨ y) miatt x=false. Ezzel az első klóz is igaz, tehát nem „hamis példány”."
-  },
-  {
-    "id": "2024-12-11_TF_01",
-    "question": "Minden Chomsky normálformájú grammatika egyben hossz-nemcsökkentő grammatika is.",
-    "options": [
-      {
-        "text": "Igaz",
-        "correct": false
-      },
-      {
-        "text": "Hamis",
-        "correct": true
-      }
-    ],
-    "explanation": "CNF-ben megengedett lehet az S→ε szabály; ez hosszcsökkenés. Ezért nem áll, hogy minden CNF grammatika hossz-nemcsökkentő."
   },
   {
     "id": "2024-12-11_TF_02",
