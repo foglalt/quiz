@@ -42,7 +42,7 @@
         "correct": false
       }
     ],
-    "explanation": "A Kuroda-normálformában megengedettek az A→BC, AB→CD, A→a alakok (és esetleg S→ε). A megadott szabályok ezekbe illenek."
+    "explanation": "A Kuroda-normálformában megengedettek az A→BC, AB→AC, AB→CB, A→a alakok (és esetleg S→ε). A megadott szabályok ezekbe illenek."
   },
   {
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_04",
@@ -1372,7 +1372,7 @@
         "correct": false
       }
     ],
-    "explanation": "A Kuroda-normálformában a szabályok alakja (pl. A→BC, AB→CD, A→a) nem csökkenti a szó hosszát; ezért ilyen grammatika hossznemcsökkentő."
+    "explanation": "A Kuroda-normálformában a szabályok alakja (A→BC, AB→AC, AB→CB, A→a) nem csökkenti a szó hosszát; ezért ilyen grammatika hossznemcsökkentő."
   },
   {
     "id": "Számelm-Vizsga_igazhamis_p1_03",
