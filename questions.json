@@ -110,14 +110,14 @@
     "options": [
       {
         "text": "Igaz",
-        "correct": true
+        "correct": false
       },
       {
         "text": "Hamis",
-        "correct": false
+        "correct": true
       }
     ],
-    "explanation": "Shortlex: először hossz szerint, azon belül lexikografikusan. Hossz 1: a,b; hossz 2: aa,ab,…"
+    "explanation": "Shortlex: először hossz szerint, azon belül lexikografikusan. Hossz 1: a,b; hossz 2: aa,ab,… Ez így jó, csak kell az elejére az epszilon is!"
   },
   {
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_09",
@@ -1343,5 +1343,455 @@
       }
     ],
     "explanation": "Részletösszegben azt kérdezzük: van-e részhalmaz, ami 29-re összegződik. Az elsőnél 16+8+4+1=29, tehát igen. A többi halmaz összegéből nem állítható elő 29 (pl. 1..7 összege 28)."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p1_01",
+    "question": "Minden környezetfüggő nyelv generálható Chomsky normálformájú grammatikával.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "A Chomsky-normálforma környezetfüggetlen (2-es típusú) grammatikák normálformája, így legfeljebb környezetfüggetlen nyelveket generál; a környezetfüggő nyelvek ennél általánosabbak."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p1_02",
+    "question": "Minden Kuroda normálformájú grammatika egyben hossznemcsökkentő grammatika is.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ],
+    "explanation": "A Kuroda-normálformában a szabályok alakja (pl. A→BC, AB→CD, A→a) nem csökkenti a szó hosszát; ezért ilyen grammatika hossznemcsökkentő."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p1_03",
+    "question": "Az x → y → z ítéletlogikai formula helyes zárójelezése ((x → y) → z).",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "Az implikáció szokásos konvenció szerint jobbra asszociatív, tehát x→y→z jelentése x→(y→z), nem pedig (x→y)→z."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p1_04",
+    "question": "Algoritmikusan eldönthető, hogy egy zárt elsőrendű logikai formula kielégíthető-e.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "Az elsőrendű logika kielégíthetőségi (és érvényességi) problémája általánosan eldönthetetlen."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p1_05",
+    "question": "L_Átló komplementere RE\\R-ben van.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ],
+    "explanation": "A szokásos átlónyelv L_Átló = {⟨M⟩ | ⟨M⟩ ∉ L(M)} nem Turing-felismerhető, viszont a komplementere L_Átló' = {⟨M⟩ | ⟨M⟩ ∈ L(M)} Turing-felismerhető, de nem eldönthető, tehát RE\\R."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p1_06",
+    "question": "Ha az M egyszalagos, determinisztikus Turing gép három lépésben elfogadja az abc inputszót, akkor az abcabc inputszót 6 lépésben fogadja el.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "Egy konkrét inputra adott futásidőből nem következik általános „duplázódási” tulajdonság; az abcabc viselkedése gépfüggő, lehet elutasítás vagy más futásidő is."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p1_07",
+    "question": "Egy L nyelvet eldöntő NTG egy u inputszóhoz tartozó nemdeterminisztikus számításifájának minden levele elfogadó konfiguráció.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "Eldöntő NTG-nél minden ág megáll, de igen-példány esetén elég, hogy legyen legalább egy elfogadó levél; lehetnek elutasító levelek is."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p1_08",
+    "question": "Minden reguláris nyelv felismerhető lineárisan korlátolt automatával.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ],
+    "explanation": "A reguláris nyelvek a környezetfüggő nyelvek részhalmazai; egy LBA (vagy akár PDA/TG) tudja szimulálni a véges automatát."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p1_09",
+    "question": "Tetszőleges G1 és G2 CF grammatikák esetén algoritmikusan eldönthető, hogy L(G1) ⊆ L(G2).",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "A környezetfüggetlen nyelvek inklúziója általánosan eldönthetetlen."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p1_10",
+    "question": "Minden L1, L2 ∈ R esetén, ha L1 ≤p L2, akkor L2 ≤p L1.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "A polinomidőben számítható sok-egy visszavezethetőség nem szimmetrikus: L1≤pL2 nem implikálja L2≤pL1."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p1_11",
+    "question": "Minden egyszerű, 8 csúcsú, összefüggő G gráfban ha van 3 csúcsból álló klikk, akkor van a gráfban 5 csúcsból álló független ponthalmaz.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "Ellenpélda: a teljes gráf K8 tartalmaz 3-klikket, de a legnagyobb független ponthalmaza 1 elemű."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p1_12",
+    "question": "Ismert, hogy a 3SAT probléma P-teljes.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "A 3SAT NP-teljes (NP-komplett). P-teljességhez P-beli tagság kellene, amit nem ismerünk (ez P=NP-t implikálna)."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p1_13",
+    "question": "Az { a/ab, abc/c, b/ca, ca/a, dd/e } dominókészletnek van megoldása.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ],
+    "explanation": "Például a (a/ab),(b/ca),(ca/a),(a/ab),(abc/c) sorrendnél a felső összefűzés: a·b·ca·a·abc = abcaaabc, az alsó: ab·ca·a·ab·c = abcaaabc, tehát megoldás."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p1_14",
+    "question": "SPACE(log(n)) ⊆ NSPACE(log(n)).",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ],
+    "explanation": "A determinisztikus log-tárigényű gépek a nemdeterminisztikus log-tárigényűek speciális esetei, így az inklúzió triviálisan teljesül."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p1_15",
+    "question": "A (x ∨ y ∨ z) ∧ (¬x ∨ y) ∧ (¬y ∨ z) ∧ ¬z formula a Horn-SAT probléma egy hamis példánya.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ],
+    "explanation": "Horn-klózban legfeljebb egy pozitív literál lehet. Az (x∨y∨z) klóz három pozitív literált tartalmaz, ezért a formula nem Horn, így nem tartozik a Horn-SAT (kielégíthető Horn formulák) nyelvbe, tehát NO/„hamis” példány."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p2_01",
+    "question": "Minden Chomsky normálformájú grammatikával generálható nyelv generálható környezetfüggő grammatikával is.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ],
+    "explanation": "Chomsky-normálformájú grammatika környezetfüggetlen nyelvet generál; minden környezetfüggetlen nyelv egyben környezetfüggő is (a nyelvosztályok egymásba ágyazottak)."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p2_02",
+    "question": "Minden hossznemcsökkentő grammatika egyben Kuroda normálformájú grammatika is.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "A hossznemcsökkentő grammatika (típus-1) ugyan átalakítható Kuroda-normálformára, de ettől még nem „eleve” Kuroda-normálformájú."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p2_03",
+    "question": "Az x ∧ y ∨ z ítéletlogikai formula helyes zárójelezése ((x ∧ y) ∨ z).",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ],
+    "explanation": "A szokásos precedencia szerint ∧ erősebben köt, mint ∨, ezért x∧y∨z = (x∧y)∨z."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p2_04",
+    "question": "Algoritmikusan eldönthető, hogy egy zárt elsőrendű logikai formula tautológia-e.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "Az elsőrendű logika érvényessége/tautologikussága általánosan eldönthetetlen."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p2_05",
+    "question": "L_Halt komplementere RE\\R-ben van.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "L_Halt Turing-felismerhető, de nem eldönthető (RE\\R). Ennek komplementere nem Turing-felismerhető (tehát nincs benne az RE-ben)."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p2_06",
+    "question": "Ha az M egyszalagos, determinisztikus Turing gép három lépésben elfogadja az abc inputszót, akkor az abcabc inputszót 6 lépésben fogadja el.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "Nincs általános tétel, hogy az input megkettőzésével a futásidő is pontosan duplázódik; a gép működése a konkrét állapot- és szalagszimbolumfüggvényektől függ."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p2_07",
+    "question": "Egy L nyelvet eldöntő NTG egy u inputszóhoz tartozó nemdeterminisztikus számításifájának minden levele elfogadó konfiguráció.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "Eldöntő NTG-nél minden ág megáll, de igen-példány esetén nem kell, hogy minden ág elfogadjon; elég egy elfogadó ág, míg a többi lehet elutasító."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p2_08",
+    "question": "Minden reguláris nyelv felismerhető lineárisan korlátolt automatával.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ],
+    "explanation": "A reguláris nyelvek felismerhetők véges automatával, amit egy LBA könnyen szimulál, így felismerhetők LBA-val is."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p2_09",
+    "question": "Tetszőleges G1 és G2 CF grammatikák esetén algoritmikusan eldönthető, hogy L(G1) ⊆ L(G2).",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "A CFL-ek inklúzió-problémája eldönthetetlen általánosan."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p2_10",
+    "question": "Minden L1, L2 ∈ R esetén, ha L1 ≤p L2, akkor L2 ≤p L1.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "A ≤p reláció nem ekvivalenciareláció; nem szimmetrikus."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p2_11",
+    "question": "Minden egyszerű, 8 csúcsú, összefüggő G gráfban ha van 3 csúcsból álló klikk, akkor van a gráfban 5 csúcsból álló független ponthalmaz.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "Ismét ellenpélda a K8: van benne 3-klikk, de nincs 5 elemű független ponthalmaz."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p2_12",
+    "question": "Ismert, hogy a 3SAT probléma P-teljes.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "A 3SAT NP-teljes, és nem ismert, hogy P-beli lenne; P-teljességet ezért nem állíthatunk."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p2_13",
+    "question": "Az { a/ab, abc/c, b/ca, ca/a, dd/e } dominókészletnek van megoldása.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ],
+    "explanation": "Ugyanaz a konkrét megoldás működik: (a/ab),(b/ca),(ca/a),(a/ab),(abc/c) → felül és alul is abcaaabc."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p2_14",
+    "question": "SPACE(log(n)) ⊆ NSPACE(log(n)).",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ],
+    "explanation": "Minden determinisztikus log-tárigényű számítás tekinthető nemdeterminisztikusnak is, ezért az inklúzió teljesül."
+  },
+  {
+    "id": "Számelm-Vizsga_igazhamis_p2_15",
+    "question": "A (x ∨ ¬y ∨ ¬z) ∧ (¬x ∨ y) ∧ (¬y ∨ z) ∧ ¬z formula a Horn-SAT probléma egy hamis példánya.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "A formula Horn (minden klózban legfeljebb egy pozitív literál van), és kielégíthető: ¬z miatt z=hamis, ekkor (¬y∨z) miatt y=hamis, (¬x∨y) miatt x=hamis; az első klóz így igaz. Tehát a formula benne van a Horn-SAT nyelvben, nem „hamis” példány."
   }
 ]
