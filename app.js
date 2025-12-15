@@ -35,6 +35,8 @@ const formatMathLike = (text = "") => {
   let formatted = escaped;
   formatted = formatted.replace(/\\overline\{([^}]+)\}/g, '<span class="overline">$1</span>');
   formatted = formatted.replace(/([\p{L}\p{N}])_\{([^}]+)\}/gu, "$1<sub>$2</sub>");
+  // Általánosabb alsó index, ha az aláírás nem betű/szám (pl. ≤_{p})
+  formatted = formatted.replace(/([^\s])_\{([^}]+)\}/g, "$1<sub>$2</sub>");
   formatted = formatted.replace(/([\p{L}\p{N}])_([\p{L}\p{N}]+)/gu, "$1<sub>$2</sub>");
   formatted = formatted.replace(/([\p{L}\p{N}\)\]])\^\{([^}]+)\}/gu, "$1<sup>$2</sup>");
   formatted = formatted.replace(/([\p{L}\p{N}\)\]])\^(\d+)/gu, "$1<sup>$2</sup>");

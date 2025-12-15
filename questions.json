@@ -5,14 +5,14 @@
     "options": [
       {
         "text": "Igaz",
-        "correct": true
+        "correct": false
       },
       {
         "text": "Hamis",
-        "correct": false
+        "correct": true
       }
     ],
-    "explanation": "Az epszilon-mentesítés célja az ε-szabályok eltüntetése, így a szabályok jobb oldala nem lehet üres."
+    "explanation": "Az epszilon-mentesítés célja az ε-szabályok eltüntetése, de az S → ε szabályt hagyhatjuk, ha az üres szó a nyelv része. Így előfordulhat, hogy egy szabály jobboldala üres lesz."
   },
   {
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_02",
@@ -76,7 +76,7 @@
   },
   {
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_06",
-    "question": "Egy M = (Q, Σ, Γ, δ, q0, qi, qn) egy szalagos, determinisztikus TG átmenetfüggvénye egy (Q \\ {qi, qn}) × Γ → Q × Γ × {L, S, R} függvény.",
+    "question": "Egy M = (Q, Σ, Γ, δ, q_{0}, q_{i}, q_{n}) egy szalagos, determinisztikus TG átmenetfüggvénye egy (Q \\ {q_{i}, q_{n}}) × Γ → Q × Γ × {L, S, R} függvény.",
     "options": [
       {
         "text": "Igaz",
@@ -151,7 +151,7 @@
   },
   {
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_11",
-    "question": "Tudjuk, hogy R ⊂ L1.",
+    "question": "Tudjuk, hogy R ⊂ L_{1}.",
     "options": [
       {
         "text": "Igaz",
@@ -162,7 +162,7 @@
         "correct": true
       }
     ],
-    "explanation": "Az ismert irány: L1 ⊆ R (a környezetfüggő nyelvek eldönthetők), nem pedig R ⊆ L1."
+    "explanation": "Az ismert irány: L_{1} ⊆ R (a környezetfüggő nyelvek eldönthetők), nem pedig R ⊆ L_{1}."
   },
   {
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_1_12",
@@ -318,10 +318,10 @@
   },
   {
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_2_05",
-    "question": "Mi az M = (Q, {0, 1}, {0, 1, ⊔}, δ, q0, qi, qn) egy szalagos nemdeterminisztikus TG 01 input szóhoz tartozó kezdőkonfigurációja?",
+    "question": "Mi az M = (Q, {0, 1}, {0, 1, ⊔}, δ, q_{0}, q_{i}, q_{n}) egy szalagos nemdeterminisztikus TG 01 input szóhoz tartozó kezdőkonfigurációja?",
     "options": [
       {
-        "text": "a) q001",
+        "text": "a) q_{0}01",
         "correct": true
       },
       {
@@ -329,7 +329,7 @@
         "correct": false
       },
       {
-        "text": "c) 01q0⊔",
+        "text": "c) 01q_{0}⊔",
         "correct": false
       },
       {
@@ -337,7 +337,7 @@
         "correct": false
       }
     ],
-    "explanation": "Kezdőkonfiguráció standard alakja q0u⊔ (vagy ekvivalensen q0u). u=01 esetén ez q001."
+    "explanation": "Kezdőkonfiguráció standard alakja q_{0}u⊔ (vagy ekvivalensen q_{0}u). u=01 esetén ez q_{0}01."
   },
   {
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_2_06",
@@ -364,26 +364,26 @@
   },
   {
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_2_07",
-    "question": "Melyik igaz biztosan, ha L1 ≤p L2?",
+    "question": "Melyik igaz biztosan, ha L_{1} ≤_{p} L_{2}?",
     "options": [
       {
-        "text": "a) L2 ≤p L1",
+        "text": "a) L_{2} ≤_{p} L_{1}",
         "correct": false
       },
       {
-        "text": "b) L̄2 ≤p L̄1",
+        "text": "b) \\overline{L_{2}} ≤_{p} \\overline{L_{1}}",
         "correct": false
       },
       {
-        "text": "c) L̄1 ≤p L̄2",
+        "text": "c) \\overline{L_{1}} ≤_{p} \\overline{L_{2}}",
         "correct": true
       },
       {
-        "text": "d) L̄2 ≤p L1",
+        "text": "d) \\overline{L_{2}} ≤_{p} L_{1}",
         "correct": false
       }
     ],
-    "explanation": "Ha x∈L1 ⇔ f(x)∈L2, akkor x∈L̄1 ⇔ f(x)∈L̄2 ugyanazzal a redukcióval."
+    "explanation": "Ha x∈L_{1} ⇔ f(x)∈L_{2}, akkor x∈\\overline{L_{1}} ⇔ f(x)∈\\overline{L_{2}} ugyanazzal a redukcióval."
   },
   {
     "id": "2025-01-29_Számításelmélet(B)_Vizsgadolgozat_Minta_2_08",
@@ -471,7 +471,7 @@
   },
   {
     "id": "2023-06-05_TF_02",
-    "question": "Az (ab|ba)* és (ab)* | (ba)* reguláris kifejezések ugyanazt a nyelvet jelölik.",
+    "question": "Az (ab|ba)^{*} és (ab)^{*} | (ba)^{*} reguláris kifejezések ugyanazt a nyelvet jelölik.",
     "options": [
       {
         "text": "Igaz",
@@ -482,11 +482,11 @@
         "correct": true
       }
     ],
-    "explanation": "(ab|ba)* tetszőleges sorrendben engedi az „ab” és „ba” blokkok ismétlését (pl. „abba” = „ab”·„ba”). (ab)* | (ba)* viszont csak tisztán „ab” ismétléseket vagy tisztán „ba” ismétléseket enged, így „abba” nem benne van."
+    "explanation": "(ab|ba)^{*} tetszőleges sorrendben engedi az „ab” és „ba” blokkok ismétlését (pl. „abba” = „ab”·„ba”). (ab)^{*} | (ba)^{*} viszont csak tisztán „ab” ismétléseket vagy tisztán „ba” ismétléseket enged, így „abba” nem benne van."
   },
   {
     "id": "2023-06-05_TF_03",
-    "question": "Bármely L nyelv esetén L* \\\\ L+ = {ε}.",
+    "question": "Bármely L nyelv esetén L^{*} ∖ L^{+} = {ε}.",
     "options": [
       {
         "text": "Igaz",
@@ -531,7 +531,7 @@
   },
   {
     "id": "2023-06-05_TF_06",
-    "question": "Egy lineáris grammatika minden szabálya A→XBY vagy A→Z alakú, ahol A,B∈VN, X,Y,Z∈VT*.",
+    "question": "Egy lineáris grammatika minden szabálya A→XBY vagy A→Z alakú, ahol A,B∈V_{N}, X,Y,Z∈V_{T}^{*}.",
     "options": [
       {
         "text": "Igaz",
@@ -636,7 +636,7 @@
   },
   {
     "id": "2023-06-05_TF_13",
-    "question": "Ha L1 ≤ L2 és L2∈R, akkor L1∈R.",
+    "question": "Ha L_{1} ≤ L_{2} és L_{2}∈R, akkor L_{1}∈R.",
     "options": [
       {
         "text": "Igaz",
@@ -647,11 +647,11 @@
         "correct": false
       }
     ],
-    "explanation": "Ha L1 sok-egy redukálható L2-re egy kiszámítható leképezéssel, és L2 eldönthető, akkor L1-et is el lehet dönteni: kiszámoljuk a leképezést, majd lefuttatjuk L2 döntő algoritmusát."
+    "explanation": "Ha L_{1} sok-egy redukálható L_{2}-re egy kiszámítható leképezéssel, és L_{2} eldönthető, akkor L_{1}-et is el lehet dönteni: kiszámoljuk a leképezést, majd lefuttatjuk L_{2} döntő algoritmusát."
   },
   {
     "id": "2023-06-05_TF_14",
-    "question": "φ és ψ ítéletkalkulusbeli formulákról eldönthető algoritmikusan, hogy φ ∼0 ψ fennáll-e.",
+    "question": "φ és ψ ítéletkalkulusbeli formulákról eldönthető algoritmikusan, hogy φ ∼_{0} ψ fennáll-e.",
     "options": [
       {
         "text": "Igaz",
@@ -662,7 +662,7 @@
         "correct": false
       }
     ],
-    "explanation": "Ítéletlogikában az ekvivalencia eldönthető (pl. igazságtáblával vagy SAT-redukcióval). φ∼0ψ akkor és csak akkor, ha φ↔ψ tautológia."
+    "explanation": "Ítéletlogikában az ekvivalencia eldönthető (pl. igazságtáblával vagy SAT-redukcióval). φ∼_{0}ψ akkor és csak akkor, ha φ↔ψ tautológia."
   },
   {
     "id": "2023-06-05_TF_15",
@@ -801,7 +801,7 @@
   },
   {
     "id": "MINTA_TF_09",
-    "question": "Tetszőleges G1 és G2 környezetfüggetlen grammatikák esetén algoritmikusan eldönthető, hogy L(G1) ⊆ L(G2).",
+    "question": "Tetszőleges G_{1} és G_{2} környezetfüggetlen grammatikák esetén algoritmikusan eldönthető, hogy L(G_{1}) ⊆ L(G_{2}).",
     "options": [
       {
         "text": "Igaz",
@@ -816,7 +816,7 @@
   },
   {
     "id": "MINTA_TF_10",
-    "question": "Minden L1,L2 ∈ R esetén, ha L1 ≤p L2, akkor L2 ≤p L1.",
+    "question": "Minden L_{1},L_{2} ∈ R esetén, ha L_{1} ≤_{p} L_{2}, akkor L_{2} ≤_{p} L_{1}.",
     "options": [
       {
         "text": "Igaz",
@@ -951,7 +951,7 @@
   },
   {
     "id": "2024-12-11_TF_04",
-    "question": "Zérusrendű logikában F formula-halmaz és φ formula esetén F ⊨0 φ akkor és csak akkor, ha F ∪ {¬φ} kielégíthetetlen.",
+    "question": "Zérusrendű logikában F formula-halmaz és φ formula esetén F ⊨_{0} φ akkor és csak akkor, ha F ∪ {¬φ} kielégíthetetlen.",
     "options": [
       {
         "text": "Igaz",
@@ -996,7 +996,7 @@
   },
   {
     "id": "2024-12-11_TF_07",
-    "question": "Egyszalagos nemdeterminisztikus TG esetén: ha u-re q0u ⊢* x qn y fennáll valamilyen x,y-re, akkor u ∉ L(M).",
+    "question": "Egyszalagos nemdeterminisztikus TG esetén: ha u-re q_{0}u ⊢^{*} xq_{n}y fennáll valamilyen x,y ∈ Γ^{+}, akkor u ∉ L(M).",
     "options": [
       {
         "text": "Igaz",
@@ -1007,7 +1007,7 @@
         "correct": true
       }
     ],
-    "explanation": "Nemdeterminisztikus elfogadásnál az számít, hogy létezik-e elfogadó ág (qi-be ér). Az, hogy van elutasító (qn-es) ág, nem zárja ki, hogy egy másik ág elfogadja u-t."
+    "explanation": "Nemdeterminisztikus elfogadásnál az számít, hogy létezik-e elfogadó ág (q_{i}-be ér). Az, hogy van elutasító (q_{n}-es) ág, nem zárja ki, hogy egy másik ág elfogadja u-t."
   },
   {
     "id": "2024-12-11_TF_08",
@@ -1041,7 +1041,7 @@
   },
   {
     "id": "2024-12-11_TF_10",
-    "question": "LPMP NP-teljes.",
+    "question": "L_{PMP} NP-teljes.",
     "options": [
       {
         "text": "Igaz",
@@ -1134,23 +1134,23 @@
     "question": "Melyik Chomsky-féle nyelvosztályokkal kapcsolatos tartalmazási reláció igaz?",
     "options": [
       {
-        "text": "L2 ⊆ L3",
+        "text": "L_{2} ⊆ L_{3}",
         "correct": false
       },
       {
-        "text": "L2 ⊂ L1",
+        "text": "L_{2} ⊂ L_{1}",
         "correct": true
       },
       {
-        "text": "L0 ⊂ L1",
+        "text": "L_{0} ⊂ L_{1}",
         "correct": false
       },
       {
-        "text": "L1 ⊆ L3",
+        "text": "L_{1} ⊆ L_{3}",
         "correct": false
       }
     ],
-    "explanation": "A Chomsky-hierarchia: L3 (reguláris) ⊂ L2 (környezetfüggetlen) ⊂ L1 (környezetfüggő) ⊂ L0 (rekurzívan felsorolható). Ebből L2 ⊂ L1 az igaz."
+    "explanation": "A Chomsky-hierarchia: L_{3} (reguláris) ⊂ L_{2} (környezetfüggetlen) ⊂ L_{1} (környezetfüggő) ⊂ L_{0} (rekurzívan felsorolható). Ebből L_{2} ⊂ L_{1} az igaz."
   },
   {
     "id": "2024-12-11_MC_02",
@@ -1269,14 +1269,14 @@
   },
   {
     "id": "2024-12-11_MC_07",
-    "question": "Melyik eldöntésprobléma vezethető vissza a másikra? LU={⟨M,w⟩ | w∈L(M)}, LHalt={⟨M,w⟩ | M megáll w-n}.",
+    "question": "Melyik eldöntésprobléma vezethető vissza a másikra? L_{U}={⟨M,w⟩ | w∈L(M)}, L_{Halt}={⟨M,w⟩ | M megáll w-n}.",
     "options": [
       {
-        "text": "Csak LU vezethető vissza LHalt-ra.",
+        "text": "Csak L_{U} vezethető vissza L_{Halt}-ra.",
         "correct": false
       },
       {
-        "text": "Csak LHalt vezethető vissza LU-ra.",
+        "text": "Csak L_{Halt} vezethető vissza L_{U}-ra.",
         "correct": false
       },
       {
@@ -1288,14 +1288,14 @@
         "correct": true
       }
     ],
-    "explanation": "LU ≤ LHalt: készítünk M'-t, ami akkor és csak akkor áll meg, ha M elfogad. LHalt ≤ LU: készítünk M''-t, ami akkor és csak akkor fogad el, ha M megáll. Így kölcsönösen visszavezethetők."
+    "explanation": "L_{U} ≤ L_{Halt}: készítünk M'-t, ami akkor és csak akkor áll meg, ha M elfogad. L_{Halt} ≤ L_{U}: készítünk M''-t, ami akkor és csak akkor fogad el, ha M megáll. Így kölcsönösen visszavezethetők."
   },
   {
     "id": "2024-12-11_MC_08",
     "question": "Legyenek L és L' NP-beli problémák. Mikor jelenthetjük ki biztosan, hogy L' NP-teljes?",
     "options": [
       {
-        "text": "Ha L NP-teljes és L ≤p L'.",
+        "text": "Ha L NP-teljes és L ≤_{p} L'.",
         "correct": true
       },
       {
@@ -1303,7 +1303,7 @@
         "correct": false
       },
       {
-        "text": "Ha L NP-teljes és L' ≤p L.",
+        "text": "Ha L NP-teljes és L' ≤_{p} L.",
         "correct": false
       },
       {
@@ -1311,7 +1311,7 @@
         "correct": false
       }
     ],
-    "explanation": "NP-teljességhez kell: L'∈NP (adott) és NP-nehézség. NP-nehézséghez elég egy ismert NP-teljes L-ről polinomiális redukciót adni L' felé: L ≤p L'."
+    "explanation": "NP-teljességhez kell: L'∈NP (adott) és NP-nehézség. NP-nehézséghez elég egy ismert NP-teljes L-ről polinomiális redukciót adni L' felé: L ≤_{p} L'."
   },
   {
     "id": "2024-12-11_MC_09",
