@@ -11,42 +11,23 @@
     <header class="header">
       <div>
         <p class="eyebrow">Kvíz gyakorlás</p>
-        <h1>Kérdések</h1>
-      </div>
-      <div class="controls">
-        <button id="restart-all" class="ghost">Újrakezdés (összes)</button>
-        <button id="restart-wrong" class="ghost">Újrakezdés (csak hibásak)</button>
+        <h1>Válassz témát</h1>
+        <p class="sub">Indítsd el a korábbi Számításelmélet kvízt, vagy a Telekom (PDF-ből) kvízt.</p>
       </div>
     </header>
 
-    <section class="status">
-      <div class="stat">
-        <p class="label">Helyes / összes</p>
-        <p class="value" id="score">0 / 0</p>
-      </div>
-      <div class="stat">
-        <p class="label">Kérdés</p>
-        <p class="value" id="position">1 / 1</p>
-      </div>
-      <div class="progress">
-        <div class="bar" id="progress-bar"></div>
-      </div>
-    </section>
-
-    <section class="card" id="card">
-      <div class="question-block">
-        <h2 id="question-title">Töltés...</h2>
-        <pre id="question-text" class="question-text"></pre>
-      </div>
-      <div id="options" class="options"></div>
-      <div id="feedback" class="feedback"></div>
-      <div class="actions">
-        <button id="prev" class="ghost">Előző</button>
-        <button id="next">Következő</button>
+    <section class="card">
+      <div class="landing">
+        <a class="topic" href="quiz.html?topic=szamelm">
+          <div class="topic-title">Számelm</div>
+          <div class="topic-sub">Korábbi kvíz kérdések</div>
+        </a>
+        <a class="topic" href="quiz.html?topic=telekom">
+          <div class="topic-title">Telekom</div>
+          <div class="topic-sub">Új kérdések a PDF-ből</div>
+        </a>
       </div>
     </section>
   </main>
-
-  <script src="app.js"></script>
 </body>
 </html>

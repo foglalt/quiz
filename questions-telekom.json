@@ -1,0 +1,3793 @@
+[
+  {
+    "id": "beugro-kvizkerdesek-q01",
+    "question": "Mi igaz az 1-perzisztens CSMA protokollra?",
+    "options": [
+      {
+        "text": "Az állomás belehallgat a csatornába. Ha az szabad, akkor küld, különben várakozik, hogy a csatorna szabaddá várjon. Ha felszabadul, azonnal küld.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q02",
+    "question": "Miért van szükség kapcsolat felépítésére TCP esetén?",
+    "options": [
+      {
+        "text": "Állapot kialakítása mindkét végponton (sorszámok)",
+        "correct": true
+      },
+      {
+        "text": "Garantált erőforrások allokálása a végpontok közötti útvonal routereiben.",
+        "correct": false
+      },
+      {
+        "text": "A végpontok authentikálása történik ekkor",
+        "correct": false
+      },
+      {
+        "text": "Dedikált vonal kiépítése a végpontok között.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q03",
+    "question": "Igaz vagy hamis? Az adat sík (data plane) a router agya, ami pl. a konfigurálásért, az útvonal",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q04",
+    "question": "Adott két végpont, melyeket egy switch/router és a köztük lévő két fizikai link kapcsol össze. Mit\nnevezünk sorban-állási késleltetésnek (queueing delay) egy csomag átvitele esetén?",
+    "options": [
+      {
+        "text": "Nincs ilyen…",
+        "correct": false
+      },
+      {
+        "text": "Azt az időt, ami egy csomag első bitjének elküldése és a címzettől kapott válasz üzenet utolsó bitjének",
+        "correct": false
+      },
+      {
+        "text": "Azt az időt, ami egy csomag routeren való áthaladásához szükséges.",
+        "correct": false
+      },
+      {
+        "text": "Azt az időt, amit a csomag a switch/router várakozási sorában várakozással tölt.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q05",
+    "question": "Jelölje be, hogy az állítások mely multiplexálási technikákra igazak!",
+    "options": [
+      {
+        "text": "Frekvencia multiplexálás  A teljes frekvencia tartományt szűkebb sávokra bontja Térbeli multiplexálás  Vezetékes kommunikáció esetén minden egyes csatornához külön pont-pont fizikai kapcsolat tartozik Térbeli multiplexálás  Vezeték nélküli kommunikáció esetén minden egyes csatornához külön antenna rendelődik Frekvencia multiplexálás  Minden állomás saját frekvencia tartományt kap Idő osztásos multiplexitás (TDM)  Diszkrét időszeletek használata Idő osztásos multiplexitás (TDM)  Minden állomás saját időszeletet kap",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q06",
+    "question": "Mi igaz a távolságvektor (distance vector) alapú routing protokollra? / Melyik állítások igazak a",
+    "options": [
+      {
+        "text": "Minden router csak a szomszédjával kommunikál.",
+        "correct": true
+      },
+      {
+        "text": "lényegében elosztott Bellman-Ford algoritmus",
+        "correct": true
+      },
+      {
+        "text": "Aszinkron működés.",
+        "correct": true
+      },
+      {
+        "text": "Minden router minden másikkal kommunikál.",
+        "correct": false
+      },
+      {
+        "text": "lényegében elosztott Dijkstra algoritmus",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q07",
+    "question": "Mi jellemző az IPv4 csomagok fragmentációjára? / Az alábbiak közül melyik állítás igaz a IPv4 csomagok",
+    "options": [
+      {
+        "text": "Memória kezelési problémák a cél állomásnál",
+        "correct": true
+      },
+      {
+        "text": "Memória kezelési problémák a forrás állomásnál",
+        "correct": false
+      },
+      {
+        "text": "A csomagok helyreállítása a cél állomás előtti routereken memória kezelés problémát okoz.",
+        "correct": false
+      },
+      {
+        "text": "Nem okoz problémát a forrás és a cél állomásoknál",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q08",
+    "question": "Egy protokoll CRC-t használ hiba felismeréséhez. Az alkalmazott generátor polinom fokszáma 4. Hány\nbiten ábrázolható a CRC kontrollösszeg (a maradék polinom)?",
+    "options": [
+      {
+        "text": "3",
+        "correct": false
+      },
+      {
+        "text": "4",
+        "correct": true
+      },
+      {
+        "text": "2",
+        "correct": false
+      },
+      {
+        "text": "Nincs összefüggés a fokszám és a CRC kontrollösszeg bitszélessége között.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q09",
+    "question": "Egy kód Hamming-távolsága 15. Hány egyszerű bithibát tudunk detektálni ezzel a kóddal?",
+    "options": [
+      {
+        "text": "14 (d bit hiba felismeréséhez a megengedett (helyes) keretek halmazában legalább d+1 Hamming távolság szükséges.)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q10",
+    "question": "Az ISO/OSI modell mely rétegéhez sorolhatók a következő fogalmak: Optikai kábel, Wifi jel, CAT6UTP\nkábel?",
+    "options": [
+      {
+        "text": "Fizikai réteg/Physical",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q11",
+    "question": "Melyik keretezési technikára igaz? A küldő az adatban előforduló minden 11111 sorozat mögé 0 bitet szúr",
+    "options": [
+      {
+        "text": "be Bit beszúrás",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q12",
+    "question": "Adott 2^N (kettő az N-ediken) állomás, melyek adaptív fabejárás protokollt használnak a\nközeghozzáféréshez. 2 állomás áll készen keret küldésére, melyek ütközést okoznak. Egy adatkeret\nküldése egységesen 1 időegységig tart. Legrosszabb esetben hány időegység szükséges az ütközés\nfeloldásához? [Az első ütközést okozó időt ne vegyük figyelembe. Továbbá tegyük fel, hogy nem érkeznek",
+    "options": [
+      {
+        "text": "újabb kérések a rendszerbe!] 2N",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q13",
+    "question": "Mi igaz a bridge-eknél (hidaknál) látott MAC címek tanulása módszerre?",
+    "options": [
+      {
+        "text": "Új cím csak akkor rakható be, ha egy régit kitörlünk.",
+        "correct": false
+      },
+      {
+        "text": "A beérkező keretben szereplő forrásállomás MAC címét és a beérkezési portot betesszük a továbbítási",
+        "correct": true
+      },
+      {
+        "text": "A beérkező keretben szereplő célállomás MAC címét és a beérkezési portot betesszük a továbbítási táblába.",
+        "correct": false
+      },
+      {
+        "text": "Ismeretlen cél esetén szétküldjük minden szomszédnak a keretet, majd figyeljük a választ és az alapján",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q14",
+    "question": "Mi igaz a sávszélességű átvitelre? / Melyik állítások igazak a szélessávú átvitelre?",
+    "options": [
+      {
+        "text": "a jelet modulációval ülteti egy vivőhullámra",
+        "correct": true
+      },
+      {
+        "text": "egy széles frekvenciatartományban történik az átvitel, nem minden frekvencián kerül átvitelre a jel",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q15",
+    "question": "Igaz vagy hamis? Minden bridge egyben switch is.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q16",
+    "question": "Mit jelent a 3 nyugta duplikátum fogadása a TCP RENO esetén?",
+    "options": [
+      {
+        "text": "Az ablakot 3 szegmenssel csúsztatja a küldő.",
+        "correct": false
+      },
+      {
+        "text": "Olyan, mintha egy nyugta érkezett volna.",
+        "correct": false
+      },
+      {
+        "text": "Csomagvesztést jelez.",
+        "correct": true
+      },
+      {
+        "text": "Helyes átvitelt jelez.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q17",
+    "question": "Legyen az átvitel (throughput) a terhelés (G) függvényében: S(G)\nDinamikus csatorna kiosztást tekintve ideális esetben milyen értéket vesz fel S(G), ha G=0.5?",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q18",
+    "question": "5",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q19",
+    "question": "Az ISO/OSI modell mely rétege foglalja magába a közeghozzáférés vezérlését (MAC)?/Az ISO/OSI",
+    "options": [
+      {
+        "text": "modell mely rétege definiálja a közeghozzáférés vezérlését? Adatkapcsolati réteg/Data Link",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q20",
+    "question": "Egy távolságvektor routing protokollt használó hálózatban az A állomás routing táblája a következő:\nhost | költség | next hop\nB | 7 | B\nC | 10 | C\nD | 1 | D\nE | 14 | E\nB szomszédtól a következő távolságvektort kapja:\nC | 2\nD | 3\nE | 3\nMi lesz C költsége A állomás routing táblájában?",
+    "options": [
+      {
+        "text": "9 (7 + 2) új költség = B-ig vezető költség (A → B) + B-től célállomásig vezető költség (B → célállomás)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q21",
+    "question": "Két szimbólum használata esetén a szimbólum ráta 4 Baud. Négy szimbólum használata mellett mekkora\nlesz a szimbólum ráta, ha semmi mást nem változtatunk?",
+    "options": [
+      {
+        "text": "4 Baud",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q22",
+    "question": "Igaz vagy hamis? A csúszóablak protokoll csatorna kihasználása rosszabb, mint az Alternáló Bit",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q23",
+    "question": "Alternáló bit protokoll (ABP) esetén mekkora kihasználtság érhető el, ha feltesszük, hogy nincs\npropagációs késés, továbbá az adatcsomag és a nyugtacsomag azonos méretű? A csatorna szimmetrikus!",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q24",
+    "question": "5",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q25",
+    "question": "Adott két végpont, melyeket egy switch/router és a köztük lévő két fizikai link kapcsol össze. Mit\nnevezünk feldolgozási késleltetésnek (processing delay) egy csomag átvitele esetén?",
+    "options": [
+      {
+        "text": "Az az idő, amit a routeren a csomag fejléceinek feldolgozása és továbbítási döntések meghozatala igényel.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q26",
+    "question": "Az ISO/OSI modell mely rétegéhez sorolhatók a következő fogalmak: BitTorrent, HTTP, BitCoin kliens?",
+    "options": [
+      {
+        "text": "Alkalmazási réteg/Application",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q27",
+    "question": "Egy kód Hamming-távolsága 2. Hány egyszerű bithibát tudunk detektálni ezzel a kóddal?",
+    "options": [
+      {
+        "text": "1 (d bit hiba felismeréséhez a megengedett (helyes) keretek halmazában legalább d+1 Hamming távolság szükséges.)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q28",
+    "question": "Melyik nyugtázási módszerre igaz az alábbi állítás? Teljes információt ad a forrásnak és jól kezeli a",
+    "options": [
+      {
+        "text": "Egyedi nyugta – individual ACK",
+        "correct": false
+      },
+      {
+        "text": "Teljes információ visszacsatolás - Full Information Feedback",
+        "correct": true
+      },
+      {
+        "text": "Kumulatív nyugta – cummulative ACK",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q29",
+    "question": "Az ISO/OSI mely rétege felelhet szinkronizációs pont menedzsmentéért? (checkpoint beszúrása stb.)",
+    "options": [
+      {
+        "text": "Munkamenet (Ülés) réteg/Session",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q30",
+    "question": "Hogyan befolyásolja a minimális keretméret egy CSMA/CD alapú Ethernet hálózatban, ha a sávszélesség\n25%-kal lecsökken?",
+    "options": [
+      {
+        "text": "A minimális keretméret nő. (25%-kal nő)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q31",
+    "question": "Hogyan befolyásolja a minimális keretméret egy CSMA/CD alapú Ethernet hálózatban, ha a két\nlegtávolabbi hoszt távolsága 25%-kal megnő?",
+    "options": [
+      {
+        "text": "A minimális keretméret növekszik.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q32",
+    "question": "Mely szolgáltatásokért felel az adatkapcsolati réteg? (4 állítás helyes)",
+    "options": [
+      {
+        "text": "Közeghozzáférés vezérlése (MAC)",
+        "correct": true
+      },
+      {
+        "text": "Bitek átvitele a médiumon",
+        "correct": false
+      },
+      {
+        "text": "Útvonal kiválasztás, routing",
+        "correct": false
+      },
+      {
+        "text": "Alkalmazások közötti (végpont-végpont) hibakezelés",
+        "correct": false
+      },
+      {
+        "text": "Alkalmazások közötti (végpont-végpont) megbízhatóság",
+        "correct": false
+      },
+      {
+        "text": "Adatok keretekre tördelése",
+        "correct": true
+      },
+      {
+        "text": "Alkalmazási tűzfal szolgáltatás",
+        "correct": false
+      },
+      {
+        "text": "Per-hop hibakezelés",
+        "correct": true
+      },
+      {
+        "text": "Per-hop megbízhatóság",
+        "correct": true
+      },
+      {
+        "text": "Domain név feloldás",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q33",
+    "question": "Melyik protokollhoz tartozik a végtelenig számlálás problémája? / Melyik protokollhoz kapcsolódik a",
+    "options": [
+      {
+        "text": "végtelenig számlálás problémája? Távolságvektor (distance vector) protokoll",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q34",
+    "question": "Melyik nyugtázási módszerre igaz az alábbi állítás? A nyugta a legnagyobb sorszámot tartalmazza,",
+    "options": [
+      {
+        "text": "Egyedi nyugta – individual ACK",
+        "correct": false
+      },
+      {
+        "text": "Teljes információ visszacsatolás – Full Information Feedback",
+        "correct": false
+      },
+      {
+        "text": "Kumulatív nyugta (Cumulative ACK)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q35",
+    "question": "Mivel arányos az átvitel TCP esetén?",
+    "options": [
+      {
+        "text": "Küldési ablakméret/Meghirdetett ablakméret",
+        "correct": false
+      },
+      {
+        "text": "Meghirdetett ablakméret/RTT",
+        "correct": false
+      },
+      {
+        "text": "Küldési ablakméret/RTT",
+        "correct": true
+      },
+      {
+        "text": "(Küldési ablakméret + Meghirdetett ablakméret)/RTT",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q36",
+    "question": "Kumulatív nyugta (cummulative ACK) esetén miként tudjuk detektálni a csomagvesztést?",
+    "options": [
+      {
+        "text": "A nyugta csomagokban kerülnek jelzésre a fogadott sorszámok, ami alapján a hiányzó csomagok",
+        "correct": false
+      },
+      {
+        "text": "A nyugta csomagokban kerülnek jelzésre a hiányzó sorszámok, ami alapján a hiányzó csomagok",
+        "correct": false
+      },
+      {
+        "text": "Az egyedi nyugták alapján a forrás nyilvántartást vezet a nyugtázott sorszámokról. Ez alapján a hiányzó",
+        "correct": false
+      },
+      {
+        "text": "Az izolált csomagvesztéséket nyugta duplikátumok jelzik. Emellett timerekkel is dolgozik a módszer.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q37",
+    "question": "Mi igaz a Compound TCP-re?",
+    "options": [
+      {
+        "text": "Reno alapú",
+        "correct": true
+      },
+      {
+        "text": "Késleltetés alapú torlódási ablakot is fenntart",
+        "correct": true
+      },
+      {
+        "text": "Csomagvesztés alapú torlódási ablakot is fenntart",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q38",
+    "question": "Legyen d(x,y) két kódszó Hamming-távolsága. Hogyan definiálja egy S kód Hamming távolságát?",
+    "options": [
+      {
+        "text": "Az S-beli kódszavak Hamming távolságának maximuma.",
+        "correct": false
+      },
+      {
+        "text": "Az S-beli kódszó párok Hamming távolságainak a minimuma.",
+        "correct": true
+      },
+      {
+        "text": "Nem definiáljuk.",
+        "correct": false
+      },
+      {
+        "text": "Az S-beli kódszavak Hamming távolságának átlaga.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q39",
+    "question": "Igaz-e az állítás: TCP SYN flood támadás azt használja ki, hogy egy szerver minden beérkező SYN\ncsomaghoz erőforrást foglal a kapcsolat állapotának nyilvántartásához, mely akar 2 percig is lefoglalva\nmaradhat. Amikor rövid időn belül sok ilyen csomag érkezik a rendelkezésre álló erőforrások elfogynak\nés a normális kapcsolatok visszautasításra kerülnek/extrém esetben a szerver összeomlik.\nIgaz",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q40",
+    "question": "Mit nevezünk elnyelődésnek?",
+    "options": [
+      {
+        "text": "A vételi és a küldési energiák különbségét.",
+        "correct": false
+      },
+      {
+        "text": "A küldési és vételi energiák hányadosát.",
+        "correct": true
+      },
+      {
+        "text": "A vételi és a küldési energiák különbségének logaritmusát.",
+        "correct": false
+      },
+      {
+        "text": "A vételi és a küldési energiák különbségének négyzetgyökét.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q41",
+    "question": "Az ISO/OSI modell mely rétege felel az adatkonverzióért különböző reprezentációk között?",
+    "options": [
+      {
+        "text": "Megjelenítési réteg/Presentation",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q42",
+    "question": "Igaz vagy hamis? Egy bridge a szomszéd bridge-eknek küldi el a konfigurációs üzenetet. mely alapján",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q43",
+    "question": "Mik az áramkörkapcsolt hálózat jellemzői?",
+    "options": [
+      {
+        "text": "-Túlterhelés esetén az új résztvevőknek már nem jut erőforrás -Garantált erőforrást kapnak a résztvevők -Az erőforrások előre lefoglalásra kerülnek minden kapcsolathoz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q44",
+    "question": "b) Válassza ki az áramkörkapcsolt hálózat jellemzőit!",
+    "options": [
+      {
+        "text": "Túlterhelés esetén új résztvevőknek már nem jut erőforrás",
+        "correct": true
+      },
+      {
+        "text": "Az információ csomagokban kerül leszállításra",
+        "correct": true
+      },
+      {
+        "text": "Túlterhelés esetén csomagok vesznek el",
+        "correct": false
+      },
+      {
+        "text": "Kapcsolat felépítési és bontási fázis felel az erőforrás lefoglalásáért és felszabadításáért",
+        "correct": true
+      },
+      {
+        "text": "Minden csomag egyedileg kerül továbbításra",
+        "correct": true
+      },
+      {
+        "text": "Dedikált erőforrás allokálódik minden kapcsolathoz",
+        "correct": true
+      },
+      {
+        "text": "",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q45",
+    "question": "Mely állítások igazak a végpont-végpont megbízhatóságra?",
+    "options": [
+      {
+        "text": "Az alkalmazásoknak nem kell a hálózati problémákkal foglalkozniuk, így a megbízhatóság biztosításával",
+        "correct": true
+      },
+      {
+        "text": "A megbízhatóságot minden alkalmazásban egyedileg kell leprogramozni.",
+        "correct": false
+      },
+      {
+        "text": "A hálózat biztosítsa a megbízhatóságot a végpontok között.",
+        "correct": false
+      },
+      {
+        "text": "A hálózat legyen a lehető legegyszerűbb, azaz nem biztosit végpont-végpont megbízhatóságot.",
+        "correct": true
+      },
+      {
+        "text": "A végpont-végpont megbízhatóságot az L3 (Network - Hálózati) réteg biztosítja.",
+        "correct": false
+      },
+      {
+        "text": "A végpont-végpont megbízhatóságot az L4 (Transport - Szállítói) réteg biztosítja.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q46",
+    "question": "Igaz vagy hamis? A csatorna kihasználtság megadja egy csomag elküldésének idejét",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q47",
+    "question": "A megbízható adatátvitel 4 fő célja közül melyik szól arról, hogy: „az adat leszállítása biztosított, sorrend\nhelyes és átvitel során nem módosul\"?",
+    "options": [
+      {
+        "text": "Hatékonyság/Efficiency",
+        "correct": false
+      },
+      {
+        "text": "Helyesség/Correctness",
+        "correct": true
+      },
+      {
+        "text": "Fairség/Fairness",
+        "correct": false
+      },
+      {
+        "text": "Időbeliség/Timeliness",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q48",
+    "question": "Adott egy hálózat:\nA---1 Gbps---B---10 Gbps---C\nés adott 3 folyam:",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q49",
+    "question": "folyam: A-ból B-be küld adatot",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q50",
+    "question": "folyam: B-ból C-be küld adatot",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q51",
+    "question": "folyam: A-ból C-be küld adatot\nMilyen rátát kap a 2. folyam Mbps-ben kifejezve, ha a max-min fair allocation-t alkalmazunk a\nsávszélességek kiosztására (a fenti példában)?",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q52",
+    "question": "0/9.5",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q53",
+    "question": "Mennyi az átviteli késleltetése egy 1500 bájtos csomagnak egy olyan hálózaton, ahol az elérhető adatráta\n12 Gbps? A választ mikromásodpercben (us) adjuk meg! (segítség 1 us = 10^-6 sec, 1Gbps = 10^9 bps",
+    "options": [
+      {
+        "text": "(bits/second))",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q54",
+    "question": "0",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q55",
+    "question": "Mivel egészíti ki az UDP a hálózati réteg(ek)től kapott szolgáltatást?",
+    "options": [
+      {
+        "text": "Lehetővé teszi a demultiplexálást és hibaellenőrzést a célállomáson.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q56",
+    "question": "Milyen hátrányai vannak az áramkör-kapcsolt hálózatoknak?",
+    "options": [
+      {
+        "text": "Hiba esetén új áramkör szükséges",
+        "correct": true
+      },
+      {
+        "text": "Alacsony hatékonyság löketszerű forgalmak és rövid folyamok esetén",
+        "correct": true
+      },
+      {
+        "text": "Bonyolult áramkör felépítés/lebontás",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q57",
+    "question": "Egy csúszóablak (sliding window) protokoll esetén a sorszámok tere 0,1,2,3,4,5,6,7. A fogadó 2 csomagot\ntud pufferelni, a vételi ablakában 2,3 sorszámok szerepelnek. Mit tesz a fogadó egy 1-es sorszámú csomag\nbeérkezése esetén?",
+    "options": [
+      {
+        "text": "Beteszi a vételi ablakba az 1-es sorszámot.",
+        "correct": false
+      },
+      {
+        "text": "Eldobja a csomagot és nyugtát küld.",
+        "correct": true
+      },
+      {
+        "text": "Odaadja a felsőbb rétegének.",
+        "correct": false
+      },
+      {
+        "text": "Eldobja.",
+        "correct": false
+      },
+      {
+        "text": "Visszaküldi a feladónak.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q58",
+    "question": "Az ISO/OSI modell mely rétegéhez tartozik az UDP protokoll?",
+    "options": [
+      {
+        "text": "Szállítói réteg/Transport",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q59",
+    "question": "Igaz vagy hamis? A pipelineing technika nem segít a csatornakihasználtság javításában.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q60",
+    "question": "Milyen viszony az IPS-k között, amikor kölcsönösen fizetség nélkül forgalmazhatnak egymás\nhálózatában?",
+    "options": [
+      {
+        "text": "Peer",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q61",
+    "question": "Az előadáson látott speciális topológiák közül melyik rendelkezik a legjobb hibatoleranciával?",
+    "options": [
+      {
+        "text": "Teljesen összekötött (full-mesh)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q62",
+    "question": "Mi igaz a p-perzisztens CSMA protokollra?",
+    "options": [
+      {
+        "text": "Az állomás belehallgat a csatornába. Ha az szabad, akkor p valószínűséggel küld, és 1-p valószínűséggel vár még egy időegységet (nem küld) és kezdi elölről. Ha foglalt a csatorna, akkor vár 1 időegységet és kezdi elölről. Diszkrét időmodell",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q63",
+    "question": "Megoldja-e a torlódás problémáját a TCP esetén a meghirdetett ablak (advertised window) használata?",
+    "options": [
+      {
+        "text": "Nem, mert ez az ablak csak a fogadót védi a túlterheléstől",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q64",
+    "question": "A 100 Mbps Ethernetnél alkalmazott 4/5 kódolással _%-ot veszítünk a hatékonyságból!",
+    "options": [
+      {
+        "text": "20",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q65",
+    "question": "Mi igaz az alternáló bit protokollra (ABP)? / Mely állítások igazak az alternáló bit protokollra (ABP)?",
+    "options": [
+      {
+        "text": "lépteti a sorszámot mod 2.",
+        "correct": true
+      },
+      {
+        "text": "Küldő egyesével küldi a sorszámmal ellátott kereteket (kezdetben 0-s sorszámmal) és addig nem küld",
+        "correct": true
+      },
+      {
+        "text": "újat, meg nem kap nyugtat a vevőtől egy megadott határidőn belül.",
+        "correct": true
+      },
+      {
+        "text": "",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q66",
+    "question": "Adott egy Distance Vector protokollt használó hálózat. Az u állomás szomszédjai A, B és C állomások.\nAdottak az alábbi élköltségek:\nc(u, A) = 3,\nc(u, B) = 1,\nc(u, C) = 7.\nAz u állomás egy adott időpillanatában megkapja mindhárom szomszéd távolságvektorait:\nd(B) = 12, d(C) = 3, d(D) = 4.\nA\nA\nA\nd(A) = 3, d(C) = 8, d(D) = 2.\nB\nB\nB\nd(A) = 1, d(B) = 2, d(D) = 1.\nC\nC\nC\nu vektorainak frissítése után adjuk meg d(A) távolságot!",
+    "options": [
+      {
+        "text": "u",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q67",
+    "question": "0",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q68",
+    "question": "Mi igaz az AS-ek közötti ún. inter-domain routingra? / Mely állítások igazak az AS-ek közötti ún. inter-",
+    "options": [
+      {
+        "text": "BGP-t használ",
+        "correct": true
+      },
+      {
+        "text": "Útvonal vektor protokollt használ",
+        "correct": true
+      },
+      {
+        "text": "Link state routing protokollt használ",
+        "correct": false
+      },
+      {
+        "text": "Hálózat operátor dönti el, hogy többi válasz közül melyik legyen alkalmazva.",
+        "correct": false
+      },
+      {
+        "text": "Távolság vektor protokollt használ",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q69",
+    "question": "Igaz vagy hamis? A vezérlési sík (control plane) a router agya, ami pl. a konfigurálásáért, az",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q70",
+    "question": "Egy végtelen populációjú ALOHA-rendszer mérései azt mutatják, hogy a rések 10%-a tétlen. Mekkora\na csatorna terhelés?",
+    "options": [
+      {
+        "text": "G = -ln(0.1)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q71",
+    "question": "Egy kód Hamming-távolsága 8. Hány egyszerű bithibát tudunk detektálni ezzel a kóddal?",
+    "options": [
+      {
+        "text": "7 (d bit hiba felismeréséhez a megengedett (helyes) keretek halmazában legalább d+1 Hamming távolság szükséges.)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q72",
+    "question": "Igaz vagy hamis? Az adat sík (data plane) a csomagok feldolgozásáért és továbbításáért felel.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": true
+      },
+      {
+        "text": "Hamis",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q73",
+    "question": "Mely állítások igazak a fizikai rétegre?",
+    "options": [
+      {
+        "text": "Üzenetet visz át két alkalmazás között",
+        "correct": false
+      },
+      {
+        "text": "Minden információ rádióhullámok segítségével kerül átvitelre",
+        "correct": false
+      },
+      {
+        "text": "Szolgáltatása, hogy információt (biteket) visz át két fizikailag összekötött eszköz között",
+        "correct": true
+      },
+      {
+        "text": "Hibajavítást alkalmaz a hálózat különböző rétegeiben előálló zaj kezelésére",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q74",
+    "question": "Melyik keretezési technikára igaz, hogy „Egy speciális ESC (Escape) bájtot szúr be az „adat\" flag bajtok\nelé”?",
+    "options": [
+      {
+        "text": "Bájt beszúrás",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q75",
+    "question": "Egy protokoll CRC-t használ hiba felismeréséhez. Az alkalmazott generátor polinom fokszáma 32. Hány\nbiten ábrázolható a CRC ellenőrzősszeg (a maradék polinom)?",
+    "options": [
+      {
+        "text": "32",
+        "correct": true
+      },
+      {
+        "text": "30",
+        "correct": false
+      },
+      {
+        "text": "31",
+        "correct": false
+      },
+      {
+        "text": "Nincs összefüggés a fokszám és a CRC kontrollösszeg bitszélessége között.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q76",
+    "question": "Mi igaz a Hamming-kódra? / Mely állítások igazak a Hamming-kódra?",
+    "options": [
+      {
+        "text": "Paritást használó technika",
+        "correct": true
+      },
+      {
+        "text": "Mindegyik ellenőrző bit a bitek valamilyen csoportjának a paritását állítja be párosra (vagy páratlanra)",
+        "correct": true
+      },
+      {
+        "text": "2 egész hatvány sorszámú pozíciói lesznek az ellenőrző bitek, azaz 1, 2, 4, 8, 16, ..., a maradék helyeket az",
+        "correct": true
+      },
+      {
+        "text": "A generátor polinomot a protokoll definiálja",
+        "correct": false
+      },
+      {
+        "text": "A polinóm aritmetika mod 2 felett történikú",
+        "correct": false
+      },
+      {
+        "text": "Nem használ redundanciát, emiatt nagyon kompakt kódolás.",
+        "correct": false
+      },
+      {
+        "text": "Polinom osztáson alapuló technika.",
+        "correct": false
+      },
+      {
+        "text": "Minden bitet kétszer küldünk át.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q77",
+    "question": "Az alábbiak közül mi az, ami a TCP fejlécben szerepel, de az UDP fejlécben nem?",
+    "options": [
+      {
+        "text": "Nyugta szám (Acknowledgement number)",
+        "correct": true
+      },
+      {
+        "text": "Sorszám (sequence number)",
+        "correct": true
+      },
+      {
+        "text": "Forrás port",
+        "correct": false
+      },
+      {
+        "text": "Checksum",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q78",
+    "question": "Igaz vagy hamis? Bridge-ek egy porton csak egy állomást tudnak kezelni.",
+    "options": [
+      {
+        "text": "Igaz",
+        "correct": false
+      },
+      {
+        "text": "Hamis",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q79",
+    "question": "Hogyan definiáltuk a helyességet! Egy szállítási mechanizmus helyes, akkor és csak akkor...",
+    "options": [
+      {
+        "text": "Minden elveszett vagy hibás csomagot újraküld.",
+        "correct": true
+      },
+      {
+        "text": "Leszállítja a csomagokat a vevőnek.",
+        "correct": false
+      },
+      {
+        "text": "Leszállítja a csomagokat a vevőnek, ha az lehetséges.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q80",
+    "question": "Mi igaz a BGP protokollra? / Mely állítások igazak a BGP protokollra?",
+    "options": [
+      {
+        "text": "A politikai jellegű szabályokat kézzel konfigurálják a BGP-routeren.",
+        "correct": true
+      },
+      {
+        "text": "A BGP router-ek páronként UDP-összeköttetést létrehozva kommunikálnak egymással.",
+        "correct": false
+      },
+      {
+        "text": "A BGP alapvetően link state protokoll, viszont a router követi a használt útvonalakat, és az útvonalat mondja",
+        "correct": false
+      },
+      {
+        "text": "A BGP router-ek páronként TCP-összeköttetést létrehozva kommunikálnak egymással.",
+        "correct": true
+      },
+      {
+        "text": "Megadható olyan szabály. hogy ne legyen átmenő forgalom bizonyos AS-eken keresztül.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q81",
+    "question": "Adjuk meg helyes sorrendben a három-utas kézfogás üzenetváltásait!",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q82",
+    "question": "SYN a klienstől a szerverhez",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q83",
+    "question": "SYN/ACK a szervertől a klienshez",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q84",
+    "question": "ACK a klienstől a szerverhez",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q85",
+    "question": "Melyik keretezési technikára jellemző? A keretben lévő karakterek számának megadása keret fejlécben",
+    "options": [
+      {
+        "text": "lévő mezőben Karakterszámolás",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q86",
+    "question": "Igaz-e az állítás: Tipikus webes forgalom esetén a TCP hatékony, képes kihasználni a rendelkezésre álló\nszabad hálózati kapacitást (sávszélességet).\nHamis",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q87",
+    "question": "Mi igaz az ALOHA protokollra? / Melyik állítás igaz az ALOHA protokollra?",
+    "options": [
+      {
+        "text": "-Ha van elküldendő adat, akkor elküldi. -Az adat azonnal kiküldésre kerül. -Amikor egy keret küldésre kész, az küldésre kerül a (következő) időrés határon.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q88",
+    "question": "Melyik címosztály esetén lehet a legkevesebb hosztot definiálni egy címosztályon belül.\nC osztály",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q89",
+    "question": "Mi igaz a kapcsolatállapot (link state) alapú routing protokollra? / Melyik állítások igazak a",
+    "options": [
+      {
+        "text": "Megméri a szomszédokhoz vezető költséget, majd ezt elküldi minden routernek.",
+        "correct": true
+      },
+      {
+        "text": "Dijkstra algoritmust alkalmaz",
+        "correct": true
+      },
+      {
+        "text": "Megméri a szomszédokhoz vezető költséget, majd ezt elküldi a szomszédos routereknek (csak nekik).",
+        "correct": false
+      },
+      {
+        "text": "A routing táblát egy központi vezérlő tölti fel.",
+        "correct": false
+      },
+      {
+        "text": "Bellman-Ford algoritmust alkalmaz.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q90",
+    "question": "Melyik csatornára igaz az állítás? Mindkét irányba folyhat kommunikáció, de egyszerre csak egy irány",
+    "options": [
+      {
+        "text": "Mi az a csatorna?",
+        "correct": false
+      },
+      {
+        "text": "Szimplex csatorna",
+        "correct": false
+      },
+      {
+        "text": "Duplex csatorna",
+        "correct": false
+      },
+      {
+        "text": "Fél-duplex csatorna",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q91",
+    "question": "Az előadáson látott naiv hibadetektáló megoldás minden keretet kétszer küld el. Ezt követően a két kópia\negyezését használja a hibamentes átvitel eldöntésére. Mely állítások igazak erre a módszerre?",
+    "options": [
+      {
+        "text": "A hiba javítására is használható, hisz a másolat alapján a hibás bit felülírható.",
+        "correct": false
+      },
+      {
+        "text": "Tökéletes megoldás, mellyel szinte minden hiba detektálható.",
+        "correct": false
+      },
+      {
+        "text": "Gyenge hibavédelemmel rendelkezik.",
+        "correct": true
+      },
+      {
+        "text": "Túl nagy a költsége.",
+        "correct": true
+      },
+      {
+        "text": "Alacsony költsége van.",
+        "correct": false
+      },
+      {
+        "text": "Ethernet is ezt használja.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q92",
+    "question": "Melyik csatornára igaz az állítás? Mindkét irányba folyhat kommunikáció szimultán módon",
+    "options": [
+      {
+        "text": "Mi az a csatorna?",
+        "correct": false
+      },
+      {
+        "text": "Szimplex csatorna",
+        "correct": false
+      },
+      {
+        "text": "Duplex csatorna",
+        "correct": true
+      },
+      {
+        "text": "Fél-duplex csatorna",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q93",
+    "question": "Legyen az átvitel (throughput) a terhelés (G) függvényében: S(G) Dinamikus csatornakiosztást tekintve\nideális esetben milyen értéket vesz fel S(G), ha G=3?",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q94",
+    "question": "0",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q95",
+    "question": "Mekkora a következő két bitsorozat Hamming-távolsága? d(1001, 1011) =",
+    "options": [
+      {
+        "text": "1 (Hamming-távolság: két azonos hosszúságú bitszóban a különböző bitek száma.)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q96",
+    "question": "Mely IPv4 mezőnek nincs megfelelő párja az IPv6 fejlécében?",
+    "options": [
+      {
+        "text": "Checksum (CRC ellenőrzési összeg)",
+        "correct": true
+      },
+      {
+        "text": "Identifier",
+        "correct": true
+      },
+      {
+        "text": "Fejléc hossza (IHL)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q97",
+    "question": "Hogyan állítjuk be az újraküldéshez használt időkorlátot (RTO) a TCP esetén?",
+    "options": [
+      {
+        "text": "2 * RTT",
+        "correct": true
+      },
+      {
+        "text": "2",
+        "correct": false
+      },
+      {
+        "text": "alfa * RTO_old + (1-alfa)*RTT",
+        "correct": false
+      },
+      {
+        "text": "RTT",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q98",
+    "question": "Egy s(t) függvényt a sin(t) vivőhullámra a következőképp kódolunk: sin(t*s(t)). Melyik modulációs\ntechnikát alkalmaztuk?",
+    "options": [
+      {
+        "text": "Amplitúdó moduláció",
+        "correct": false
+      },
+      {
+        "text": "QAM technika (A QAM egyszerre modulálja az amplitúdót és a fázist, de a kérdésben csak",
+        "correct": false
+      },
+      {
+        "text": "Fázis moduláció",
+        "correct": false
+      },
+      {
+        "text": "Frekvencia moduláció",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q99",
+    "question": "A terhelés (G) a protokoll által közölni kívánt csomagok száma egy csomag kiszolgálásának ideje alatt.\nOptimális esetben G>1 esetén az átvitel S(G) =_\n1",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q100",
+    "question": "Adott N állomás, melyek bináris visszaszámlálás protokollt (Mok és Ward féle javítás nélkül) használnak\na közeghozzáféréshez. A versengési időrés 1 időegység. Egy adatkeret küldése szintén egységesen 1\nidőegységig tart. Legjobb esetben hány időegységet kell egy állomásnak várnia a saját kerete átvitelének\nmegkezdése előtt? [Azt az időt már ne számoljuk, amiben a saját keret is átvitelre kerül. Továbbá tegyük",
+    "options": [
+      {
+        "text": "fel, hogy közvetlenül a versengési időrés előtt állunk.] 1",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q101",
+    "question": "Adott N állomás, melyek bináris visszaszámlálás protokollt (Mok és Ward féle javítás nélkül) használnak\na közeghozzáféréshez. A versengési időrés 1 időegység. Egy adatkeret küldése szintén egységesen 1\nidőegységig tart. Legrosszabb esetben hány időegységet kell egy állomásnak várnia a saját kerete\nátvitelének megkezdése előtt? [Azt az időt már ne számoljuk, amiben a saját keret is átvitelre kerül.",
+    "options": [
+      {
+        "text": "Továbbá tegyük fel, hogy közvetlenül a versengési időrés előtt állunk!] Soha nem került átvitelre az állomás kerete, mivel lesz nála nagyobb prioritású/sorszámú állomás, aki küld.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q102",
+    "question": "Mi igaz az útvonal-meghatározásra (routing)? / Melyik állítások igazak az útvonal-meghatározásra",
+    "options": [
+      {
+        "text": "Helyi folyamat.",
+        "correct": false
+      },
+      {
+        "text": "Vezérlési rétegben valósítják meg.",
+        "correct": true
+      },
+      {
+        "text": "A csomagot egy kimenő vonal felé irányítja.",
+        "correct": false
+      },
+      {
+        "text": "A csomag által követendő útvonalak kiszámítása.",
+        "correct": true
+      },
+      {
+        "text": "Időskála: nanosecundum",
+        "correct": false
+      },
+      {
+        "text": "Globális folyamat.",
+        "correct": true
+      },
+      {
+        "text": "Adat síkban (data plane) valósul meg.",
+        "correct": false
+      },
+      {
+        "text": "Időskála: kb. 10 ezredmásodperc",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q103",
+    "question": "Az alábbiak közül melyik protokollt használjuk az ún. váratlan események jelzésére?",
+    "options": [
+      {
+        "text": "UDP",
+        "correct": false
+      },
+      {
+        "text": "RARP",
+        "correct": false
+      },
+      {
+        "text": "ARP",
+        "correct": false
+      },
+      {
+        "text": "ICMP",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q104",
+    "question": "Igaz-e az állítas: Csomagvesztés utáni kis időben a CUBIC TCP küldési rátájának a felfutása gyorsabb,\nmint amit a slow start mechanizmus esetén láttunk.\nIgaz",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q105",
+    "question": "Melyik állítás igaz?",
+    "options": [
+      {
+        "text": "Bridge-ek egy porton csak egy állomást tudnak kezelni.",
+        "correct": false
+      },
+      {
+        "text": "Switchek esetén nincs szükség CSMA/CD-re.",
+        "correct": true
+      },
+      {
+        "text": "Switchek esetén full duplex linkek kötik be az állomásokat.",
+        "correct": true
+      },
+      {
+        "text": "Minden bridge egyben switch is.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q106",
+    "question": "Egy s(t) függvényt a sin(t) vivőhullámra a következőképp kódolunk: sin(t + s(t)). Melyik modulációs\ntechnikát alkalmaztuk?",
+    "options": [
+      {
+        "text": "Amplitúdó moduláció",
+        "correct": false
+      },
+      {
+        "text": "QAM-16 technika",
+        "correct": false
+      },
+      {
+        "text": "Fázis moduláció",
+        "correct": true
+      },
+      {
+        "text": "Frekvencia moduláció",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q107",
+    "question": "Adott két végpont, melyek között egy 120 MB-os file letöltése 2 percet vesz igénybe. Mekkora az átviteli\nráta (throughput) a két oldal között? Mbps-ben",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q108",
+    "question": "0",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q109",
+    "question": "Az ISO/OSI modell mely rétege felel az üzenetek adott állomáson belüli forgalom\nmultiplexálásáért/demultiplexálásáért?",
+    "options": [
+      {
+        "text": "Szállítói réteg/Transport",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q110",
+    "question": "Egy távolságvektor routing protokollt használó hálózatban az A állomás routing táblája a következő:\nhost | költség | next hop\nB | 7 | B\nC | 10 | C\nD | 1 | D\nE | 14 | E\nB szomszédtól a következő távolságvektort kapja:\nC | 2\nD | 3\nE | 3\nMi lesz D költsége A állomás routing táblájában?",
+    "options": [
+      {
+        "text": "1 új költség = B-ig vezető költség (A → B) + B-től célállomásig vezető költség (B → célállomás)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q111",
+    "question": "Mi igaz az ütközés detektálásra (collision detection)?",
+    "options": [
+      {
+        "text": "Minden állomás küldés közben megfigyeli a csatornát. Ha ütközést tapasztal, akkor megszakítja az adást, és végtelen ideig várakozik, majd újra elkezdi leadni a keretet.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q112",
+    "question": "Mi igaz egy hálózat C végpontjához készített feszítőfára? (A hálózat routerekből és végpontokból áll.",
+    "options": [
+      {
+        "text": "Minden routert tartalmaz.",
+        "correct": true
+      },
+      {
+        "text": "C minden routerből elérhető a feszítőfa élei mentén.",
+        "correct": true
+      },
+      {
+        "text": "Minden router egy kimenő éllel rendelkezik.",
+        "correct": true
+      },
+      {
+        "text": "Minden router egy bejövő éllel rendelkezik.",
+        "correct": false
+      },
+      {
+        "text": "Egy router többször is szerepelhet a fában.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q113",
+    "question": "100.\nEgy optikai gerinchálózaton 2 routert 200 km üvegszál köt össze. Az üvegszálban a jelterjedési\nsebesség 2*10^8 m/s. Mekkora propagációs késést tapasztalunk a fenti optikai linken ezredmásodpercben\nkifejezve (ms)? (segítség: 1ms = 10^-3 s)",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q114",
+    "question": "0",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q115",
+    "question": "101.\nEgy globális továbbítási állapot (global forwarding state) akkor és csak akkor érvényes, ha…",
+    "options": [
+      {
+        "text": "Nincsenek zsákutcák (dead ends) a hálózatban.",
+        "correct": true
+      },
+      {
+        "text": "Nincsenek hurkok/körök a hálózatban.",
+        "correct": true
+      },
+      {
+        "text": "Negatív költségű körök vannak a hálózatban.",
+        "correct": false
+      },
+      {
+        "text": "Pozitív költségű körök vannak a hálózatban.",
+        "correct": false
+      },
+      {
+        "text": "Legalább két alternatív útvonal is van minden célállomáshoz.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q116",
+    "question": "102.\nElőrefoglalásos erőforrás kezelés esetén P=1 Gbps erőforrást foglalunk le a és b állomások között.\nAz átlagos ráta A=100 Mbps. Milyen kihasználtsági szintet látunk (százalékban)?",
+    "options": [
+      {
+        "text": "10%",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q117",
+    "question": "103.\nMelyik állítás igaz a bridge-eknél (hidaknál) látott feszítőfa protokollra (STP)?",
+    "options": [
+      {
+        "text": "A fa gyökere a legnagyobb kapacitású állomás, melyet a bridge-ek választanak meg.",
+        "correct": false
+      },
+      {
+        "text": "Az állomások az összes bridge-nek elküldik a konfigurációs üzenetük, mely alapján azok frissítik a gyökér",
+        "correct": false
+      },
+      {
+        "text": "Egy bridge a szomszéd bridge-eknek küldi el a konfigurációs üzenetét, mely alapján azok frissítik a gyökér",
+        "correct": true
+      },
+      {
+        "text": "A kialakított fa optimális továbbítást tesz lehetővé.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q118",
+    "question": "104.\nMelyik állítás igaz a bridge-eknél (hidaknál) látott feszítőfa protokollra (STP)?",
+    "options": [
+      {
+        "text": "Ismeretlen cél esetén szétküldjük minden szomszédnak a keretet, majd figyeljük a választ és az alapján",
+        "correct": false
+      },
+      {
+        "text": "A fa gyökere a legkisebb ID-val rendelkező bridge, melyet a szomszédoktól kapott üzenetek alapján frissít",
+        "correct": true
+      },
+      {
+        "text": "Centralizált algoritmus kiszámítja a gyökérelemhez vezető legrövidebb utakat, majd ezeket alkalmazza a",
+        "correct": false
+      },
+      {
+        "text": "Hurok csak akkor megengedett, ha azzal javítható a teljesítmény.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q119",
+    "question": "105.\nMi a folyam vezérlés (flow control) célja a megbízható adatátvitel során?",
+    "options": [
+      {
+        "text": "A lassú vevő túlterhelésének a megakadályozása.",
+        "correct": true
+      },
+      {
+        "text": "A lassú hálózat túlterhelésének a megakadályozása.",
+        "correct": false
+      },
+      {
+        "text": "A hálózat terheléséhez való alkalmazkodás.",
+        "correct": false
+      },
+      {
+        "text": "Csomagvesztés esetén a agresszívabb küldési stratégia választása.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q120",
+    "question": "106.\nMely modulációs technika használja a vivőhullám több jellemzőjét is a szimbólumok kifejezésére?",
+    "options": [
+      {
+        "text": "Amplitúdó moduláció",
+        "correct": false
+      },
+      {
+        "text": "QAM-16 technika",
+        "correct": true
+      },
+      {
+        "text": "Fázis moduláció",
+        "correct": false
+      },
+      {
+        "text": "Frekvencia moduláció",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q121",
+    "question": "107.\nMit nevezünk torlódásnak? / Mi az a torlódás?",
+    "options": [
+      {
+        "text": "A vevő kapacitása nagyobb, mint amennyivel küldő adni képes",
+        "correct": false
+      },
+      {
+        "text": "Nem emlékszem, de Trónok harca",
+        "correct": false
+      },
+      {
+        "text": "A gyors küldő túlterheli a lassú vevőt.",
+        "correct": false
+      },
+      {
+        "text": "A fogadó terhelése nagyobb, mint a kapacitása.",
+        "correct": false
+      },
+      {
+        "text": "A hálózat terhelése nagyobb, mint a kapacitása.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q122",
+    "question": "108.\nMinek kell teljesülnie a chip vektorokra a CDMA módszer esetén?",
+    "options": [
+      {
+        "text": "Dimenzió számuk maximum kettő lehet a bitek kódolása miatt.",
+        "correct": false
+      },
+      {
+        "text": "Elégséges a lineáris függetlenség megkövetelése.",
+        "correct": false
+      },
+      {
+        "text": "Egységvektoroknak kell lenniük.",
+        "correct": false
+      },
+      {
+        "text": "Páronként ortogonális vektoroknak kell lenniük. (skaláris szorzatuk 0)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q123",
+    "question": "109.\nMi igaz a csomagtovábbításra (forwarding)? / Melyik állítások igazak a csomagtovábbításra",
+    "options": [
+      {
+        "text": "Vezérlési rétegben valósítják meg.",
+        "correct": false
+      },
+      {
+        "text": "A csomagot egy kimenő vonal felé irányítja.",
+        "correct": true
+      },
+      {
+        "text": "Időskála: nanosecundum",
+        "correct": true
+      },
+      {
+        "text": "Időskála: kb. 10 ezredmásodperc",
+        "correct": false
+      },
+      {
+        "text": "Globális folyamat.",
+        "correct": false
+      },
+      {
+        "text": "Adat síkban (data plane) valósul meg.",
+        "correct": true
+      },
+      {
+        "text": "Helyi folyamat.",
+        "correct": true
+      },
+      {
+        "text": "A csomagok által követendő útvonalak kiszámítása.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q124",
+    "question": "110.\nMi igaz a TCP lassú indulás (slow start) mechanizmusára?",
+    "options": [
+      {
+        "text": "Minden nyugta fogadása esetén a küldő egy szegmenssel növeli a torlódási ablakot. Az időben ez gyors, exponenciális növekedést jelent a küldési rátában.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q125",
+    "question": "111.\nEgy kód Hamming-távolsága 25. Hány egyszerű bithibát tudunk javítani ezzel a kóddal?",
+    "options": [
+      {
+        "text": "12 (d bit hiba javításához a megengedett (helyes) keretek halmazában legalább 2d+1 Hamming távolság szükséges)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q126",
+    "question": "112.\nAdott egy fizikai link, ami két eszközt kapcsol össze, melyek kommunikálni szeretnének. Mit\nnevezünk propagációs késésnek (propagation delay) ebben az esetben?",
+    "options": [
+      {
+        "text": "Azt az időt, ami a jelnek szükséges ahhoz, hogy áthaladjon a fizikai közegen, ami összeköti a küldő és a cél eszközöket.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q127",
+    "question": "113.\nEgy ISO/OSI modell mely rétege felel az útválasztásért? / Az ISO/OSI modell mely rétege felel az",
+    "options": [
+      {
+        "text": "útvonal választásáért? Hálózati réteg/Network",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q128",
+    "question": "114.\nIgaz vagy hamis? Az Alternáló Bit Protokoll csatorna kihasználtsága azonos a szimplex megáll és",
+    "options": [
+      {
+        "text": "vár protokoll esetén látottal. Igaz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q129",
+    "question": "115.\nEgy protokoll CRC-t használ hiba felismeréséhez. Az alkalmazott generátor polinom fokszáma 7.\nHány biten ábrázolható a CRC kontrollösszeg (a maradék polinom)?",
+    "options": [
+      {
+        "text": "8",
+        "correct": false
+      },
+      {
+        "text": "7",
+        "correct": true
+      },
+      {
+        "text": "6",
+        "correct": false
+      },
+      {
+        "text": "Nincs összefüggés a fokszám és a CRC kontrollösszeg bitszélessége között.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q130",
+    "question": "116.\nMi a fő probléma a forrás-cél alapú csomag továbbítással (source- and destination-based\nforwarding)?",
+    "options": [
+      {
+        "text": "A további táblákban sokkal több (~n^2) bejegyzést kell nyilvántartani, mint célalapú megoldásnál.",
+        "correct": true
+      },
+      {
+        "text": "Egyik sem igaz a megadott válaszok közül.",
+        "correct": false
+      },
+      {
+        "text": "A forrás cím használatának semmi értelme.",
+        "correct": false
+      },
+      {
+        "text": "Gyakorlatban nem megvalósítható.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q131",
+    "question": "117.\nMely bit hibákat nem képes felismerni a CRC módszer, ha a generátor polinom x^11+x^9+x+1?",
+    "options": [
+      {
+        "text": "ahol a hiba polinom E(x) = x^12+x^10+x^2+x",
+        "correct": true
+      },
+      {
+        "text": "Minden hibát felismer a módszer.",
+        "correct": false
+      },
+      {
+        "text": "ahol a hiba polinom E(x) = x + 1",
+        "correct": false
+      },
+      {
+        "text": "",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q132",
+    "question": "118.\nAz ISO/OSI mely rétegeit nem használjuk az internet architektúrájának leírásához? (Segítség:",
+    "options": [
+      {
+        "text": "Munkamenet (Ülés) réteg/Session",
+        "correct": true
+      },
+      {
+        "text": "Megjelenítési réteg/Presentation",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q133",
+    "question": "119.\nAdott egy Distance Vector protokollt használó hálózat. Az u állomás szomszédjai A, B és C\nállomások. Adottak az alábbi elköltségek:\nc(u, A) = 3,\nc(u, B) = 1,\nc(u, C) = 7.\nAz u állomás egy adott időpillanatában megkapja mindhárom szomszéd távolság vektorait:\nd(B) = 12, d(C) = 3, d(D) = 4.\nA\nA\nA\nd(A) = 3, d(C) = 8, d(D) = 2.\nB\nB\nB\nd(A) = 1, d(B) = 2, d(D) = 1.\nC\nC\nC\nu vektorainak frissítése után adjuk meg d(C) távolságot!",
+    "options": [
+      {
+        "text": "u",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q134",
+    "question": "0",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q135",
+    "question": "120.\nMely bit hibákat nem képes felismerni a CRC módszer, ha a generátor polinom x^4+x+1, ahol x^4\njelöli az \"x a negyediken hatvány\"?",
+    "options": [
+      {
+        "text": "ahol a hiba polinom E(x) = x^5 + x^2 + x",
+        "correct": true
+      },
+      {
+        "text": "Minden hibát felismer a módszer.",
+        "correct": true
+      },
+      {
+        "text": "ahol a hiba polinom E(x) = x + 1",
+        "correct": false
+      },
+      {
+        "text": "",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q136",
+    "question": "121.\nMely réteghez tartozik a VPN alapját adó IPSec?",
+    "options": [
+      {
+        "text": "Alkalmazási réteg/Application",
+        "correct": false
+      },
+      {
+        "text": "Hálózati Réteg/Network",
+        "correct": true
+      },
+      {
+        "text": "Szállítói réteg/Transport",
+        "correct": false
+      },
+      {
+        "text": "Adatkapcsolati réteg/Data link",
+        "correct": false
+      },
+      {
+        "text": "Megjelenítési réteg/Presentation",
+        "correct": false
+      },
+      {
+        "text": "Munkamenet (Ülés) réteg/Session",
+        "correct": false
+      },
+      {
+        "text": "Fizikai réteg/Physical",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q137",
+    "question": "122.\nEgy s(t) függvényt a sin(t) vivőhullámra a következőképp kódolunk: s(t)*sin(t). Melyik modulációs\ntechnikát alkalmaztuk?",
+    "options": [
+      {
+        "text": "Amplitúdó moduláció",
+        "correct": true
+      },
+      {
+        "text": "QAM-16 technika",
+        "correct": false
+      },
+      {
+        "text": "Fázis moduláció",
+        "correct": false
+      },
+      {
+        "text": "Frekvencia moduláció",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q138",
+    "question": "123.\nMi az összefüggés a frekvencia (f), a hullámhossz (L (LAMBDA)) és a fénysebesség (c) között?",
+    "options": [
+      {
+        "text": "F*L = c",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q139",
+    "question": "124.\nMi az, ami biztosan NEM szerepel egy L3 router routing táblájában? / Az alábbiak közül mi az,",
+    "options": [
+      {
+        "text": "TCP port",
+        "correct": true
+      },
+      {
+        "text": "UDP port",
+        "correct": true
+      },
+      {
+        "text": "cél MAC cím",
+        "correct": true
+      },
+      {
+        "text": "forrás MAC cím",
+        "correct": true
+      },
+      {
+        "text": "interface/kimenő port",
+        "correct": false
+      },
+      {
+        "text": "Netmask",
+        "correct": false
+      },
+      {
+        "text": "Network destination (IP cím)",
+        "correct": false
+      },
+      {
+        "text": "Gateway (next hop)",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q140",
+    "question": "125.\nMely réteghez tartozik a TCP és az UDP protokoll?",
+    "options": [
+      {
+        "text": "Szállítói réteg/Transport",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q141",
+    "question": "126.\nMire szolgál a meghirdetett ablak (advertised window) TCP esetén?",
+    "options": [
+      {
+        "text": "A fogadó pufferének méretét mutatja",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q142",
+    "question": "127.\nAz ISO/OSI modell mely rétegéhez tartozik a TCP protokoll?",
+    "options": [
+      {
+        "text": "Szállítói réteg/Transport",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q143",
+    "question": "128.\nMelyik állítás igaz általában a DSL Internet hozzáférésre?",
+    "options": [
+      {
+        "text": "A feltöltési és letöltési csatornák kapacitása szimmetrikus.",
+        "correct": false
+      },
+      {
+        "text": "A feltöltési csatorna kapacitása nagyobb, mint a letöltésié.",
+        "correct": false
+      },
+      {
+        "text": "A letöltési csatorna kapacitása nagyobb, mint a feltöltési csatornáé.",
+        "correct": true
+      },
+      {
+        "text": "A két-irányú telefon csatorna használatos adatkommunikációra.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q144",
+    "question": "129.\nMit jelent az optimalitási elv útvonalkiválasztás esetén?",
+    "options": [
+      {
+        "text": "Legyen P az I-ből K állomásba vezető optimális útvonal. Ekkor bármely J állomást véve a P útvonal mentén,",
+        "correct": true
+      },
+      {
+        "text": "Legyen P az I-ből K állomásba vezető optimális útvonal. Ekkor bármely J állomást véve a P útvonal mentén,",
+        "correct": false
+      },
+      {
+        "text": "Egyik állítás sem igaz. Másnak kell teljesülnie.",
+        "correct": false
+      },
+      {
+        "text": "Legyen P az I-ből K állomásba vezető optimális útvonal. Ekkor bármely J állomást véve a P útvonal mentén,",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q145",
+    "question": "130.\nMelyik címosztály esetén osztható ki a legkevesebb ilyen IP tartomány?",
+    "options": [
+      {
+        "text": "A osztály",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q146",
+    "question": "131.\nMilyen előnyei vannak a csomagkapcsolt hálózatoknak?",
+    "options": [
+      {
+        "text": "Hatékony erőforrásgazdálkodás",
+        "correct": true
+      },
+      {
+        "text": "Jó hibatolerancia",
+        "correct": true
+      },
+      {
+        "text": "Egyszerű megvalósítás",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q147",
+    "question": "132.\nMit csinál Nagle algoritmusa a TCP esetén, ha van nem nyugtázott adat és az elérhető adat < MSS?",
+    "options": [
+      {
+        "text": "Elküldi az adatot.",
+        "correct": false
+      },
+      {
+        "text": "Várakoztatja az adatot egy pufferben, amíg nyugtát nem kap.",
+        "correct": true
+      },
+      {
+        "text": "Eldobja az adatot.",
+        "correct": false
+      },
+      {
+        "text": "Vár egy időegységet és elküldi az adatot.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q148",
+    "question": "133.\nA megbízató adatátvitel 4 fő célja közül melyik szól az adat leszállítási idejének minimalizálásáról.",
+    "options": [
+      {
+        "text": "Helyesség/Correctness",
+        "correct": false
+      },
+      {
+        "text": "Időbeliség/Timeliness",
+        "correct": true
+      },
+      {
+        "text": "Fairség/Fairness",
+        "correct": false
+      },
+      {
+        "text": "Hatékonyság/Efficiency",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q149",
+    "question": "134.\nMikor érvényes egy globális továbbítási állapot (global forwarding state)?",
+    "options": [
+      {
+        "text": "Ha a csomagokat mindig leszállítja a célállomásnak.",
+        "correct": true
+      },
+      {
+        "text": "Ha minden csomópont közvetlen éllel rendelkezik a célállomáshoz.",
+        "correct": false
+      },
+      {
+        "text": "Ha zsákutcák vannak a hálózatban.",
+        "correct": false
+      },
+      {
+        "text": "Ha a csomagokat bármely forrástól tudja továbbítani egy szomszédnak.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q150",
+    "question": "135.\nAz ISO/OSI modell mely rétege felel a csomagtovábbításért? / Az ISO/OSI modell mely rétege",
+    "options": [
+      {
+        "text": "biztosítja a csomagküldést egy adott végpont felé? Hálózati réteg/Network",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q151",
+    "question": "136.\nMit használ az ún. NAT doboz bejövő csomagok esetén a cél IP címek fordításához?",
+    "options": [
+      {
+        "text": "Az IP fejléc proto mezőjét",
+        "correct": false
+      },
+      {
+        "text": "UDP/TCP fejléc cél port mezőjét",
+        "correct": true
+      },
+      {
+        "text": "Az IP fejléc forrás IP cím mezőjét",
+        "correct": false
+      },
+      {
+        "text": "Az UDP/TCP fejléc checksum mezőjét",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q152",
+    "question": "137.\nMi igaz az alapsávú átvitelre? / Mely állítások igazak az alapsávú átvitelre?",
+    "options": [
+      {
+        "text": "a jelet modulálással ülteti egy vivőhullámra",
+        "correct": false
+      },
+      {
+        "text": "a jel minden frekvencián átvitelre kerül",
+        "correct": true
+      },
+      {
+        "text": "a digitális jel direkt árammá vagy feszültséggé alakul",
+        "correct": true
+      },
+      {
+        "text": "egy széles frekvencia tartományban történik az átvitel, nem minden frekvencián kerül átvitelre a jel",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q153",
+    "question": "138.\nAdott N állomás, melyek Alapvető bittérkép protokollt használnak a közeghozzáféréshez. A\nversengési időrés 1 időegység. Egy adatkeret küldése szintén egységesen 1 időegységig tart. Legrosszabb\nesetben hány időegységet kell egy állomásnak várnia a saját keretre átvitelének megkezdése előtt? [Azt",
+    "options": [
+      {
+        "text": "az időrést már ne számoljuk, amiben a saját keret is átvitelre kerül. Továbbá tegyük fel, hogy közvetlenül a versengési időrés előtt állunk]! N",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q154",
+    "question": "139.\nAdott N állomás, melyek Alapvető bittérkép protokollt használnak a közeghozzáféréshez. A\nversengési időérés 1 időegység. Egy adatkeret küldése szintén egységesen 1 időegységig tart. Legjobb\nesetben hány időegységet kell egy állomásnak várnia a saját kerete átvitelének megkezdése előtt? [Azt az",
+    "options": [
+      {
+        "text": "időrést már ne számoljuk, amiben a saját keret is átvitelre kerül. Továbbá tegyük fel, hogy közvetlenül a versengési időrés előtt állunk]! 1",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q155",
+    "question": "140.\nAz alábbiak közül melyik protokollt használjuk az IP címhez tartozó MAC cím feloldására?",
+    "options": [
+      {
+        "text": "UDP",
+        "correct": false
+      },
+      {
+        "text": "RARP",
+        "correct": false
+      },
+      {
+        "text": "ARP",
+        "correct": true
+      },
+      {
+        "text": "ICMP",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q156",
+    "question": "141.\nMikor van értelme áramkör-kapcsolt hálózatot használni?",
+    "options": [
+      {
+        "text": "Amikor az átlagos kihasználtság nagy.",
+        "correct": true
+      },
+      {
+        "text": "Amikor az átlagos kihasználtság kicsi.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q157",
+    "question": "142.\nAz ISO/OSI modell mely rétege definiálja az átvitelre szánt adatok keretekre tördelését?",
+    "options": [
+      {
+        "text": "Adatkapcsolati réteg/Data Link",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q158",
+    "question": "143.\nAdott egy fizikai link, ami két eszközt kapcsol össze, melyek kommunikálni szeretnének. Mit\nnevezünk átviteli késésnek (transmission delay) ebben az esetben?",
+    "options": [
+      {
+        "text": "Az az idő, amely alatt minden küldeni kívánt bit felkerül a linkre / Azt az időt, ami a csomag összes bitjének hálózatra viteléhez szükséges.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q159",
+    "question": "144.\nMi igaz a TCP AIMD mechanizmusara?",
+    "options": [
+      {
+        "text": "Gyors újraküldés esetén csomagvesztés során (dupack) felére csökkentjük a torlódási ablakot.",
+        "correct": true
+      },
+      {
+        "text": "Minden nyugta fogadása esetén \"1/torlódási ablak méret\"-tel növeljük torlódási ablakot.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q160",
+    "question": "145.\nNégy szimbólum használata esetén hány bitet tudunk egy szimbólumba kódolni?",
+    "options": [
+      {
+        "text": "2",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q161",
+    "question": "146.\nMikor használ egy switch elárasztást egy csomag továbbítása során?",
+    "options": [
+      {
+        "text": "Ha a csomag forrásállomása nem szerepel a továbbítási táblában.",
+        "correct": false
+      },
+      {
+        "text": "Mindig.",
+        "correct": false
+      },
+      {
+        "text": "Ha a csomag célállomása nem szerepel a továbbítási táblában.",
+        "correct": true
+      },
+      {
+        "text": "Soha.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q162",
+    "question": "147.\nEgy csúszóablak (sliding window) protokoll esetén a sorszámok tere 0,1,2,3,4,5,6,7, a négy hosszú\nküldési ablakban az 1,2,3,4 sorszámok várnak. Az 1-es sorszámú nyugta beérkezése után, milyen\nsorszámmal lehetnek elküldött de nem nyugtázott csomagok.",
+    "options": [
+      {
+        "text": "1,2,3,4",
+        "correct": false
+      },
+      {
+        "text": "2,3,4",
+        "correct": false
+      },
+      {
+        "text": "5,6,7,8",
+        "correct": false
+      },
+      {
+        "text": "2,3,4,5",
+        "correct": true
+      },
+      {
+        "text": "5",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q163",
+    "question": "148.\nEgy távolságvektor routing protokollt használó hálózatban az A állomás routing táblája a\nkövetkező:\nhost | költség | next hop\nB | 7 | B\nC | 10 | C\nD | 1 | D\nE | 14 | E\nB szomszédtól a következő távolságvektort kapja:\nC | 2\nD | 3\nE | 3\nMi lesz E költsége A állomás routing táblájában?",
+    "options": [
+      {
+        "text": "10 új költség = B-ig vezető költség (A → B) + B-től célállomásig vezető költség (B → célállomás)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q164",
+    "question": "149.\nHogyan tanulják meg a switch-ek a forrás állomás címet?",
+    "options": [
+      {
+        "text": "Ha egy A ponton érkezik egy csomag B állomástól, és B nem szerepel a továbbítási táblában, akkor",
+        "correct": true
+      },
+      {
+        "text": "A switchek nem tanulják a címeket, a csomagokat elárasztásos technikával továbbítják.",
+        "correct": false
+      },
+      {
+        "text": "Ha egy A porton érkezik egy csomag, melyet B állomásnak küldtek, és B nem szerepel a továbbítási",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q165",
+    "question": "150.\nMelyik csatornára igaz az alábbi állítás? A kommunikáció pusztán az egyik irányba lehetséges.",
+    "options": [
+      {
+        "text": "Szimplex csatorna",
+        "correct": true
+      },
+      {
+        "text": "Duplex csatorna",
+        "correct": false
+      },
+      {
+        "text": "Mi az a csatorna?",
+        "correct": false
+      },
+      {
+        "text": "Fél-duplex csatorna",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q166",
+    "question": "151.\nMely állítások igazak a szimplex megáll és vár protokollra (zajos csat.)?",
+    "options": [
+      {
+        "text": "Nyugta elvesztése esetén duplikátumok adódhatnak át a felsőbb rétegeknek a fogadó oldalon.",
+        "correct": true
+      },
+      {
+        "text": "Pipeline technikával küldi a kereteket.",
+        "correct": false
+      },
+      {
+        "text": "Csak duplex csatorna esetén alkalmazható.",
+        "correct": false
+      },
+      {
+        "text": "Csomagvesztés esetén az időzítő lejárta után (timeout) újraküldi a keretet.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q167",
+    "question": "152.\nEgy kód Hamming-távolsága 13. Hány egyszerű bithibát tudunk javítani ezzel a kóddal?",
+    "options": [
+      {
+        "text": "6 (d bit hiba javításához a megengedett (helyes) keretek halmazában legalább 2d+1 Hamming távolság szükséges)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q168",
+    "question": "153.\nAz előadáson látott kihasználtság definíció mellett mi az elérhető legnagyobb kihasználtság?",
+    "options": [
+      {
+        "text": "1",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q169",
+    "question": "154.\nMik történhetnek egy csomaggal átvitel során, melyet egy megbízható végpont-végpont\nadattranszport protokollnak kezelnie kell?",
+    "options": [
+      {
+        "text": "duplikátumok – duplicates",
+        "correct": true
+      },
+      {
+        "text": "ütközés a közös médiumhoz való hozzáférés – collision when accessing to a shared media",
+        "correct": false
+      },
+      {
+        "text": "interferencia – interference",
+        "correct": false
+      },
+      {
+        "text": "csomag darabolódás - fragmentation",
+        "correct": false
+      },
+      {
+        "text": "csomagvesztés – loss",
+        "correct": true
+      },
+      {
+        "text": "várakoztatás - being delayed",
+        "correct": true
+      },
+      {
+        "text": "csomagok sorrendjenek megváltoztatása – reordering",
+        "correct": true
+      },
+      {
+        "text": "meghibásodás – being corrupted",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q170",
+    "question": "155.\nMit értünk csomópont-kapacitás alatt?",
+    "options": [
+      {
+        "text": "A linkek száma kellően nagy, hogy a csomópontokon áthaladó forgalmat minden állomás el tudja vezetni.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q171",
+    "question": "156.\nElőrefoglalásos erőforrás kezelés esetén P=1 Gbps erőforrást foglalunk le a és b állomások között.\nAz átlagos ráta A=10 Mbps. Milyen kihasználtsági szintet látunk (százalékban)?",
+    "options": [
+      {
+        "text": "1%",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q172",
+    "question": "157.\nMi igaz a csúszóablak protokollra? / Mely állítások igazak a csúszóablak protokollra?",
+    "options": [
+      {
+        "text": "Nyugta elvesztése esetén duplikátumok adódhatnak át a felsőbb rétegnek a fogadó oldalon.",
+        "correct": false
+      },
+      {
+        "text": "A keret nyugtázója tartalmazza a következőnek várt keret sorszámát",
+        "correct": true
+      },
+      {
+        "text": "A nem megengedett sorozatszámmal érkező kereteket el kell dobni.",
+        "correct": true
+      },
+      {
+        "text": "Csak duplex csatorna esetén alkalmazható. Adat és nyugta csomagok egyszerre utazhatnak.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q173",
+    "question": "158.\nMelyik keretezési technikára igaz? A keretek rögzített mérettel rendelkeznek, aminek (pl. STS-1",
+    "options": [
+      {
+        "text": "esetén) elküldése 125 us ideig tart Óra alapú keretezés",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q174",
+    "question": "159.\nAdott 2^N (kettő az N-ediken) állomás, melyek adaptív fabejárás protokollt használnak a\nközeghozzáféréshez. 2 állomás áll készen keret küldésére, melyek ütközést okoznak. Egy adatkeret\nküldése egységesen 1 időegységig tart. Legjobb esetben hány időegység szükséges az ütközés\nfeloldásához? [Az első ütközést okozó időt ne vegyük figyelembe. Továbbá tegyük fel, hogy nem érkeznek",
+    "options": [
+      {
+        "text": "újabb kérések a rendszerbe!] 2",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q175",
+    "question": "160.\nEgy 20 MB (megabájtos) fájl letöltése 16 másodpercbe telik. A letöltési adatráta ez esetben __\nMbps, ahol Mbps a megabit perc secundum rövidítése\n10",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q176",
+    "question": "161.\nRendezze sorba az ISO/OSI modell 7 rétegét! Kisebb sorszám kerüljön az alsóbb rétegekhez!",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q177",
+    "question": "Fizikai réteg/Physical",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q178",
+    "question": "Adatkapcsolati réteg/Data link",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q179",
+    "question": "Hálózati réteg/Network",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q180",
+    "question": "Szállítói réteg/Transport",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q181",
+    "question": "Munkamenet (Ülés) réteg/Session",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q182",
+    "question": "Megjelenítési réteg/Presentation",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q183",
+    "question": "Alkalmazási réteg/Application",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q184",
+    "question": "162.\nMekkora a következő két bitsorozat Hamming-távolsága? d(11111,01011) =",
+    "options": [
+      {
+        "text": "2 (Hamming-távolság: két azonos hosszúságú bitszóban a különböző bitek száma.)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q185",
+    "question": "163.\nEgy kód Hamming-távolsága 5. Hány egyszerű bithibát tudunk javítani ezzel a kóddal?",
+    "options": [
+      {
+        "text": "2 (d bit hiba javításához a megengedett (helyes) keretek halmazában legalább 2d+1 Hamming távolság szükséges)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q186",
+    "question": "164.\nRendelje össze a fogalmakat! A bal oldalon egy keretezési technika, a jobb oldalon annak egy\njellemzője álljon! / Alkosson párokat a keretezési technikák jellemzőiből és neveiből!",
+    "options": [
+      {
+        "text": "Bájt beszúrás Egy speciális ESC (escape) bájtot szúr be az “adat” ESC bájtok elé ⇔ Bit beszúrás A Fogadó az adatban előforduló minden 11111 részsorozat után ellenőrzi a következő bitet, majd ⇔ ez alapján tovább Óra alapú keretezés ⇔ SONET hálózatoknál alkalmazzák / A keretek rögzített mérettel rendelkeznek, aminek (pl. STS-1 esetén) elküldése 125 us ideig tart Karakterszámlálás ⇔ Nagyon érzékeny a bithibákra (pl. fejléc meghibásodása) / A keretben lévő karakterek számának megadása keret fejlécben lévő mezőben",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q187",
+    "question": "165.\nAz alábbi három kódolás közül melyiket érdemes használni, ha tudjuk, hogy a csatorna nem\nmegbízható. R(S) jelöli a kód rátáját, q(S) pedig a kód távolságát!",
+    "options": [
+      {
+        "text": "R(S) = 0.5 és q(S) = 0.2 R(S) = 0.5 és q(S) = 0.1 R(S) = 0.7 és q(S) = 0.7 R(S) = 0.9 és q(S) = 0.3",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q188",
+    "question": "166.\nAdott három állomás (A, B, C), melyek CDMA módszert használnak. Jelölje be, hogy mely chip\nvektorok lennének helyesek?",
+    "options": [
+      {
+        "text": "A: (1,1,0); B:(1,-1,0); C:(0,0,-1)",
+        "correct": true
+      },
+      {
+        "text": "A: (0,1,0); B:(1,0,0); C:(1,1,0)",
+        "correct": false
+      },
+      {
+        "text": "A: (1,0,0); B:(0,1,0); C:(0,0,1)",
+        "correct": true
+      },
+      {
+        "text": "A: (1,1,1); B:(-1,-1,0); C:(0,0,-1)",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q189",
+    "question": "167.\nMi történik a visszalépés n-nel stratégia esetén hibás átvitel után?",
+    "options": [
+      {
+        "text": "elveszett kerettel.",
+        "correct": true
+      },
+      {
+        "text": "Negatív nyugtát küld vissza.",
+        "correct": true
+      },
+      {
+        "text": "A hibás keret előtti n keretet újraküldi.",
+        "correct": false
+      },
+      {
+        "text": "",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q190",
+    "question": "168.\nMely bithibát nem képes felismerni a CRC módszer, ha a generátor polinom x^9 + x^2 + x + 1,\nahol pl. x^4 jelöli az “x a negyediken” hatványt?",
+    "options": [
+      {
+        "text": "ahol a hiba polinom E(x) = x^9 + x + 1",
+        "correct": true
+      },
+      {
+        "text": "ahol a hiba polinom E(x) = x + 1",
+        "correct": false
+      },
+      {
+        "text": "Minden hibát felismer a módszer.",
+        "correct": false
+      },
+      {
+        "text": "",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q191",
+    "question": "169.\nMelyik állítás igaz?",
+    "options": [
+      {
+        "text": "A csatorna kihasználtság megadja egy csomag elküldésének idejét.",
+        "correct": false
+      },
+      {
+        "text": "A pipelineing technika nem segít a csatornakihasználtság javításában.",
+        "correct": false
+      },
+      {
+        "text": "Az Alternáló Bit Protokoll csatorna kihasználtsága azonos a szimplex megáll és vár protokoll esetén látottal.",
+        "correct": true
+      },
+      {
+        "text": "",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q192",
+    "question": "170.\nMely bithibát nem képes felismerni a CRC módszer, ha a generátor polinom x^3 + x + 1, ahol pl.\nx^4 jelöli az “x a negyediken” hatványt?",
+    "options": [
+      {
+        "text": "ahol a hiba polinom E(x) = x^4 + x^2 + x",
+        "correct": true
+      },
+      {
+        "text": "Minden hibát felismer a módszer.",
+        "correct": true
+      },
+      {
+        "text": "ahol a hiba polinom E(x) = x + 1",
+        "correct": false
+      },
+      {
+        "text": "",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q193",
+    "question": "171.\nEgy protokoll CRC-t használ hiba felismeréséhez. Az alkalmazott generátor polinom fokszáma 10.\nHány biten ábrázolható a CRC kontrollösszeg (a maradék polinom)?",
+    "options": [
+      {
+        "text": "10",
+        "correct": true
+      },
+      {
+        "text": "11",
+        "correct": false
+      },
+      {
+        "text": "Nincs összefüggés a fokszám és a CRC kontrollösszeg bitszélessége között.",
+        "correct": false
+      },
+      {
+        "text": "9",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q194",
+    "question": "172.\nEgy protokoll CRC-t használ hiba felismeréséhez. Az alkalmazott generátor polinom fokszáma 12.\nHány biten ábrázolható a CRC kontrollösszeg (a maradék polinom)?",
+    "options": [
+      {
+        "text": "11",
+        "correct": false
+      },
+      {
+        "text": "10",
+        "correct": false
+      },
+      {
+        "text": "Nincs összefüggés a fokszám és a CRC kontrollösszeg bitszélessége között.",
+        "correct": false
+      },
+      {
+        "text": "12",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q195",
+    "question": "173.\nMely bithibát nem képes felismerni a CRC módszer, ha a generátor polinom x^11 + x^9 + x + 1,\nahol pl. x^4 jelöli az “x a negyediken” hatványt?",
+    "options": [
+      {
+        "text": "ahol a hiba polinom E(x) = x^12 + x^10 + x^2 + x",
+        "correct": true
+      },
+      {
+        "text": "ahol a hiba polinom E(x) = x^9 + x + 1",
+        "correct": false
+      },
+      {
+        "text": "ahol a hiba polinom E(x) = x + 1",
+        "correct": false
+      },
+      {
+        "text": "Minden hibát felismer a módszer.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q196",
+    "question": "174.\nMit jelent a CIDR?",
+    "options": [
+      {
+        "text": "Osztályok nélküli környezetek közötti forgalomirányítás",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q197",
+    "question": "175.\nHány biten ábrázolják az IPv4 címeket?",
+    "options": [
+      {
+        "text": "32",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q198",
+    "question": "176.\nMit nevezünk végtelenig számlálás problémájának?",
+    "options": [
+      {
+        "text": "Kapcsolatállapot (link state) routing protokoll esetén ha egy él törlődik a hálózatból, akkor az új információ",
+        "correct": false
+      },
+      {
+        "text": "Távolságvektor protokoll esetén, ha egy él költsége csökken, akkor azt csak nagyon lassan tanulja meg a",
+        "correct": true
+      },
+      {
+        "text": "Egyik sem helyes válasz.",
+        "correct": false
+      },
+      {
+        "text": "Feszítőfa protokoll oldja meg a problémát, amit bridge-elt hálózatokban a hurkok okoznak.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q199",
+    "question": "177.\nMit jelent az IPv4 TTL mezője?",
+    "options": [
+      {
+        "text": "Time to live mező, a csomag élettartamára ad korlátot",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q200",
+    "question": "178.\nMelyik címosztály esetén osztható ki IP cím a legtöbb hosztnak egy adott hálozat (aki rendelkezik\ncímtartománnyal) esetén?",
+    "options": [
+      {
+        "text": "A címosztály",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q201",
+    "question": "179.\nMi az ún. loopback interfész címe (localhost) IPv4 hálozatokban?",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q202",
+    "question": "0.0.1",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q203",
+    "question": "180.\nMit nevezünk többes-küldéses forgalomirányításnak IP hálózatokban?",
+    "options": [
+      {
+        "text": "Egy csomag meghatározott csoporthoz történő egyidejű küldése.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q204",
+    "question": "181.\nAdott az alábbi AS gráf részlet:\nazaz AS1 és AS2, továbbá AS2 és AS3 peerek, míg AS4 előfizetője AS1-nek, AS5 előfizetője AS2-nek és AS6\nelőfizetője AS3-nak. Az alábbiak közül mely útvonalak mentén történhet forgalmazás a fenti hálózatban?",
+    "options": [
+      {
+        "text": "AS1 → AS2 → AS3",
+        "correct": false
+      },
+      {
+        "text": "AS5 → AS2 → AS1 → AS4",
+        "correct": true
+      },
+      {
+        "text": "AS4 → AS1 → AS2 → AS3 → AS6",
+        "correct": false
+      },
+      {
+        "text": "AS3 → AS2 → AS1 → AS4",
+        "correct": false
+      },
+      {
+        "text": "AS1 → AS2 → AS5",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q205",
+    "question": "182.\nMilyen lehetőségekkel rendelkezik egy BGP router az útvonal politikák alkalmazására?",
+    "options": [
+      {
+        "text": "Megváltoztathatja a használt intradomain routing protokollt.",
+        "correct": false
+      },
+      {
+        "text": "Dönthet, hogy mely útvonalat használja a rendelkezésre állók közül.",
+        "correct": true
+      },
+      {
+        "text": "Eldöntheti, hogy melyik útvonalakat exportálja a szomszédainak.",
+        "correct": true
+      },
+      {
+        "text": "Meghamisítja az útvonalakat, így okozva piaci kárt a szomszédainak.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q206",
+    "question": "183.\nAz alábbi IPv4 címek közül melyek NEM használhatók globális forgalomirányításra az\ninterneten? Azaz melyek ún. privát IP címek?",
+    "options": [
+      {
+        "text": "",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q207",
+    "question": "168.0.3",
+    "options": [
+      {
+        "text": "",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q208",
+    "question": "168.0.16",
+    "options": [
+      {
+        "text": "",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q209",
+    "question": "0.234.254",
+    "options": [
+      {
+        "text": "",
+        "correct": false
+      },
+      {
+        "text": "A PDF nem tartalmazza a megoldást.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q210",
+    "question": "55.45.34",
+    "options": [
+      {
+        "text": "",
+        "correct": false
+      },
+      {
+        "text": "A PDF nem tartalmazza a megoldást.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q211",
+    "question": "181.33.2",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q212",
+    "question": "184.\nAz alábbiak közül melyek helyes IPv6 címek?",
+    "options": [
+      {
+        "text": "2001:0db8:ff00:ff00:ff00:ff00:0042:8329",
+        "correct": true
+      },
+      {
+        "text": "2001:0db8::ff00:0042:8329",
+        "correct": true
+      },
+      {
+        "text": "2001:0db8:ff00:ff00:ff00:ff00:1234",
+        "correct": false
+      },
+      {
+        "text": "2001:0db8:ff00:ff00:ff00:ff00:5463",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q213",
+    "question": "185.\nHány bájtos egy UDP fejléc?",
+    "options": [
+      {
+        "text": "12",
+        "correct": false
+      },
+      {
+        "text": "8",
+        "correct": true
+      },
+      {
+        "text": "16",
+        "correct": false
+      },
+      {
+        "text": "20",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q214",
+    "question": "186.\nMit old meg a Karn algoritmus a TCP RTO beállítása esetén?",
+    "options": [
+      {
+        "text": "Ha van nyugtázatlan csomag, akkor várakoztatja az adatot.",
+        "correct": false
+      },
+      {
+        "text": "Az újraküldésből keletkező hibás RTT mintákat kiszűri.",
+        "correct": true
+      },
+      {
+        "text": "Megakadályozza, hogy kis csomagokat küldjünk.",
+        "correct": false
+      },
+      {
+        "text": "Nincs ilyen algoritmus a TCP esetén.",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q215",
+    "question": "187.\nMekkora a következő két bitsorozat Hamming-távolsága? d(11111, 11000) =",
+    "options": [
+      {
+        "text": "3 (Hamming-távolság: két azonos hosszúságú bitszóban a különböző bitek száma.)",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q216",
+    "question": "188.\nMely bithibát nem képes felismerni a CRC módszer, ha a generátor polinom x^32 + x^31 + x + 1,\nahol pl. x^4 jelöli az „x a negyediken” hatványt?",
+    "options": [
+      {
+        "text": "ahol a hiba a polinom E(x) = x^33 + x^32 + x^2 + x",
+        "correct": true
+      },
+      {
+        "text": "Minden hibát felismer a módszer.",
+        "correct": true
+      },
+      {
+        "text": "ahol a hiba polinom E(x) = x + 1",
+        "correct": false
+      },
+      {
+        "text": "",
+        "correct": false
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q217",
+    "question": "189.\nAdott 8 állomás, melyek adaptív fabejárás protokollt használnak a közeghozzáféréshez. Az\nállomások sorszámai 1-8, melyek a fa levél szintjén helyezkednek el balról jobbra. A 3. és 4. állomások\nakarnak keretet átvinni a csatornán. A lent látható időérés sorozatok közül melyik tartozik a fenti ütközés\nfeloldásához? [Az első ütközést okozó időrést ne vegyük figyelembe. Továbbá tegyük fel, hogy nem",
+    "options": [
+      {
+        "text": "érkeznek újabb kérések a rendszerbe!] ütközés (3 és 4 küld) | üres | ütközés (3 és 4 küld) | 3 küld | 4 küld | üres",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q218",
+    "question": "190.\nMelyik állítás igaz?",
+    "options": [
+      {
+        "text": "Switchek esetén csak fél-duplex linkek megengedettek.",
+        "correct": false
+      },
+      {
+        "text": "Minden bridge egyben switch is.",
+        "correct": false
+      },
+      {
+        "text": "Bridge minden portja csak egyetlen egy hoszthoz kapcsolható, ami lehet egy másik bridge is.",
+        "correct": false
+      },
+      {
+        "text": "Minden switch egyben bridge is.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q219",
+    "question": "191.\nAdott N állomás, melyek bináris visszaszámlálás protokollt és Mok és Ward féle javítást\nhasználnak a közeghozzáféréshez. 4 állomás áll készen keret küldésére. A versengési időrés 1 időegység.\nEgy adatkeret küldése szintén egységesen 1 időegységig tart. Legrosszabb esetben hány időegységet kell\negy állomásnak várnia a saját kerete átvitelének megkezdése előtt? [Azt az időrést már ne számoljuk,",
+    "options": [
+      {
+        "text": "amiben a saját keret is átvitelre kerül. Továbbá tegyik fel, hogy közvetlenül a versengési időrés előtt állunk! Nem érkeznek újabb kérések a rendszerbe!] 7",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q220",
+    "question": "192.\nAdott N állomás, melyek bináris visszaszámlálás protokollt és Mok és Ward féle javítást\nhasználnak a közeghozzáféréshez. 4 állomás áll készen keret küldésére. A versengési időrés 1 időegység.\nEgy adatkeret küldése szintén egységesen 1 időegységig tart. Legjobb esetben hány időegységet kell egy\nállomásnak várnia a saját kerete átvitelének megkezdése előtt? [Azt az időrést már ne számoljuk, amiben",
+    "options": [
+      {
+        "text": "a saját keret is átvitelre kerül. Továbbá tegyik fel, hogy közvetlenül a versengési időrés előtt állunk! Nem érkeznek újabb kérések a rendszerbe!] 1",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q221",
+    "question": "193.\nMit jelent a vivőjel érzékelési képesség?",
+    "options": [
+      {
+        "text": "Az egyes állomások vagy rendelkeznek ezzel a tulajdonsággal vagy nem. a) Ha nincs, akkor az állomások nem tudják megvizsgálni a közös csatorna állapotát, ezért egyszerűen elkezdenek küldeni, ha van rá lehetőségük b)Ha van, akkor állomások meg tudják vizsgálni a közös csatorna állapotát a küldés előtt. A csatorna lehet: foglalt vagy szabad. Ha a foglalt a csatorna, akkor nem próbálják használni az állomások, amíg fel nem szabadul.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q222",
+    "question": "194.\nMely állítások igazak a Link-State Routing-ra?",
+    "options": [
+      {
+        "text": "A hálózat globális szerkezetét (topológiáját) igényli.",
+        "correct": true
+      },
+      {
+        "text": "Nem igényli a globális hálózat szerkezet ismeretét.",
+        "correct": false
+      },
+      {
+        "text": "Lokális információt csak a szomszédoknak küldik szét a routerek.",
+        "correct": false
+      },
+      {
+        "text": "Lokálisan minden router egy Dijkstra algoritmust futtat.",
+        "correct": true
+      },
+      {
+        "text": "Elárasztással, minden routernek eljuttatja a lokális információkat.",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q223",
+    "question": "195.\nRendezze sorba méret szerint az alábbi hálózatokat! A legkisebb kiterjedésű legyen legelöl!",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q224",
+    "question": "Magánhálózat [PAN]",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q225",
+    "question": "Helyi hálózat [LAN]",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q226",
+    "question": "Városi hálózat [MAN]",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q227",
+    "question": "Nagy kiterjesztésű hálózat",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q228",
+    "question": "Internet",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "beugro-kvizkerdesek-q229",
+    "question": "196.\nIgaz-e az állítás: Csomagvesztés minden esetben a hálózati torlódás jele/következménye.\nHamis",
+    "options": [
+      {
+        "text": "Szabad szöveges válasz",
+        "correct": true
+      }
+    ],
+    "explanation": "Magyarázat hamarosan."
+  }
+]

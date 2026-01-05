@@ -19,6 +19,22 @@ const state = {
   answers: new Map(), // id -> {selected, correct}
 };
 
+function getTopicConfig() {
+  const params = new URLSearchParams(window.location.search);
+  const topic = (params.get("topic") || "szamelm").toLowerCase();
+  const map = {
+    szamelm: {
+      file: "questions.json",
+      label: "Számelm",
+    },
+    telekom: {
+      file: "questions-telekom.json",
+      label: "Telekom",
+    },
+  };
+  return map[topic] || map.szamelm;
+}
+
 const escapeHtml = (text = "") =>
   text
     .replace(/&/g, "&amp;")
@@ -60,7 +76,11 @@ const shuffle = (arr) => {
 
 async function init() {
   try {
-    const res = await fetch("questions.json");
+    const cfg = getTopicConfig();
+    const topicLabel = document.getElementById("topic-label");
+    if (topicLabel) topicLabel.textContent = `Kvíz gyakorlás · ${cfg.label}`;
+
+    const res = await fetch(cfg.file);
     if (!res.ok) throw new Error(`Nem sikerült betölteni a kérdéseket (${res.status})`);
     state.allQuestions = await res.json();
     startSession(state.allQuestions);
