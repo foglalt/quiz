@@ -1222,7 +1222,7 @@
     "explanation": "Magyarázat hamarosan."
   },
   {
-    "id": "beugro-kvizkerdesek-q79",
+    "id": "beugro-kvizkerdesek-q71",
     "question": "Hogyan definiáltuk a helyességet! Egy szállítási mechanizmus helyes, akkor és csak akkor...",
     "options": [
       {
@@ -1241,7 +1241,7 @@
     "explanation": "Magyarázat hamarosan."
   },
   {
-    "id": "beugro-kvizkerdesek-q80",
+    "id": "beugro-kvizkerdesek-q72",
     "question": "Mi igaz a BGP protokollra? / Mely állítások igazak a BGP protokollra?",
     "options": [
       {
@@ -1268,62 +1268,37 @@
     "explanation": "Magyarázat hamarosan."
   },
   {
-    "id": "beugro-kvizkerdesek-q81",
+    "id": "beugro-kvizkerdesek-q73",
     "question": "Adjuk meg helyes sorrendben a három-utas kézfogás üzenetváltásait!",
     "options": [
       {
-        "text": "Szabad szöveges válasz",
+        "text": "1. SYN a klienstől a szerverhez",
+        "correct": true
+      },
+      {
+        "text": "2. SYN/ACK a szervertől a klienshez",
+        "correct": true
+      },
+      {
+        "text": "3. ACK a klienstől a szerverhez",
         "correct": true
       }
     ],
     "explanation": "Magyarázat hamarosan."
   },
   {
-    "id": "beugro-kvizkerdesek-q82",
-    "question": "SYN a klienstől a szerverhez",
+    "id": "beugro-kvizkerdesek-q74",
+    "question": "Melyik keretezési technikára jellemző? A keretben lévő karakterek számának megadása keret fejlécben lévő mezőben",
     "options": [
       {
-        "text": "Szabad szöveges válasz",
+        "text": "Karakterszámolás",
         "correct": true
       }
     ],
     "explanation": "Magyarázat hamarosan."
   },
   {
-    "id": "beugro-kvizkerdesek-q83",
-    "question": "SYN/ACK a szervertől a klienshez",
-    "options": [
-      {
-        "text": "Szabad szöveges válasz",
-        "correct": true
-      }
-    ],
-    "explanation": "Magyarázat hamarosan."
-  },
-  {
-    "id": "beugro-kvizkerdesek-q84",
-    "question": "ACK a klienstől a szerverhez",
-    "options": [
-      {
-        "text": "Szabad szöveges válasz",
-        "correct": true
-      }
-    ],
-    "explanation": "Magyarázat hamarosan."
-  },
-  {
-    "id": "beugro-kvizkerdesek-q85",
-    "question": "Melyik keretezési technikára jellemző? A keretben lévő karakterek számának megadása keret fejlécben",
-    "options": [
-      {
-        "text": "lévő mezőben Karakterszámolás",
-        "correct": true
-      }
-    ],
-    "explanation": "Magyarázat hamarosan."
-  },
-  {
-    "id": "beugro-kvizkerdesek-q86",
+    "id": "beugro-kvizkerdesek-q75",
     "question": "Igaz-e az állítás: Tipikus webes forgalom esetén a TCP hatékony, képes kihasználni a rendelkezésre álló\nszabad hálózati kapacitást (sávszélességet).\nHamis",
     "options": [
       {
