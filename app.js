@@ -17,6 +17,7 @@ const state = {
   deck: [],
   currentIndex: 0,
   answers: new Map(), // id -> {selected, correct}
+  pendingSelections: new Map(), // id -> Set<optionIndex> (multi-correct questions)
 };
 
 function getTopicConfig() {
@@ -97,12 +98,33 @@ function startSession(list) {
   state.deck = shuffle(list);
   state.currentIndex = 0;
   state.answers = new Map();
+  state.pendingSelections = new Map();
   renderQuestion();
   updateStats();
 }
 
 function currentQuestion() {
   return state.deck[state.currentIndex];
+}
+
+function correctIndexes(q) {
+  return q.options
+    .map((opt, idx) => (opt.correct ? idx : null))
+    .filter((v) => v !== null);
+}
+
+function isMultiCorrect(q) {
+  return correctIndexes(q).length > 1;
+}
+
+function setNextButtonLabel() {
+  const q = currentQuestion();
+  const answer = state.answers.get(q?.id);
+  if (q && isMultiCorrect(q) && !answer) {
+    els.next.textContent = "Ellenőrzés";
+  } else {
+    els.next.textContent = "Következő";
+  }
 }
 
 function renderQuestion() {
@@ -119,6 +141,8 @@ function renderQuestion() {
 
   const q = currentQuestion();
   const answer = state.answers.get(q.id);
+  const multi = isMultiCorrect(q);
+  const pending = state.pendingSelections.get(q.id) || new Set();
 
   els.questionTitle.textContent = `Kérdés ${state.currentIndex + 1}`;
   setFormattedHtml(els.questionText, q.question);
@@ -130,20 +154,46 @@ function renderQuestion() {
     btn.innerHTML = formatMathLike(opt.text || "—");
     btn.type = "button";
     btn.disabled = !!answer;
-    btn.addEventListener("click", () => handleAnswer(idx));
+    btn.addEventListener("click", () => {
+      if (multi) {
+        togglePending(idx);
+      } else {
+        handleAnswer(idx);
+      }
+    });
 
     if (answer) {
       if (opt.correct) btn.classList.add("correct");
-      if (answer.selected === idx) btn.classList.add("chosen");
-      if (answer.selected === idx && !opt.correct) btn.classList.add("wrong");
+      const selectedList = Array.isArray(answer.selected) ? answer.selected : [answer.selected];
+      if (selectedList.includes(idx)) btn.classList.add("chosen");
+      if (selectedList.includes(idx) && !opt.correct) btn.classList.add("wrong");
+    } else if (multi && pending.has(idx)) {
+      btn.classList.add("chosen");
     }
     els.options.appendChild(btn);
   });
 
   els.prev.disabled = state.currentIndex === 0;
-  els.next.disabled = !answer;
+  els.next.disabled = multi ? false : !answer;
   setFormattedHtml(els.feedback, answer ? feedbackMessage(q, answer.selected) : "");
+  setNextButtonLabel();
   updateStats();
+}
+
+function togglePending(idx) {
+  const q = currentQuestion();
+  if (!q) return;
+  if (state.answers.has(q.id)) return;
+  const set = state.pendingSelections.get(q.id) || new Set();
+  if (set.has(idx)) set.delete(idx);
+  else set.add(idx);
+  state.pendingSelections.set(q.id, set);
+
+  // Update visual selection immediately.
+  const buttons = Array.from(els.options.querySelectorAll("button"));
+  buttons.forEach((btn, i) => {
+    btn.classList.toggle("chosen", set.has(i));
+  });
 }
 
 function handleAnswer(idx) {
@@ -165,6 +215,24 @@ function handleAnswer(idx) {
   updateStats();
 }
 
+function handleAnswerMulti() {
+  const q = currentQuestion();
+  if (!q) return;
+  if (state.answers.has(q.id)) return;
+
+  const selectedSet = state.pendingSelections.get(q.id) || new Set();
+  const selected = Array.from(selectedSet.values()).sort((a, b) => a - b);
+  const correct = correctIndexes(q);
+
+  const isCorrect =
+    selected.length === correct.length && selected.every((v, i) => v === correct[i]);
+  state.answers.set(q.id, { selected, correct: isCorrect, wrong: !isCorrect, multi: true });
+  lockOptionsMulti(q, selected);
+  setFormattedHtml(els.feedback, feedbackMessage(q, selected));
+  setNextButtonLabel();
+  updateStats();
+}
+
 function lockOptions(q, selectedIdx) {
   const buttons = Array.from(els.options.querySelectorAll("button"));
   buttons.forEach((btn, idx) => {
@@ -176,12 +244,28 @@ function lockOptions(q, selectedIdx) {
   });
 }
 
+function lockOptionsMulti(q, selectedIdxs) {
+  const selected = new Set(selectedIdxs);
+  const buttons = Array.from(els.options.querySelectorAll("button"));
+  buttons.forEach((btn, idx) => {
+    btn.disabled = true;
+    const opt = q.options[idx];
+    if (opt.correct) btn.classList.add("correct");
+    if (selected.has(idx)) btn.classList.add("chosen");
+    if (selected.has(idx) && !opt.correct) btn.classList.add("wrong");
+  });
+}
+
 function feedbackText(q, selectedIdx) {
-  const picked = q.options[selectedIdx];
+  const selectedIdxs = Array.isArray(selectedIdx) ? selectedIdx : [selectedIdx];
+  const selectedSet = new Set(selectedIdxs);
+  const correctIdxs = correctIndexes(q);
   const correctTexts = q.options.filter((o) => o.correct).map((o) => o.text);
-  if (picked?.correct) {
-    return "Helyes válasz!";
-  }
+
+  const isCorrect =
+    selectedIdxs.length === correctIdxs.length && correctIdxs.every((i) => selectedSet.has(i));
+
+  if (isCorrect) return "Helyes válasz!";
   return `Helyes megoldás: ${correctTexts.join(" | ")}`;
 }
 
@@ -202,6 +286,15 @@ function updateStats() {
 }
 
 function goNext() {
+  const q = currentQuestion();
+  const multi = q ? isMultiCorrect(q) : false;
+  const answered = q ? state.answers.has(q.id) : false;
+
+  if (q && multi && !answered) {
+    handleAnswerMulti();
+    return;
+  }
+
   if (state.currentIndex < state.deck.length - 1) {
     state.currentIndex += 1;
     renderQuestion();
