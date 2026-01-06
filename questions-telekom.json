@@ -3789,5 +3789,726 @@
       }
     ],
     "explanation": "Magyarázat hamarosan."
+  },
+  {
+    "id": "extra_kerdesek-1",
+    "question": "Adott N állomás, melyek Alapvető bittérkép protokollt használnak a közeghozzáféréshez. A versengési időrés 1 időegység. Egy adatkeret küldése szintén egységesen 1 időegységig tart. Legjobb esetben hány időegységet kell egy állomásnak várnia a saját kerete átvitelének megkezdése előtt? [Azt az időrést már ne számoljuk, amiben a saját kerete is átvitelre kerül. Továbbá tegyük fel, hogy közvetlenül a versengési időrés előtt állunk! Gondoljunk az ideális sorszámra!]",
+    "options": [
+      { "text": "2", "correct": false },
+      { "text": "1", "correct": false },
+      { "text": "N+2", "correct": false },
+      { "text": "N", "correct": true }
+    ],
+    "explanation": "Az alapvető bittérkép (helyfoglalásos) eljárásban először végigmegy a N hosszú versengési/lefoglalási szakasz (minden állomásnak jut egy időszelet/bithely), és csak ezután kezdődhet a tényleges adatátvitel. Ideális esetben a saját kereted lesz az első a data-fázisban, de akkor is meg kell várnod a teljes N hosszú versengési szakaszt. (merged.pdf: „Alapvető bittérkép protokoll – helyfoglalásos megoldás”, kb. 370. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-2",
+    "question": "Melyik protokoll használ portszámokat a multiplexáláshoz az alábbiak közül?",
+    "options": [
+      { "text": "IP", "correct": false },
+      { "text": "Ethernet", "correct": false },
+      { "text": "ARP", "correct": false },
+      { "text": "TCP", "correct": true }
+    ],
+    "explanation": "A portszámok a szállítói réteg multiplexálás/demultiplexálás funkciójához tartoznak; TCP (és UDP) használ portokat. (merged.pdf: „Szállítói réteg … Port szám … Példa: UDP, TCP”, kb. 125. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-3",
+    "question": "Adott három állomás (A,B,C), melyek CDMA módszert használnak. Jelölje be, hogy mely chip vektorok lennének helyesek?",
+    "options": [
+      { "text": "A: (0,1,0) ; B: (1,0,0) ; C: (1,1,0)", "correct": false },
+      { "text": "A: (1,1,1) ; B: (-1,-1,0) ; C: (0,0,-1)", "correct": false },
+      { "text": "A: (1,1,0) ; B: (1,-1,0) ; C: (0,0,-1)", "correct": true },
+      { "text": "A: (1,0,0) ; B: (0,1,0) ; C: (0,0,1)", "correct": true }
+    ],
+    "explanation": "CDMA-nál a chip-sorozatok (kódvektorok) akkor „jók”, ha páronként ortogonálisak (skalárszorzatuk 0), így korrelációval szétválaszthatók. A 3. és 4. opcióban minden páros skalárszorzat 0. (merged.pdf: „CDMA … chip sequence … egymás között ortogonálisak”, kb. 928–929. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-4",
+    "question": "Melyik mező szerepel az UDP fejlécében a hibák ellenőrzésére?",
+    "options": [
+      { "text": "Nyugtaszám", "correct": false },
+      { "text": "Sorszám", "correct": false },
+      { "text": "Ellenőrzőösszeg", "correct": true },
+      { "text": "Ablak mérete", "correct": false }
+    ],
+    "explanation": "UDP-ben a hibadetektálásra a kontrollösszeg/ellenőrzőösszeg (checksum) mező szolgál. (merged.pdf: UDP fejléc + „Kontrollösszeg hiba detektáláshoz”, kb. 481. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-5",
+    "question": "Adott egy fizikai link, ami két eszközt kapcsol össze, melyek kommunikálni szeretnének. Mit nevezünk propagációs késésnek (propagation delay) ebben az esetben?",
+    "options": [
+      {
+        "text": "Azt az időt, ami a csomag összes bitjének hálózatra viteléhez szükséges.",
+        "correct": false
+      },
+      {
+        "text": "Azt az időt, ami egy csomag routeren való áthaladásához szükséges.",
+        "correct": false
+      },
+      {
+        "text": "Azt az időt, ami a jelnek szükséges ahhoz, hogy áthaladjon a fizikai közegen, ami összeköti a küldő és a cél eszközöket.",
+        "correct": true
+      },
+      {
+        "text": "Azt az időt, ami egy csomag első bitjének elküldése és a címzettől kapott válasz üzenet utolsó bitjének megérkezése között telik.",
+        "correct": false
+      }
+    ],
+    "explanation": "Propagációs késés: a jel terjedési ideje a közegen (tipikusan d = távolság / terjedési sebesség). (merged.pdf: „Propagációs késés … d/s”, kb. 320. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-6",
+    "question": "Mi igaz a bridge-eknél (hidaknál) látott MAC címek tanulása módszerre?",
+    "options": [
+      {
+        "text": "A beérkező keretben szereplő forrásállomás MAC címét és a beérkezési portot betesszük a továbbítási táblába.",
+        "correct": true
+      },
+      {
+        "text": "Új cím csak akkor rakható be, ha egy régit kitörlünk.",
+        "correct": false
+      },
+      {
+        "text": "Ismeretlen cél esetén szétküldjük minden szomszédnak a keretet, majd figyeljük a választ és az alapján készítünk táblabejegyzést.",
+        "correct": false
+      },
+      {
+        "text": "A beérkező keretben szereplő célállomás MAC címét és a beérkezési portot betesszük a továbbítási táblába.",
+        "correct": false
+      }
+    ],
+    "explanation": "A bridge/switch a forrás MAC címből tanul: bejövő keret forráscímét a bejövő porttal eltárolja a továbbítási táblában. (merged.pdf: „… a forráscím alapján tanul … eltároljuk (beérkezési port, forrás MAC)”, kb. 472. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-7",
+    "question": "Melyik közeghozzáférést biztosító protokoll használ rögzített időréseket a továbbítási kísérletekhez?",
+    "options": [
+      { "text": "Slotted ALOHA", "correct": true },
+      { "text": "Pure ALOHA", "correct": false },
+      { "text": "Non-persistent CSMA", "correct": false },
+      { "text": "1-persistent CSMA", "correct": false }
+    ],
+    "explanation": "A Slotted ALOHA időrésekre (slotokra) osztja az időt, és adást csak slot-határon enged. (merged.pdf: „Slotted ALOHA … a csatorna időrésekre van felosztva”, kb. 301. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-8",
+    "question": "Melyek a DCTCP (Data Center TCP) FŐ jellemzői? (Válassza ki az összes helyeset!)",
+    "options": [
+      {
+        "text": "Torlódás mértékével arányos torlódási ablak (CWND) csökkentés.",
+        "correct": true
+      },
+      {
+        "text": "CWND szabad kapacitással arányos növekedése minden ACK-ra",
+        "correct": false
+      },
+      {
+        "text": "ECN bit figyelése finom torlódási visszajelzéshez",
+        "correct": true
+      },
+      {
+        "text": "A CWND a felére csökken minden csomagvesztésnél",
+        "correct": false
+      },
+      {
+        "text": "Dinamikus MSS módosítás a kapacitásnak megfelelően",
+        "correct": false
+      }
+    ],
+    "explanation": "A DCTCP lényege, hogy ECN jelölés alapján a torlódás mértékével arányosan reagál (nem csak „van/nincs torlódás”), és a CWND csökkentését is ehhez igazítja. Nem a klasszikus „felezés csomagvesztésre” és nem MSS-dinamikázás a fő ismérv. (merged.pdf: „DCTCP – Two Key Ideas”, kb. 869. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-9",
+    "question": "Adott egy 400 bites keret. 4/5 bit kódolás segítségével visszük át a fizikai közegen. Hány bit kerül ténylegesen átvitelre ezzel a kódolással (=hány órajelciklus szükséges)?",
+    "options": [
+      { "text": "500", "correct": true },
+      { "text": "400", "correct": false },
+      { "text": "450", "correct": false },
+      { "text": "625", "correct": false }
+    ],
+    "explanation": "4/5 kódolásnál minden 4 hasznos bitből 5 továbbított bit lesz, ezért a szorzó 5/4. 400 * (5/4) = 500 bit (órajelciklus)."
+  },
+  {
+    "id": "extra_kerdesek-10",
+    "question": "Négy szimbólum használata esetén hány bitet tudunk egy szimbólumba kódolni?",
+    "options": [
+      { "text": "2", "correct": true },
+      { "text": "1", "correct": false },
+      { "text": "3", "correct": false },
+      { "text": "4", "correct": false }
+    ],
+    "explanation": "A szimbólumonként kódolható bitek száma: log2(M). Négy szimbólumnál M=4, ezért log2(4)=2 bit/szimbólum. (merged.pdf: „Diszkrét halmaz kódolja a szimbólumokat … 16 szimbólum → négyszeres adatrátához …”, kb. 913. oldal; ebből következik 4 szimbólum → 2 bit/szimbólum)"
+  },
+  {
+    "id": "extra_kerdesek-11",
+    "question": "Melyek a link-state (OSPF-szerű) routing protokoll jellemzői? (Válassza ki az összes helyeset!)",
+    "options": [
+      {
+        "text": "Csak a szomszédos routerekkel cserélnek távolságvektorokat",
+        "correct": false
+      },
+      {
+        "text": "A routerek minden közvetlen link állapotát lekérdezik",
+        "correct": true
+      },
+      {
+        "text": "A routerek topológiai \"adatbázist\" építenek és Dijkstra-algoritmust futtatnak",
+        "correct": true
+      },
+      { "text": "Dinamikusan módosítják az IP fejléceket", "correct": false }
+    ],
+    "explanation": "Link-state routingnál a routerek felkutatják a szomszédokat, meghatározzák/mérik a közvetlen linkek költségét, majd az így kapott információból topológiai képet (adatbázist) építenek, és legrövidebb utakat számolnak Dijkstra (SPF) algoritmussal. (merged.pdf 450. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-12",
+    "question": "Melyik fizikai rétegű kódolás alkalmaz Manchester kódot?",
+    "options": [
+      { "text": "Ethernet 10Base-T", "correct": true },
+      { "text": "Wi-Fi 802.11g", "correct": false },
+      { "text": "Ethernet 100Base-TX", "correct": false },
+      { "text": "Bluetooth", "correct": false }
+    ],
+    "explanation": "A tananyag külön kiemeli a Manchester kódolást a 10 Mbps Ethernethez (10BASE-T). (merged.pdf 907. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-13",
+    "question": "A TCP Slow Start során hogyan változik a küldési ablak (cwnd) minden sikeres visszaigazolás után időben?",
+    "options": [
+      { "text": "Állandó értéken marad", "correct": false },
+      {
+        "text": "RTT-nként megduplázódik (exponenciális növekedés)",
+        "correct": true
+      },
+      {
+        "text": "RTT-nként egy MSS-sel nő (lineáris növekedés)",
+        "correct": false
+      },
+      { "text": "Felére csökken", "correct": false }
+    ],
+    "explanation": "Slow Start alatt a cwnd exponenciálisan nő; tipikusan 1, 2, 4, 8… (RTT-nként duplázódik) egészen ssthresh-ig vagy veszteségig. (merged.pdf 791. és 794. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-14",
+    "question": "Mely lépések történnek a routing tábla alapú csomagtovábbításkor? (Válassza ki az összes helyeset!)",
+    "options": [
+      {
+        "text": "Ha nincs egyezés, a default útvonal (default gateway) használata történik",
+        "correct": true
+      },
+      {
+        "text": "A csomagokat visszadobják, ha nincs útvonal",
+        "correct": true
+      },
+      {
+        "text": "A csomag cél IP-címét a routing táblában kikeresik",
+        "correct": true
+      },
+      {
+        "text": "Minden csomagra frissítik a routing protokollt",
+        "correct": false
+      }
+    ],
+    "explanation": "A továbbításkor a router a célcímet a routing táblában keresi (tipikusan leghosszabb prefix-illeszkedéssel), a megfelelő kimenet felé küld. Ha nincs specifikus egyezés, akkor a default route jöhet szóba; ha semmi nincs, a csomagot eldobja. A routing protokoll frissítése nem „minden csomagra” történik. (A tábla-lookup/illeszkedés logikája: merged.pdf 476. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-15",
+    "question": "Mely állítások igazak az szélessávú átvitelre?",
+    "options": [
+      {
+        "text": "a digitális jel direkt árammá vagy feszültséggé alakul",
+        "correct": false
+      },
+      {
+        "text": "egy széles frekvencia tartományban történik az átvitel, nem minden frekvencián kerül átvitelre a jel",
+        "correct": true
+      },
+      { "text": "a jel minden frekvencián átvitelre kerül", "correct": false },
+      {
+        "text": "a jelet modulálással ülteti egy vivőhullámra",
+        "correct": true
+      }
+    ],
+    "explanation": "A tananyag szerint szélessáv (broadband) esetén egy széles frekvenciatartományt használunk, és a jelet vivőhullámra „ültetjük” modulációval; a „minden frekvencián átvitelre kerül” inkább alapsáv (baseband) jellemző. (merged.pdf 912. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-16",
+    "question": "Mit nevezünk végtelenig számlálás problémájának?",
+    "options": [
+      { "text": "Egyik sem helyes válasz", "correct": true },
+      {
+        "text": "Távolságvektor protokoll esetén, ha egy él költsége csökken, akkor azt csak nagyon lassan tanulja meg a többi router. Egyesével kezd csökkenni az állomáshoz tartozó érték.",
+        "correct": false
+      },
+      {
+        "text": "Kapcsolatállapot (link state) routing protokoll esetén ha egy él törlődik a hálózatból, akkor az új információ csak lassan propagál szét a routerekhez. A routing táblák hibás bejegyzéseket tartalmaznak.",
+        "correct": false
+      },
+      {
+        "text": "Feszítőfa protokoll oldja meg a problémát, amit bridge-elt hálózatokban a hurkok okoznak.",
+        "correct": false
+      }
+    ],
+    "explanation": "A „végtelenig számlálás” (count-to-infinity) távolságvektoros routingnál jelenik meg, amikor a „rossz hír” (elérhetetlenség/költségnövekedés) lassan terjed, és a metrikák lépésenként nőnek egy ciklus miatt. A megadott opciók ezt nem írják le helyesen (pl. nem költségcsökkenésről szól). (merged.pdf 406. és 408. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-17",
+    "question": "CSMA/CD esetén mi történik, ha ütközést érzékelnek?",
+    "options": [
+      {
+        "text": "Jam jel küldése, majd várakozás és keret újraküldése",
+        "correct": true
+      },
+      { "text": "Keret azonnali újraküldése", "correct": false },
+      { "text": "Az állomás várakozik időtúllépésig", "correct": false },
+      { "text": "Médium felszabadítása értesítés nélkül", "correct": false }
+    ],
+    "explanation": "Ütközésnél a küldő „jam” jelet küld, majd bináris exponenciális backoff szerint véletlen ideig vár, és újraküldi a keretet. (merged.pdf 315. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-18",
+    "question": "Mit jelent a vivőjel érzékelési képesség?",
+    "options": [
+      {
+        "text": "Egy vivőjelet módosítva modulációs technika segítségével meghatározható a csatorna foglaltsága.",
+        "correct": false
+      },
+      {
+        "text": "Az állomások meg tudják vizsgálni a közös csatorna állapotát a küldés előtt. A csatorna lehet foglalt vagy szabad.",
+        "correct": true
+      },
+      {
+        "text": "Az állomások egy központi szervertől információt kapnak a csatorna állapotáról.",
+        "correct": false
+      },
+      { "text": "A vivőjel hibáját képes detektálni", "correct": false }
+    ],
+    "explanation": "Vivőjel-érzékelés (carrier sense) esetén az állomás adás előtt „belehallgat” a csatornába, és annak foglaltsága alapján dönt (foglalt/szabad). (merged.pdf 306. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-19",
+    "question": "Hány rétege van az ISO/OSI-modellnek?",
+    "options": [{ "text": "7", "correct": true }],
+    "explanation": "Az OSI referencia modell 7 rétegből áll. (merged.pdf 118. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-20",
+    "question": "Mit nevezünk elnyelődésnek?",
+    "options": [
+      {
+        "text": "A vételi és a küldési energiák különbségét.",
+        "correct": false
+      },
+      { "text": "A küldési és vételi energiák hányadosát.", "correct": true },
+      {
+        "text": "A vételi és küldési energiák különbségének négyzetgyökét.",
+        "correct": false
+      },
+      {
+        "text": "A vételi és a küldési energiák különbségének logaritmusát.",
+        "correct": false
+      }
+    ],
+    "explanation": "A tananyag szerint az elnyelődés (attenuation) lényegében a küldési és a vételi energia/teljesítmény hányadosa (P0/P1), és dB-ben gyakran 10·log10(P0/P1)-ként adják meg. (merged.pdf 883. oldal)"
+  },
+  {
+    "id": "extra_kerdesek-21",
+    "question": "Adott N állomás, melyek Alapvető bittérkép protokollt használnak a közeghozzáféréshez. A versengési időrés 1 időegység. Egy adatkeret küldése szintén egységesen 1 időegységig tart. Legjobb esetben hány időegységet kell egy állomásnak várnia a saját kerete átvitelének megkezdése előtt? [Azt az időrést már ne számoljuk, amiben a saját keret is átvitelre kerül. Továbbá tegyük fel, hogy közvetlenül a versengési időrés előtt állunk! Gondolkodjunk az ideális sorszámmal!]",
+    "options": [
+      { "text": "2", "correct": false },
+      { "text": "1", "correct": false },
+      { "text": "N+2", "correct": false },
+      { "text": "N", "correct": true }
+    ],
+    "explanation": "Az alapvető bittérkép protokollnál a versengési periódus hossza N időrés (a PDF-ben: „Az ütköztetési periódus N időrés”), és a küldések csak ezután indulnak sorszám szerint. Legjobb esetben (ideális, legkisebb sorszámú küldőként) nincs előtted adatkeret, így csak a teljes bittérkép/versengési periódust kell kivárnod: N."
+  },
+  {
+    "id": "extra_kerdesek-22",
+    "question": "Melyik protokoll használ portszámokat a multiplexáláshoz az alábbiak közül?",
+    "options": [
+      { "text": "IP", "correct": false },
+      { "text": "Ethernet", "correct": false },
+      { "text": "ARP", "correct": false },
+      { "text": "TCP", "correct": true }
+    ],
+    "explanation": "A portszámok a szállítási rétegben (TCP/UDP) szolgálnak a folyamatok közötti multiplexálásra/demultiplexálásra."
+  },
+  {
+    "id": "extra_kerdesek-23",
+    "question": "Adott három állomás (A,B,C), melyek CDMA módszert használnak. Jelölje be, hogy mely chip vektorok lennének helyesek?",
+    "options": [
+      { "text": "A: (0,1,0) ; B: (1,0,0) ; C: (1,1,0)", "correct": false },
+      { "text": "A: (1,1,1) ; B: (-1,-1,0) ; C: (0,0,-1)", "correct": false },
+      { "text": "A: (1,1,0) ; B: (1,-1,0) ; C: (0,0,-1)", "correct": true },
+      { "text": "A: (1,0,0) ; B: (0,1,0) ; C: (0,0,1)", "correct": true }
+    ],
+    "explanation": "CDMA-nál a jó chip-kódok (ideális esetben) páronként ortogonálisak (belső szorzatuk 0), így a vevő korrelációval szét tudja választani a felhasználókat. A 3. és 4. opcióban a vektorok páronként ortogonálisak."
+  },
+  {
+    "id": "extra_kerdesek-24",
+    "question": "Melyik mező szerepel az UDP fejlécében a hibák ellenőrzésére?",
+    "options": [
+      { "text": "Nyugtaszám", "correct": false },
+      { "text": "Sorszám", "correct": false },
+      { "text": "Ellenőrzőösszeg", "correct": true },
+      { "text": "Ablak mérete", "correct": false }
+    ],
+    "explanation": "Az UDP fejléc tartalmaz ellenőrzőösszeget (checksum) hibadetektálásra."
+  },
+  {
+    "id": "extra_kerdesek-25",
+    "question": "Adott egy fizikai link, ami két eszközt kapcsol össze, melyek kommunikálni szeretnének. Mit nevezünk propagációs késésnek (propagation delay) ebben az esetben?",
+    "options": [
+      {
+        "text": "Azt az időt, ami a csomag összes bitjének hálózatra viteléhez szükséges.",
+        "correct": false
+      },
+      {
+        "text": "Azt az időt, ami egy csomag routeren való áthaladásához szükséges.",
+        "correct": false
+      },
+      {
+        "text": "Azt az időt, ami a jelnek szükséges ahhoz, hogy áthaladjon a fizikai közegen, ami összeköti a küldő és a cél eszközöket.",
+        "correct": true
+      },
+      {
+        "text": "Azt az időt, ami egy csomag első bitjének elküldése és a címzettől kapott válasz üzenet utolsó bitjének megérkezése között eltelik.",
+        "correct": false
+      }
+    ],
+    "explanation": "A propagációs késés a jel terjedési ideje a közegen (a PDF-ben is: d = távolság / terjedési sebesség)."
+  },
+  {
+    "id": "extra_kerdesek-26",
+    "question": "Mi igaz a bridge-eknél (hidaknál) látott MAC címek tanulása módszerre?",
+    "options": [
+      {
+        "text": "A beérkező keretben szereplő forrásállomás MAC címét és a beérkezési portot betesszük a továbbítási táblába.",
+        "correct": true
+      },
+      {
+        "text": "Új cím csak akkor rakható be, ha egy régit kitörlünk.",
+        "correct": false
+      },
+      {
+        "text": "Ismeretlen cél esetén szétküldjük minden szomszédnak a keretet, majd figyeljük a választ és az alapján készítünk táblabejegyzést.",
+        "correct": false
+      },
+      {
+        "text": "A beérkező keretben szereplő célállomás MAC címét és a beérkezési portot betesszük a továbbítási táblába.",
+        "correct": false
+      }
+    ],
+    "explanation": "A bridge/switch a beérkező keretek forrás MAC-címéből tanul: a PDF-ben „Tekintsük a forrás címeit a különböző portokon beérkező kereteknek — képezzünk ebből táblázatot”."
+  },
+  {
+    "id": "extra_kerdesek-27",
+    "question": "Melyik közeghozzáférést biztosító protokoll használ rögzített időrésket a továbbítási kísérletekhez?",
+    "options": [
+      { "text": "Slotted ALOHA", "correct": true },
+      { "text": "Pure ALOHA", "correct": false },
+      { "text": "Non-persistent CSMA", "correct": false },
+      { "text": "1-persistent CSMA", "correct": false }
+    ],
+    "explanation": "A Réselt (Slotted) ALOHA rögzített időrésekre osztja a csatornát (a PDF-ben: „A csatornát azonos időrésekre bontjuk… Átvitel csak az időrések határán lehetséges”)."
+  },
+  {
+    "id": "extra_kerdesek-28",
+    "question": "Melyek a DCTCP (Data Center TCP) FŐ jellemzői? (Válassza ki az összes helyeset!)",
+    "options": [
+      {
+        "text": "Torlódás mértékével arányos torlódási ablak (CWND) csökkentés.",
+        "correct": true
+      },
+      {
+        "text": "CWND szabad kapacitással arányos növekedése minden ACK-ra",
+        "correct": false
+      },
+      {
+        "text": "ECN bit figyelése finom torlódási visszajelzéshez",
+        "correct": true
+      },
+      {
+        "text": "A CWND a felére csökken minden csomagvesztésnél",
+        "correct": false
+      },
+      {
+        "text": "Dinamikus MSS módosítás a kapacitásnak megfelelően",
+        "correct": false
+      }
+    ],
+    "explanation": "A PDF DCTCP diái szerint a lényeg: (1) „React in proportion to the extent of congestion” → arányos CWND-csökkentés, és (2) ECN jelzések (markok) használata finom visszajelzésre. Nem a klasszikus „mindig felez” viselkedés és nem MSS-dinamikázás."
+  },
+  {
+    "id": "extra_kerdesek-29",
+    "question": "Adott egy 400 bites keret. 4/5 bit kódolás segítségével visszük át a fizikai közegen. Hány bit kerül ténylegesen átvitelre ezzel a kódolással (=hány órajelciklus szükséges)?",
+    "options": [{ "text": "500", "correct": true }],
+    "explanation": "4/5 kódolásnál minden 4 adatbitből 5 vonali bit lesz, így 400 * (5/4) = 500 bit kerül átvitelre."
+  },
+  {
+    "id": "extra_kerdesek-30",
+    "question": "Hogyan állítjuk be az újraküldéshez használt időkorlátot (RTO) a TCP esetén?",
+    "options": [
+      { "text": "2 * RTT", "correct": true },
+      { "text": "alfa * RTO_old + (1-alfa)*RTT", "correct": false },
+      { "text": "RTT", "correct": false },
+      { "text": "2", "correct": false }
+    ],
+    "explanation": "A TCP az RTT-t becsüli (simítással), és az RTO-t ennek egy (konzervatívabb) többszöröseként állítja be; a tananyag egyszerűsített alakja: RTO ≈ 2 * becsült RTT."
+  },
+  {
+    "id": "extra_kerdesek-31",
+    "question": "Mi a folyam vezérlés (flow control) célja a megbízható adatátvitel során?",
+    "options": [
+      {
+        "text": "A lassú hálózat túlterhelésének a megakadályozása.",
+        "correct": false
+      },
+      {
+        "text": "Csomagvesztés esetén a agresszívabb küldési stratégia választása.",
+        "correct": false
+      },
+      {
+        "text": "A hálózat terheléséhez való alkalmazkodás.",
+        "correct": false
+      },
+      {
+        "text": "A lassú vevő túlterhelésének a megakadályozása.",
+        "correct": true
+      }
+    ],
+    "explanation": "A flow control a vevő védelmét szolgálja (ne kapjon több adatot, mint amennyit pufferezni/feldolgozni tud). A hálózat terheléséhez való alkalmazkodás a torlódásvezérlés (congestion control)."
+  },
+  {
+    "id": "extra_kerdesek-32",
+    "question": "Kumulatív nyugta (cummulative ACK) esetén miként tudjuk detektálni a csomagvesztést?",
+    "options": [
+      {
+        "text": "Az izolált csomagvesztéseket nyugta duplikátumok jelzik. Emellett timerekkel is dolgozik a módszer.",
+        "correct": true
+      },
+      {
+        "text": "A nyugta csomagokban kerülnek jelzése a hiányzó sorszámok, ami alapján a hiányzó csomagok újraküldhetők.",
+        "correct": false
+      },
+      {
+        "text": "A nyugta csomagokban kerülnek jelzése a fogadott sorszámok, ami alapján a hiányzó csomagok újraküldhetők.",
+        "correct": false
+      },
+      {
+        "text": "Az egyedi nyugták alapján a forrás nyilvántartást vezet a nyugtázott sorszámokról. Ez alapján a hiányzó csomagok szelektíven újraküldhetők.",
+        "correct": false
+      }
+    ],
+    "explanation": "Kumulatív ACK-nál a hiányt tipikusan duplikált ACK-ok (pl. 3 dup ACK → fast retransmit) és/vagy időtúllépés jelzi; nem listázza a hiányzó sorszámokat."
+  },
+  {
+    "id": "extra_kerdesek-33",
+    "question": "Melyik OSI-réteg feladata a fizikai réteg hibáinak detektálása és -javítása?",
+    "options": [
+      { "text": "Fizikai réteg", "correct": false },
+      { "text": "Adatkapcsolati réteg", "correct": true },
+      { "text": "Szállító réteg", "correct": false },
+      { "text": "Hálózati réteg", "correct": false }
+    ],
+    "explanation": "A fizikai réteg biteket visz át; a keretszintű hibadetektálás/-javítás (pl. CRC, ARQ) tipikusan az adatkapcsolati réteg feladata."
+  },
+  {
+    "id": "extra_kerdesek-34",
+    "question": "Melyik réteg nyújt végpont–végpont kommunikációt socketekkel?",
+    "options": [
+      { "text": "Adatkapcsolati réteg", "correct": false },
+      { "text": "Alkalmazási réteg", "correct": false },
+      { "text": "Hálózati réteg", "correct": false },
+      { "text": "Szállítási réteg", "correct": true }
+    ],
+    "explanation": "A socket az end-to-end szállítási szolgáltatás (TCP/UDP) tipikus programozói interfésze."
+  },
+  {
+    "id": "extra_kerdesek-35",
+    "question": "Melyik eszköz fő feladata a keretek továbbítása MAC-cím alapján?",
+    "options": [
+      { "text": "Útválasztó/Router", "correct": false },
+      { "text": "Kapcsoló/Switch", "correct": true },
+      { "text": "Hub", "correct": false },
+      { "text": "Átjáró/Gateway", "correct": false }
+    ],
+    "explanation": "MAC-cím alapján, 2. rétegbeli továbbítást a switch végez (MAC-tábla alapján)."
+  },
+  {
+    "id": "extra_kerdesek-36",
+    "question": "A TCP torlódásvezérlés első fázisát így nevezzük (kis betűvel írva angolul, két szó):",
+    "options": [{ "text": "slow start", "correct": true }],
+    "explanation": "A TCP torlódásvezérlés első szakasza a \"slow start\"."
+  },
+  {
+    "id": "extra_kerdesek-37",
+    "question": "Adjuk meg helyes sorrendben a három-utas kézfogás üzenetváltásait!",
+    "options": [
+      {
+        "text": "1) SYN a szervertől a klienshez, 2) SYN/ACK a klienstől a szerverhez, 3) ACK a szervertől a klienshez",
+        "correct": false
+      },
+      {
+        "text": "1) SYN a klienstől a szerverhez, 2) SYN/ACK a szervertől a klienshez, 3) ACK a klienstől a szerverhez",
+        "correct": true
+      },
+      {
+        "text": "1) SYN a szervertől a klienshez, 2) ACK a klienstől a szerverhez, 3) SYN/ACK a szervertől a klienshez",
+        "correct": false
+      },
+      {
+        "text": "1) SYN a klienstől a szerverhez, 2) SYN a szervertől a klienshez, 3) ACK a klienstől a szerverhez",
+        "correct": false
+      }
+    ],
+    "explanation": "TCP 3-way handshake: kliens SYN → szerver, szerver SYN/ACK → kliens, kliens ACK → szerver."
+  },
+  {
+    "id": "extra_kerdesek-38",
+    "question": "Melyik multiplexelési technika osztja frekvencia alapján a sávot?",
+    "options": [
+      { "text": "TDMA", "correct": false },
+      { "text": "SDMA", "correct": false },
+      { "text": "FDMA", "correct": true },
+      { "text": "CDMA", "correct": false }
+    ],
+    "explanation": "Frekvencia szerinti felosztás: FDMA (Frequency Division Multiple Access)."
+  },
+  {
+    "id": "extra_kerdesek-39",
+    "question": "Mely algoritmusok kapcsolódnak a TCP torlódásvezérléséhez? (Válassza ki az összes helyeset!)",
+    "options": [
+      { "text": "Dijkstra", "correct": false },
+      { "text": "Cubic", "correct": true },
+      { "text": "Fast Retransmit", "correct": true },
+      { "text": "Slow Start", "correct": true },
+      { "text": "RED", "correct": true }
+    ],
+    "explanation": "CUBIC, Slow Start és Fast Retransmit a TCP torlódás-/veszteségkezeléséhez kötődik; RED (Random Early Detection) torlódáselkerülési/AQM mechanizmus, ami TCP-vel együtt tipikusan a torlódás kezelését szolgálja. Dijkstra útvonalválasztási algoritmus."
+  },
+  {
+    "id": "extra_kerdesek-40",
+    "question": "Legyen az átvitel (throughput) a terhelés (G) függvényében: S(G). Dinamikus csatornakiosztást tekintve ideális esetben milyen értéket vesz fel S(G), ha G=0.5?",
+    "options": [{ "text": "0.5", "correct": true }],
+    "explanation": "Ideális dinamikus csatornakiosztásnál nincs ütközési veszteség: S(G)=G (amíg G≤1), ezért G=0.5 esetén S=0.5."
+  },
+  {
+    "id": "extra_kerdesek-41",
+    "question": "Adott 2^N állomás, melyek adaptív fabejárás protokollt használnak a közeghozzáféréshez. Két állomás áll készen keret küldésére egy időben, melyek ütközést okoznak. Egy adatkeret küldése egységesen 1 időegységig tart. Legrosszabb esetben hány időegység szükséges az ütközés feloldásához? (Az első ütközéses időrés nem számolva; nincs új kérés; legrosszabb sorszám-kiosztás.)",
+    "options": [
+      { "text": "N-1", "correct": false },
+      { "text": "2N", "correct": false },
+      { "text": "3", "correct": false },
+      { "text": "N", "correct": true }
+    ],
+    "explanation": "Legrosszabb esetben a két állomás azonos N−1 bites prefixet oszt meg, ezért a fabejárás N szintig kénytelen haladni, mire az első sikeres adás megtörténik (az első ütközéses slotot nem számolva)."
+  },
+  {
+    "id": "extra_kerdesek-42",
+    "question": "Melyik protokollra jellemző a path vector routing?",
+    "options": [
+      { "text": "IS-IS", "correct": false },
+      { "text": "OSPF", "correct": false },
+      { "text": "BGP", "correct": true },
+      { "text": "RIP", "correct": false }
+    ],
+    "explanation": "A path-vector útvonalválasztás az AS-path jellegű információt használó BGP-re jellemző."
+  },
+  {
+    "id": "extra_kerdesek-43",
+    "question": "Az alábbiak közül melyik egy szállítói réteghez kapcsolódó PDU (Protocol Data Unit, Protokoll Adategység)?",
+    "options": [
+      { "text": "Keret", "correct": false },
+      { "text": "Szegmens", "correct": true },
+      { "text": "Csomag", "correct": false },
+      { "text": "Datagram", "correct": false }
+    ],
+    "explanation": "A szállítói (transport) réteg tipikus PDU-ja a szegmens (TCP: segment). A keret L2, a csomag/datagram L3."
+  },
+  {
+    "id": "extra_kerdesek-44",
+    "question": "Mi az IPv4 C-osztályú hálózat alapértelmezett alhálózati maszkja (x.y.z.s formátumban)?",
+    "options": [{ "text": "255.255.255.0", "correct": true }],
+    "explanation": "A klasszikus osztályalapú címzésben a C osztály alapértelmezett maszkja /24, azaz 255.255.255.0."
+  },
+  {
+    "id": "extra_kerdesek-45",
+    "question": "Mire szolgál a meghirdetett ablak (advertised window) TCP esetén?",
+    "options": [
+      {
+        "text": "A küldő a hálózati rétege által kezelhető csomagok számát adja.",
+        "correct": false
+      },
+      {
+        "text": "A hálózat által kezelhető maximális adatmennyiséget mutatja.",
+        "correct": false
+      },
+      { "text": "A fogadó pufferének méretét mutatja.", "correct": true },
+      { "text": "A kiküldhető csomagok számát jelenti.", "correct": false }
+    ],
+    "explanation": "Az advertised window (rwnd) a fogadó által jelzett fogadói puffer/szabad kapacitás, a TCP flow control alapja."
+  },
+  {
+    "id": "extra_kerdesek-46",
+    "question": "Egy protokoll CRC-t használ hiba felismeréshez. Az alkalmazott generátor polinom fokszáma 32. Hány biten ábrázolható a CRC kontrollösszeg (a maradék polinom)?",
+    "options": [
+      { "text": "30", "correct": false },
+      {
+        "text": "Nincs összefüggés a fokszám és a CRC kontrollösszeg bitszélessége között.",
+        "correct": false
+      },
+      { "text": "32", "correct": true },
+      { "text": "31", "correct": false }
+    ],
+    "explanation": "A generátor polinom foka r esetén a maradék polinom foka < r, ezért r bites CRC-t tárolunk; itt r=32."
+  },
+  {
+    "id": "extra_kerdesek-47",
+    "question": "Adott egy állomás a 192.168.0.11/24 címen, aki csomagot szeretne küldeni a 157.181.6.3 címre. Mi történhet ilyenkor? (Több válasz is helyes lehet)",
+    "options": [
+      {
+        "text": "Megnézi a lokális routing táblában, hogy milyen routeren keresztül érhető el az 157.181.6.3.",
+        "correct": true
+      },
+      {
+        "text": "Az ARP vagy a helyi ARP táblát használja vagy ARP kérést küld a hálózatra a MAC cím meghatározásához.",
+        "correct": true
+      },
+      {
+        "text": "ARP segítségével meghatározza az 157.181.6.3 MAC címét és Ethernet keretet küld neki.",
+        "correct": false
+      },
+      {
+        "text": "ARP segítségével meghatározza a következő router MAC címét és Ethernet keretet küld neki. Az IP fejlécben a cél címet átírja a következő router címére.",
+        "correct": false
+      },
+      {
+        "text": "ICMP segítségével meghatározza a következő router MAC címét és Ethernet keretet küld neki. Az IP fejlécben a cél cím a 157.181.6.3 marad.",
+        "correct": false
+      },
+      {
+        "text": "ARP segítségével meghatározza a következő router MAC címét és Ethernet keretet küld neki. Az IP fejlécben a cél cím a 157.181.6.3 marad.",
+        "correct": true
+      }
+    ],
+    "explanation": "Távoli IP-cím esetén a host a routing táblából kiválasztja a next hop-ot (tipikusan default gateway), annak MAC címét ARP-vel feloldja (cache vagy ARP request), és Ethernet keretet a routernek küld. Az IP célcím végig 157.181.6.3 marad."
+  },
+  {
+    "id": "extra_kerdesek-48",
+    "question": "TCP Reno Fast Retransmit mikor küldi újra a csomagot?",
+    "options": [
+      { "text": "Időtúllépéskor", "correct": false },
+      { "text": "Három duplikált nyugta után", "correct": true },
+      { "text": "CWND felére csökkentése után", "correct": false },
+      { "text": "SSTHRESH elérésekor", "correct": false }
+    ],
+    "explanation": "A Fast Retransmit tipikusan 3 darab duplikált ACK után újraküldést indít (nem vár timeout-ra)."
+  },
+  {
+    "id": "extra_kerdesek-49",
+    "question": "Adott egy Distance Vector protokollt használó hálózat. Az u állomás szomszédai A, B és C. Adottak az alábbi élköltségek: c(u,A)=3, c(u,B)=1, c(u,C)=7. Az u állomás egy adott időpillanatban megkapja mindhárom szomszéd távolság vektorait: dA(B)=12, dA(C)=3, dA(D)=4; dB(A)=3, dB(C)=8, dB(D)=2; dC(A)=1, dC(B)=2, dC(D)=1. u vektorainak frissítése után adjuk meg du(D) távolságot!",
+    "options": [{ "text": "3", "correct": true }],
+    "explanation": "Distance Vector frissítés: du(D)=min{c(u,A)+dA(D), c(u,B)+dB(D), c(u,C)+dC(D)} = min{3+4, 1+2, 7+1} = min{7,3,8} = 3."
   }
 ]
