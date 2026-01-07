@@ -8,7 +8,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az 1‑perzisztens CSMA-ben az állomás vivőjel-érzékeléssel figyeli a csatornát: ha szabad, azonnal ad; ha foglalt, addig „rajta marad” a csatornán (folyamatosan figyel), és felszabaduláskor rögtön küld. Ütközés esetén visszalépés (véletlen várakozás) után újrapróbál."
   },
   {
     "id": "beugro-kvizkerdesek-q02",
@@ -31,7 +31,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "TCP-nél kapcsolatfelépítés kell, mert a két végpontnak közös állapotot kell kialakítania, különösen a kezdeti sorszámokat (sequence number) és a nyugtázási teret. A háromutas kézfogás (SYN → SYN+ACK → ACK) egyszerre jelzi a saját kezdő sorszámot és nyugtázza a másik félét, így elkerülhetők a régi/duplikált szegmensek okozta félreértések."
   },
   {
     "id": "beugro-kvizkerdesek-q03",
@@ -46,7 +46,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az adat sík (data plane) a csomagok tényleges továbbítását végzi a forwarding táblák alapján (gyors, per-csomag művelet). A vezérlő sík (control plane) számítja/építi fel ezeket a táblákat (routing, protokollok, konfiguráció), ezért nem az adat sík a „router agya”."
   },
   {
     "id": "beugro-kvizkerdesek-q04",
@@ -69,7 +69,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Sorbanállási (queuing) késésnek azt nevezzük, amíg a csomag a kimenő pufferben vár, mert a link éppen foglalt. Erősen függ a terheléstől/kihasználtságtól: nagy kihasználtságnál gyorsan megnő, sőt szórása is nagy lehet."
   },
   {
     "id": "beugro-kvizkerdesek-q05",
@@ -100,7 +100,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Multiplexálásnál több adatfolyam osztozik ugyanazon fizikai erőforráson. Tipikus formák: időosztásos (TDM) – időszeletek; frekvenciaosztásos (FDM) – frekvenciasávok; hullámhossz-osztásos (WDM) – optikai „színek”; kódosztásos (CDMA) – ortogonális kódok."
   },
   {
     "id": "beugro-kvizkerdesek-q06",
@@ -127,7 +127,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Távolságvektoros routingnál a router csak a célokig mért becsült távolságvektorát és a next hopot tartja nyilván, és ezt periodikusan a szomszédokkal cseréli (Bellman–Ford jellegű frissítés). Egyszerű, de lassabban konvergálhat és előjöhet a végtelenig számlálás."
   },
   {
     "id": "beugro-kvizkerdesek-q07",
@@ -150,7 +150,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "IPv4 fragmentáció akkor történik, ha a csomag nagyobb, mint a kimenő link MTU-ja: a csomagot több fragmentre bontják, mindegyik saját IP fejléccel megy tovább. A fragmenteket az Identification mező kapcsolja össze, a Fragment Offset adja a helyüket, a MF (More Fragments) jelzi, van‑e még további fragment; összerakás a célállomáson történik."
   },
   {
     "id": "beugro-kvizkerdesek-q08",
@@ -173,7 +173,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A CRC-ben a generátorpolinom foka r esetén a maradék polinom foka legfeljebb r−1, ezért az ellenőrző összeg (CRC) r biten ábrázolható. Itt r=4."
   },
   {
     "id": "beugro-kvizkerdesek-q09",
@@ -195,7 +195,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Ezek fizikai hordozók/jelenségek (kábel, rádiójel), ezért az ISO/OSI modell fizikai rétegéhez tartoznak: itt történik a bitek átvitele a közegen."
   },
   {
     "id": "beugro-kvizkerdesek-q11",
@@ -206,7 +206,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Ez bit-beszúrásos (bit stuffing) keretezés: a zászlóminta (flag) felismerhetősége miatt a küldő az adatrészben előforduló 11111 sorozat után 0 bitet szúr be; a vevő ezt eltávolítja, így a flag nem jelenik meg „véletlenül” az adatokban."
   },
   {
     "id": "beugro-kvizkerdesek-q12",
@@ -217,7 +217,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 2N."
   },
   {
     "id": "beugro-kvizkerdesek-q13",
@@ -240,7 +240,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: A beérkező keretben szereplő forrásállomás MAC címét és a beérkezési portot betesszük a továbbítási."
   },
   {
     "id": "beugro-kvizkerdesek-q14",
@@ -255,7 +255,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: a jelet modulációval ülteti egy vivőhullámra; egy széles frekvenciatartományban történik az átvitel, nem minden frekvencián kerül átvitelre a jel."
   },
   {
     "id": "beugro-kvizkerdesek-q15",
@@ -270,7 +270,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Hamis."
   },
   {
     "id": "beugro-kvizkerdesek-q16",
@@ -293,7 +293,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Csomagvesztést jelez.."
   },
   {
     "id": "beugro-kvizkerdesek-q17",
@@ -304,7 +304,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 0.5."
   },
   {
     "id": "beugro-kvizkerdesek-q18",
@@ -315,7 +315,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az OSI modell rétegei funkció szerint különülnek el: a fizikai/adatkapcsolati a közeg és keretek, a hálózati a csomagtovábbítás és címzés, a szállítói a végpontok közti szállítás, felette pedig a munkamenet/megjelenítés/alkalmazás rétegek."
   },
   {
     "id": "beugro-kvizkerdesek-q19",
@@ -349,7 +349,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 4 Baud."
   },
   {
     "id": "beugro-kvizkerdesek-q21",
@@ -364,7 +364,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az alternáló bit protokoll (ABP) megbízható szállítást ad stop‑and‑wait módon: a küldő 0/1 sorszámú kereteket küld, a vevő nyugtáz, és duplikátum esetén a sorszám alapján felismeri, hogy ismétlés történt."
   },
   {
     "id": "beugro-kvizkerdesek-q22",
@@ -375,7 +375,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Propagációs késés: a jel terjedési ideje a fizikai közegen. Képlete: d/s, ahol d a távolság, s a terjedési sebesség (közegfüggő, tipikusan a fénysebesség nagyságrendje)."
   },
   {
     "id": "beugro-kvizkerdesek-q23",
@@ -386,7 +386,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Feldolgozási (processing) késés: a csomag beérkezésekor a csomópontnak idő kell a fejléc ellenőrzésére, hibadetektálásra, útvonal/port kiválasztására és a csomag pufferbe helyezésére. Ez tipikusan a csomagmérettől kevésbé, inkább az eszköz teljesítményétől függ."
   },
   {
     "id": "beugro-kvizkerdesek-q24",
@@ -397,7 +397,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Ezek alkalmazási szintű protokollok/szoftverek, ezért az ISO/OSI alkalmazási rétegéhez soroljuk (szolgáltatást nyújtanak a felhasználói alkalmazásoknak)."
   },
   {
     "id": "beugro-kvizkerdesek-q25",
@@ -427,7 +427,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Teljes információ visszacsatolás - Full Information Feedback."
   },
   {
     "id": "beugro-kvizkerdesek-q27",
@@ -438,7 +438,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A szinkronizációs pontok, párbeszéd- és munkamenet-kezelés (checkpoint, újraindítás) az OSI ülés/munkamenet (session) réteg tipikus feladata."
   },
   {
     "id": "beugro-kvizkerdesek-q28",
@@ -449,7 +449,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A CSMA/CD (Ethernet) ütközésdetektálást használ: adás közben a küldő figyeli a vonalat, ütközéskor megszakítja az adást (jam jel), majd bináris exponenciális visszalépést (backoff) alkalmaz, és később újraküldi."
   },
   {
     "id": "beugro-kvizkerdesek-q29",
@@ -460,7 +460,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A CSMA/CD (Ethernet) ütközésdetektálást használ: adás közben a küldő figyeli a vonalat, ütközéskor megszakítja az adást (jam jel), majd bináris exponenciális visszalépést (backoff) alkalmaz, és később újraküldi."
   },
   {
     "id": "beugro-kvizkerdesek-q30",
@@ -507,7 +507,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: Közeghozzáférés vezérlése (MAC); Adatok keretekre tördelése; Per-hop hibakezelés; Per-hop megbízhatóság."
   },
   {
     "id": "beugro-kvizkerdesek-q31",
@@ -518,7 +518,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az RTO (retransmission timeout) az az időzítő, amelynek lejártakor a küldő úgy tekinti, hogy a szegmens/nyugta elveszett, és újraküld. Az RTO-t az RTT becsléséből számítjuk (átlag + szórás/jitter figyelembevételével), hogy a túl korai és túl késői timeoutokat is elkerüljük."
   },
   {
     "id": "beugro-kvizkerdesek-q32",
@@ -537,7 +537,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Kumulatív nyugtázásnál a nyugta azt jelzi, hogy az adott sorszámig bezárólag minden keret/bájt rendben megérkezett (folytonos tartomány). Ez egyszerű és jól kezeli a nyugták elvesztését, mert egy későbbi nyugta „pótolhatja” a korábbit."
   },
   {
     "id": "beugro-kvizkerdesek-q33",
@@ -560,7 +560,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A TCP elérhető átvitele tipikusan fordítottan arányos az RTT-vel (minél nagyobb a köridő, annál lassabban érkeznek vissza a nyugták), és csökken a veszteségi valószínűség növekedésével (a torlódásvezérlés visszaveszi a küldési rátát)."
   },
   {
     "id": "beugro-kvizkerdesek-q34",
@@ -583,7 +583,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Kumulatív nyugtázásnál a nyugta azt jelzi, hogy az adott sorszámig bezárólag minden keret/bájt rendben megérkezett (folytonos tartomány). Ez egyszerű és jól kezeli a nyugták elvesztését, mert egy későbbi nyugta „pótolhatja” a korábbit."
   },
   {
     "id": "beugro-kvizkerdesek-q35",
@@ -602,7 +602,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: Reno alapú; Késleltetés alapú torlódási ablakot is fenntart; Csomagvesztés alapú torlódási ablakot is fenntart."
   },
   {
     "id": "beugro-kvizkerdesek-q36",
@@ -625,7 +625,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A Hamming-távolság két azonos hosszúságú bitszó eltérő bitjeinek száma; a kód minimális Hamming-távolsága határozza meg a detektálható/javítható bithibák számát."
   },
   {
     "id": "beugro-kvizkerdesek-q37",
@@ -640,7 +640,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "SYN flood esetén a szerver sok félkész (SYN_RECEIVED) kapcsolatállapotot tart fenn, ami erőforrás-kimerítést okozhat. Védekezés például a SYN cookies, ahol a szerver minimalizálja a lefoglalt állapotot a kézfogás során."
   },
   {
     "id": "beugro-kvizkerdesek-q38",
@@ -663,7 +663,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: A küldési és vételi energiák hányadosát.."
   },
   {
     "id": "beugro-kvizkerdesek-q39",
@@ -674,7 +674,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A különböző adatreprezentációk közti konverzió (kódolás, tömörítés, titkosítás jellegű átalakítások) tipikusan a megjelenítési (presentation) réteg feladata az OSI modellben."
   },
   {
     "id": "beugro-kvizkerdesek-q40",
@@ -689,7 +689,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Igaz."
   },
   {
     "id": "beugro-kvizkerdesek-q41",
@@ -708,7 +708,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: -Túlterhelés esetén az új résztvevőknek már nem jut erőforrás; -Garantált erőforrást kapnak a résztvevők; -Az erőforrások előre lefoglalásra kerülnek minden kapcsolathoz."
   },
   {
     "id": "beugro-kvizkerdesek-q43b",
@@ -743,7 +743,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: Túlterhelés esetén új résztvevőknek már nem jut erőforrás; Garantált erőforrást kapnak a résztvevők; Kapcsolat felépítési és bontási fázis felel az erőforrás lefoglalásáért és felszabadításáért; Dedikált erőforrás allokálódik minden kapcsolathoz."
   },
   {
     "id": "beugro-kvizkerdesek-q42",
@@ -774,7 +774,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: Az alkalmazásoknak nem kell a hálózati problémákkal foglalkozniuk, így a megbízhatóság biztosításával; A hálózat legyen a lehető legegyszerűbb, azaz nem biztosit végpont-végpont megbízhatóságot.; A végpont-végpont megbízhatóságot az L4 (Transport - Szállítói) réteg biztosítja.."
   },
   {
     "id": "beugro-kvizkerdesek-q43",
@@ -789,7 +789,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Hamis."
   },
   {
     "id": "beugro-kvizkerdesek-q44",
@@ -812,7 +812,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Helyesség/Correctness."
   },
   {
     "id": "beugro-kvizkerdesek-q45",
@@ -823,7 +823,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 9500.0/9.5."
   },
   {
     "id": "beugro-kvizkerdesek-q46",
@@ -834,7 +834,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 1.0."
   },
   {
     "id": "beugro-kvizkerdesek-q47",
@@ -845,7 +845,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Lehetővé teszi a demultiplexálást és hibaellenőrzést a célállomáson.."
   },
   {
     "id": "beugro-kvizkerdesek-q48",
@@ -864,7 +864,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: Hiba esetén új áramkör szükséges; Alacsony hatékonyság löketszerű forgalmak és rövid folyamok esetén; Bonyolult áramkör felépítés/lebontás."
   },
   {
     "id": "beugro-kvizkerdesek-q50",
@@ -891,7 +891,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A csúszóablak protokoll pipeliningot ad: a küldő az ablakméret erejéig nyugtázás nélkül is küldhet, a vevő pedig sorszám alapján rendezi/nyugtázza. Ez javítja a hatékonyságot nagy késleltetésnél."
   },
   {
     "id": "beugro-kvizkerdesek-q51",
@@ -902,7 +902,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az RTO (retransmission timeout) az az időzítő, amelynek lejártakor a küldő úgy tekinti, hogy a szegmens/nyugta elveszett, és újraküld. Az RTO-t az RTT becsléséből számítjuk (átlag + szórás/jitter figyelembevételével), hogy a túl korai és túl késői timeoutokat is elkerüljük."
   },
   {
     "id": "beugro-kvizkerdesek-q52",
@@ -917,7 +917,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Hamis."
   },
   {
     "id": "beugro-kvizkerdesek-q53",
@@ -928,7 +928,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Peer."
   },
   {
     "id": "beugro-kvizkerdesek-q54",
@@ -939,7 +939,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Teljesen összekötött (full-mesh)."
   },
   {
     "id": "beugro-kvizkerdesek-q55",
@@ -950,7 +950,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A p‑perzisztens CSMA diszkrét időréses modellben működik: ha a csatorna szabad, az állomás p valószínűséggel küld, 1−p valószínűséggel vár a következő időrésig és újra próbál; ha foglalt, időrésenként újra ellenőriz. Ezzel csökkenti az egyszerre induló adások esélyét."
   },
   {
     "id": "beugro-kvizkerdesek-q56",
@@ -961,7 +961,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A meghirdetett ablak (advertised window) a fogadó pufferének védelmét szolgáló folyamvezérlés: a fogadó jelzi, mennyit tud még fogadni. Ez nem torlódásvezérlés, tehát nem oldja meg a hálózati torlódást; arra külön (pl. cwnd) mechanizmusok vannak."
   },
   {
     "id": "beugro-kvizkerdesek-q57",
@@ -972,7 +972,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 20."
   },
   {
     "id": "beugro-kvizkerdesek-q58",
@@ -995,7 +995,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az alternáló bit protokoll (ABP) megbízható szállítást ad stop‑and‑wait módon: a küldő 0/1 sorszámú kereteket küld, a vevő nyugtáz, és duplikátum esetén a sorszám alapján felismeri, hogy ismétlés történt."
   },
   {
     "id": "beugro-kvizkerdesek-q59",
@@ -1006,7 +1006,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Távolságvektoros routingnál a router csak a célokig mért becsült távolságvektorát és a next hopot tartja nyilván, és ezt periodikusan a szomszédokkal cseréli (Bellman–Ford jellegű frissítés). Egyszerű, de lassabban konvergálhat és előjöhet a végtelenig számlálás."
   },
   {
     "id": "beugro-kvizkerdesek-q60",
@@ -1033,7 +1033,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: BGP-t használ; Útvonal vektor protokollt használ."
   },
   {
     "id": "beugro-kvizkerdesek-q61",
@@ -1048,7 +1048,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Igaz."
   },
   {
     "id": "beugro-kvizkerdesek-q62",
@@ -1059,7 +1059,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A (tiszta) ALOHA-ban az állomások tetszőleges időpontban kezdhetnek adni, ezért ütközés könnyen előfordul. A „sebezhető időablak” 2·keretidő, ezért a maximális áteresztőképesség elméletben 1/(2e) körüli."
   },
   {
     "id": "beugro-kvizkerdesek-q63",
@@ -1085,7 +1085,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az adat sík (data plane) a csomagok tényleges továbbítását végzi a forwarding táblák alapján (gyors, per-csomag művelet). A vezérlő sík (control plane) számítja/építi fel ezeket a táblákat (routing, protokollok, konfiguráció), ezért nem az adat sík a „router agya”."
   },
   {
     "id": "beugro-kvizkerdesek-q65",
@@ -1108,7 +1108,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Szolgáltatása, hogy információt (biteket) visz át két fizikailag összekötött eszköz között."
   },
   {
     "id": "beugro-kvizkerdesek-q66",
@@ -1119,7 +1119,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Keretezésnél a bájtfolyamot egyértelműen elhatárolt keretekre bontjuk (flag, hosszmező, stuffing stb.), hogy a vevő tudja, hol kezdődik és hol ér véget egy keret."
   },
   {
     "id": "beugro-kvizkerdesek-q67",
@@ -1142,7 +1142,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A CRC-ben a generátorpolinom foka r esetén a maradék polinom foka legfeljebb r−1, ezért az ellenőrző összeg (CRC) r biten ábrázolható. Itt r=32."
   },
   {
     "id": "beugro-kvizkerdesek-q68",
@@ -1181,7 +1181,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: Paritást használó technika; Mindegyik ellenőrző bit a bitek valamilyen csoportjának a paritását állítja be párosra (vagy páratlanra); 2 egész hatvány sorszámú pozíciói lesznek az ellenőrző bitek, azaz 1, 2, 4, 8, 16, ..., a maradék helyeket az."
   },
   {
     "id": "beugro-kvizkerdesek-q69",
@@ -1204,7 +1204,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A TCP megbízhatóságot és sorrendhelyességet ad, ezért a fejlécében van sorszám (Sequence Number) és nyugtaszám (Acknowledgement Number), valamint vezérlő bitek és ablakmezők. UDP-ben ezek nincsenek, mert kapcsolatmentes és nem nyugtáz."
   },
   {
     "id": "beugro-kvizkerdesek-q70",
@@ -1219,7 +1219,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az RTO (retransmission timeout) az az időzítő, amelynek lejártakor a küldő úgy tekinti, hogy a szegmens/nyugta elveszett, és újraküld. Az RTO-t az RTT becsléséből számítjuk (átlag + szórás/jitter figyelembevételével), hogy a túl korai és túl késői timeoutokat is elkerüljük."
   },
   {
     "id": "beugro-kvizkerdesek-q71",
@@ -1238,7 +1238,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A szállítási mechanizmus helyessége itt azt jelenti, hogy a veszteség/hibák ellenére végül minden elveszett vagy hibás csomagot újraküld, így a vevő a küldött adatok teljes halmazát megkapja (a protokoll nem „adja fel” csendben a csomagokat)."
   },
   {
     "id": "beugro-kvizkerdesek-q72",
@@ -1265,7 +1265,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A BGP egy AS-ek közötti (inter-domain) útvonalválasztó protokoll, amely erősen policy-alapú. A szomszédos BGP routerek TCP kapcsolaton kommunikálnak, és útvonal-attribútumokat (pl. AS-PATH) cserélnek; így a döntés nem csak „legrövidebb út”, hanem üzleti/politikai szabályok függvénye."
   },
   {
     "id": "beugro-kvizkerdesek-q73",
@@ -1284,7 +1284,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: 1. SYN a klienstől a szerverhez; 2. SYN/ACK a szervertől a klienshez; 3. ACK a klienstől a szerverhez."
   },
   {
     "id": "beugro-kvizkerdesek-q74",
@@ -1295,7 +1295,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Keretezésnél a bájtfolyamot egyértelműen elhatárolt keretekre bontjuk (flag, hosszmező, stuffing stb.), hogy a vevő tudja, hol kezdődik és hol ér véget egy keret."
   },
   {
     "id": "beugro-kvizkerdesek-q75",
@@ -1310,7 +1310,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Hamis."
   },
   {
     "id": "beugro-kvizkerdesek-q76",
@@ -1329,7 +1329,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A (tiszta) ALOHA-ban az állomások tetszőleges időpontban kezdhetnek adni, ezért ütközés könnyen előfordul. A „sebezhető időablak” 2·keretidő, ezért a maximális áteresztőképesség elméletben 1/(2e) körüli."
   },
   {
     "id": "beugro-kvizkerdesek-q77",
@@ -1340,7 +1340,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az IPv4 osztályos címzésben a C osztály adja a legkevesebb hosztcímet egy hálózaton belül (klasszikusan 254 használható hoszt), mert a hálózatrész hosszabb, a hosztrész rövidebb."
   },
   {
     "id": "beugro-kvizkerdesek-q78",
@@ -1367,7 +1367,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Link-state routingnál a routerek a link-állapot információt (szomszédok, költségek) elárasztással terjesztik, így mindenki ugyanazt a topológiai képet építi. Ezután tipikusan Dijkstra algoritmussal számítják a legrövidebb utakat; gyorsabb konvergencia, nagyobb overhead."
   },
   {
     "id": "beugro-kvizkerdesek-q79",
@@ -1390,7 +1390,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Fél-duplex csatorna."
   },
   {
     "id": "beugro-kvizkerdesek-q80",
@@ -1421,7 +1421,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: Gyenge hibavédelemmel rendelkezik.; Túl nagy a költsége.."
   },
   {
     "id": "beugro-kvizkerdesek-q81",
@@ -1444,7 +1444,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Duplex csatorna."
   },
   {
     "id": "beugro-kvizkerdesek-q82",
@@ -1455,7 +1455,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 1.0."
   },
   {
     "id": "beugro-kvizkerdesek-q83",
@@ -1485,7 +1485,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: Checksum (CRC ellenőrzési összeg); Identifier; Fejléc hossza (IHL)."
   },
   {
     "id": "beugro-kvizkerdesek-q85",
@@ -1508,7 +1508,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az RTO (retransmission timeout) az az időzítő, amelynek lejártakor a küldő úgy tekinti, hogy a szegmens/nyugta elveszett, és újraküld. Az RTO-t az RTT becsléséből számítjuk (átlag + szórás/jitter figyelembevételével), hogy a túl korai és túl késői timeoutokat is elkerüljük."
   },
   {
     "id": "beugro-kvizkerdesek-q86",
@@ -1531,7 +1531,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Frekvencia moduláció."
   },
   {
     "id": "beugro-kvizkerdesek-q87",
@@ -1542,7 +1542,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 1."
   },
   {
     "id": "beugro-kvizkerdesek-q88",
@@ -1553,7 +1553,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 1."
   },
   {
     "id": "beugro-kvizkerdesek-q89",
@@ -1564,7 +1564,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Soha nem került átvitelre az állomás kerete, mivel lesz nála nagyobb prioritású/sorszámú állomás, aki küld.."
   },
   {
     "id": "beugro-kvizkerdesek-q90",
@@ -1603,7 +1603,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: Vezérlési rétegben valósítják meg.; A csomag által követendő útvonalak kiszámítása.; Globális folyamat.; Időskála: kb. 10 ezredmásodperc."
   },
   {
     "id": "beugro-kvizkerdesek-q91",
@@ -1626,7 +1626,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: ICMP."
   },
   {
     "id": "beugro-kvizkerdesek-q92",
@@ -1641,7 +1641,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Igaz."
   },
   {
     "id": "beugro-kvizkerdesek-q93",
@@ -1664,7 +1664,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: Switchek esetén nincs szükség CSMA/CD-re.; Switchek esetén full duplex linkek kötik be az állomásokat.."
   },
   {
     "id": "beugro-kvizkerdesek-q94",
@@ -1687,7 +1687,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Fázis moduláció."
   },
   {
     "id": "beugro-kvizkerdesek-q95",
@@ -1698,7 +1698,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A letöltési adatráta a fájlméret (bitben) és a letöltési idő hányadosa: Mbps = (MB·8)/s (tipikus közelítés megabájt → megabit átváltással)."
   },
   {
     "id": "beugro-kvizkerdesek-q96",
@@ -1709,7 +1709,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Multiplexálásnál több adatfolyam osztozik ugyanazon fizikai erőforráson. Tipikus formák: időosztásos (TDM) – időszeletek; frekvenciaosztásos (FDM) – frekvenciasávok; hullámhossz-osztásos (WDM) – optikai „színek”; kódosztásos (CDMA) – ortogonális kódok."
   },
   {
     "id": "beugro-kvizkerdesek-q97",
@@ -1720,7 +1720,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Távolságvektoros routingnál a router csak a célokig mért becsült távolságvektorát és a next hopot tartja nyilván, és ezt periodikusan a szomszédokkal cseréli (Bellman–Ford jellegű frissítés). Egyszerű, de lassabban konvergálhat és előjöhet a végtelenig számlálás."
   },
   {
     "id": "beugro-kvizkerdesek-q98",
@@ -1731,7 +1731,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Minden állomás küldés közben megfigyeli a csatornát. Ha ütközést tapasztal, akkor megszakítja az adást, és végtelen ideig várakozik, majd újra elkezdi leadni a keretet.."
   },
   {
     "id": "beugro-kvizkerdesek-q99",
@@ -1758,7 +1758,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: Minden routert tartalmaz.; C minden routerből elérhető a feszítőfa élei mentén.; Minden router egy kimenő éllel rendelkezik.."
   },
   {
     "id": "beugro-kvizkerdesek-q100",
@@ -1769,7 +1769,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Propagációs késés: a jel terjedési ideje a fizikai közegen. Képlete: d/s, ahol d a távolság, s a terjedési sebesség (közegfüggő, tipikusan a fénysebesség nagyságrendje)."
   },
   {
     "id": "beugro-kvizkerdesek-q101",
@@ -1796,7 +1796,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A csomagtovábbítás (forwarding) lokális, adat-síkbeli művelet: a bejövő csomag fejlécéből kiválasztott mezők alapján a forwarding táblából (FIB) kiválasztja a kimenő interfészt/next hopot, majd továbbít. Nem keverendő össze a routinggal, ami a táblák kiszámítása."
   },
   {
     "id": "beugro-kvizkerdesek-q102",
@@ -1807,7 +1807,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Előrefoglalásos erőforrás-kezelésnél a kihasználtság a ténylegesen használt átlagos ráta és a lefoglalt kapacitás aránya: kihasználtság = A/P. Ha P sokkal nagyobb, mint az átlagos igény, a kihasználtság alacsony (pazarlás), cserébe garantált a kapacitás."
   },
   {
     "id": "beugro-kvizkerdesek-q103",
@@ -1830,7 +1830,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az STP (Spanning Tree Protocol) a layer‑2 hurkok elkerülésére szolgál: a switchek közösen kiválasztanak egy feszítőfát (root bridge, legjobb utak), és a redundáns linkeket blokkolják. Így nincs végtelen keret-keringés/broadcast storm."
   },
   {
     "id": "beugro-kvizkerdesek-q104",
@@ -1853,7 +1853,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az STP (Spanning Tree Protocol) a layer‑2 hurkok elkerülésére szolgál: a switchek közösen kiválasztanak egy feszítőfát (root bridge, legjobb utak), és a redundáns linkeket blokkolják. Így nincs végtelen keret-keringés/broadcast storm."
   },
   {
     "id": "beugro-kvizkerdesek-q105",
@@ -1876,7 +1876,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: A lassú vevő túlterhelésének a megakadályozása.."
   },
   {
     "id": "beugro-kvizkerdesek-q106",
@@ -1899,7 +1899,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: QAM-16 technika."
   },
   {
     "id": "beugro-kvizkerdesek-q107",
@@ -1926,7 +1926,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: A hálózat terhelése nagyobb, mint a kapacitása.."
   },
   {
     "id": "beugro-kvizkerdesek-q108",
@@ -1949,7 +1949,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Páronként ortogonális vektoroknak kell lenniük. (skaláris szorzatuk 0)."
   },
   {
     "id": "beugro-kvizkerdesek-q109",
@@ -1988,7 +1988,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A csomagtovábbítás (forwarding) lokális, adat-síkbeli művelet: a bejövő csomag fejlécéből kiválasztott mezők alapján a forwarding táblából (FIB) kiválasztja a kimenő interfészt/next hopot, majd továbbít. Nem keverendő össze a routinggal, ami a táblák kiszámítása."
   },
   {
     "id": "beugro-kvizkerdesek-q110",
@@ -1999,7 +1999,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Minden nyugta fogadása esetén a küldő egy szegmenssel növeli a torlódási ablakot. Az időben ez gyors, exponenciális növekedést jelent a küldési rátában.."
   },
   {
     "id": "beugro-kvizkerdesek-q111",
@@ -2021,7 +2021,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Propagációs késés: a jel terjedési ideje a fizikai közegen. Képlete: d/s, ahol d a távolság, s a terjedési sebesség (közegfüggő, tipikusan a fénysebesség nagyságrendje)."
   },
   {
     "id": "beugro-kvizkerdesek-q113",
@@ -2032,7 +2032,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az OSI modell rétegei funkció szerint különülnek el: a fizikai/adatkapcsolati a közeg és keretek, a hálózati a csomagtovábbítás és címzés, a szállítói a végpontok közti szállítás, felette pedig a munkamenet/megjelenítés/alkalmazás rétegek."
   },
   {
     "id": "beugro-kvizkerdesek-q114",
@@ -2047,7 +2047,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az alternáló bit protokoll lényegében stop‑and‑wait ARQ: egyszerre csak egy keret lehet „úton”, a küldő nyugtára vár. Propagációs késés nélkül a kihasználtság közel 1 (mindig tud küldeni), de nagy RTT esetén a várakozás rontja a kihasználtságot."
   },
   {
     "id": "beugro-kvizkerdesek-q115",
@@ -2070,7 +2070,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A CRC-ben a generátorpolinom foka r esetén a maradék polinom foka legfeljebb r−1, ezért az ellenőrző összeg (CRC) r biten ábrázolható. Itt r=7."
   },
   {
     "id": "beugro-kvizkerdesek-q116",
@@ -2093,7 +2093,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A csomagtovábbítás (forwarding) lokális, adat-síkbeli művelet: a bejövő csomag fejlécéből kiválasztott mezők alapján a forwarding táblából (FIB) kiválasztja a kimenő interfészt/next hopot, majd továbbít. Nem keverendő össze a routinggal, ami a táblák kiszámítása."
   },
   {
     "id": "beugro-kvizkerdesek-q117",
@@ -2116,7 +2116,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "CRC esetén egy hiba akkor maradhat észrevétlen, ha a hiba polinom E(x) osztható a generátor polinommal G(x) (azaz az osztási maradék 0). A helyes opció ezért az, amelynél E(x) többszöröse/osztható G(x)-szel."
   },
   {
     "id": "beugro-kvizkerdesek-q118",
@@ -2131,7 +2131,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az OSI modell rétegei funkció szerint különülnek el: a fizikai/adatkapcsolati a közeg és keretek, a hálózati a csomagtovábbítás és címzés, a szállítói a végpontok közti szállítás, felette pedig a munkamenet/megjelenítés/alkalmazás rétegek."
   },
   {
     "id": "beugro-kvizkerdesek-q119",
@@ -2142,7 +2142,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Távolságvektoros routingnál a router csak a célokig mért becsült távolságvektorát és a next hopot tartja nyilván, és ezt periodikusan a szomszédokkal cseréli (Bellman–Ford jellegű frissítés). Egyszerű, de lassabban konvergálhat és előjöhet a végtelenig számlálás."
   },
   {
     "id": "beugro-kvizkerdesek-q120",
@@ -2165,7 +2165,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "CRC esetén egy hiba akkor maradhat észrevétlen, ha a hiba polinom E(x) osztható a generátor polinommal G(x) (azaz az osztási maradék 0). A helyes opció ezért az, amelynél E(x) többszöröse/osztható G(x)-szel."
   },
   {
     "id": "beugro-kvizkerdesek-q121",
@@ -2200,7 +2200,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az RTO (retransmission timeout) az az időzítő, amelynek lejártakor a küldő úgy tekinti, hogy a szegmens/nyugta elveszett, és újraküld. Az RTO-t az RTT becsléséből számítjuk (átlag + szórás/jitter figyelembevételével), hogy a túl korai és túl késői timeoutokat is elkerüljük."
   },
   {
     "id": "beugro-kvizkerdesek-q122",
@@ -2223,7 +2223,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Amplitúdó moduláció."
   },
   {
     "id": "beugro-kvizkerdesek-q123",
@@ -2234,7 +2234,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: F*L = c."
   },
   {
     "id": "beugro-kvizkerdesek-q124",
@@ -2273,7 +2273,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: TCP port; UDP port; cél MAC cím; forrás MAC cím."
   },
   {
     "id": "beugro-kvizkerdesek-q125",
@@ -2284,7 +2284,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az RTO (retransmission timeout) az az időzítő, amelynek lejártakor a küldő úgy tekinti, hogy a szegmens/nyugta elveszett, és újraküld. Az RTO-t az RTT becsléséből számítjuk (átlag + szórás/jitter figyelembevételével), hogy a túl korai és túl késői timeoutokat is elkerüljük."
   },
   {
     "id": "beugro-kvizkerdesek-q126",
@@ -2295,7 +2295,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A meghirdetett ablak (advertised window) a fogadó pufferének védelmét szolgáló folyamvezérlés: a fogadó jelzi, mennyit tud még fogadni. Ez nem torlódásvezérlés, tehát nem oldja meg a hálózati torlódást; arra külön (pl. cwnd) mechanizmusok vannak."
   },
   {
     "id": "beugro-kvizkerdesek-q127",
@@ -2306,7 +2306,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az RTO (retransmission timeout) az az időzítő, amelynek lejártakor a küldő úgy tekinti, hogy a szegmens/nyugta elveszett, és újraküld. Az RTO-t az RTT becsléséből számítjuk (átlag + szórás/jitter figyelembevételével), hogy a túl korai és túl késői timeoutokat is elkerüljük."
   },
   {
     "id": "beugro-kvizkerdesek-q128",
@@ -2329,7 +2329,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "DSL technológiáknál a réz érpár frekvenciasávját osztják fel (pl. külön sáv a beszédnek és az adatnak), és a letöltési/feltöltési irány sávszélessége tipikusan aszimmetrikus lehet."
   },
   {
     "id": "beugro-kvizkerdesek-q129",
@@ -2352,7 +2352,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az optimalitási elv szerint egy optimális (legrövidebb költségű) útvonal bármely részútvonala is optimális a két részútvégpont között. Ez indokolja a legrövidebb-út algoritmusok (pl. Dijkstra) dinamikus felépítését."
   },
   {
     "id": "beugro-kvizkerdesek-q130",
@@ -2363,7 +2363,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az RTO (retransmission timeout) az az időzítő, amelynek lejártakor a küldő úgy tekinti, hogy a szegmens/nyugta elveszett, és újraküld. Az RTO-t az RTT becsléséből számítjuk (átlag + szórás/jitter figyelembevételével), hogy a túl korai és túl késői timeoutokat is elkerüljük."
   },
   {
     "id": "beugro-kvizkerdesek-q131",
@@ -2382,7 +2382,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A csomagkapcsolt hálózatok előnye, hogy statisztikai multiplexálással hatékonyak burztös forgalomnál: nincs szükség végpontok közti fix erőforrás-foglalásra, a linkek megosztva használhatók, rugalmasabb és robusztusabb (átirányítás lehetséges), bár a késleltetés és a jitter változó lehet."
   },
   {
     "id": "beugro-kvizkerdesek-q132",
@@ -2405,7 +2405,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Várakoztatja az adatot egy pufferben, amíg nyugtát nem kap.."
   },
   {
     "id": "beugro-kvizkerdesek-q133",
@@ -2428,7 +2428,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Időbeliség/Timeliness."
   },
   {
     "id": "beugro-kvizkerdesek-q134",
@@ -2451,7 +2451,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A csomagtovábbítás (forwarding) lokális, adat-síkbeli művelet: a bejövő csomag fejlécéből kiválasztott mezők alapján a forwarding táblából (FIB) kiválasztja a kimenő interfészt/next hopot, majd továbbít. Nem keverendő össze a routinggal, ami a táblák kiszámítása."
   },
   {
     "id": "beugro-kvizkerdesek-q135",
@@ -2462,7 +2462,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A csomagtovábbítás (forwarding) lokális, adat-síkbeli művelet: a bejövő csomag fejlécéből kiválasztott mezők alapján a forwarding táblából (FIB) kiválasztja a kimenő interfészt/next hopot, majd továbbít. Nem keverendő össze a routinggal, ami a táblák kiszámítása."
   },
   {
     "id": "beugro-kvizkerdesek-q136",
@@ -2485,7 +2485,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A NAT a bejövő csomagoknál a címfordítást a NAT-táblában tárolt leképezés alapján végzi (külső cím/port ↔ belső cím/port). Így tudja visszairányítani a válaszcsomagokat a megfelelő belső hoszthoz."
   },
   {
     "id": "beugro-kvizkerdesek-q137",
@@ -2508,7 +2508,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Alapsávú (baseband) átvitelnél a digitális jelet közvetlenül a csatornára visszük (a teljes sávot használjuk egy jel számára), tipikusan vonali kódolással. Szemben a sávos (passband) átvitellel, ahol vivőfrekvenciára modulálunk."
   },
   {
     "id": "beugro-kvizkerdesek-q138",
@@ -2519,7 +2519,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: N."
   },
   {
     "id": "beugro-kvizkerdesek-q139",
@@ -2530,7 +2530,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 1."
   },
   {
     "id": "beugro-kvizkerdesek-q140",
@@ -2553,7 +2553,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az RTO (retransmission timeout) az az időzítő, amelynek lejártakor a küldő úgy tekinti, hogy a szegmens/nyugta elveszett, és újraküld. Az RTO-t az RTT becsléséből számítjuk (átlag + szórás/jitter figyelembevételével), hogy a túl korai és túl késői timeoutokat is elkerüljük."
   },
   {
     "id": "beugro-kvizkerdesek-q141",
@@ -2568,7 +2568,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Amikor az átlagos kihasználtság nagy.."
   },
   {
     "id": "beugro-kvizkerdesek-q142",
@@ -2579,7 +2579,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az OSI modell rétegei funkció szerint különülnek el: a fizikai/adatkapcsolati a közeg és keretek, a hálózati a csomagtovábbítás és címzés, a szállítói a végpontok közti szállítás, felette pedig a munkamenet/megjelenítés/alkalmazás rétegek."
   },
   {
     "id": "beugro-kvizkerdesek-q143",
@@ -2590,7 +2590,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Átviteli (transmission) késés: a csomag bitjeinek „kicsurgatásához” szükséges idő a linkre. Képlete: L/R, ahol L a csomag hossza bitben, R a link sebessége (bit/s)."
   },
   {
     "id": "beugro-kvizkerdesek-q144",
@@ -2605,7 +2605,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: Gyors újraküldés esetén csomagvesztés során (dupack) felére csökkentjük a torlódási ablakot.; Minden nyugta fogadása esetén \"1/torlódási ablak méret\"-tel növeljük torlódási ablakot.."
   },
   {
     "id": "beugro-kvizkerdesek-q145",
@@ -2616,7 +2616,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 2."
   },
   {
     "id": "beugro-kvizkerdesek-q146",
@@ -2639,7 +2639,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Ha a csomag célállomása nem szerepel a továbbítási táblában.."
   },
   {
     "id": "beugro-kvizkerdesek-q147",
@@ -2666,7 +2666,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A csúszóablak protokoll pipeliningot ad: a küldő az ablakméret erejéig nyugtázás nélkül is küldhet, a vevő pedig sorszám alapján rendezi/nyugtázza. Ez javítja a hatékonyságot nagy késleltetésnél."
   },
   {
     "id": "beugro-kvizkerdesek-q148",
@@ -2677,7 +2677,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Távolságvektoros routingnál a router csak a célokig mért becsült távolságvektorát és a next hopot tartja nyilván, és ezt periodikusan a szomszédokkal cseréli (Bellman–Ford jellegű frissítés). Egyszerű, de lassabban konvergálhat és előjöhet a végtelenig számlálás."
   },
   {
     "id": "beugro-kvizkerdesek-q149",
@@ -2696,7 +2696,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Ha egy A ponton érkezik egy csomag B állomástól, és B nem szerepel a továbbítási táblában, akkor megtanulja, hogy B állomás az A port irányában érhető el.."
   },
   {
     "id": "beugro-kvizkerdesek-q150",
@@ -2719,7 +2719,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Szimplex csatorna."
   },
   {
     "id": "beugro-kvizkerdesek-q151",
@@ -2742,7 +2742,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: Nyugta elvesztése esetén duplikátumok adódhatnak át a felsőbb rétegeknek a fogadó oldalon.; Csomagvesztés esetén az időzítő lejárta után (timeout) újraküldi a keretet.."
   },
   {
     "id": "beugro-kvizkerdesek-q152",
@@ -2753,7 +2753,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Ha a minimális Hamming-távolság d_min, akkor legfeljebb ⌊(d_min−1)/2⌋ bithiba javítható egyértelműen (mert ekkor a „gömbök” a kódszavak körül nem fedik egymást)."
   },
   {
     "id": "beugro-kvizkerdesek-q153",
@@ -2764,7 +2764,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 1."
   },
   {
     "id": "beugro-kvizkerdesek-q154",
@@ -2803,7 +2803,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: duplikátumok – duplicates; csomagvesztés – loss; várakoztatás - being delayed; csomagok sorrendjenek megváltoztatása – reordering; meghibásodás – being corrupted."
   },
   {
     "id": "beugro-kvizkerdesek-q155",
@@ -2814,7 +2814,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: A linkek száma kellően nagy, hogy a csomópontokon áthaladó forgalmat minden állomás el tudja vezetni.."
   },
   {
     "id": "beugro-kvizkerdesek-q156",
@@ -2825,7 +2825,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Előrefoglalásos erőforrás-kezelésnél a kihasználtság a ténylegesen használt átlagos ráta és a lefoglalt kapacitás aránya: kihasználtság = A/P. Ha P sokkal nagyobb, mint az átlagos igény, a kihasználtság alacsony (pazarlás), cserébe garantált a kapacitás."
   },
   {
     "id": "beugro-kvizkerdesek-q157",
@@ -2848,7 +2848,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A csúszóablak protokoll pipeliningot ad: a küldő az ablakméret erejéig nyugtázás nélkül is küldhet, a vevő pedig sorszám alapján rendezi/nyugtázza. Ez javítja a hatékonyságot nagy késleltetésnél."
   },
   {
     "id": "beugro-kvizkerdesek-q158",
@@ -2859,7 +2859,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Rögzített, időalapú keretezésnél a keretek fix hosszúak, és fix periódusonként (pl. 125 μs) ismétlődnek. Ez jellemző szinkron időosztásos rendszerekre (pl. SONET/SDH jelleg)."
   },
   {
     "id": "beugro-kvizkerdesek-q174",
@@ -2870,7 +2870,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 2."
   },
   {
     "id": "beugro-kvizkerdesek-q160",
@@ -2881,7 +2881,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A letöltési ráta = (méret bitben) / idő. 20 MB ≈ 160 Mbit, ezért 160/16 ≈ 10 Mbps, ami a megadott válasszal egyezik (kerekítve)."
   },
   {
     "id": "beugro-kvizkerdesek-q161",
@@ -2916,7 +2916,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az OSI modell rétegei funkció szerint különülnek el: a fizikai/adatkapcsolati a közeg és keretek, a hálózati a csomagtovábbítás és címzés, a szállítói a végpontok közti szállítás, felette pedig a munkamenet/megjelenítés/alkalmazás rétegek."
   },
   {
     "id": "beugro-kvizkerdesek-q162",
@@ -2927,7 +2927,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A Hamming-távolság két azonos hosszúságú bitszó eltérő bitjeinek száma; a kód minimális Hamming-távolsága határozza meg a detektálható/javítható bithibák számát."
   },
   {
     "id": "beugro-kvizkerdesek-q163",
@@ -2938,7 +2938,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Ha a minimális Hamming-távolság d_min, akkor legfeljebb ⌊(d_min−1)/2⌋ bithiba javítható egyértelműen (mert ekkor a „gömbök” a kódszavak körül nem fedik egymást)."
   },
   {
     "id": "beugro-kvizkerdesek-q164",
@@ -2961,7 +2961,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Keretezésnél a bájtfolyamot egyértelműen elhatárolt keretekre bontjuk (flag, hosszmező, stuffing stb.), hogy a vevő tudja, hol kezdődik és hol ér véget egy keret."
   },
   {
     "id": "beugro-kvizkerdesek-q165",
@@ -2984,7 +2984,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: R(S) = 0.7 és q(S) = 0.7."
   },
   {
     "id": "beugro-kvizkerdesek-q166",
@@ -3007,7 +3007,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: A: (1,1,0); B:(1,-1,0); C:(0,0,-1); A: (1,0,0); B:(0,1,0); C:(0,0,1)."
   },
   {
     "id": "beugro-kvizkerdesek-q167",
@@ -3030,7 +3030,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Go‑Back‑N ARQ-nál a vevő kumulatív nyugtát ad: a legnagyobb, folytonosan helyesen vett sorszámig nyugtáz. Hiba esetén a küldő az első hiányzó kerettől kezdve mindent újraküld (ezért „visszalép N‑nel”)."
   },
   {
     "id": "beugro-kvizkerdesek-q168",
@@ -3053,7 +3053,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "CRC esetén egy hiba akkor maradhat észrevétlen, ha a hiba polinom E(x) osztható a generátor polinommal G(x) (azaz az osztási maradék 0). A helyes opció ezért az, amelynél E(x) többszöröse/osztható G(x)-szel."
   },
   {
     "id": "beugro-kvizkerdesek-q169",
@@ -3076,7 +3076,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Az Alternáló Bit Protokoll csatorna kihasználtsága azonos a szimplex megáll és vár protokoll esetén látottal.."
   },
   {
     "id": "beugro-kvizkerdesek-q170",
@@ -3099,7 +3099,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "CRC esetén egy hiba akkor maradhat észrevétlen, ha a hiba polinom E(x) osztható a generátor polinommal G(x) (azaz az osztási maradék 0). A helyes opció ezért az, amelynél E(x) többszöröse/osztható G(x)-szel."
   },
   {
     "id": "beugro-kvizkerdesek-q171",
@@ -3122,7 +3122,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A CRC-ben a generátorpolinom foka r esetén a maradék polinom foka legfeljebb r−1, ezért az ellenőrző összeg (CRC) r biten ábrázolható. Itt r=10."
   },
   {
     "id": "beugro-kvizkerdesek-q172",
@@ -3145,7 +3145,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A CRC-ben a generátorpolinom foka r esetén a maradék polinom foka legfeljebb r−1, ezért az ellenőrző összeg (CRC) r biten ábrázolható. Itt r=12."
   },
   {
     "id": "beugro-kvizkerdesek-q173",
@@ -3168,7 +3168,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "CRC esetén egy hiba akkor maradhat észrevétlen, ha a hiba polinom E(x) osztható a generátor polinommal G(x) (azaz az osztási maradék 0). A helyes opció ezért az, amelynél E(x) többszöröse/osztható G(x)-szel."
   },
   {
     "id": "beugro-kvizkerdesek-q174",
@@ -3179,7 +3179,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "CIDR-ben nincs fix A/B/C osztály: a hálózati prefix hossza /n formában adott, így rugalmas a címtartomány mérete és lehetőség van prefix-aggregációra (route summarization)."
   },
   {
     "id": "beugro-kvizkerdesek-q175",
@@ -3190,30 +3190,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
-  },
-  {
-    "id": "beugro-kvizkerdesek-q176",
-    "question": "176.\nMit nevezünk végtelenig számlálás problémájának?",
-    "options": [
-      {
-        "text": "Kapcsolatállapot (link state) routing protokoll esetén ha egy él törlődik a hálózatból, akkor az új információ csak lassan propagál szét a routerekhez. A routing táblák hibás bejegyzéseket tartalmaznak.",
-        "correct": false
-      },
-      {
-        "text": "Távolságvektor protokoll esetén, ha egy él költsége csökken, akkor azt csak nagyon lassan tanulja meg a többi router. Egyesével kezd csökkenni az állomáshoz tartozó érték",
-        "correct": true
-      },
-      {
-        "text": "Egyik sem helyes válasz.",
-        "correct": false
-      },
-      {
-        "text": "Feszítőfa protokoll oldja meg a problémát, amit bridge-elt hálózatokban a hurkok okoznak.",
-        "correct": false
-      }
-    ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 32."
   },
   {
     "id": "beugro-kvizkerdesek-q177",
@@ -3224,7 +3201,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A TTL (hop limit) minden routeren csökken; ha 0-ra ér, a csomagot eldobják. Ez megakadályozza, hogy routing hurok esetén a csomag a végtelenségig keringjen."
   },
   {
     "id": "beugro-kvizkerdesek-q178",
@@ -3235,7 +3212,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az RTO (retransmission timeout) az az időzítő, amelynek lejártakor a küldő úgy tekinti, hogy a szegmens/nyugta elveszett, és újraküld. Az RTO-t az RTT becsléséből számítjuk (átlag + szórás/jitter figyelembevételével), hogy a túl korai és túl késői timeoutokat is elkerüljük."
   },
   {
     "id": "beugro-kvizkerdesek-q179",
@@ -3246,7 +3223,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 127.0.0.1."
   },
   {
     "id": "beugro-kvizkerdesek-q180",
@@ -3257,7 +3234,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Egy csomag meghatározott csoporthoz történő egyidejű küldése.."
   },
   {
     "id": "beugro-kvizkerdesek-q181",
@@ -3284,7 +3261,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: AS5 → AS2 → AS1 → AS4; AS1 → AS2 → AS5."
   },
   {
     "id": "beugro-kvizkerdesek-q182",
@@ -3307,7 +3284,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A BGP egy AS-ek közötti (inter-domain) útvonalválasztó protokoll, amely erősen policy-alapú. A szomszédos BGP routerek TCP kapcsolaton kommunikálnak, és útvonal-attribútumokat (pl. AS-PATH) cserélnek; így a döntés nem csak „legrövidebb út”, hanem üzleti/politikai szabályok függvénye."
   },
   {
     "id": "beugro-kvizkerdesek-q183",
@@ -3334,7 +3311,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: 192.168.0.3; 192.168.0.16; 10.0.234.254."
   },
   {
     "id": "beugro-kvizkerdesek-q184",
@@ -3357,7 +3334,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: 2001:0db8:ff00:ff00:ff00:ff00:0042:8329; 2001:0db8::ff00:0042:8329."
   },
   {
     "id": "beugro-kvizkerdesek-q185",
@@ -3380,7 +3357,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 8."
   },
   {
     "id": "beugro-kvizkerdesek-q186",
@@ -3403,7 +3380,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az RTO (retransmission timeout) az az időzítő, amelynek lejártakor a küldő úgy tekinti, hogy a szegmens/nyugta elveszett, és újraküld. Az RTO-t az RTT becsléséből számítjuk (átlag + szórás/jitter figyelembevételével), hogy a túl korai és túl késői timeoutokat is elkerüljük."
   },
   {
     "id": "beugro-kvizkerdesek-q187",
@@ -3414,7 +3391,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A Hamming-távolság két azonos hosszúságú bitszó eltérő bitjeinek száma; a kód minimális Hamming-távolsága határozza meg a detektálható/javítható bithibák számát."
   },
   {
     "id": "beugro-kvizkerdesek-q188",
@@ -3437,7 +3414,7 @@
         "correct": false
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "CRC esetén egy hiba akkor maradhat észrevétlen, ha a hiba polinom E(x) osztható a generátor polinommal G(x) (azaz az osztási maradék 0). A helyes opció ezért az, amelynél E(x) többszöröse/osztható G(x)-szel."
   },
   {
     "id": "beugro-kvizkerdesek-q189",
@@ -3448,7 +3425,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Az RTO (retransmission timeout) az az időzítő, amelynek lejártakor a küldő úgy tekinti, hogy a szegmens/nyugta elveszett, és újraküld. Az RTO-t az RTT becsléséből számítjuk (átlag + szórás/jitter figyelembevételével), hogy a túl korai és túl késői timeoutokat is elkerüljük."
   },
   {
     "id": "beugro-kvizkerdesek-q190",
@@ -3471,7 +3448,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Minden switch egyben bridge is.."
   },
   {
     "id": "beugro-kvizkerdesek-q191",
@@ -3482,7 +3459,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 7."
   },
   {
     "id": "beugro-kvizkerdesek-q192",
@@ -3493,7 +3470,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 1."
   },
   {
     "id": "beugro-kvizkerdesek-q193",
@@ -3504,7 +3481,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Az egyes állomások vagy rendelkeznek ezzel a tulajdonsággal vagy nem. a) Ha nincs, akkor az állomások nem tudják megvizsgálni a közös csatorna állapotát, ezért egyszerűen elkezdenek küldeni, ha van rá lehetőségük b)Ha van, akkor állomások meg tudják vizsgálni a közös csatorna állapotát a küldés előtt. A csatorna lehet: foglalt vagy szabad. Ha a foglalt a csatorna, akkor nem próbálják használni az állomások, amíg fel nem szabadul.."
   },
   {
     "id": "beugro-kvizkerdesek-q194",
@@ -3531,7 +3508,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "Link-state routingnál a routerek a link-állapot információt (szomszédok, költségek) elárasztással terjesztik, így mindenki ugyanazt a topológiai képet építi. Ezután tipikusan Dijkstra algoritmussal számítják a legrövidebb utakat; gyorsabb konvergencia, nagyobb overhead."
   },
   {
     "id": "beugro-kvizkerdesek-q195",
@@ -3558,7 +3535,7 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válaszok a témában használt definíciók szerint mind igaz állítások: 1. Magánhálózat [PAN]; 2. Helyi hálózat [LAN]; 3. Városi hálózat [MAN]; 4. Nagy kiterjesztésű hálózat [WAN]; 5. Internet."
   },
   {
     "id": "beugro-kvizkerdesek-q196",
@@ -3573,16 +3550,28 @@
         "correct": true
       }
     ],
-    "explanation": "Magyarázat hamarosan."
+    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: Hamis."
   },
   {
     "id": "extra_kerdesek-1",
     "question": "Adott N állomás, melyek Alapvető bittérkép protokollt használnak a közeghozzáféréshez. A versengési időrés 1 időegység. Egy adatkeret küldése szintén egységesen 1 időegységig tart. Legjobb esetben hány időegységet kell egy állomásnak várnia a saját kerete átvitelének megkezdése előtt? [Azt az időrést már ne számoljuk, amiben a saját kerete is átvitelre kerül. Továbbá tegyük fel, hogy közvetlenül a versengési időrés előtt állunk! Gondoljunk az ideális sorszámra!]",
     "options": [
-      { "text": "2", "correct": false },
-      { "text": "1", "correct": false },
-      { "text": "N+2", "correct": false },
-      { "text": "N", "correct": true }
+      {
+        "text": "2",
+        "correct": false
+      },
+      {
+        "text": "1",
+        "correct": false
+      },
+      {
+        "text": "N+2",
+        "correct": false
+      },
+      {
+        "text": "N",
+        "correct": true
+      }
     ],
     "explanation": "Az alapvető bittérkép (helyfoglalásos) eljárásban először végigmegy a N hosszú versengési/lefoglalási szakasz (minden állomásnak jut egy időszelet/bithely), és csak ezután kezdődhet a tényleges adatátvitel. Ideális esetben a saját kereted lesz az első a data-fázisban, de akkor is meg kell várnod a teljes N hosszú versengési szakaszt. (merged.pdf: „Alapvető bittérkép protokoll – helyfoglalásos megoldás”, kb. 370. oldal)"
   },
@@ -3590,10 +3579,22 @@
     "id": "extra_kerdesek-2",
     "question": "Melyik protokoll használ portszámokat a multiplexáláshoz az alábbiak közül?",
     "options": [
-      { "text": "IP", "correct": false },
-      { "text": "Ethernet", "correct": false },
-      { "text": "ARP", "correct": false },
-      { "text": "TCP", "correct": true }
+      {
+        "text": "IP",
+        "correct": false
+      },
+      {
+        "text": "Ethernet",
+        "correct": false
+      },
+      {
+        "text": "ARP",
+        "correct": false
+      },
+      {
+        "text": "TCP",
+        "correct": true
+      }
     ],
     "explanation": "A portszámok a szállítói réteg multiplexálás/demultiplexálás funkciójához tartoznak; TCP (és UDP) használ portokat. (merged.pdf: „Szállítói réteg … Port szám … Példa: UDP, TCP”, kb. 125. oldal)"
   },
@@ -3601,10 +3602,22 @@
     "id": "extra_kerdesek-3",
     "question": "Adott három állomás (A,B,C), melyek CDMA módszert használnak. Jelölje be, hogy mely chip vektorok lennének helyesek?",
     "options": [
-      { "text": "A: (0,1,0) ; B: (1,0,0) ; C: (1,1,0)", "correct": false },
-      { "text": "A: (1,1,1) ; B: (-1,-1,0) ; C: (0,0,-1)", "correct": false },
-      { "text": "A: (1,1,0) ; B: (1,-1,0) ; C: (0,0,-1)", "correct": true },
-      { "text": "A: (1,0,0) ; B: (0,1,0) ; C: (0,0,1)", "correct": true }
+      {
+        "text": "A: (0,1,0) ; B: (1,0,0) ; C: (1,1,0)",
+        "correct": false
+      },
+      {
+        "text": "A: (1,1,1) ; B: (-1,-1,0) ; C: (0,0,-1)",
+        "correct": false
+      },
+      {
+        "text": "A: (1,1,0) ; B: (1,-1,0) ; C: (0,0,-1)",
+        "correct": true
+      },
+      {
+        "text": "A: (1,0,0) ; B: (0,1,0) ; C: (0,0,1)",
+        "correct": true
+      }
     ],
     "explanation": "CDMA-nál a chip-sorozatok (kódvektorok) akkor „jók”, ha páronként ortogonálisak (skalárszorzatuk 0), így korrelációval szétválaszthatók. A 3. és 4. opcióban minden páros skalárszorzat 0. (merged.pdf: „CDMA … chip sequence … egymás között ortogonálisak”, kb. 928–929. oldal)"
   },
@@ -3612,10 +3625,22 @@
     "id": "extra_kerdesek-4",
     "question": "Melyik mező szerepel az UDP fejlécében a hibák ellenőrzésére?",
     "options": [
-      { "text": "Nyugtaszám", "correct": false },
-      { "text": "Sorszám", "correct": false },
-      { "text": "Ellenőrzőösszeg", "correct": true },
-      { "text": "Ablak mérete", "correct": false }
+      {
+        "text": "Nyugtaszám",
+        "correct": false
+      },
+      {
+        "text": "Sorszám",
+        "correct": false
+      },
+      {
+        "text": "Ellenőrzőösszeg",
+        "correct": true
+      },
+      {
+        "text": "Ablak mérete",
+        "correct": false
+      }
     ],
     "explanation": "UDP-ben a hibadetektálásra a kontrollösszeg/ellenőrzőösszeg (checksum) mező szolgál. (merged.pdf: UDP fejléc + „Kontrollösszeg hiba detektáláshoz”, kb. 481. oldal)"
   },
@@ -3669,10 +3694,22 @@
     "id": "extra_kerdesek-7",
     "question": "Melyik közeghozzáférést biztosító protokoll használ rögzített időréseket a továbbítási kísérletekhez?",
     "options": [
-      { "text": "Slotted ALOHA", "correct": true },
-      { "text": "Pure ALOHA", "correct": false },
-      { "text": "Non-persistent CSMA", "correct": false },
-      { "text": "1-persistent CSMA", "correct": false }
+      {
+        "text": "Slotted ALOHA",
+        "correct": true
+      },
+      {
+        "text": "Pure ALOHA",
+        "correct": false
+      },
+      {
+        "text": "Non-persistent CSMA",
+        "correct": false
+      },
+      {
+        "text": "1-persistent CSMA",
+        "correct": false
+      }
     ],
     "explanation": "A Slotted ALOHA időrésekre (slotokra) osztja az időt, és adást csak slot-határon enged. (merged.pdf: „Slotted ALOHA … a csatorna időrésekre van felosztva”, kb. 301. oldal)"
   },
@@ -3707,10 +3744,22 @@
     "id": "extra_kerdesek-9",
     "question": "Adott egy 400 bites keret. 4/5 bit kódolás segítségével visszük át a fizikai közegen. Hány bit kerül ténylegesen átvitelre ezzel a kódolással (=hány órajelciklus szükséges)?",
     "options": [
-      { "text": "500", "correct": true },
-      { "text": "400", "correct": false },
-      { "text": "450", "correct": false },
-      { "text": "625", "correct": false }
+      {
+        "text": "500",
+        "correct": true
+      },
+      {
+        "text": "400",
+        "correct": false
+      },
+      {
+        "text": "450",
+        "correct": false
+      },
+      {
+        "text": "625",
+        "correct": false
+      }
     ],
     "explanation": "4/5 kódolásnál minden 4 hasznos bitből 5 továbbított bit lesz, ezért a szorzó 5/4. 400 * (5/4) = 500 bit (órajelciklus)."
   },
@@ -3718,10 +3767,22 @@
     "id": "extra_kerdesek-10",
     "question": "Négy szimbólum használata esetén hány bitet tudunk egy szimbólumba kódolni?",
     "options": [
-      { "text": "2", "correct": true },
-      { "text": "1", "correct": false },
-      { "text": "3", "correct": false },
-      { "text": "4", "correct": false }
+      {
+        "text": "2",
+        "correct": true
+      },
+      {
+        "text": "1",
+        "correct": false
+      },
+      {
+        "text": "3",
+        "correct": false
+      },
+      {
+        "text": "4",
+        "correct": false
+      }
     ],
     "explanation": "A szimbólumonként kódolható bitek száma: log2(M). Négy szimbólumnál M=4, ezért log2(4)=2 bit/szimbólum. (merged.pdf: „Diszkrét halmaz kódolja a szimbólumokat … 16 szimbólum → négyszeres adatrátához …”, kb. 913. oldal; ebből következik 4 szimbólum → 2 bit/szimbólum)"
   },
@@ -3741,7 +3802,10 @@
         "text": "A routerek topológiai \"adatbázist\" építenek és Dijkstra-algoritmust futtatnak",
         "correct": true
       },
-      { "text": "Dinamikusan módosítják az IP fejléceket", "correct": false }
+      {
+        "text": "Dinamikusan módosítják az IP fejléceket",
+        "correct": false
+      }
     ],
     "explanation": "Link-state routingnál a routerek felkutatják a szomszédokat, meghatározzák/mérik a közvetlen linkek költségét, majd az így kapott információból topológiai képet (adatbázist) építenek, és legrövidebb utakat számolnak Dijkstra (SPF) algoritmussal. (merged.pdf 450. oldal)"
   },
@@ -3749,10 +3813,22 @@
     "id": "extra_kerdesek-12",
     "question": "Melyik fizikai rétegű kódolás alkalmaz Manchester kódot?",
     "options": [
-      { "text": "Ethernet 10Base-T", "correct": true },
-      { "text": "Wi-Fi 802.11g", "correct": false },
-      { "text": "Ethernet 100Base-TX", "correct": false },
-      { "text": "Bluetooth", "correct": false }
+      {
+        "text": "Ethernet 10Base-T",
+        "correct": true
+      },
+      {
+        "text": "Wi-Fi 802.11g",
+        "correct": false
+      },
+      {
+        "text": "Ethernet 100Base-TX",
+        "correct": false
+      },
+      {
+        "text": "Bluetooth",
+        "correct": false
+      }
     ],
     "explanation": "A tananyag külön kiemeli a Manchester kódolást a 10 Mbps Ethernethez (10BASE-T). (merged.pdf 907. oldal)"
   },
@@ -3760,7 +3836,10 @@
     "id": "extra_kerdesek-13",
     "question": "A TCP Slow Start során hogyan változik a küldési ablak (cwnd) minden sikeres visszaigazolás után időben?",
     "options": [
-      { "text": "Állandó értéken marad", "correct": false },
+      {
+        "text": "Állandó értéken marad",
+        "correct": false
+      },
       {
         "text": "RTT-nként megduplázódik (exponenciális növekedés)",
         "correct": true
@@ -3769,7 +3848,10 @@
         "text": "RTT-nként egy MSS-sel nő (lineáris növekedés)",
         "correct": false
       },
-      { "text": "Felére csökken", "correct": false }
+      {
+        "text": "Felére csökken",
+        "correct": false
+      }
     ],
     "explanation": "Slow Start alatt a cwnd exponenciálisan nő; tipikusan 1, 2, 4, 8… (RTT-nként duplázódik) egészen ssthresh-ig vagy veszteségig. (merged.pdf 791. és 794. oldal)"
   },
@@ -3808,7 +3890,10 @@
         "text": "egy széles frekvencia tartományban történik az átvitel, nem minden frekvencián kerül átvitelre a jel",
         "correct": true
       },
-      { "text": "a jel minden frekvencián átvitelre kerül", "correct": false },
+      {
+        "text": "a jel minden frekvencián átvitelre kerül",
+        "correct": false
+      },
       {
         "text": "a jelet modulálással ülteti egy vivőhullámra",
         "correct": true
@@ -3820,7 +3905,10 @@
     "id": "extra_kerdesek-16",
     "question": "Mit nevezünk végtelenig számlálás problémájának?",
     "options": [
-      { "text": "Egyik sem helyes válasz", "correct": true },
+      {
+        "text": "Egyik sem helyes válasz",
+        "correct": true
+      },
       {
         "text": "Távolságvektor protokoll esetén, ha egy él költsége csökken, akkor azt csak nagyon lassan tanulja meg a többi router. Egyesével kezd csökkenni az állomáshoz tartozó érték.",
         "correct": false
@@ -3844,9 +3932,18 @@
         "text": "Jam jel küldése, majd várakozás és keret újraküldése",
         "correct": true
       },
-      { "text": "Keret azonnali újraküldése", "correct": false },
-      { "text": "Az állomás várakozik időtúllépésig", "correct": false },
-      { "text": "Médium felszabadítása értesítés nélkül", "correct": false }
+      {
+        "text": "Keret azonnali újraküldése",
+        "correct": false
+      },
+      {
+        "text": "Az állomás várakozik időtúllépésig",
+        "correct": false
+      },
+      {
+        "text": "Médium felszabadítása értesítés nélkül",
+        "correct": false
+      }
     ],
     "explanation": "Ütközésnél a küldő „jam” jelet küld, majd bináris exponenciális backoff szerint véletlen ideig vár, és újraküldi a keretet. (merged.pdf 315. oldal)"
   },
@@ -3866,14 +3963,22 @@
         "text": "Az állomások egy központi szervertől információt kapnak a csatorna állapotáról.",
         "correct": false
       },
-      { "text": "A vivőjel hibáját képes detektálni", "correct": false }
+      {
+        "text": "A vivőjel hibáját képes detektálni",
+        "correct": false
+      }
     ],
     "explanation": "Vivőjel-érzékelés (carrier sense) esetén az állomás adás előtt „belehallgat” a csatornába, és annak foglaltsága alapján dönt (foglalt/szabad). (merged.pdf 306. oldal)"
   },
   {
     "id": "extra_kerdesek-19",
     "question": "Hány rétege van az ISO/OSI-modellnek?",
-    "options": [{ "text": "7", "correct": true }],
+    "options": [
+      {
+        "text": "7",
+        "correct": true
+      }
+    ],
     "explanation": "Az OSI referencia modell 7 rétegből áll. (merged.pdf 118. oldal)"
   },
   {
@@ -3884,7 +3989,10 @@
         "text": "A vételi és a küldési energiák különbségét.",
         "correct": false
       },
-      { "text": "A küldési és vételi energiák hányadosát.", "correct": true },
+      {
+        "text": "A küldési és vételi energiák hányadosát.",
+        "correct": true
+      },
       {
         "text": "A vételi és küldési energiák különbségének négyzetgyökét.",
         "correct": false
@@ -3900,10 +4008,22 @@
     "id": "extra_kerdesek-21",
     "question": "Adott N állomás, melyek Alapvető bittérkép protokollt használnak a közeghozzáféréshez. A versengési időrés 1 időegység. Egy adatkeret küldése szintén egységesen 1 időegységig tart. Legjobb esetben hány időegységet kell egy állomásnak várnia a saját kerete átvitelének megkezdése előtt? [Azt az időrést már ne számoljuk, amiben a saját keret is átvitelre kerül. Továbbá tegyük fel, hogy közvetlenül a versengési időrés előtt állunk! Gondolkodjunk az ideális sorszámmal!]",
     "options": [
-      { "text": "2", "correct": false },
-      { "text": "1", "correct": false },
-      { "text": "N+2", "correct": false },
-      { "text": "N", "correct": true }
+      {
+        "text": "2",
+        "correct": false
+      },
+      {
+        "text": "1",
+        "correct": false
+      },
+      {
+        "text": "N+2",
+        "correct": false
+      },
+      {
+        "text": "N",
+        "correct": true
+      }
     ],
     "explanation": "Az alapvető bittérkép protokollnál a versengési periódus hossza N időrés (a PDF-ben: „Az ütköztetési periódus N időrés”), és a küldések csak ezután indulnak sorszám szerint. Legjobb esetben (ideális, legkisebb sorszámú küldőként) nincs előtted adatkeret, így csak a teljes bittérkép/versengési periódust kell kivárnod: N."
   },
@@ -3911,10 +4031,22 @@
     "id": "extra_kerdesek-22",
     "question": "Melyik protokoll használ portszámokat a multiplexáláshoz az alábbiak közül?",
     "options": [
-      { "text": "IP", "correct": false },
-      { "text": "Ethernet", "correct": false },
-      { "text": "ARP", "correct": false },
-      { "text": "TCP", "correct": true }
+      {
+        "text": "IP",
+        "correct": false
+      },
+      {
+        "text": "Ethernet",
+        "correct": false
+      },
+      {
+        "text": "ARP",
+        "correct": false
+      },
+      {
+        "text": "TCP",
+        "correct": true
+      }
     ],
     "explanation": "A portszámok a szállítási rétegben (TCP/UDP) szolgálnak a folyamatok közötti multiplexálásra/demultiplexálásra."
   },
@@ -3922,10 +4054,22 @@
     "id": "extra_kerdesek-23",
     "question": "Adott három állomás (A,B,C), melyek CDMA módszert használnak. Jelölje be, hogy mely chip vektorok lennének helyesek?",
     "options": [
-      { "text": "A: (0,1,0) ; B: (1,0,0) ; C: (1,1,0)", "correct": false },
-      { "text": "A: (1,1,1) ; B: (-1,-1,0) ; C: (0,0,-1)", "correct": false },
-      { "text": "A: (1,1,0) ; B: (1,-1,0) ; C: (0,0,-1)", "correct": true },
-      { "text": "A: (1,0,0) ; B: (0,1,0) ; C: (0,0,1)", "correct": true }
+      {
+        "text": "A: (0,1,0) ; B: (1,0,0) ; C: (1,1,0)",
+        "correct": false
+      },
+      {
+        "text": "A: (1,1,1) ; B: (-1,-1,0) ; C: (0,0,-1)",
+        "correct": false
+      },
+      {
+        "text": "A: (1,1,0) ; B: (1,-1,0) ; C: (0,0,-1)",
+        "correct": true
+      },
+      {
+        "text": "A: (1,0,0) ; B: (0,1,0) ; C: (0,0,1)",
+        "correct": true
+      }
     ],
     "explanation": "CDMA-nál a jó chip-kódok (ideális esetben) páronként ortogonálisak (belső szorzatuk 0), így a vevő korrelációval szét tudja választani a felhasználókat. A 3. és 4. opcióban a vektorok páronként ortogonálisak."
   },
@@ -3933,10 +4077,22 @@
     "id": "extra_kerdesek-24",
     "question": "Melyik mező szerepel az UDP fejlécében a hibák ellenőrzésére?",
     "options": [
-      { "text": "Nyugtaszám", "correct": false },
-      { "text": "Sorszám", "correct": false },
-      { "text": "Ellenőrzőösszeg", "correct": true },
-      { "text": "Ablak mérete", "correct": false }
+      {
+        "text": "Nyugtaszám",
+        "correct": false
+      },
+      {
+        "text": "Sorszám",
+        "correct": false
+      },
+      {
+        "text": "Ellenőrzőösszeg",
+        "correct": true
+      },
+      {
+        "text": "Ablak mérete",
+        "correct": false
+      }
     ],
     "explanation": "Az UDP fejléc tartalmaz ellenőrzőösszeget (checksum) hibadetektálásra."
   },
@@ -3990,10 +4146,22 @@
     "id": "extra_kerdesek-27",
     "question": "Melyik közeghozzáférést biztosító protokoll használ rögzített időrésket a továbbítási kísérletekhez?",
     "options": [
-      { "text": "Slotted ALOHA", "correct": true },
-      { "text": "Pure ALOHA", "correct": false },
-      { "text": "Non-persistent CSMA", "correct": false },
-      { "text": "1-persistent CSMA", "correct": false }
+      {
+        "text": "Slotted ALOHA",
+        "correct": true
+      },
+      {
+        "text": "Pure ALOHA",
+        "correct": false
+      },
+      {
+        "text": "Non-persistent CSMA",
+        "correct": false
+      },
+      {
+        "text": "1-persistent CSMA",
+        "correct": false
+      }
     ],
     "explanation": "A Réselt (Slotted) ALOHA rögzített időrésekre osztja a csatornát (a PDF-ben: „A csatornát azonos időrésekre bontjuk… Átvitel csak az időrések határán lehetséges”)."
   },
@@ -4027,17 +4195,34 @@
   {
     "id": "extra_kerdesek-29",
     "question": "Adott egy 400 bites keret. 4/5 bit kódolás segítségével visszük át a fizikai közegen. Hány bit kerül ténylegesen átvitelre ezzel a kódolással (=hány órajelciklus szükséges)?",
-    "options": [{ "text": "500", "correct": true }],
+    "options": [
+      {
+        "text": "500",
+        "correct": true
+      }
+    ],
     "explanation": "4/5 kódolásnál minden 4 adatbitből 5 vonali bit lesz, így 400 * (5/4) = 500 bit kerül átvitelre."
   },
   {
     "id": "extra_kerdesek-30",
     "question": "Hogyan állítjuk be az újraküldéshez használt időkorlátot (RTO) a TCP esetén?",
     "options": [
-      { "text": "2 * RTT", "correct": true },
-      { "text": "alfa * RTO_old + (1-alfa)*RTT", "correct": false },
-      { "text": "RTT", "correct": false },
-      { "text": "2", "correct": false }
+      {
+        "text": "2 * RTT",
+        "correct": true
+      },
+      {
+        "text": "alfa * RTO_old + (1-alfa)*RTT",
+        "correct": false
+      },
+      {
+        "text": "RTT",
+        "correct": false
+      },
+      {
+        "text": "2",
+        "correct": false
+      }
     ],
     "explanation": "A TCP az RTT-t becsüli (simítással), és az RTO-t ennek egy (konzervatívabb) többszöröseként állítja be; a tananyag egyszerűsített alakja: RTO ≈ 2 * becsült RTT."
   },
@@ -4091,10 +4276,22 @@
     "id": "extra_kerdesek-33",
     "question": "Melyik OSI-réteg feladata a fizikai réteg hibáinak detektálása és -javítása?",
     "options": [
-      { "text": "Fizikai réteg", "correct": false },
-      { "text": "Adatkapcsolati réteg", "correct": true },
-      { "text": "Szállító réteg", "correct": false },
-      { "text": "Hálózati réteg", "correct": false }
+      {
+        "text": "Fizikai réteg",
+        "correct": false
+      },
+      {
+        "text": "Adatkapcsolati réteg",
+        "correct": true
+      },
+      {
+        "text": "Szállító réteg",
+        "correct": false
+      },
+      {
+        "text": "Hálózati réteg",
+        "correct": false
+      }
     ],
     "explanation": "A fizikai réteg biteket visz át; a keretszintű hibadetektálás/-javítás (pl. CRC, ARQ) tipikusan az adatkapcsolati réteg feladata."
   },
@@ -4102,10 +4299,22 @@
     "id": "extra_kerdesek-34",
     "question": "Melyik réteg nyújt végpont–végpont kommunikációt socketekkel?",
     "options": [
-      { "text": "Adatkapcsolati réteg", "correct": false },
-      { "text": "Alkalmazási réteg", "correct": false },
-      { "text": "Hálózati réteg", "correct": false },
-      { "text": "Szállítási réteg", "correct": true }
+      {
+        "text": "Adatkapcsolati réteg",
+        "correct": false
+      },
+      {
+        "text": "Alkalmazási réteg",
+        "correct": false
+      },
+      {
+        "text": "Hálózati réteg",
+        "correct": false
+      },
+      {
+        "text": "Szállítási réteg",
+        "correct": true
+      }
     ],
     "explanation": "A socket az end-to-end szállítási szolgáltatás (TCP/UDP) tipikus programozói interfésze."
   },
@@ -4113,17 +4322,34 @@
     "id": "extra_kerdesek-35",
     "question": "Melyik eszköz fő feladata a keretek továbbítása MAC-cím alapján?",
     "options": [
-      { "text": "Útválasztó/Router", "correct": false },
-      { "text": "Kapcsoló/Switch", "correct": true },
-      { "text": "Hub", "correct": false },
-      { "text": "Átjáró/Gateway", "correct": false }
+      {
+        "text": "Útválasztó/Router",
+        "correct": false
+      },
+      {
+        "text": "Kapcsoló/Switch",
+        "correct": true
+      },
+      {
+        "text": "Hub",
+        "correct": false
+      },
+      {
+        "text": "Átjáró/Gateway",
+        "correct": false
+      }
     ],
     "explanation": "MAC-cím alapján, 2. rétegbeli továbbítást a switch végez (MAC-tábla alapján)."
   },
   {
     "id": "extra_kerdesek-36",
     "question": "A TCP torlódásvezérlés első fázisát így nevezzük (kis betűvel írva angolul, két szó):",
-    "options": [{ "text": "slow start", "correct": true }],
+    "options": [
+      {
+        "text": "slow start",
+        "correct": true
+      }
+    ],
     "explanation": "A TCP torlódásvezérlés első szakasza a \"slow start\"."
   },
   {
@@ -4153,10 +4379,22 @@
     "id": "extra_kerdesek-38",
     "question": "Melyik multiplexelési technika osztja frekvencia alapján a sávot?",
     "options": [
-      { "text": "TDMA", "correct": false },
-      { "text": "SDMA", "correct": false },
-      { "text": "FDMA", "correct": true },
-      { "text": "CDMA", "correct": false }
+      {
+        "text": "TDMA",
+        "correct": false
+      },
+      {
+        "text": "SDMA",
+        "correct": false
+      },
+      {
+        "text": "FDMA",
+        "correct": true
+      },
+      {
+        "text": "CDMA",
+        "correct": false
+      }
     ],
     "explanation": "Frekvencia szerinti felosztás: FDMA (Frequency Division Multiple Access)."
   },
@@ -4164,28 +4402,60 @@
     "id": "extra_kerdesek-39",
     "question": "Mely algoritmusok kapcsolódnak a TCP torlódásvezérléséhez? (Válassza ki az összes helyeset!)",
     "options": [
-      { "text": "Dijkstra", "correct": false },
-      { "text": "Cubic", "correct": true },
-      { "text": "Fast Retransmit", "correct": true },
-      { "text": "Slow Start", "correct": true },
-      { "text": "RED", "correct": true }
+      {
+        "text": "Dijkstra",
+        "correct": false
+      },
+      {
+        "text": "Cubic",
+        "correct": true
+      },
+      {
+        "text": "Fast Retransmit",
+        "correct": true
+      },
+      {
+        "text": "Slow Start",
+        "correct": true
+      },
+      {
+        "text": "RED",
+        "correct": true
+      }
     ],
     "explanation": "CUBIC, Slow Start és Fast Retransmit a TCP torlódás-/veszteségkezeléséhez kötődik; RED (Random Early Detection) torlódáselkerülési/AQM mechanizmus, ami TCP-vel együtt tipikusan a torlódás kezelését szolgálja. Dijkstra útvonalválasztási algoritmus."
   },
   {
     "id": "extra_kerdesek-40",
     "question": "Legyen az átvitel (throughput) a terhelés (G) függvényében: S(G). Dinamikus csatornakiosztást tekintve ideális esetben milyen értéket vesz fel S(G), ha G=0.5?",
-    "options": [{ "text": "0.5", "correct": true }],
+    "options": [
+      {
+        "text": "0.5",
+        "correct": true
+      }
+    ],
     "explanation": "Ideális dinamikus csatornakiosztásnál nincs ütközési veszteség: S(G)=G (amíg G≤1), ezért G=0.5 esetén S=0.5."
   },
   {
     "id": "extra_kerdesek-41",
     "question": "Adott 2^N állomás, melyek adaptív fabejárás protokollt használnak a közeghozzáféréshez. Két állomás áll készen keret küldésére egy időben, melyek ütközést okoznak. Egy adatkeret küldése egységesen 1 időegységig tart. Legrosszabb esetben hány időegység szükséges az ütközés feloldásához? (Az első ütközéses időrés nem számolva; nincs új kérés; legrosszabb sorszám-kiosztás.)",
     "options": [
-      { "text": "N-1", "correct": false },
-      { "text": "2N", "correct": false },
-      { "text": "3", "correct": false },
-      { "text": "N", "correct": true }
+      {
+        "text": "N-1",
+        "correct": false
+      },
+      {
+        "text": "2N",
+        "correct": false
+      },
+      {
+        "text": "3",
+        "correct": false
+      },
+      {
+        "text": "N",
+        "correct": true
+      }
     ],
     "explanation": "Legrosszabb esetben a két állomás azonos N−1 bites prefixet oszt meg, ezért a fabejárás N szintig kénytelen haladni, mire az első sikeres adás megtörténik (az első ütközéses slotot nem számolva)."
   },
@@ -4193,10 +4463,22 @@
     "id": "extra_kerdesek-42",
     "question": "Melyik protokollra jellemző a path vector routing?",
     "options": [
-      { "text": "IS-IS", "correct": false },
-      { "text": "OSPF", "correct": false },
-      { "text": "BGP", "correct": true },
-      { "text": "RIP", "correct": false }
+      {
+        "text": "IS-IS",
+        "correct": false
+      },
+      {
+        "text": "OSPF",
+        "correct": false
+      },
+      {
+        "text": "BGP",
+        "correct": true
+      },
+      {
+        "text": "RIP",
+        "correct": false
+      }
     ],
     "explanation": "A path-vector útvonalválasztás az AS-path jellegű információt használó BGP-re jellemző."
   },
@@ -4204,17 +4486,34 @@
     "id": "extra_kerdesek-43",
     "question": "Az alábbiak közül melyik egy szállítói réteghez kapcsolódó PDU (Protocol Data Unit, Protokoll Adategység)?",
     "options": [
-      { "text": "Keret", "correct": false },
-      { "text": "Szegmens", "correct": true },
-      { "text": "Csomag", "correct": false },
-      { "text": "Datagram", "correct": false }
+      {
+        "text": "Keret",
+        "correct": false
+      },
+      {
+        "text": "Szegmens",
+        "correct": true
+      },
+      {
+        "text": "Csomag",
+        "correct": false
+      },
+      {
+        "text": "Datagram",
+        "correct": false
+      }
     ],
     "explanation": "A szállítói (transport) réteg tipikus PDU-ja a szegmens (TCP: segment). A keret L2, a csomag/datagram L3."
   },
   {
     "id": "extra_kerdesek-44",
     "question": "Mi az IPv4 C-osztályú hálózat alapértelmezett alhálózati maszkja (x.y.z.s formátumban)?",
-    "options": [{ "text": "255.255.255.0", "correct": true }],
+    "options": [
+      {
+        "text": "255.255.255.0",
+        "correct": true
+      }
+    ],
     "explanation": "A klasszikus osztályalapú címzésben a C osztály alapértelmezett maszkja /24, azaz 255.255.255.0."
   },
   {
@@ -4229,8 +4528,14 @@
         "text": "A hálózat által kezelhető maximális adatmennyiséget mutatja.",
         "correct": false
       },
-      { "text": "A fogadó pufferének méretét mutatja.", "correct": true },
-      { "text": "A kiküldhető csomagok számát jelenti.", "correct": false }
+      {
+        "text": "A fogadó pufferének méretét mutatja.",
+        "correct": true
+      },
+      {
+        "text": "A kiküldhető csomagok számát jelenti.",
+        "correct": false
+      }
     ],
     "explanation": "Az advertised window (rwnd) a fogadó által jelzett fogadói puffer/szabad kapacitás, a TCP flow control alapja."
   },
@@ -4238,13 +4543,22 @@
     "id": "extra_kerdesek-46",
     "question": "Egy protokoll CRC-t használ hiba felismeréshez. Az alkalmazott generátor polinom fokszáma 32. Hány biten ábrázolható a CRC kontrollösszeg (a maradék polinom)?",
     "options": [
-      { "text": "30", "correct": false },
+      {
+        "text": "30",
+        "correct": false
+      },
       {
         "text": "Nincs összefüggés a fokszám és a CRC kontrollösszeg bitszélessége között.",
         "correct": false
       },
-      { "text": "32", "correct": true },
-      { "text": "31", "correct": false }
+      {
+        "text": "32",
+        "correct": true
+      },
+      {
+        "text": "31",
+        "correct": false
+      }
     ],
     "explanation": "A generátor polinom foka r esetén a maradék polinom foka < r, ezért r bites CRC-t tárolunk; itt r=32."
   },
@@ -4283,17 +4597,34 @@
     "id": "extra_kerdesek-48",
     "question": "TCP Reno Fast Retransmit mikor küldi újra a csomagot?",
     "options": [
-      { "text": "Időtúllépéskor", "correct": false },
-      { "text": "Három duplikált nyugta után", "correct": true },
-      { "text": "CWND felére csökkentése után", "correct": false },
-      { "text": "SSTHRESH elérésekor", "correct": false }
+      {
+        "text": "Időtúllépéskor",
+        "correct": false
+      },
+      {
+        "text": "Három duplikált nyugta után",
+        "correct": true
+      },
+      {
+        "text": "CWND felére csökkentése után",
+        "correct": false
+      },
+      {
+        "text": "SSTHRESH elérésekor",
+        "correct": false
+      }
     ],
     "explanation": "A Fast Retransmit tipikusan 3 darab duplikált ACK után újraküldést indít (nem vár timeout-ra)."
   },
   {
     "id": "extra_kerdesek-49",
     "question": "Adott egy Distance Vector protokollt használó hálózat. Az u állomás szomszédai A, B és C. Adottak az alábbi élköltségek: c(u,A)=3, c(u,B)=1, c(u,C)=7. Az u állomás egy adott időpillanatban megkapja mindhárom szomszéd távolság vektorait: dA(B)=12, dA(C)=3, dA(D)=4; dB(A)=3, dB(C)=8, dB(D)=2; dC(A)=1, dC(B)=2, dC(D)=1. u vektorainak frissítése után adjuk meg du(D) távolságot!",
-    "options": [{ "text": "3", "correct": true }],
+    "options": [
+      {
+        "text": "3",
+        "correct": true
+      }
+    ],
     "explanation": "Distance Vector frissítés: du(D)=min{c(u,A)+dA(D), c(u,B)+dB(D), c(u,C)+dC(D)} = min{3+4, 1+2, 7+1} = min{7,3,8} = 3."
   }
 ]
