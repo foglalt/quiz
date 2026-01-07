@@ -1519,7 +1519,7 @@
         "correct": false
       },
       {
-        "text": "QAM technika (A QAM egyszerre modulálja az amplitúdót és a fázist, de a kérdésben csak",
+        "text": "QAM technika (A QAM egyszerre modulálja az amplitúdót és a fázist, de a kérdésben csak frekvenciaváltozásról van szó.)",
         "correct": false
       },
       {
@@ -3038,7 +3038,7 @@
     "options": [
       {
         "text": "ahol a hiba polinom E(x) = x^9 + x + 1",
-        "correct": true
+        "correct": false
       },
       {
         "text": "ahol a hiba polinom E(x) = x + 1",
@@ -3049,8 +3049,8 @@
         "correct": false
       },
       {
-        "text": "Minden hibát felismer a módszer.",
-        "correct": false
+        "text": "ahol a hiba polinom E(x) = x^11 + x^4 + x^3 + x^2",
+        "correct": true
       }
     ],
     "explanation": "CRC esetén egy hiba akkor maradhat észrevétlen, ha a hiba polinom E(x) osztható a generátor polinommal G(x) (azaz az osztási maradék 0). A helyes opció ezért az, amelynél E(x) többszöröse/osztható G(x)-szel."
