@@ -220,29 +220,6 @@
     "explanation": "A helyes válasz a definíció közvetlen alkalmazása: 2N."
   },
   {
-    "id": "beugro-kvizkerdesek-q13",
-    "question": "Mi igaz a bridge-eknél (hidaknál) látott MAC címek tanulása módszerre?",
-    "options": [
-      {
-        "text": "Új cím csak akkor rakható be, ha egy régit kitörlünk.",
-        "correct": false
-      },
-      {
-        "text": "A beérkező keretben szereplő forrásállomás MAC címét és a beérkezési portot betesszük a továbbítási",
-        "correct": true
-      },
-      {
-        "text": "A beérkező keretben szereplő célállomás MAC címét és a beérkezési portot betesszük a továbbítási táblába.",
-        "correct": false
-      },
-      {
-        "text": "Ismeretlen cél esetén szétküldjük minden szomszédnak a keretet, majd figyeljük a választ és az alapján",
-        "correct": false
-      }
-    ],
-    "explanation": "A helyes válasz a definíció közvetlen alkalmazása: A beérkező keretben szereplő forrásállomás MAC címét és a beérkezési portot betesszük a továbbítási."
-  },
-  {
     "id": "beugro-kvizkerdesek-q14",
     "question": "Mi igaz a sávszélességű átvitelre? / Melyik állítások igazak a szélessávú átvitelre?",
     "options": [
@@ -561,29 +538,6 @@
       }
     ],
     "explanation": "A TCP elérhető átvitele tipikusan fordítottan arányos az RTT-vel (minél nagyobb a köridő, annál lassabban érkeznek vissza a nyugták), és csökken a veszteségi valószínűség növekedésével (a torlódásvezérlés visszaveszi a küldési rátát)."
-  },
-  {
-    "id": "beugro-kvizkerdesek-q34",
-    "question": "Kumulatív nyugta (cummulative ACK) esetén miként tudjuk detektálni a csomagvesztést?",
-    "options": [
-      {
-        "text": "A nyugta csomagokban kerülnek jelzésre a fogadott sorszámok, ami alapján a hiányzó csomagok",
-        "correct": false
-      },
-      {
-        "text": "A nyugta csomagokban kerülnek jelzésre a hiányzó sorszámok, ami alapján a hiányzó csomagok",
-        "correct": false
-      },
-      {
-        "text": "Az egyedi nyugták alapján a forrás nyilvántartást vezet a nyugtázott sorszámokról. Ez alapján a hiányzó",
-        "correct": false
-      },
-      {
-        "text": "Az izolált csomagvesztéséket nyugta duplikátumok jelzik. Emellett timerekkel is dolgozik a módszer.",
-        "correct": true
-      }
-    ],
-    "explanation": "Kumulatív nyugtázásnál a nyugta azt jelzi, hogy az adott sorszámig bezárólag minden keret/bájt rendben megérkezett (folytonos tartomány). Ez egyszerű és jól kezeli a nyugták elvesztését, mert egy későbbi nyugta „pótolhatja” a korábbit."
   },
   {
     "id": "beugro-kvizkerdesek-q35",
@@ -979,7 +933,7 @@
     "question": "Mi igaz az alternáló bit protokollra (ABP)? / Mely állítások igazak az alternáló bit protokollra (ABP)?",
     "options": [
       {
-        "text": "evő oldalon, ha nincs hiba az adatrészt továbbküldi a hálózati rétegnek, végül nyugtázza a keretet és lépteti a sorszámot mod 2.",
+        "text": "Vevő oldalon, ha nincs hiba az adatrészt továbbküldi a hálózati rétegnek, végül nyugtázza a keretet és lépteti a sorszámot mod 2.",
         "correct": true
       },
       {
@@ -1157,7 +1111,7 @@
         "correct": true
       },
       {
-        "text": "2 egész hatvány sorszámú pozíciói lesznek az ellenőrző bitek, azaz 1, 2, 4, 8, 16, ..., a maradék helyeket az",
+        "text": "2 egész hatvány sorszámú pozíciói lesznek az ellenőrző bitek, azaz 1, 2, 4, 8, 16, ..., a maradék helyeket az üzenet bitjeivel töltjük fel",
         "correct": true
       },
       {
@@ -1165,7 +1119,7 @@
         "correct": false
       },
       {
-        "text": "A polinóm aritmetika mod 2 felett történikú",
+        "text": "A polinóm aritmetika mod 2 felett történik",
         "correct": false
       },
       {
