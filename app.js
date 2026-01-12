@@ -32,6 +32,10 @@ function getTopicConfig() {
       file: "questions-telekom.json",
       label: "Telekom",
     },
+    konkurens: {
+      file: "questions-konkurens.json",
+      label: "Konkurens",
+    },
   };
   return map[topic] || map.szamelm;
 }

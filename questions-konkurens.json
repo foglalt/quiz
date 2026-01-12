@@ -1,0 +1,539 @@
+[
+  {
+    "id": "konk-notes-q01-sync-method-equivalence",
+    "question": "Mivel egyenértékű egy metódus zárolása (pl. `synchronized void m() { ... }`)?",
+    "options": [
+      {
+        "text": "`void m() { synchronized(this) { ... } }`",
+        "correct": true
+      },
+      {
+        "text": "`void m() { synchronized(C.class) { ... } }`",
+        "correct": false
+      },
+      {
+        "text": "`static synchronized void m() { ... }`",
+        "correct": false
+      },
+      {
+        "text": "`void m() { synchronized(new Object()) { ... } }`",
+        "correct": false
+      }
+    ],
+    "explanation": "A nem statikus `synchronized` metódus az adott példány (`this`) monitorján szinkronizál, ezért a vele ekvivalens forma egy `synchronized(this)` blokk."
+  },
+  {
+    "id": "konk-notes-q02-interrupt-print-min",
+    "question": "Legalább hány számot ír ki a következő kódrészlet?\n\nclass T extends Thread {\n    public void run() {\n        for (int i = 0; i < 100; ++i) {\n            for (int j = 0; j < 100; ++j) {\n                System.out.println(100 * i + j);\n            }\n            try {\n                Thread.sleep(10);\n            } catch (InterruptedException e) {\n                return;\n            }\n        }\n    }\n}\n...\nT t = new T();\nt.start();\nt.interrupt();",
+    "options": [
+      {
+        "text": "0",
+        "correct": false
+      },
+      {
+        "text": "1",
+        "correct": false
+      },
+      {
+        "text": "100",
+        "correct": true
+      },
+      {
+        "text": "10000",
+        "correct": false
+      }
+    ],
+    "explanation": "Az interrupt csak a `sleep`-nél dob kivételt (itt nincs külön megszakítás-ellenőrzés a belső ciklusban), így az első 100 kiírás (i=0, j=0..99) biztosan megtörténik, mielőtt a `sleep` azonnal `InterruptedException`-t dobna."
+  },
+  {
+    "id": "konk-notes-q03-too-large-tasks-disadvantage",
+    "question": "Mi a hátránya a túl nagy feladatoknak (túl durva szemcsézettségű párhuzamosításnál)?",
+    "options": [
+      {
+        "text": "Kismértékű konkurencia (kevés párhuzamosan futó egység, rosszabb terheléselosztás).",
+        "correct": true
+      },
+      {
+        "text": "Kevesebb a kontextusváltás, ezért lassabb lesz a program.",
+        "correct": false
+      },
+      {
+        "text": "Nő a holtpont (deadlock) esélye önmagában a feladat méretétől.",
+        "correct": false
+      },
+      {
+        "text": "A JVM automatikusan letiltja a párhuzamos futást nagy feladatoknál.",
+        "correct": false
+      }
+    ],
+    "explanation": "Ha kevés, nagy task van, akkor a rendelkezésre álló szálak/magok könnyen tétlenek maradnak (rossz load balancing), ezért csökken az elérhető párhuzamosság."
+  },
+  {
+    "id": "konk-notes-q04-join-20-race",
+    "question": "Helyes-e a következő kód? (Vagyis a `b.join()` után 20 lesz-e `n[0]` értéke?)\n\nint[] n = new int[1];\n...\nclass A extends Thread {\n  public void run() {\n    for (i = 0; i < 10; ++i) {\n      synchronized (n) { ++n[0]; }\n    }\n  }\n}\nclass B extends Thread {\n  public void run() {\n    for (i = 0; i < 10; ++i) { ++n[0]; }\n  }\n}\n...\nA a = new A();\nB b = new B();\na.start();\nb.start();\na.join();\nb.join();",
+    "options": [
+      {
+        "text": "Igen, mert a `join()` garantálja, hogy a műveletek „összeadódnak” és 20 lesz az eredmény.",
+        "correct": false
+      },
+      {
+        "text": "Nem, mert a második szálból hiányzik a szinkronizáció, így adatrace és elvesző növelések lehetnek.",
+        "correct": true
+      },
+      {
+        "text": "Igen, mert az `int[]` referencia megosztott, ezért automatikusan szálbiztos.",
+        "correct": false
+      },
+      {
+        "text": "Nem, mert tömböt (`int[]`) nem lehet zárolni Java-ban.",
+        "correct": false
+      }
+    ],
+    "explanation": "A `++n[0]` nem atomi művelet. Mivel a `B` szál nem használ szinkronizációt ugyanazon a lockon, versenyhelyzet léphet fel, és az eredmény 20-nál kevesebb is lehet."
+  },
+  {
+    "id": "konk-notes-q05-read-no-sync-keyword",
+    "question": "Milyen kulcsszóval megjelölt változónak az olvasása nem igényel szinkronizációt (a konstruktor utáni inicializációs biztonság miatt)?",
+    "options": [
+      {
+        "text": "final",
+        "correct": true
+      },
+      {
+        "text": "volatile",
+        "correct": false
+      },
+      {
+        "text": "synchronized",
+        "correct": false
+      },
+      {
+        "text": "atomic",
+        "correct": false
+      }
+    ],
+    "explanation": "A `final` mezők speciális láthatósági garanciát kapnak: ha az objektum konstrukciója rendben lefutott és az objektum „biztonságosan publikált”, akkor a `final` mezők értéke más szálak számára szinkronizáció nélkül is helyesen látható."
+  },
+  {
+    "id": "konk-notes-q06-deadlock-which-threads",
+    "question": "A következő szálak közül melyek kerülhetnek holtpontba?\n\nT1: synchronized(o1) { synchronized(o2) { ... } }\nT2: synchronized(o2) { synchronized(o1) { ... } }",
+    "options": [
+      {
+        "text": "Csak a T1 kerülhet holtpontba.",
+        "correct": false
+      },
+      {
+        "text": "Csak a T2 kerülhet holtpontba.",
+        "correct": false
+      },
+      {
+        "text": "A T1 és T2 együtt holtpontba kerülhet (körkörös várakozás a lock-sorrend miatt).",
+        "correct": true
+      },
+      {
+        "text": "Egyik sem, mert a `synchronized` mindig deadlock-mentes.",
+        "correct": false
+      }
+    ],
+    "explanation": "Ha a T1 megszerzi `o1`-et és közben a T2 megszerzi `o2`-t, akkor mindkettő a másik lockjára várhat, ami klasszikus deadlock."
+  },
+  {
+    "id": "konk-notes-q07-producer-consumer-ds",
+    "question": "Milyen adatszerkezet segítségével képes egy vagy több termelő szál egy vagy több fogyasztó szállal hatékonyan és szálbiztos módon kommunikálni?",
+    "options": [
+      {
+        "text": "Blokkoló sor (BlockingQueue)",
+        "correct": true
+      },
+      {
+        "text": "Sima `ArrayList`, mert az gyors és mindenhol elérhető.",
+        "correct": false
+      },
+      {
+        "text": "`HashMap`, mert kulcs alapján lehet benne keresni.",
+        "correct": false
+      },
+      {
+        "text": "`Semaphore`, mert az tárolja az elemeket és átadja a fogyasztónak.",
+        "correct": false
+      }
+    ],
+    "explanation": "A BlockingQueue egyszerre ad szálbiztosságot és hatékony várakozást: ha üres, a fogyasztó blokkol; ha tele (bounded queue), a termelő blokkol."
+  },
+  {
+    "id": "konk-notes-q08-fixed-pool-2-three-tasks",
+    "question": "Legalább hány másodpercig tart a következő kód végrehajtása?\n\nExecutorService pool = Executors.newFixedThreadPool(2);\nCallable<Integer> slowReturner = () -> { Thread.sleep(1000); return 1; };\nFuture<Integer> i1 = pool.submit(slowReturner);\nFuture<Integer> i2 = pool.submit(slowReturner);\nFuture<Integer> i3 = pool.submit(slowReturner);\nSystem.out.println(i1.get() + i2.get() + i3.get());\npool.shutdown();",
+    "options": [
+      {
+        "text": "1",
+        "correct": false
+      },
+      {
+        "text": "2",
+        "correct": true
+      },
+      {
+        "text": "3",
+        "correct": false
+      },
+      {
+        "text": "Nem meghatározható, mert a `get()` azonnal visszatér.",
+        "correct": false
+      }
+    ],
+    "explanation": "A pool mérete 2, ezért egyszerre legfeljebb 2 task futhat. Két task ~1s alatt lefut párhuzamosan, a harmadik csak ezután kezdhet futni (~+1s), így minimum ~2s."
+  },
+  {
+    "id": "konk-notes-q09-why-wait-in-loop",
+    "question": "Miért szokás a `wait()` műveletet ciklusba (tipikusan `while`) tenni?",
+    "options": [
+      {
+        "text": "Mert a várakozó szál ok nélkül is felébredhet (spurious wakeup), és újra kell ellenőrizni a feltételt.",
+        "correct": true
+      },
+      {
+        "text": "Mert a `wait()` csak ciklusban hívható, különben fordítási hiba lesz.",
+        "correct": false
+      },
+      {
+        "text": "Mert a `notify()` mindig csak ciklusból képes felébreszteni más szálakat.",
+        "correct": false
+      },
+      {
+        "text": "Mert a ciklus biztosítja, hogy a lock felszabadítása gyorsabb legyen.",
+        "correct": false
+      }
+    ],
+    "explanation": "A `wait()` visszatérhet úgy is, hogy a várt feltétel még nem teljesül (spurious wakeup vagy másik szál elvitte az erőforrást), ezért a helyes minta: `while (!condition) lock.wait();`."
+  },
+  {
+    "id": "konk-notes-q10-blockingqueue-which-waits",
+    "question": "A következő hívások közül melyik várakozik, amennyiben a sor éppen üres?\n\nBlockingQueue<Integer> q = new LinkedBlockingQueue<>();\n...\nint n = q.take();",
+    "options": [
+      {
+        "text": "`take()`",
+        "correct": true
+      },
+      {
+        "text": "`poll()`",
+        "correct": false
+      },
+      {
+        "text": "`peek()`",
+        "correct": false
+      },
+      {
+        "text": "`remove()`",
+        "correct": false
+      }
+    ],
+    "explanation": "`take()` blokkol, amíg elem nem kerül a sorba. Ezzel szemben a `poll()`/`peek()` azonnal visszatér (pl. `null`-lal), a `remove()` pedig kivételt is dobhat üres sor esetén."
+  },
+  {
+    "id": "konk-notes-q11-explicit-lock-advantage",
+    "question": "Mi az előnye az explicit zárolásnak (pl. `ReentrantLock`) a beépítetthez (`synchronized`) képest?",
+    "options": [
+      {
+        "text": "Többféle művelettel rendelkezik (pl. `tryLock`, timeout, `lockInterruptibly`, külön `Condition`).",
+        "correct": true
+      },
+      {
+        "text": "Soha nem okozhat deadlockot.",
+        "correct": false
+      },
+      {
+        "text": "Nem kell feloldani (`unlock()`), mert automatikusan felszabadul.",
+        "correct": false
+      },
+      {
+        "text": "A JVM garantálja, hogy mindig gyorsabb, mint a `synchronized`.",
+        "correct": false
+      }
+    ],
+    "explanation": "Az explicit lockok rugalmasabb API-t adnak: lehet próbálkozni lock-szerzéssel (`tryLock`), időkorlátot/interruptibilitást használni és több feltételváltozót (`Condition`) kezelni."
+  },
+  {
+    "id": "konk-notes-q12-wait-notify-correctness",
+    "question": "Melyik megoldás helyes `wait/notify` használatára (azonos monitoron, monitor birtoklása mellett)?",
+    "options": [
+      {
+        "text": "A várakozó szál `synchronized(this)` blokkban hívja a `wait()`-ot, a jelző szál pedig `synchronized(t1)` blokkban hívja a `t1.notify()`-t.",
+        "correct": true
+      },
+      {
+        "text": "A várakozó szál hívhatja a `wait()`-ot szinkronizáció nélkül is, mert a `wait()` úgyis elengedi a lockot.",
+        "correct": false
+      },
+      {
+        "text": "A jelző szál hívhatja a `notify()`-t szinkronizáció nélkül, mert csak jelez.",
+        "correct": false
+      },
+      {
+        "text": "A várakozó szál `wait()`-olhat `this`-en, a jelző szál pedig `notify()`-olhat egy másik objektumon, ez ugyanazt a hatást adja.",
+        "correct": false
+      }
+    ],
+    "explanation": "A `wait/notify`-t ugyanazon objektum monitorán kell használni, és mindkettőt csak úgy szabad hívni, hogy a hívó szál éppen birtokolja az adott monitor lockját (különben `IllegalMonitorStateException`)."
+  },
+  {
+    "id": "konk-notes-q13-what-not-on-stack",
+    "question": "Java-ban mi az, ami nem a végrehajtási veremben (stack) található?",
+    "options": [
+      {
+        "text": "Osztálypéldányok (objektumok)",
+        "correct": true
+      },
+      {
+        "text": "Lokális változók és paraméterek (stack frame részei)",
+        "correct": false
+      },
+      {
+        "text": "Hívási keretek (activation record / stack frame)",
+        "correct": false
+      },
+      {
+        "text": "Visszatérési cím / kivételkezeléshez szükséges keret-információk",
+        "correct": false
+      }
+    ],
+    "explanation": "A stack a hívások aktivációs rekordjait tartalmazza (paraméterek, lokálisak, vezérlési információk). Az objektumok tipikusan a heapen helyezkednek el, és a stacken legfeljebb referencia található rájuk."
+  },
+  {
+    "id": "konk-notes-q14-readwrite-max-critical",
+    "question": "Mindegyikből indítunk 10-10 példányt (Reader/Writer). Összesen legfeljebb mennyi futhat egyszerre a kritikus szakaszában egy `ReadWriteLock` mellett?",
+    "options": [
+      {
+        "text": "1",
+        "correct": false
+      },
+      {
+        "text": "10",
+        "correct": true
+      },
+      {
+        "text": "20",
+        "correct": false
+      },
+      {
+        "text": "11",
+        "correct": false
+      }
+    ],
+    "explanation": "Read lockból több is tartható egyszerre, ezért legfeljebb mind a 10 olvasó lehet a kritikus szakaszban. Író lock viszont kizárólagos, így íróból egyszerre legfeljebb 1 lehetne."
+  },
+  {
+    "id": "konk-notes-q15-best-tcp-server",
+    "question": "Melyik a legcélszerűbb TCP szerver megvalósítás (sok kliens esetén, erőforrás-kímélő módon)?",
+    "options": [
+      {
+        "text": "Minden bejövő kapcsolathoz azonnal létrehozunk egy új `Thread`-et (`new Thread(...).start()`).",
+        "correct": false
+      },
+      {
+        "text": "Egy acceptor szál fogadja a kapcsolatokat, és a klienskezelést egy `ExecutorService`-es thread pool végzi (korlátozott, újrahasznosított szálak).",
+        "correct": true
+      },
+      {
+        "text": "Egyetlen szál fogad és szolgál ki minden klienst sorban (szinkron, blokkoló I/O).",
+        "correct": false
+      },
+      {
+        "text": "Végtelen ciklusban minden socketet folyamatosan lekérdezünk (busy-wait), hogy van-e adat.",
+        "correct": false
+      }
+    ],
+    "explanation": "A thread pool korlátozza a párhuzamos szálak számát és újrahasznosítja őket, így skálázhatóbb, mint a „thread-per-connection” modell, és jóval hatékonyabb, mint a soros vagy busy-wait megoldások."
+  },
+  {
+    "id": "konk-notes-q16-countdownlatch-ready",
+    "question": "Hány másodperc múlva írja ki a következő kód a \"Kész\" üzenetet?\n\nCountDownLatch latch = new CountDownLatch(1);\nThread thread = new Thread(() -> {\n    Thread.sleep(1000);\n    latch.countDown();\n});\nthread.start();\n\nlatch.await();\n\nthread = new Thread(() -> {\n    Thread.sleep(1000);\n    latch.countDown();\n});\nthread.start();\n\nlatch.await();\n\nSystem.out.println(\"Kész!\");",
+    "options": [
+      {
+        "text": "0",
+        "correct": false
+      },
+      {
+        "text": "1",
+        "correct": true
+      },
+      {
+        "text": "2",
+        "correct": false
+      },
+      {
+        "text": "Nem meghatározható, mert a latch újrahasználható (resetel).",
+        "correct": false
+      }
+    ],
+    "explanation": "Az első `await()` kb. 1s-ig vár, amíg a latch 0-ra csökken. A CountDownLatch nem resetelhető: a második `await()` már azonnal visszatér, mert a latch értéke továbbra is 0, így összesen ~1s után írja ki a program."
+  },
+  {
+    "id": "konkurens-zh-20260109-q01",
+    "question": "Melyik enged nagyobb mértékű egyidejű elérést az adatszerkezetben tárolt adatokhoz?",
+    "options": [
+      {
+        "text": "new ConcurrentHashMap<>()",
+        "correct": true
+      },
+      {
+        "text": "new HashMap<>()",
+        "correct": false
+      },
+      {
+        "text": "Mindhárom egyforma mértékű egyidejűséget biztosít.",
+        "correct": false
+      },
+      {
+        "text": "Collections.synchronizedMap(new HashMap<>())",
+        "correct": false
+      }
+    ],
+    "explanation": "A ConcurrentHashMap kifejezetten többszálú használatra készült, és több szál tud benne párhuzamosan dolgozni anélkül, hogy minden művelet egyetlen globális záron sorba állna. A HashMap nem szálbiztos, a synchronizedMap pedig jellemzően egy közös zárral szerializálja a műveleteket."
+  },
+  {
+    "id": "konkurens-zh-20260109-q02",
+    "question": "Egy változónak (effectively) final minősítőjűnek kell lennie, ha X eszközön kívül hozzuk létre, de benne használjuk. Mi az X?",
+    "options": [
+      {
+        "text": "a többi válaszlehetőség közül egynél több válasz is helyes",
+        "correct": false
+      },
+      {
+        "text": "lambda-kifejezés",
+        "correct": true
+      },
+      {
+        "text": "synchronized metódus",
+        "correct": false
+      },
+      {
+        "text": "kritikus szakasz",
+        "correct": false
+      },
+      {
+        "text": "synchronized blokk",
+        "correct": false
+      }
+    ],
+    "explanation": "A lambda (és az anonim belső osztály) csak olyan lokális változót tud „befogni”, amelyik final vagy effectively final. Ennek oka, hogy a befogott értéket a futtatandó kód biztonságosan és egyértelműen tudja használni, miközben a külső scope-ban már nem módosul."
+  },
+  {
+    "id": "konkurens-zh-20260109-q03",
+    "question": "Mi a kontextusváltás?",
+    "options": [
+      {
+        "text": "egy processzor(mag) másik metódust kezd el végrehajtani, és bevárja a kapcsolódó szálakat",
+        "correct": false
+      },
+      {
+        "text": "egy processzor(mag) másik szálat kezd el végrehajtani, és betölti a kapcsolódó adatokat",
+        "correct": true
+      },
+      {
+        "text": "egy processzor(mag) másik metódust kezd el végrehajtani, és betölti a kapcsolódó adatokat",
+        "correct": false
+      },
+      {
+        "text": "egy processzor(mag) másik szálat kezd el végrehajtani, és bevárja a kapcsolódó szálakat",
+        "correct": false
+      }
+    ],
+    "explanation": "Kontextusváltáskor a CPU egy másik végrehajtási szál/processz futtatására vált, ezért elmenti az aktuális szál állapotát (pl. regisztereket), majd betölti a következőét. Ez az ütemezéshez kapcsolódó alapművelet."
+  },
+  {
+    "id": "konkurens-zh-20260109-q04",
+    "question": "Hogyan tudjuk befolyásolni két szál egymáshoz képest való ütemezését Javában?",
+    "options": [
+      {
+        "text": "a System osztály `schedule` metódusával",
+        "correct": false
+      },
+      {
+        "text": "az ExecutorService osztály `schedule` metódusával",
+        "correct": false
+      },
+      {
+        "text": "a Thread osztály `schedule` metódusával",
+        "correct": false
+      },
+      {
+        "text": "nincsen rá érdemi befolyásunk",
+        "correct": true
+      }
+    ],
+    "explanation": "A szálak ütemezését alapvetően a JVM és az operációs rendszer végzi, és nincs olyan általános Java API, amivel két tetszőleges szál relatív ütemezését determinisztikusan „beállíthatnánk”. Legfeljebb közvetett eszközök vannak (pl. lockok, várakoztatás), de ezek nem általános ütemezés-vezérlés."
+  },
+  {
+    "id": "konkurens-zh-20260109-q05",
+    "question": "Egy metódus egy lokális változójának a tartalma mindig egy szálra van-e korlátozva?",
+    "options": [
+      {
+        "text": "csak akkor, ha final jellegű",
+        "correct": false
+      },
+      {
+        "text": "csak akkor, ha synchronized jellegű",
+        "correct": false
+      },
+      {
+        "text": "csak akkor, ha atomic jellegű",
+        "correct": false
+      },
+      {
+        "text": "nem",
+        "correct": true
+      },
+      {
+        "text": "csak akkor, ha immutable jellegű",
+        "correct": false
+      }
+    ],
+    "explanation": "A lokális változó „helye” (a veremkeretben) valóban szálhoz kötött, de a benne tárolt érték lehet például egy más szálak által is elérhető objektum referenciája. Ha a referencia „kiszökik” (megosztjuk), akkor a tartalom már nem garantáltan csak egy szálhoz tartozik."
+  },
+  {
+    "id": "konkurens-zh-20260109-q06",
+    "question": "Kiegészítendő: Folyamatok egy halmaza holtpontba kerül, ha a halmaz minden folyamata feltétel vagy [A] nélkül blokkolódik egy olyan erőforrásra várva, amelyet egy olyan folyamat tart lekötve, amely [B].",
+    "options": [
+      {
+        "text": "[A] memóriakorlát [B] ezen a halmazon kívül van",
+        "correct": false
+      },
+      {
+        "text": "[A] memóriakorlát [B] szintén ebben a halmazban van",
+        "correct": false
+      },
+      {
+        "text": "[A] időkorlát [B] szintén ebben a halmazban van",
+        "correct": true
+      },
+      {
+        "text": "[A] időkorlát [B] ezen a halmazon kívül van",
+        "correct": false
+      }
+    ],
+    "explanation": "Holtpont (deadlock) esetén a várakozás körkörös: minden érintett folyamat olyan erőforrásra vár, amit egy másik (ugyanebben a halmazban lévő) folyamat fog. Ha nincs feltétel vagy időkorlát (timeout), akkor ebből a helyzetből külső beavatkozás nélkül nem jutnak ki."
+  },
+  {
+    "id": "konkurens-zh-20260109-q07",
+    "question": "Melyik állítás igaz a synchronized kulcsszó kétfajta használatával kapcsolatban?",
+    "options": [
+      {
+        "text": "az egyik esetben a védelem két különböző objektumra él, a másikban nem",
+        "correct": false
+      },
+      {
+        "text": "az egyik esetben a kulcs referencia típusú, a másikban nem",
+        "correct": false
+      },
+      {
+        "text": "az egyik esetben a kritikus szakasz hossza testreszabható, a másikban nem",
+        "correct": true
+      },
+      {
+        "text": "az egyik esetben a védett részen meghívható a wait, a másikban nem",
+        "correct": false
+      }
+    ],
+    "explanation": "Synchronized metódusnál a teljes metódust védjük (implicit módon egy monitorral), míg synchronized blokkban csak egy tetszőleges részletet zárunk körbe. Ezért blokk esetén a kritikus szakasz hossza rugalmasan alakítható, a metódus-szintű synchronized ezt nem teszi lehetővé."
+  }
+]
