@@ -373,11 +373,11 @@
     "options": [
       {
         "text": "new ConcurrentHashMap<>()",
-        "correct": true
+        "correct": false
       },
       {
         "text": "new HashMap<>()",
-        "correct": false
+        "correct": true
       },
       {
         "text": "Mindhárom egyforma mértékű egyidejűséget biztosít.",
@@ -388,7 +388,7 @@
         "correct": false
       }
     ],
-    "explanation": "A ConcurrentHashMap kifejezetten többszálú használatra készült, és több szál tud benne párhuzamosan dolgozni anélkül, hogy minden művelet egyetlen globális záron sorba állna. A HashMap nem szálbiztos, a synchronizedMap pedig jellemzően egy közös zárral szerializálja a műveleteket."
+    "explanation": "A ConcurrentHashMap kifejezetten többszálú használatra készült, és több szál tud benne párhuzamosan dolgozni anélkül, hogy minden művelet egyetlen globális záron sorba állna. A HashMap nem szálbiztos, viszont gyorsabb, így ez lesz a helyes válasz. A synchronizedMap pedig jellemzően egy közös zárral szerializálja a műveleteket."
   },
   {
     "id": "konkurens-zh-20260109-q02",
@@ -535,5 +535,166 @@
       }
     ],
     "explanation": "Synchronized metódusnál a teljes metódust védjük (implicit módon egy monitorral), míg synchronized blokkban csak egy tetszőleges részletet zárunk körbe. Ezért blokk esetén a kritikus szakasz hossza rugalmasan alakítható, a metódus-szintű synchronized ezt nem teszi lehetővé."
+  },
+  {
+    "id": "tms-zh-20260112-q01-sync-lock-key",
+    "question": "Az alábbiak közül mi nem lehet egy synchronized blokk kulcsa?",
+    "options": [
+      {
+        "text": "this (az aktuális objektumpéldány)",
+        "correct": false
+      },
+      {
+        "text": "Valamelyik osztály .class objektuma (pl. MyClass.class)",
+        "correct": false
+      },
+      {
+        "text": "Egy tetszőleges referenciatípusú objektum (pl. egy külön lock objektum)",
+        "correct": false
+      },
+      {
+        "text": "a \"normál\" válaszlehetőségek közül mindegyik lehet",
+        "correct": true
+      }
+    ],
+    "explanation": "A synchronized blokk kulcsa (monitor) csak referenciatípusú érték lehet (objektumreferencia). A tipikus opciók – this, egy külön lock objektum, illetve egy osztály Class objektuma – mind érvényesek, ezért a felsorolt „normál” lehetőségek közül nincs olyan, ami ne lehetne kulcs."
+  },
+  {
+    "id": "tms-zh-20260112-q02-class-threadsafe-usual",
+    "question": "Az alábbiak közül melyik szokásos megközelítés osztály szálbiztossá tételére?",
+    "options": [
+      {
+        "text": "minden mezőt volatile-nak jelölünk, és így kész",
+        "correct": false
+      },
+      {
+        "text": "minden metódusát synchronized minősítővel látjuk el",
+        "correct": true
+      },
+      {
+        "text": "csak a konstruktor lesz synchronized",
+        "correct": false
+      },
+      {
+        "text": "minden metódus elején Thread.sleep-et hívunk, hogy „ne ütközzenek”",
+        "correct": false
+      }
+    ],
+    "explanation": "A „minden publikus/metódus synchronized” egy klasszikus (bár sokszor túl durva) módja annak, hogy a megosztott belső állapothoz való hozzáférést sorosítsuk. A volatile nem helyettesíti az atomi műveleteket/összetett invariánsokat, a konstruktor szinkronizálása önmagában nem elég, a sleep pedig nem szinkronizáció."
+  },
+  {
+    "id": "tms-zh-20260112-q03-sleep-vs-timed-wait",
+    "question": "Mi a különbség a sleep és a paraméterekkel ellátott wait hívás között?",
+    "options": [
+      {
+        "text": "A sleep elengedi a monitor lockot, a wait nem.",
+        "correct": false
+      },
+      {
+        "text": "A wait bárhol meghívható, a sleep csak synchronized belsejében.",
+        "correct": false
+      },
+      {
+        "text": "Az egyik bárhol meghívható, a másik csak synchronized belsejében.",
+        "correct": true
+      },
+      {
+        "text": "Nincs különbség, mindkettő ugyanúgy csak időzített várakozás.",
+        "correct": false
+      }
+    ],
+    "explanation": "A Thread.sleep(...) bármelyik helyről hívható, és nem igényli, hogy lockot tarts. Ezzel szemben az Object.wait(timeout) csak akkor hívható, ha a hívó szál éppen birtokolja az adott objektum monitorját (tipikusan synchronized blokk/metódusban), és a wait a várakozás idejére el is engedi a lockot, majd visszatérés előtt újra megszerzi."
+  },
+  {
+    "id": "tms-zh-20260112-q04-executorservice-not-advantage",
+    "question": "Mi nem jellemző előnye egy ExecutorService használatának?",
+    "options": [
+      {
+        "text": "Az ExecutorService hatékonyabban hajtja végre a feladatokat.",
+        "correct": true
+      },
+      {
+        "text": "Thread poolt ad, így a szálak újrahasznosíthatók (kevesebb létrehozási költség).",
+        "correct": false
+      },
+      {
+        "text": "Lehetővé teszi a feladatok Future-n keresztüli kezelését (pl. get(), cancel()).",
+        "correct": false
+      },
+      {
+        "text": "Kontrollálható a párhuzamosság mértéke (pl. fix méretű pool).",
+        "correct": false
+      }
+    ],
+    "explanation": "Az ExecutorService fő előnye a szálkezelés/ütemezés absztrakciója (pooling, életciklus, Future-k). Nem „varázsolja gyorsabbá” magát a feladat végrehajtását; a feladat algoritmikus ideje ugyanaz, legfeljebb az erőforrás-kezelés lehet hatékonyabb (pl. kevesebb thread-létrehozási overhead)."
+  },
+  {
+    "id": "tms-zh-20260112-q05-which-thread-most-efficient",
+    "question": "Melyik szál futása a leghatékonyabb az alábbiak közül?",
+    "options": [
+      {
+        "text": "a daemon szál",
+        "correct": false
+      },
+      {
+        "text": "a nem-daemon (\"user\") szál",
+        "correct": false
+      },
+      {
+        "text": "a main szál",
+        "correct": false
+      },
+      {
+        "text": "nincsen különbség a hatékonyságukban",
+        "correct": true
+      }
+    ],
+    "explanation": "A daemon vs nem-daemon különbség a JVM leállási viselkedésére vonatkozik (a JVM nem vár daemon szálakra). A main szál is „normál” szál. Ezek a címkék önmagukban nem adnak általános teljesítményelőnyt; a futás hatékonyságát inkább a terhelés, lockolás, ütemezés, I/O, stb. befolyásolja."
+  },
+  {
+    "id": "tms-zh-20260112-q06-join-finished-thread",
+    "question": "Mi történik, ha olyan szálra hívunk join-t, ami már befejeződött?",
+    "options": [
+      {
+        "text": "A hívó szál rögtön fut is tovább.",
+        "correct": true
+      },
+      {
+        "text": "A hívó szál mindig vár még legalább 1 ütemezési ciklust.",
+        "correct": false
+      },
+      {
+        "text": "IllegalThreadStateException dobódik.",
+        "correct": false
+      },
+      {
+        "text": "A cél szál újraindul, hogy a join teljesülhessen.",
+        "correct": false
+      }
+    ],
+    "explanation": "A join lényege, hogy megvárja a cél szál befejeződését. Ha a cél szál már befejeződött, nincs mire várni, ezért a join azonnal visszatér."
+  },
+  {
+    "id": "tms-zh-20260112-q07-interrupt-information",
+    "question": "Milyen információt ad át az interrupt() hívás annak a szálnak, amire meghívják?",
+    "options": [
+      {
+        "text": "nem ad át értéket",
+        "correct": true
+      },
+      {
+        "text": "egy egész számot ad át (pl. hibakódot)",
+        "correct": false
+      },
+      {
+        "text": "egy kivételt ad át közvetlenül a szálnak minden esetben",
+        "correct": false
+      },
+      {
+        "text": "egy tetszőleges objektumot ad át paraméterként",
+        "correct": false
+      }
+    ],
+    "explanation": "Az interrupt() nem ad át adatértéket: egy megszakítási jelzést küld (beállítja az interrupted flaget). Ha a szál éppen blokkoló műveletben van (pl. sleep/wait/join), az gyakran InterruptedException-nel tér vissza; egyébként a szálnak magának kell ellenőriznie az interrupted állapotot."
   }
 ]
